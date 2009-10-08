@@ -35,6 +35,7 @@
 				<width>168</width>
 				<height>168</height>
 				<texture>$INFO[MusicPlayer.Cover]</texture>
+				<aspectratio>scale</aspectratio>
 				<bordertexture border="8">common/thumb_border.png</bordertexture>
 				<bordersize>8</bordersize>
 				<animation type="Conditional" condition="Window.IsActive(2006)|Window.IsActive(120)">

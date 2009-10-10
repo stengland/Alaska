@@ -158,7 +158,7 @@
 				<font>Font_ListDetail</font>
 				<textcolor>ListTrackF</textcolor>
 				<label>[B]$INFO[ListItem.Genre][/B]</label>
-				<visible>Container.Content(tvshows)|Container.Content(movies)</visible>
+				<visible>Container.Content(tvshows) | Container.Content(movies)</visible>
 			</control>
 			<control type="label">
 				<posx>5</posx>
@@ -169,7 +169,7 @@
 				<font>Font_ListDetail</font>
 				<textcolor>ListTrackF</textcolor>
 				<label>Episodes: [B]$INFO[ListItem.Episode][/B]</label>
-				<visible>!IsEmpty(ListItem.Episode)+[Container.Content(tvshows)|Container.Content(seasons)]</visible>
+				<visible>!IsEmpty(ListItem.Episode) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 			</control>
 			<control type="label">
 				<posx>5</posx>
@@ -315,7 +315,7 @@
 			</control>
 		<!-- Song -->
 			<control type="group">
-				<visible>Container.Content(songs)| Window.IsActive(500) | Window.IsActive(501) | [ Window.IsActive(502)+!Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]</visible>
+				<visible>Container.Content(songs) |  Window.IsActive(500) | Window.IsActive(501) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]</visible>
 				<control type="label">
 					<posx>0</posx>
 					<posy>5</posy>
@@ -337,7 +337,7 @@
 					<textcolor>ListTitleF</textcolor>
 					<label>$INFO[ListItem.TrackNumber]. $INFO[ListItem.Title]</label>
 					<visible>!IsEmpty(ListItem.Title)</visible>
-					<animation effect="slide" start="0,-10" end="0,-10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502)+!Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
+					<animation effect="slide" start="0,-10" end="0,-10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
 				</control>
 				<control type="label">
 					<posx>0</posx>
@@ -348,7 +348,7 @@
 					<font>Font_ListDetail</font>
 					<textcolor>ListTitleF</textcolor>
 					<label>[B]Album:[/B] $INFO[ListItem.Album]</label>
-					<visible>[Window.IsActive(500) | [ Window.IsActive(502)+!Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]]+!IsEmpty(ListItem.Title)</visible>
+					<visible>[Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]] + !IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="label">
 					<posx>0</posx>
@@ -360,7 +360,7 @@
 					<textcolor>ListTitleF</textcolor>
 					<label>[B]Artist:[/B] $INFO[ListItem.Artist]</label>
 					<visible>!IsEmpty(ListItem.Title)</visible>
-					<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502)+!Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
+					<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
 				</control>
 				<control type="label">
 					<posx>0</posx>
@@ -372,7 +372,7 @@
 					<textcolor>ListTitleF</textcolor>
 					<label>[B]Duration:[/B] $INFO[ListItem.Duration]</label>
 					<visible>!IsEmpty(ListItem.Title)</visible>
-					<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502)+!Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
+					<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
 				</control>
 			</control>
 		</control>

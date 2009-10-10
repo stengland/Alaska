@@ -12,6 +12,8 @@
 	<include file="Includes_MediaFlags.xml" />
 	<include file="Includes_Animations.xml" />
 	<include file="Includes_Backgrounds.xml" />
+	<include file="Includes_Filemanager.xml" />
+	<include file="Includes_Objects.xml" />
 	<!-- Debug objects -->
 	<include name="Object_DebugGrid">
 		<control type="image">
@@ -68,11 +70,27 @@
 			<animation effect="fade" start="100" end="80" time="400" condition="[Window.IsActive(2) + [substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)] + !Window.Next(Home)]">Conditional</animation>
 		</control>
 	</include>
+	<include name="Global_DialogFilter">
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<texture>backdrops/background.png</texture>
+			<colordiffuse>f1FFFFFF</colordiffuse>
+			<animation effect="fade" start="100" end="80" time="400" condition="[!IsEmpty(ListItem.Property(Fanart_Image)) + !Window.Next(Home)]">Conditional</animation>
+			<animation effect="fade" start="100" end="80" time="400" condition="[Window.IsActive(2) + [substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)] + !Window.Next(Home)]">Conditional</animation>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<texture>backdrops/backgroundcolordiffuse.png</texture>
+			<colordiffuse>backgroundColor</colordiffuse>
+			<animation effect="fade" start="100" end="80" time="400" condition="[!IsEmpty(ListItem.Property(Fanart_Image)) + !Window.Next(Home)]">Conditional</animation>
+			<animation effect="fade" start="100" end="80" time="400" condition="[Window.IsActive(2) + [substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)] + !Window.Next(Home)]">Conditional</animation>
+		</control>
+	</include>
 	<include name="Global_ContextFilter">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture>backdrops/background.png</texture>
-			<visible>ControlGroup(7001).HasFocus | ControlGroup(7000).HasFocus | Window.IsActive(106) | Window.IsActive(111)</visible>
+			<visible>ControlGroup(7001).HasFocus | ControlGroup(7000).HasFocus | Window.IsActive(106) | Window.IsActive(111) | Window.IsActive(134)</visible>
 			<colordiffuse>f1FFFFFF</colordiffuse>
 			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
@@ -81,11 +99,28 @@
 			<include>Dimensions_Fullscreen</include>
 			<texture>backdrops/backgroundcolordiffuse.png</texture>
 			<colordiffuse>backgroundColor</colordiffuse>
-			<visible>ControlGroup(7001).HasFocus | ControlGroup(7000).HasFocus | Window.IsActive(106) | Window.IsActive(111)</visible>
+			<visible>ControlGroup(7001).HasFocus | ControlGroup(7000).HasFocus | Window.IsActive(106) | Window.IsActive(111) | Window.IsActive(134)</visible>
 			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
 		</control>
 	</include>
+	
+	<include name="Global_Weather">
+		<control type="group">
+			<posx>1250</posx>
+			<posy>40</posy>
+			<control type="label">
+				<width>128</width>
+				<font>Font_Date</font>
+				<textcolor>Time</textcolor>
+				<info>Weather.Temperature</info>
+				<align>right</align>
+				<visible effect="fade" time="250">system.hasnetwork</visible>
+			</control>
+			<visible>Skin.HasSetting(ShowGlobalWeather)</visible>
+		</control>
+	</include>
+	
 	<include name="Global_Time">
 		<control type="group">
 			<posx>1250</posx>
@@ -107,6 +142,7 @@
 			</control>
 		</control>
 	</include>
+	
 	<include name="Global_HeadingSectionVars">
 		<width>800</width>
 		<font>Font_Time</font>
@@ -251,6 +287,7 @@
 			<height>165</height>
 			<texture>backdrops/background.png</texture>
 			<aspectratio aligny="bottom">scale</aspectratio>
+			<animation effect="slide" start="0,0" end="0,82" time="0" condition="Window.IsVisible(115)">Conditional</animation>
 		</control>
 		<control type="image">
 			<posx>-5</posx>
@@ -260,6 +297,7 @@
 			<texture>backdrops/backgroundcolordiffuse.png</texture>
 			<colordiffuse>backgroundColor</colordiffuse>
 			<aspectratio aligny="bottom">scale</aspectratio>
+			<animation effect="slide" start="0,0" end="0,82" time="0" condition="Window.IsVisible(115)">Conditional</animation>
 		</control>
 	</include>
 	<!-- Home -->
@@ -503,8 +541,17 @@
 					<description>PROGRAMS</description>
 					<label>0</label>
 					<icon>backdrops/programsicon.png</icon>
+					<onclick>XBMC.ActivateWindow(1,plugin://programs/Launcher/)</onclick>
+					<visible>Skin.HasSetting(launcherforgames)</visible>
+					<visible>!Skin.HasSetting(nogames)</visible>
+				</item>
+				<item id="2">
+					<description>PROGRAMS</description>
+					<label>0</label>
+					<icon>backdrops/programsicon.png</icon>
 					<onclick>XBMC.ActivateWindow(MyPrograms)</onclick>
 					<visible>!Skin.HasSetting(nogames)</visible>
+					<visible>!Skin.HasSetting(launcherforgames)</visible>
 				</item>
 				<item id="3">
 					<description>Picture</description>
@@ -669,6 +716,15 @@
 				<icon>special://skin/media/backdrops/programs.jpg</icon>
 				<thumb>$INFO[Skin.String(CustomPictures)]</thumb>
 				<onclick>XBMC.ActivateWindow(MyPrograms)</onclick>
+				<visible>!Skin.HasSetting(launcherforgames)</visible>
+			</item>
+			<item id="1">
+				<description>PROGRAMS</description>
+				<label>0</label>
+				<icon>special://skin/media/backdrops/programs.jpg</icon>
+				<thumb>$INFO[Skin.String(CustomPictures)]</thumb>
+				<onclick>XBMC.ActivateWindow(1,plugin://programs/Launcher/)</onclick>
+				<visible>Skin.HasSetting(launcherforgames)</visible>
 			</item>
 			<item id="2">
 				<description>Video</description>

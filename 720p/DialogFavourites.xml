@@ -17,7 +17,7 @@
 		<control type="image">
 			<description>Panel</description>
 			<posx>240</posx>
-			<posy>88</posy>
+			<posy>72</posy>
 			<width>800</width>
 			<height>544</height>
 			<texture>favorites/favorites_panel.png</texture>
@@ -25,7 +25,7 @@
 
 		<control type="image">
 			<posx>270</posx>
-			<posy>530</posy>
+			<posy>514</posy>
 			<width>740</width>
 			<height>2</height>
 			<texture>common/divider.png</texture>
@@ -34,7 +34,7 @@
 		<control type="label">
 			<description>Favourites Label</description>
 			<posx>990</posx>
-			<posy>532</posy>
+			<posy>516</posy>
 			<width>500</width>
 			<height>60</height>
 			<align>right</align>
@@ -42,12 +42,12 @@
 			<textcolor>CCababab</textcolor>
 			<label>$LOCALIZE[1036]</label>
 			<font>Font_FavoritesLabel</font>
-			<shadowcolor>CCdadada</shadowcolor>
+			<shadowcolor>CCdadadada</shadowcolor>
 		</control>
 		
 		<control type="list" id="450">
 			<posx>260</posx>
-			<posy>130</posy>
+			<posy>114</posy>
 			<width>781</width>
 			<height>375</height>
 			<onleft>-</onleft>

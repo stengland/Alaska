@@ -1,3 +1,5 @@
+<!--Alaska-->
+
 <includes>
 	<!-- File includes -->
 	<include file="Defaults.xml" />
@@ -104,7 +106,7 @@
 			<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
 		</control>
 	</include>
-	
+
 	<include name="Global_Weather">
 		<control type="group">
 			<posx>1250</posx>
@@ -120,7 +122,7 @@
 			<visible>Skin.HasSetting(ShowGlobalWeather)</visible>
 		</control>
 	</include>
-	
+
 	<include name="Global_Time">
 		<control type="group">
 			<posx>1250</posx>
@@ -142,7 +144,7 @@
 			</control>
 		</control>
 	</include>
-	
+
 	<include name="Global_HeadingSectionVars">
 		<width>800</width>
 		<font>Font_Time</font>

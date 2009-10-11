@@ -372,23 +372,13 @@
 			<texture>$INFO[Container(55).ListItem.Icon]</texture>
 			<bordertexture border="8">common/thumb_border.png</bordertexture>
 			<bordersize>8</bordersize>
-			<!--Not yet working-->
-			<animation type="Focus" reversible="false">
-				<effect type="zoom" center="52,52" start="50" end="100" time="200" tween="cubic" easing="out" />
-				<effect type="fade" start="0" end="100" time="200" />
-			</animation>
-			<!--end-->
-			<animation type="Conditional" condition="Window.IsActive(2003)">
-				<effect type="zoom" center="auto" start="100" end="120" time="400" tween="cubic" easing="inout" />
-				<effect type="slide" start="0,0" end="40,0" time="400" tween="cubic" easing="inout" />
-			</animation>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByMusicInfo</include>
 			<visible>Control.IsVisible(55)</visible>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(55)</visible>
+			<visible>Control.IsVisible(55) + Window.IsActive(25)</visible>
 			<include>Animation_ZoomedByMenu</include>
 			<include>PosterMediaFlags</include>
 		</control>

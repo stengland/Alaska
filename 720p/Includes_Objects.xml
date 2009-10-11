@@ -122,9 +122,9 @@
 	</include>
 	<!--Movie Info-->
 	<include name="Objects_FSInfoCertificate">
-		<posy>66</posy>
-		<width>166</width>
-		<height>38</height>
+		<posy>56</posy>
+		<width>249</width>
+		<height>57</height>
 	</include>
 	<include name="Objects_FSInfoYear">
 		<width>109</width>

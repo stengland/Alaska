@@ -334,7 +334,7 @@
 				</animation>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/programs.jpg" >$INFO[Skin.String(CustomGames)]</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/programs.jpg">$INFO[Skin.String(CustomGames)]</imagepath>
 				</control>
 				<include>Home_MainMenuFrame</include>
 				<control type="label">
@@ -536,7 +536,7 @@
 					<description>Music</description>
 					<label>2</label>
 					<icon>backdrops/musicicon.png</icon>
-					<onclick>XBMC.ActivateWindow(MyMusic,return)</onclick>
+					<onclick>XBMC.ActivateWindow(MyMusic)</onclick>
 					<visible>!Skin.HasSetting(nomusic)</visible>
 				</item>
 				<item id="2">
@@ -566,14 +566,14 @@
 					<description>Movies</description>
 					<label>342</label>
 					<icon>backdrops/moviesicon.png</icon>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles)</onclick>
 					<visible>!Skin.HasSetting(nomovies)</visible>
 				</item>
 				<item id="5">
 					<description>Tv Shows</description>
 					<label>20343</label>
 					<icon>backdrops/tvshowsicon.png</icon>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
 					<visible>!Skin.HasSetting(notvshows)</visible>
 				</item>
 				<item id="6">
@@ -740,21 +740,21 @@
 				<label>2</label>
 				<icon>special://skin/media/backdrops/music.jpg</icon>
 				<thumb>$INFO[Skin.String(CustomMusic)]</thumb>
-				<onclick>XBMC.ActivateWindow(MyMusic,return)</onclick>
+				<onclick>XBMC.ActivateWindow(MyMusic)</onclick>
 			</item>
 			<item id="4">
 				<description>Movies</description>
 				<label>342</label>
 				<icon>special://skin/media/backdrops/movies.jpg</icon>
 				<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
-				<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
+				<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles)</onclick>
 			</item>
 			<item id="5">
 				<description>Tv Shows</description>
 				<label>20343</label>
 				<icon>special://skin/media/backdrops/tvshows.jpg</icon>
 				<thumb>$INFO[Skin.String(CustomTV)]</thumb>
-				<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
+				<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
 			</item>
 			<item id="6">
 				<description>Picture</description>

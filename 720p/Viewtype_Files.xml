@@ -369,13 +369,28 @@
 			<height>360</height>
 			<fadetime>400</fadetime>
 			<aspectratio align="center" aligny="center">keep</aspectratio>
-			<texture>$INFO[Container(55).ListItem.Icon]</texture>
+			<texture background="true">$INFO[Container(55).ListItem.Icon]</texture>
 			<bordertexture border="8">common/thumb_border.png</bordertexture>
 			<bordersize>8</bordersize>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByMusicInfo</include>
-			<visible>Control.IsVisible(55)</visible>
+			<visible>Control.IsVisible(55) + !Container.Content(Genres)</visible>
+		</control>
+		<control type="image">
+			<posx>32</posx>
+			<posy>120</posy>
+			<width>440</width>
+			<height>360</height>
+			<fadetime>400</fadetime>
+			<aspectratio align="center" aligny="center">keep</aspectratio>
+			<texture fallback="moviegenres\default.jpg">moviegenres\$INFO[ListItem.Label].jpg</texture>
+			<bordertexture border="8">common/thumb_border.png</bordertexture>
+			<bordersize>8</bordersize>
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByMusicInfo</include>
+			<visible>Control.IsVisible(55) + Container.Content(Genres)</visible>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(55) + Window.IsActive(25)</visible>

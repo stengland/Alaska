@@ -156,8 +156,6 @@
 		<control type="group">
 			<visible>Control.IsVisible(56)</visible>
 			<include>Animation_ZoomedByMenu</include>
-			<posx>-330</posx>
-			<posy>20</posy>
 			<include>PosterMediaFlags</include>
 		</control>
 	</include>

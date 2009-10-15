@@ -56,17 +56,20 @@
 						<onclick>SetFocus(9002)</onclick>
 					</item>
 					<item id="3">
-	<!-- LOC -->		<description>Views</description>
+						<!-- LOC -->
+						<description>Views</description>
 						<label>Views</label>
 						<onclick>SetFocus(9003)</onclick>
 					</item>
 					<item id="4">
-	<!-- LOC -->		<description>Backdrops</description>
+						<!-- LOC -->
+						<description>Backdrops</description>
 						<label>Backdrops</label>
 						<onclick>SetFocus(9004)</onclick>
 					</item>
 					<item id="5">
-	<!-- LOC -->		<description>Misc.</description>
+						<!-- LOC -->
+						<description>Misc.</description>
 						<label>Misc.</label>
 						<onclick>SetFocus(9005)</onclick>
 					</item>
@@ -90,7 +93,8 @@
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
-	<!-- LOC -->		<label>Scroll Plot</label>
+						<!-- LOC -->
+						<label>Scroll Plot</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(autoscroll)</onclick>
@@ -101,18 +105,32 @@
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
-	<!-- LOC -->		<label>Media Flags</label>
+						<!-- LOC -->
+						<label>Media Flags</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(mediaflagson)</onclick>
 						<selected>Skin.HasSetting(mediaflagson)</selected>
+					</control>
+					<control type="radiobutton" id="104">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>Black</focusedcolor>
+						<!-- LOC -->
+						<label>Swap IMDB for Studio Flags</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(showstudioflags)</onclick>
+						<selected>Skin.HasSetting(showstudioflags)</selected>
 					</control>
 					<control type="radiobutton" id="102">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
-	<!-- LOC -->		<label>Larger RSS</label>
+						<!-- LOC -->
+						<label>Larger RSS</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(largeRSS)</onclick>
@@ -123,7 +141,8 @@
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
-	<!-- LOC -->		<label>only show RSS on home screen</label>
+						<!-- LOC -->
+						<label>only show RSS on home screen</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(RSS_only_on_home)</onclick>
@@ -145,7 +164,8 @@
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
-	<!-- LOC -->		<label>Home 2</label>
+						<!-- LOC -->
+						<label>Home 2</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(home2)</onclick>
@@ -157,7 +177,8 @@
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
-	<!-- LOC -->		<label>Home 3</label>
+						<!-- LOC -->
+						<label>Home 3</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(home3)</onclick>
@@ -169,7 +190,8 @@
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
-	<!-- LOC -->		<label>Conditional Weather</label>
+						<!-- LOC -->
+						<label>Conditional Weather</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(homeweather)</onclick>
@@ -180,7 +202,8 @@
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
-	<!-- LOC -->		<label>Link Programs to Launcher Plugin</label>
+						<!-- LOC -->
+						<label>Link Programs to Launcher Plugin</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(launcherforgames)</onclick>
@@ -202,7 +225,8 @@
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
-	<!-- LOC -->		<label>File View Focus Line</label>
+						<!-- LOC -->
+						<label>File View Focus Line</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(File_View_Focus_Line)</onclick>
@@ -235,7 +259,8 @@
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
-	<!-- LOC -->		<label>Debug mode</label>
+						<!-- LOC -->
+						<label>Debug mode</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(debugmode)</onclick>
@@ -246,7 +271,8 @@
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
-	<!-- LOC -->		<label>Debug Grid</label>
+						<!-- LOC -->
+						<label>Debug Grid</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(debuggrid)</onclick>
@@ -259,7 +285,7 @@
 		<include>Global_Time</include>
 		<include>Setting_Heading</include>
 		<include>Global_RSS</include>
-	<!-- debug -->
+		<!-- debug -->
 		<include>Object_DebugGrid</include>
 		<control type="label">
 			<include>WindowID</include>

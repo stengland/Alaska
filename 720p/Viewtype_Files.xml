@@ -26,7 +26,7 @@
 					<height>46</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
-					<textcolor>ListTitleNF</textcolor>
+					<textcolor>FileTitleNF</textcolor>
 					<label>$INFO[ListItem.TrackNumber]. $INFO[ListItem.Title] [COLOR Date]$INFO[ListItem.Duration][/COLOR]</label>
 					<visible>!IsEmpty(ListItem.Duration) + !IsEmpty(ListItem.TrackNumber) + [Container.Content(songs) | Window.IsActive(500) | [Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]]</visible>
 				</control>
@@ -37,7 +37,7 @@
 					<height>46</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
-					<textcolor>ListTitleNF</textcolor>
+					<textcolor>FileTitleNF</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 					<visible>![Window.IsActive(25) | Window.IsActive(502) | Window.IsActive(500)]</visible>
 				</control>
@@ -48,7 +48,7 @@
 					<height>46</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
-					<textcolor>ListTitleNF</textcolor>
+					<textcolor>FileTitleNF</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 					<visible>IsEmpty(ListItem.Title) + [Window.IsActive(25) | Window.IsActive(502)]</visible>
 				</control>
@@ -59,7 +59,7 @@
 					<height>46</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
-					<textcolor>ListTitleNF</textcolor>
+					<textcolor>FileTitleNF</textcolor>
 					<label>$INFO[ListItem.Title]</label>
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + !Container.Content(episodes)</visible>
 					<animation effect="slide" start="0,-6" end="0,-6" time="0" condition="!Container.Content(seasons)">Conditional</animation>
@@ -71,7 +71,7 @@
 					<height>25</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
-					<textcolor>ListTitleNF</textcolor>
+					<textcolor>FileTitleNF</textcolor>
 					<label>$INFO[ListItem.Episode]. $INFO[ListItem.Title]</label>
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + Container.Content(episodes)</visible>
 				</control>
@@ -82,7 +82,7 @@
 					<height>17</height>
 					<aligny>center</aligny>
 					<font>Font_ListDetailNF</font>
-					<textcolor>ListTitleNF</textcolor>
+					<textcolor>FileTitleNF</textcolor>
 					<label>$INFO[ListItem.Duration]</label>
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25)</visible>
 				</control>
@@ -93,7 +93,7 @@
 					<height>17</height>
 					<aligny>center</aligny>
 					<font>Font_ListDetailNF</font>
-					<textcolor>ListTitleNF</textcolor>
+					<textcolor>FileTitleNF</textcolor>
 					<label>$LOCALIZE[20416]: $INFO[ListItem.Date]</label>
 					<visible>!IsEmpty(ListItem.Date) + Window.IsActive(25) + Container.Content(episodes)</visible>
 				</control>
@@ -104,7 +104,7 @@
 					<height>17</height>
 					<aligny>center</aligny>
 					<font>Font_ListDetailNF</font>
-					<textcolor>ListTitleNF</textcolor>
+					<textcolor>FileTitleNF</textcolor>
 					<label>$LOCALIZE[20360]: $INFO[ListItem.Episode]</label>
 					<visible>!IsEmpty(ListItem.Episode) + Window.IsActive(25) + Container.Content(tvshows)</visible>
 				</control>

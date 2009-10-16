@@ -369,7 +369,7 @@
 			<width>440</width>
 			<height>360</height>
 			<fadetime>400</fadetime>
-			<aspectratio align="left" aligny="center">keep</aspectratio>
+			<aspectratio align="right" aligny="center">keep</aspectratio>
 			<texture background="true">$INFO[Container(55).ListItem.Icon]</texture>
 			<bordertexture border="8">common/thumb_border.png</bordertexture>
 			<bordersize>8</bordersize>
@@ -384,7 +384,7 @@
 			<width>440</width>
 			<height>360</height>
 			<fadetime>400</fadetime>
-			<aspectratio align="left" aligny="center">keep</aspectratio>
+			<aspectratio align="right" aligny="center">keep</aspectratio>
 			<texture fallback="moviegenres\default.jpg">moviegenres\$INFO[ListItem.Label].jpg</texture>
 			<bordertexture border="8">common/thumb_border.png</bordertexture>
 			<bordersize>8</bordersize>
@@ -405,11 +405,8 @@
 			<height>460</height>
 			<visible allowhiddenfocus="true">Control.IsVisible(55) + Control.HasFocus(60)</visible>
 			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-			<texturesliderbarfocus border="0,16,0,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-			<textureslidernib>-</textureslidernib>
-			<textureslidernibfocus>-</textureslidernibfocus>
+			<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
 			<onleft>55</onleft>
-			<onright>60</onright>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
 			<include>Animation_CommonFade</include>

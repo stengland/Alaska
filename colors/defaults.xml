@@ -9,7 +9,9 @@
 	<!-- Global colours -->
 
 	<color name="backgroundColor">FFefc1d4</color>
+	
 	<!--FFEFC1D4-->
+	
 	<color name="Time">77686868</color>
 	<color name="Date">77686868</color>
 	<color name="RSSBody">FF686868</color>
@@ -23,6 +25,7 @@
 	<color name="FlagDiffuse">CC474747</color>
 
 	<!-- OSD -->
+	
 	<color name="OSDPlayingArtist">FF686868</color>
 	<color name="OSDPlayingTrack">FF686868</color>
 	<color name="OSDPlayingAlbum">77686868</color>
@@ -30,6 +33,7 @@
 	<color name="OSDDetails">FF686868</color>
 	<color name="OSDTime">B9202020</color>
 	<color name="OSDProgress">55686868</color>
+	
 	<!-- Window menu colours -->
 
 	<color name="MenuValue">FF5b5b5b</color>
@@ -44,7 +48,7 @@
 
 	<color name="PosterTitle">FF474747</color>
 	<color name="EpisodeLabelF">FF474747</color>	
-	<color name="EpisodePlot">FF474747</color>	
+	<color name="EpisodePlot">DD262626</color>	
 	<color name="EpisodeNumber">FF474747</color>		
 
 	<!-- Info dialog colours -->

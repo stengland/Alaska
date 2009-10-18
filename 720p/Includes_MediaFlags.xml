@@ -12,6 +12,7 @@
 			<include>Animation_SlideUpFadeOut</include>
 			<include>Animation_HiddenByInfo</include>
 			<posx>58</posx>
+			<animation effect="slide" start="0,0" end="0,20" condition="Control.IsVisible(51)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="-345,-400" condition="Control.IsVisible(52)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,35" condition="Control.IsVisible(55)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="-340,20" condition="Control.IsVisible(56)">Conditional</animation>
@@ -74,31 +75,31 @@
 					<label>$INFO[ListItem.VideoResolution]</label>
 					<posx>7</posx>
 					<posy>538</posy>
-					<width>40</width>
+					<width>42</width>
 					<height>45</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>Font_Res</font>
-					<textcolor>aaffffff</textcolor>
+					<textcolor>FlagText</textcolor>
 					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
 				</control>
 				<control type="label">
 					<label>?</label>
 					<posx>8</posx>
 					<posy>538</posy>
-					<width>38</width>
+					<width>42</width>
 					<height>45</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>Font_Res</font>
-					<textcolor>aaffffff</textcolor>
+					<textcolor>FlagText</textcolor>
 					<visible>IsEmpty(ListItem.VideoResolution)</visible>
 				</control>
 				<control type="label">
 					<label>$INFO[ListItem.VideoAspect]</label>
 					<posx>55</posx>
 					<posy>538</posy>
-					<width>27</width>
+					<width>28</width>
 					<height>45</height>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -110,7 +111,7 @@
 					<label>?</label>
 					<posx>55</posx>
 					<posy>538</posy>
-					<width>27</width>
+					<width>28</width>
 					<height>45</height>
 					<align>center</align>
 					<aligny>center</aligny>

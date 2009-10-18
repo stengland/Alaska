@@ -26,7 +26,7 @@
 				</control>
 				<control type="image" id="81">
 					<include>PosterMediaFlagsVars</include>
-					<texture fallback="flags/default.png">$INFO[Listitem.studio,flags/studios/,.png]</texture>
+					<texture fallback="flags/default.png">$INFO[Listitem.studio,extras/studios/,.png]</texture>
 					<visible>Skin.HasSetting(showstudioflags)</visible>
 				</control>
 			</control>

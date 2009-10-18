@@ -450,7 +450,7 @@
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">mainmenu/weather/$INFO[Weather.FanartCode]/</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">extras/weather/$INFO[Weather.FanartCode]/</imagepath>
 					<visible>Skin.HasSetting(homeweather)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>

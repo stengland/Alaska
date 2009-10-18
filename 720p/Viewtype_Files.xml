@@ -169,7 +169,7 @@
 					<width>440</width>
 					<height>360</height>
 					<aspectratio align="right" aligny="center">keep</aspectratio>
-					<texture fallback="defaultmoviegenre.jpg">moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<texture fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
 					<bordertexture border="8">common\thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
 					<include>Animation_ZoomInZoomOut</include>

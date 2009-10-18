@@ -224,7 +224,7 @@
 				<description>Video</description>
 				<label>3</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>[Window.IsActive(24)| [Window.IsActive(25) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(movies)]] + IsEmpty(Container.PluginName) + !Window.IsActive(134)</visible>
+				<visible>[Window.IsActive(24)| [Window.IsActive(25) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(movies)]] + IsEmpty(Container.PluginName) + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<label>$INFO[Container.NumItems] ITEMS</label>

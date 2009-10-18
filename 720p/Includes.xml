@@ -992,7 +992,7 @@
 	</include>
 	<!-- Window menus -->
 	<include name="WindowMenuVars">
-		<width>1000</width>
+		<width>1100</width>
 		<height>40</height>
 		<posx>140</posx>
 		<onup>50</onup>
@@ -1010,6 +1010,22 @@
 		<align>center</align>
 		<font>Font_MenuValue</font>
 		<textcolor>MenuValue</textcolor>
+	</include>
+	<include name="WindowMenuRadioButton">
+		<posx>0</posx>
+		<posy>30</posy>
+		<width>200</width>
+		<height>30</height>
+		<align>center</align>
+		<radioposx>45</radioposx>
+		<radioposy>30</radioposy>
+		<radioheight>7</radioheight>
+		<radiowidth>100</radiowidth>
+		<font>Font_MenuValue</font>
+		<textcolor>MenuValue</textcolor>
+		<textureradioon>common/radioUnderline.png</textureradioon>
+		<textureradiooff>-</textureradiooff>
+		<colordiffuse>FlagDiffuse</colordiffuse>
 	</include>
 	<include name="WindowMenuLabel">
 		<posx>0</posx>

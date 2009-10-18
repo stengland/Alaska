@@ -244,6 +244,7 @@
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByInfo</include>
 			<onup>7000</onup>
 			<ondown>7000</ondown>
 			<itemlayout width="200" height="200">
@@ -258,6 +259,16 @@
 					<bordersize>8</bordersize>
 					<animation effect="fade" start="60" end="60" time="0" condition="true">Conditional</animation>
 					<animation effect="fade" start="100" end="60" time="200">UnFocus</animation>
+				</control>
+				<control type="image">
+					<posx>8</posx>
+					<posy>250</posy>
+					<width>184</width>
+					<height>184</height>
+					<texture background="true" flipy="true" diffuse="postermatteNF_reflect.png">$INFO[ListItem.Icon]</texture>
+					<fadetime>200</fadetime>
+					<colordiffuse>89FFFFFF</colordiffuse>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
 				</control>
 			</itemlayout>
 			<focusedlayout width="300" height="300">

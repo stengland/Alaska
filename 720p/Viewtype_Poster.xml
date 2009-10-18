@@ -14,7 +14,7 @@
 			<ondown>7000</ondown>
 			<viewtype label="Poster">list</viewtype>
 			<orientation>horizontal</orientation>
-			<scrolltime>200</scrolltime>
+			<scrolltime>100</scrolltime>
 			<focusposition>4</focusposition>
 			<scrolltime>200</scrolltime>
 			<include>Animation_ZoomInZoomOut</include>
@@ -234,11 +234,11 @@
 		<control type="wraplist" id="54">
 			<viewtype label="Poster">icon</viewtype>
 			<posx>-110</posx>
-			<posy>150</posy>
+			<posy>100</posy>
 			<width>1500</width>
 			<height>300</height>
 			<pagecontrol>61</pagecontrol>
-			<scrolltime>0</scrolltime>
+			<scrolltime>100</scrolltime>
 			<orientation>horizontal</orientation>
 			<focusposition>3</focusposition>
 			<include>Animation_ZoomInZoomOut</include>
@@ -249,16 +249,15 @@
 			<itemlayout width="200" height="200">
 				<control type="image">
 					<posx>0</posx>
-					<posy>0</posy>
+					<posy>50</posy>
 					<width>200</width>
 					<height>200</height>
-					<fadetime>200</fadetime>
 					<texture>$INFO[ListItem.Icon]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordertexture border="8">common/thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
-					<animation effect="fade" start="30" end="30" time="0" condition="true">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="200">UnFocus</animation>
+					<animation effect="fade" start="60" end="60" time="0" condition="true">Conditional</animation>
+					<animation effect="fade" start="100" end="60" time="200">UnFocus</animation>
 				</control>
 			</itemlayout>
 			<focusedlayout width="300" height="300">
@@ -267,14 +266,13 @@
 					<posy>0</posy>
 					<width>300</width>
 					<height>300</height>
-					<fadetime>200</fadetime>
 					<texture>$INFO[ListItem.Icon]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordertexture border="8">common/thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
 					<animation type="Focus" reversible="false">
-						<effect type="zoom" center="160,0" start="67" end="100" time="600" tween="back" easing="out" />
-						<effect type="fade" start="30" end="100" time="600" />
+						<effect type="zoom" center="150,150" start="67" end="100" time="600" tween="back" easing="out" />
+						<effect type="fade" start="60" end="100" time="600" />
 					</animation>
 				</control>
 			</focusedlayout>

@@ -10,3 +10,6 @@
 
 #ImageSource
 *.psd
+
+#Folders
+*media/moviegenres

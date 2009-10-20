@@ -4,12 +4,21 @@
 
 	<include name="Viewtype_List">
 
-<!-- Browser -->
-	
+		<!-- Background Diffuse -->
+		
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<animation effect="fade" start="100" end="90" time="400" condition="true">Conditional</animation>
+			<texture>list/maskback.png</texture>
+			<visible>Control.IsVisible(53)</visible>
+		</control>
+
+		<!-- Browser -->
+
 		<control type="fixedlist" id="53">
 			<posx>350</posx>
 			<posy>90</posy>
-			<height>1034</height>
+			<height>500</height>
 			<width>990</width>
 			<onup>53</onup>
 			<ondown>53</ondown>
@@ -30,7 +39,7 @@
 					<aligny>center</aligny>
 					<align>right</align>
 					<font>Font_ListTrackNF</font>
-					<textcolor>ListTrackNF</textcolor>
+					<textcolor>FileTitleNF</textcolor>
 					<selectedcolor>ListTrackNF</selectedcolor>					
 					<label>$INFO[ListItem.TrackNumber]</label>
 					<visible>Container.Content(songs)</visible>
@@ -42,7 +51,7 @@
 					<height>25</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
-					<textcolor>ListTitleNF</textcolor>
+					<textcolor>FileTitleNF</textcolor>
 					<selectedcolor>ListTitleNF</selectedcolor>					
 					<label>$INFO[ListItem.Title]</label>
 					<visible>Container.Content(songs)</visible>
@@ -54,7 +63,7 @@
 					<height>49</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
-					<textcolor>ListTitleNF</textcolor>
+					<textcolor>FileTitleNF</textcolor>
 					<selectedcolor>ListTitleNF</selectedcolor>					
 					<label>$INFO[ListItem.Label]</label>
 					<visible>IsEmpty(ListItem.Title)</visible>
@@ -66,7 +75,7 @@
 					<height>17</height>
 					<aligny>center</aligny>
 					<font>Font_ListDetailNF</font>
-					<textcolor>ListTitleNF</textcolor>
+					<textcolor>FileTitleNF</textcolor>
 					<selectedcolor>ListTitleNF</selectedcolor>					
 					<label>$INFO[ListItem.Artist] - $INFO[ListItem.Album] - $INFO[ListItem.Duration]</label>
 					<visible>!IsEmpty(ListItem.Title)</visible>
@@ -141,19 +150,23 @@
 				</control>
 			</focusedlayout>
 		</control>
+		
+		<!-- List Diffuse -->
 
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="list/list_mask_1.png">backdrops/background.png</texture>
+			<animation effect="fade" start="100" end="90" time="400" condition="true">Conditional</animation>
+			<texture>list/maskfront.png</texture>
 			<visible>Control.IsVisible(53)</visible>
 		</control>
+		
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture diffuse="list/list_mask_1.png">backdrops/backgroundcolordiffuse.png</texture>
 			<colordiffuse>backgroundColor</colordiffuse>
 			<visible>Control.IsVisible(53)</visible>
 		</control>
-		
+
 	</include>
 
 </includes>

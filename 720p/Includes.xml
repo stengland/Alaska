@@ -586,9 +586,9 @@
 				<item id="7">
 					<description>Weather</description>
 					<label>8</label>
-					<include>BackgroundVarsWeather</include>
+					<icon>backdrops/weathericon.png</icon>
 					<onclick>xbmc.activatewindow(2600)</onclick>
-					<visible>Skin.HasSetting(weather)</visible>
+					<visible>!Skin.HasSetting(noweather)</visible>
 				</item>
 				<item id="8">
 					<description>Settings</description>

@@ -24,7 +24,7 @@
 			<width>350</width>
 			<animation effect="slide" start="0,0" end="0,20" condition="Control.IsVisible(51)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="-341,40" condition="Control.IsVisible(52)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-327,50" condition="Control.IsVisible(55)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-327,42" condition="Control.IsVisible(55)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="-340,30" condition="Control.IsVisible(56)">Conditional</animation>
 			<visible>Skin.HasSetting(mediaflagson) + [Container.Content(movies) | Container.Content(episodes)]</visible>
 

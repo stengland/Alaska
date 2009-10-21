@@ -4,7 +4,7 @@
 	<include name="Viewtype_Files">
 
 		<!-- Background Diffuse -->
-		
+
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<animation effect="fade" start="100" end="80" time="400" condition="true">Conditional</animation>
@@ -13,7 +13,7 @@
 		</control>
 
 		<!-- Browser -->
-		
+
 		<control type="fixedlist" id="55">
 			<posx>-200</posx>
 			<posy>90</posy>
@@ -221,7 +221,18 @@
 					<width>121</width>
 					<height>25</height>
 					<texture>$INFO[ListItem.StarRating]</texture>
-					<visible>Window.IsActive(25) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(genres) | [Container.Content(movies) + Skin.HasSetting(mediaflagson)]]</visible>
+					<visible>Window.IsActive(25) + Container.Content(tvshows)</visible>
+				</control>
+				<control type="label">
+					<posx>690</posx>
+					<posy>80</posy>
+					<width>720</width>
+					<height>25</height>
+					<aligny>center</aligny>
+					<font>Font_ListDetail</font>
+					<textcolor>ListTitleF</textcolor>
+					<label>[B]Runtime:[/B] $INFO[ListItem.Duration]</label>
+					<visible>!IsEmpty(ListItem.Title) + Container.Content(movies)</visible>
 				</control>
 				<!-- Programs -->
 				<control type="group">
@@ -379,7 +390,7 @@
 				</control>
 			</focusedlayout>
 		</control>
-		
+
 		<!-- List Diffuse -->
 
 		<control type="image">
@@ -388,24 +399,24 @@
 			<texture>list/maskfront.png</texture>
 			<visible>Control.IsVisible(55)</visible>
 		</control>
-		
+
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture diffuse="list/list_mask_1.png">backdrops/backgroundcolordiffuse.png</texture>
 			<colordiffuse>backgroundColor</colordiffuse>
 			<visible>Control.IsVisible(55)</visible>
 		</control>
-		
+
 		<!-- Media Flags -->
-		
+
 		<control type="group">
 			<visible>Control.IsVisible(55) + Window.IsActive(25)</visible>
 			<include>Animation_ZoomedByMenu</include>
 			<include>PosterMediaFlags</include>
 		</control>
-		
+
 		<!-- Scroll Bar -->
-		
+
 		<control type="scrollbar" id="60">
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>

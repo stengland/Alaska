@@ -1,7 +1,11 @@
 <!--Alaska-->
 
 <includes>
+
 	<include name="Viewtype_Fanart">
+
+		<!-- Browser -->
+	
 		<control type="wraplist" id="56">
 			<posx>-66</posx>
 			<posy>70</posy>
@@ -110,7 +114,9 @@
 				</control>
 			</focusedlayout>
 		</control>
+		
 		<!-- Browser label and flags -->
+		
 		<control type="group">
 			<posx>505</posx>
 			<posy>364</posy>

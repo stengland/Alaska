@@ -172,7 +172,7 @@
 				<height>50</height>
 				<aligny>center</aligny>
 				<font>Font_TVShow</font>
-				<textcolor>ListTrackF</textcolor>
+				<textcolor>FanartTitle</textcolor>
 				<label>Aired: [B]$INFO[ListItem.Date][/B]</label>
 				<visible>Container.Content(episodes)</visible>
 			</control>			
@@ -183,7 +183,7 @@
 				<height>50</height>
 				<aligny>center</aligny>
 				<font>Font_TVShow</font>
-				<textcolor>ListTrackF</textcolor>
+				<textcolor>FanartTitle</textcolor>
 				<label>Genre: [B]$INFO[ListItem.Genre][/B]</label>
 				<visible>Container.Content(tvshows)</visible>
 			</control>			
@@ -194,7 +194,7 @@
 				<height>50</height>
 				<aligny>center</aligny>
 				<font>Font_TVShow</font>
-				<textcolor>ListTrackF</textcolor>
+				<textcolor>FanartTitle</textcolor>
 				<label>Episodes: [B]$INFO[ListItem.Episode][/B]</label>
 				<visible>Container.Content(tvshows)</visible>
 			</control>			
@@ -205,7 +205,7 @@
 				<height>50</height>
 				<aligny>center</aligny>
 				<font>Font_TVShow</font>
-				<textcolor>ListTrackF</textcolor>
+				<textcolor>FanartTitle</textcolor>
 				<label>Premiered: [B]$INFO[ListItem.Premiered][/B]</label>
 				<visible>Container.Content(tvshows)</visible>
 			</control>		
@@ -218,9 +218,14 @@
 				<info>ListItem.Plot</info>
 				<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
 				<font>Font_TVShow</font>
-				<textcolor>ListTrackF</textcolor>
+				<textcolor>FanartText</textcolor>
 				<visible>Container.Content(episodes)</visible>
 			</control>			
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(52)</visible>
+			<include>Animation_ZoomedByMenu</include>
+			<include>PosterMediaFlags</include>
 		</control>
 
 	</include>

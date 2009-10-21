@@ -13,6 +13,7 @@
 		</control>
 
 		<!-- Browser -->
+		
 		<control type="fixedlist" id="55">
 			<posx>-200</posx>
 			<posy>90</posy>
@@ -136,7 +137,7 @@
 					<include>Animation_HiddenByMusicInfo</include>
 					<visible>!Container.Content(Genres)</visible>
 					<animation type="Focus" reversible="false">
-						<effect type="zoom" center="450,75" start="50" end="100" time="200" tween="cubic" easing="out" />
+						<effect type="zoom" center="450,75" start="80" end="100" time="200" tween="cubic" easing="out" />
 						<effect type="fade" start="60" end="100" time="200" />
 					</animation>
 				</control>
@@ -154,7 +155,7 @@
 					<include>Animation_HiddenByMusicInfo</include>
 					<visible>Container.Content(Genres)</visible>
 					<animation type="Focus" reversible="false">
-						<effect type="zoom" center="450,75" start="50" end="100" time="200" tween="cubic" easing="out" />
+						<effect type="zoom" center="450,75" start="80" end="100" time="200" tween="cubic" easing="out" />
 						<effect type="fade" start="60" end="100" time="200" />
 					</animation>
 				</control>
@@ -220,7 +221,7 @@
 					<width>121</width>
 					<height>25</height>
 					<texture>$INFO[ListItem.StarRating]</texture>
-					<visible>Window.IsActive(25) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(genres)]</visible>
+					<visible>Window.IsActive(25) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(genres) | [Container.Content(movies) + Skin.HasSetting(mediaflagson)]]</visible>
 				</control>
 				<!-- Programs -->
 				<control type="group">

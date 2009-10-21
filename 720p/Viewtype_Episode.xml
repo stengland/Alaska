@@ -1,7 +1,11 @@
 <!--Alaska-->
 
 <includes>
+
 	<include name="Viewtype_Episode">
+
+		<!-- Browser -->
+		
 		<control type="fixedlist" id="51">
 			<viewtype label="31752">list</viewtype>
 			<animation effect="slide" start="55,0" end="55,0" time="0" condition="Player.HasVideo">Conditional</animation>
@@ -134,6 +138,8 @@
 			</focusedlayout>
 		</control>
 
+		<!-- Browser label and flags -->
+
 		<control type="textbox">
 			<animation effect="slide" start="55,0" end="55,0" time="0" condition="Player.HasVideo">Conditional</animation>
 			<posx>559</posx>
@@ -152,10 +158,9 @@
 			<include>Animation_EpisodePlot</include>
 			<include>Animation_EpisodeFloat</include>
 			<include>Animation_HiddenByInfo</include>
-		</control>
-		
+		</control>		
 		<control type="group">
-			<visible>Control.IsVisible(51) + Window.IsActive(25)</visible>
+			<visible>Control.IsVisible(51)</visible>
 			<include>Animation_ZoomedByMenu</include>
 			<include>PosterMediaFlags</include>
 		</control>

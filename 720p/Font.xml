@@ -5,23 +5,30 @@
 	<fontset id="Default" unicode="true">
 
 		<font>
-			<name>Font_Res</name>
+			<name>Font_Channels</name>
 			<filename>alaska_condblack.ttf</filename>
 			<size>26</size>
 			<linespacing>0.6</linespacing>
 		</font>
 
 		<font>
+			<name>Font_Res</name>
+			<filename>alaska_condblack.ttf</filename>
+			<size>28</size>
+			<linespacing>0.6</linespacing>
+		</font>
+
+		<font>
 			<name>Font_Aspect</name>
 			<filename>alaska_condblack.ttf</filename>
-			<size>20</size>
+			<size>24</size>
 			<linespacing>0.6</linespacing>
 		</font>
 
 		<font>
 			<name>Font_PosterRating</name>
 			<filename>alaska_condblack.ttf</filename>
-			<size>24</size>
+			<size>28</size>
 			<linespacing>0.6</linespacing>
 		</font>
 

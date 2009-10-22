@@ -157,6 +157,12 @@
 				<visible>Window.IsActive(1) + !Window.IsActive(134) + IsEmpty(Container.PluginName)</visible>
 			</control>
 			<control type="label">
+				<description>Scripts</description>
+				<label>247</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(20) + !Window.IsActive(134)</visible>
+			</control>
+			<control type="label">
 				<description>Movies</description>
 				<label>342</label>
 				<include>Global_HeadingSectionVars</include>
@@ -716,7 +722,7 @@
 				<description>PROGRAMS</description>
 				<label>0</label>
 				<icon>special://skin/media/backdrops/programs.jpg</icon>
-				<thumb>$INFO[Skin.String(CustomPictures)]</thumb>
+				<thumb>$INFO[Skin.String(CustomPrograms)]</thumb>
 				<onclick>XBMC.ActivateWindow(MyPrograms)</onclick>
 				<visible>!Skin.HasSetting(launcherforgames)</visible>
 			</item>

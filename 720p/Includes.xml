@@ -92,22 +92,6 @@
 		</control>
 	</include>
 
-	<include name="Global_Weather">
-		<control type="group">
-			<posx>1250</posx>
-			<posy>40</posy>
-			<control type="label">
-				<width>128</width>
-				<font>Font_Date</font>
-				<textcolor>Time</textcolor>
-				<info>Weather.Temperature</info>
-				<align>right</align>
-				<visible effect="fade" time="250">system.hasnetwork</visible>
-			</control>
-			<visible>Skin.HasSetting(ShowGlobalWeather)</visible>
-		</control>
-	</include>
-
 	<include name="Global_Time">
 		<control type="group">
 			<posx>1250</posx>
@@ -118,6 +102,7 @@
 				<textcolor>Time</textcolor>
 				<info>System.Time</info>
 				<align>right</align>
+				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Skin.HasSetting(ShowGlobalTemp)">Conditional</animation>
 			</control>
 			<control type="label">
 				<posy>40</posy>
@@ -127,6 +112,19 @@
 				<info>System.Date</info>
 				<align>right</align>
 			</control>
+		</control>
+		<control type="group">
+			<posx>1250</posx>
+			<posy>30</posy>
+			<control type="label">
+				<width>128</width>
+				<font>Font_Time</font>
+				<textcolor>Time</textcolor>
+				<info>Weather.Temperature</info>
+				<align>right</align>
+				<visible effect="fade" time="250">system.hasnetwork</visible>
+			</control>
+			<visible>Skin.HasSetting(ShowGlobalTemp)</visible>
 		</control>
 	</include>
 
@@ -541,14 +539,14 @@
 				<item id="1">
 					<description>Music</description>
 					<label>2</label>
-					<icon>backdrops/musicicon.png</icon>
+					<icon>mainmenu/musicicon.png</icon>
 					<onclick>XBMC.ActivateWindow(MyMusic)</onclick>
 					<visible>!Skin.HasSetting(nomusic)</visible>
 				</item>
 				<item id="2">
 					<description>PROGRAMS</description>
 					<label>0</label>
-					<icon>backdrops/programsicon.png</icon>
+					<icon>mainmenu/programsicon.png</icon>
 					<onclick>XBMC.ActivateWindow(1,plugin://programs/Launcher/)</onclick>
 					<visible>Skin.HasSetting(launcherforgames)</visible>
 					<visible>!Skin.HasSetting(nogames)</visible>
@@ -556,7 +554,7 @@
 				<item id="2">
 					<description>PROGRAMS</description>
 					<label>0</label>
-					<icon>backdrops/programsicon.png</icon>
+					<icon>mainmenu/programsicon.png</icon>
 					<onclick>XBMC.ActivateWindow(MyPrograms)</onclick>
 					<visible>!Skin.HasSetting(nogames)</visible>
 					<visible>!Skin.HasSetting(launcherforgames)</visible>
@@ -564,42 +562,42 @@
 				<item id="3">
 					<description>Picture</description>
 					<label>1</label>
-					<icon>backdrops/picturesicon.png</icon>
+					<icon>mainmenu/picturesicon.png</icon>
 					<onclick>XBMC.ActivateWindow(MyPictures)</onclick>
 					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
 				<item id="4">
 					<description>Movies</description>
 					<label>342</label>
-					<icon>backdrops/moviesicon.png</icon>
+					<icon>mainmenu/moviesicon.png</icon>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles)</onclick>
 					<visible>!Skin.HasSetting(nomovies)</visible>
 				</item>
 				<item id="5">
 					<description>Tv Shows</description>
 					<label>20343</label>
-					<icon>backdrops/tvshowsicon.png</icon>
+					<icon>mainmenu/tvshowsicon.png</icon>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
 					<visible>!Skin.HasSetting(notvshows)</visible>
 				</item>
 				<item id="6">
 					<description>Video</description>
 					<label>3</label>
-					<icon>backdrops/videosicon.png</icon>
+					<icon>mainmenu/videosicon.png</icon>
 					<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
 				<item id="7">
 					<description>Weather</description>
 					<label>8</label>
-					<icon>backdrops/weathericon.png</icon>
+					<icon>mainmenu/weathericon.png</icon>
 					<onclick>xbmc.activatewindow(2600)</onclick>
 					<visible>!Skin.HasSetting(noweather)</visible>
 				</item>
 				<item id="8">
 					<description>Settings</description>
 					<label>5</label>
-					<icon>backdrops/settingsicon.png</icon>
+					<icon>mainmenu/settingsicon.png</icon>
 					<onclick>XBMC.ActivateWindow(4)</onclick>
 					<visible>!Skin.HasSetting(nosettings)</visible>
 				</item>
@@ -612,7 +610,7 @@
 				<item id="10">
 					<description>Play Disc</description>
 					<label>31018</label>
-					<icon>backdrops/playdiscicon.png</icon>
+					<icon>mainmenu/playdiscicon.png</icon>
 					<onclick>XBMC.PlayDVD</onclick>
 					<visible>System.HasMediadvd</visible>
 				</item>
@@ -625,7 +623,7 @@
 				<item id="13">
 					<description>Shutdown</description>
 					<label>31019</label>
-					<icon>backdrops/shutdownicon.png</icon>
+					<icon>mainmenu/shutdownicon.png</icon>
 					<onclick>XBMC.Shutdown()</onclick>
 					<visible>false</visible>
 				</item>
@@ -775,7 +773,15 @@
 				<icon>special://skin/media/backdrops/weather.jpg</icon>
 				<thumb>$INFO[Skin.String(CustomWeather)]</thumb>
 				<onclick>XBMC.Activatewindow(2600)</onclick>
+				<visible>!Skin.HasSetting(homeweather)</visible>
 			</item>
+			<item id="7">
+				<description>Weather</description>
+				<label>8</label>
+				<icon>special://skin/media/extras/weather/$INFO[Weather.FanartCode]/</icon>
+				<onclick>XBMC.Activatewindow(2600)</onclick>
+				<visible>Skin.HasSetting(homeweather)</visible>
+			</item>				
 			<item id="8">
 				<description>Settings</description>
 				<label>5</label>

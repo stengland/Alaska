@@ -232,6 +232,54 @@
 						<onclick>Skin.ToggleSetting(File_View_Focus_Line)</onclick>
 						<selected>Skin.HasSetting(File_View_Focus_Line)</selected>
 					</control>
+					<control type="radiobutton" id="301">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>Black</focusedcolor>
+						<!-- LOC -->
+						<label>File View Focus Line</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(File_View_Focus_Line)</onclick>
+						<selected>Skin.HasSetting(File_View_Focus_Line)</selected>
+					</control>
+					<control type="radiobutton" id="302">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>Black</focusedcolor>
+						<!-- LOC -->
+						<label>File View Focus Line</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(File_View_Focus_Line)</onclick>
+						<selected>Skin.HasSetting(File_View_Focus_Line)</selected>
+					</control>
+					<control type="radiobutton" id="303">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>Black</focusedcolor>
+						<!-- LOC -->
+						<label>File View Focus Line</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(File_View_Focus_Line)</onclick>
+						<selected>Skin.HasSetting(File_View_Focus_Line)</selected>
+					</control>
+					<control type="radiobutton" id="304">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>Black</focusedcolor>
+						<!-- LOC -->
+						<label>File View Focus Line</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(File_View_Focus_Line)</onclick>
+						<selected>Skin.HasSetting(File_View_Focus_Line)</selected>
+					</control>
 				</control>
 				<control type="grouplist" id="9004">
 					<visible>Container(9000).Hasfocus(4)</visible>

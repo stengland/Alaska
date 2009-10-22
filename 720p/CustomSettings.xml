@@ -106,23 +106,11 @@
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
 						<!-- LOC -->
-						<label>Media Flags</label>
+						<label>Global Temp.</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<onclick>Skin.ToggleSetting(mediaflagson)</onclick>
-						<selected>Skin.HasSetting(mediaflagson)</selected>
-					</control>
-					<control type="radiobutton" id="104">
-						<width>740</width>
-						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
-						<!-- LOC -->
-						<label>Swap IMDB for Studio Flags</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<onclick>Skin.ToggleSetting(showstudioflags)</onclick>
-						<selected>Skin.HasSetting(showstudioflags)</selected>
+						<onclick>Skin.ToggleSetting(ShowGlobalTemp)</onclick>
+						<selected>Skin.HasSetting(ShowGlobalTemp)</selected>
 					</control>
 					<control type="radiobutton" id="102">
 						<width>740</width>

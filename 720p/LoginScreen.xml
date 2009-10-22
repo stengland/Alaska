@@ -4,7 +4,18 @@
 	<defaultcontrol always="true">52</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
+	
 		<include>Global_Background</include>
+
+		<control type="image" id="0">
+			<description>Back Panel</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>560</width>
+			<height>480</height>
+			<texture>common/white.png</texture>
+		</control>
+		
 		<control type="label">
 			<include>WindowID</include>
 			<label>LoginScreen.xml</label>
@@ -40,7 +51,7 @@
 					<width>250</width>
 					<info>ListItem.Label</info>
 					<font>Large</font>
-					<textcolor>Grey</textcolor>
+					<textcolor>Black</textcolor>
 					<align>center</align>
 				</control>
 			</focusedlayout>

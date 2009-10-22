@@ -4,12 +4,24 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
+
 		<include>Global_Background</include>
+
+		<control type="image" id="0">
+			<description>Back Panel</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>560</width>
+			<height>480</height>
+			<texture>common/white.png</texture>
+		</control>
+
 		<control type="label">
 			<include>WindowID</include>
 			<label>SettingsSystemInfo.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
+
 		<control type="group">
 			<posy>-20</posy>
 
@@ -27,65 +39,73 @@
 					<description>General</description>
 					<width>150</width>
 					<label>$LOCALIZE[128]</label>
+					<font>Font_InfoPlot</font>
 					<textcolor>Grey</textcolor>
-					<texturefocus border="1">ButtonFo.png</texturefocus>
-					<texturenofocus border="1">ButtonNF.png</texturenofocus>
+					<focusedcolor>Black</focusedcolor>
+					<disabledcolor>Red</disabledcolor>
 				</control>
 				<control type="button" id="101">
 					<description>Storage</description>
 					<width>150</width>
 					<label>$LOCALIZE[13277]</label>
+					<font>Font_InfoPlot</font>
 					<textcolor>Grey</textcolor>
-					<texturefocus border="1">ButtonFo.png</texturefocus>
-					<texturenofocus border="1">ButtonNF.png</texturenofocus>
+					<focusedcolor>Black</focusedcolor>
+					<disabledcolor>Red</disabledcolor>
 				</control>
 				<control type="button" id="102">
 					<description>HDD</description>
 					<width>150</width>
 					<label>$LOCALIZE[13275]</label>
+					<font>Font_InfoPlot</font>
 					<textcolor>Grey</textcolor>
-					<texturefocus border="1">ButtonFo.png</texturefocus>
-					<texturenofocus border="1">ButtonNF.png</texturenofocus>
+					<focusedcolor>Black</focusedcolor>
+					<disabledcolor>Red</disabledcolor>
 				</control>
 				<control type="button" id="103">
 					<description>DVD</description>
 					<width>150</width>
 					<label>$LOCALIZE[13276]</label>
+					<font>Font_InfoPlot</font>
 					<textcolor>Grey</textcolor>
-					<texturefocus border="1">ButtonFo.png</texturefocus>
-					<texturenofocus border="1">ButtonNF.png</texturenofocus>
+					<focusedcolor>Black</focusedcolor>
+					<disabledcolor>Red</disabledcolor>
 				</control>
 				<control type="button" id="104">
 					<description>Network</description>
 					<width>150</width>
 					<label>$LOCALIZE[13279]</label>
+					<font>Font_InfoPlot</font>
 					<textcolor>Grey</textcolor>
-					<texturefocus border="1">ButtonFo.png</texturefocus>
-					<texturenofocus border="1">ButtonNF.png</texturenofocus>
+					<focusedcolor>Black</focusedcolor>
+					<disabledcolor>Red</disabledcolor>
 				</control>
 				<control type="button" id="105">
 					<description>Video</description>
 					<width>150</width>
 					<label>$LOCALIZE[13280]</label>
+					<font>Font_InfoPlot</font>
 					<textcolor>Grey</textcolor>
-					<texturefocus border="1">ButtonFo.png</texturefocus>
-					<texturenofocus border="1">ButtonNF.png</texturenofocus>
+					<focusedcolor>Black</focusedcolor>
+					<disabledcolor>Red</disabledcolor>
 				</control>
 				<control type="button" id="106">
 					<description>Hardware</description>
 					<width>150</width>
 					<label>$LOCALIZE[13281]</label>
+					<font>Font_InfoPlot</font>
 					<textcolor>Grey</textcolor>
-					<texturefocus border="1">ButtonFo.png</texturefocus>
-					<texturenofocus border="1">ButtonNF.png</texturenofocus>
+					<focusedcolor>Black</focusedcolor>
+					<disabledcolor>Red</disabledcolor>
 				</control>
 				<control type="button" id="107">
 					<description>About</description>
 					<width>150</width>
 					<label>$LOCALIZE[482]</label>
+					<font>Font_InfoPlot</font>
 					<textcolor>Grey</textcolor>
-					<texturefocus border="1">ButtonFo.png</texturefocus>
-					<texturenofocus border="1">ButtonNF.png</texturenofocus>
+					<focusedcolor>Black</focusedcolor>
+					<disabledcolor>Red</disabledcolor>
 				</control>
 			</control>
 

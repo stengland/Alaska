@@ -23,21 +23,6 @@
     <texture>-</texture>
   </default>
 
-  <default type="button">
-    <posx>0</posx>
-    <posy>0</posy>
-    <width>150</width>
-    <height>30</height>
-    <font>Font_InfoPlot</font>
-    <label>-</label>
-    <textcolor>Grey</textcolor>
-    <focusedcolor>Black</focusedcolor>
-    <disabledcolor>Red</disabledcolor>
-    <texturefocus>ButtonFo.png</texturefocus>
-    <texturenofocus>ButtonNF.png</texturenofocus>
-    <pulseonselect>false</pulseonselect>
-  </default>
-
   <default type="togglebutton">
     <posx>0</posx>
     <posy>0</posy>

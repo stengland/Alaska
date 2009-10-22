@@ -11,6 +11,15 @@
 
 	<controls>
 
+		<control type="image" id="0">
+			<description>Back Panel</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>560</width>
+			<height>480</height>
+			<texture>common/white.png</texture>
+		</control>
+
 		<control type="label">
 			<include>DialogID</include>
 			<label>VisualisationPresetList.xml</label>
@@ -50,7 +59,7 @@
 					<posx>5</posx>
 					<width>490</width>
 					<height>30</height>
-					<textcolor>Grey</textcolor>
+					<textcolor>Black</textcolor>
 					<info>ListItem.Label</info>
 				</control>
 			</focusedlayout>

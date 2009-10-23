@@ -15,45 +15,30 @@
 		<colordiffuse>FlagDiffuse</colordiffuse>
 	</include>
 
+	<include name="FlagsSlideAnimations">
+		<animation effect="slide" start="0,0" end="-98,0" condition="Skin.HasSetting(noratingpanel)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-170,0" condition="Skin.HasSetting(novideopanel)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-108,0" condition="Skin.HasSetting(noaudiopanel)">Conditional</animation>
+	</include>
+
 	<include name="PosterMediaFlags">
 		<control type="group">
 			<include>Animation_SlideUpFadeOut</include>
 			<include>Animation_HiddenByInfo</include>
-			<posx>58</posx>
-			<posy>0</posy>
+			<posx>62</posx>
+			<posy>5</posy>
 			<width>350</width>
-			<animation effect="slide" start="0,0" end="0,20" condition="Control.IsVisible(51)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-341,40" condition="Control.IsVisible(52)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-327,42" condition="Control.IsVisible(55)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-340,30" condition="Control.IsVisible(56)">Conditional</animation>
-			<visible>Skin.HasSetting(mediaflagson) + [Container.Content(movies) | Container.Content(episodes)]</visible>
-
-			<!-- Studio Panel -->
-
-			<!--control type="group">
-				<posx>785</posx>
-				<posy>0</posy>
-				<control type="image">
-					<width>88</width>
-					<height>59</height>
-					<include>PosterMediaFlagsVars</include>
-					<texture>flags/default.png</texture>
-					<visible>!Control.IsVisible(81) + !Skin.HasSetting(nodefaultflags) + Skin.HasSetting(showstudioflags)</visible>
-				</control>
-				<control type="image" id="81">
-					<width>88</width>
-					<height>59</height>
-					<include>PosterMediaFlagsVars</include>
-					<texture fallback="flags/default.png">$INFO[Listitem.studio,extras/studios/,.png]</texture>
-					<visible>Skin.HasSetting(showstudioflags)</visible>
-				</control>
-			</control-->
+			<animation effect="slide" start="0,0" end="-60,20" condition="Control.IsVisible(51)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-341,20" condition="Control.IsVisible(52)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-60,60" condition="Control.IsVisible(55)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-341,20" condition="Control.IsVisible(56)">Conditional</animation>
+			<visible>[!Skin.HasSetting(nostudiopanel) | !Skin.HasSetting(noratingpanel) | !Skin.HasSetting(novideopanel) | !Skin.HasSetting(noaudiopanel)] + [Container.Content(movies) | Container.Content(episodes)]</visible>
 
 			<!-- Rating Panel -->
 
 			<control type="group">
 				<description>IMDB rating</description>
-				<posx>785</posx>
+				<posx>780</posx>
 				<posy>0</posy>
 				<visible>!Skin.HasSetting(noratingpanel)</visible>
 				<control type="image">
@@ -77,8 +62,9 @@
 			<!-- Video Panel -->
 
 			<control type="group">
-				<posx>888</posx>
+				<posx>878</posx>
 				<visible>!Skin.HasSetting(novideopanel)</visible>
+				<include>FlagsSlideAnimations</include>
 				<control type="image">
 					<width>161</width>
 					<include>PosterMediaFlagsVars</include>
@@ -136,8 +122,9 @@
 			<!-- Audio Panel -->
 
 			<control type="group">
-				<posx>1064</posx>
+				<posx>1049</posx>
 				<visible>!Skin.HasSetting(noaudiopanel)</visible>
+				<include>FlagsSlideAnimations</include>
 				<control type="image">
 					<width>100</width>
 					<include>PosterMediaFlagsVars</include>
@@ -187,6 +174,49 @@
 					<colordiffuse>FlagDiffuse</colordiffuse>
 					<texture fallback="flags/default.png">$INFO[Listitem.AudioCodec,flags/AudioCodec/,.png]</texture>
 					<visible>!IsEmpty(ListItem.AudioCodec)</visible>
+				</control>
+			</control>
+
+			<!-- Studio Panel -->
+
+			<control type="group">
+				<posx>1161</posx>
+				<posy>514</posy>
+				<visible>!Skin.HasSetting(nostudiopanel) + !Control.IsVisible(50)</visible>
+				<include>FlagsSlideAnimations</include>
+				<control type="image">
+					<width>92</width>
+					<height>63</height>
+					<colordiffuse>FlagDiffuse</colordiffuse>
+					<texture>flags/studioframe.png</texture>
+				</control>
+				<control type="image">
+					<posx>2</posx>
+					<posy>2</posy>
+					<width>88</width>
+					<height>59</height>
+					<colordiffuse>FlagDiffuse</colordiffuse>
+					<texture fallback="flags/default.png">$INFO[Listitem.studio,extras/studios/,.png]</texture>
+				</control>
+			</control>
+
+			<control type="group">
+				<posx>784</posx>
+				<posy>118</posy>
+				<visible>!Skin.HasSetting(nostudiopanel) + Control.IsVisible(50)</visible>
+				<control type="image">
+					<width>92</width>
+					<height>63</height>
+					<colordiffuse>FlagDiffuse</colordiffuse>
+					<texture>flags/studioframe.png</texture>
+				</control>
+				<control type="image">
+					<posx>2</posx>
+					<posy>2</posy>
+					<width>88</width>
+					<height>59</height>
+					<colordiffuse>FlagDiffuse</colordiffuse>
+					<texture fallback="flags/default.png">$INFO[Listitem.studio,extras/studios/,.png]</texture>
 				</control>
 			</control>
 		</control>

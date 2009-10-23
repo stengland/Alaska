@@ -214,11 +214,11 @@
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
 						<!-- LOC -->
-						<label>File View Focus Line</label>
+						<label>Show Rating Flags</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<onclick>Skin.ToggleSetting(File_View_Focus_Line)</onclick>
-						<selected>Skin.HasSetting(File_View_Focus_Line)</selected>
+						<onclick>Skin.ToggleSetting(noratingpanel)</onclick>
+						<selected>!Skin.HasSetting(noratingpanel)</selected>
 					</control>
 					<control type="radiobutton" id="301">
 						<width>740</width>
@@ -226,11 +226,11 @@
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
 						<!-- LOC -->
-						<label>File View Focus Line</label>
+						<label>Show Video Flags</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<onclick>Skin.ToggleSetting(File_View_Focus_Line)</onclick>
-						<selected>Skin.HasSetting(File_View_Focus_Line)</selected>
+						<onclick>Skin.ToggleSetting(novideopanel)</onclick>
+						<selected>!Skin.HasSetting(novideopanel)</selected>
 					</control>
 					<control type="radiobutton" id="302">
 						<width>740</width>
@@ -238,11 +238,11 @@
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
 						<!-- LOC -->
-						<label>File View Focus Line</label>
+						<label>Show Audio Flags</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<onclick>Skin.ToggleSetting(File_View_Focus_Line)</onclick>
-						<selected>Skin.HasSetting(File_View_Focus_Line)</selected>
+						<onclick>Skin.ToggleSetting(noaudiopanel)</onclick>
+						<selected>!Skin.HasSetting(noaudiopanel)</selected>
 					</control>
 					<control type="radiobutton" id="303">
 						<width>740</width>
@@ -250,11 +250,11 @@
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
 						<!-- LOC -->
-						<label>File View Focus Line</label>
+						<label>Show Studio Flags</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<onclick>Skin.ToggleSetting(File_View_Focus_Line)</onclick>
-						<selected>Skin.HasSetting(File_View_Focus_Line)</selected>
+						<onclick>Skin.ToggleSetting(nostudiopanel)</onclick>
+						<selected>!Skin.HasSetting(nostudiopanel)</selected>
 					</control>
 					<control type="radiobutton" id="304">
 						<width>740</width>

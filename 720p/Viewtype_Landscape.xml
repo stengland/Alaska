@@ -8,7 +8,7 @@
 
 		<control type="wraplist" id="52">
 			<posx>-340</posx>
-			<posy>70</posy>
+			<posy>50</posy>
 			<height>500</height>
 			<width>1690</width>
 			<onleft>300</onleft>
@@ -118,7 +118,7 @@
 
 		<control type="group">
 			<posx>500</posx>
-			<posy>58</posy>
+			<posy>38</posy>
 			<visible>Control.IsVisible(52)</visible>
 			<include>Animation_SlideUpFadeOut</include>
 			<include>Animation_HiddenByInfo</include>

@@ -2,17 +2,22 @@
 
 <window id="130">
 	<defaultcontrol always="true">5</defaultcontrol>
-	<controls>
 
-		<include>Global_Background</include>
+	<coordinates>
+		<system>1</system>
+		<posx>360</posx>
+		<posy>120</posy>
+	</coordinates>
+
+	<controls>
 
 		<control type="image" id="0">
 			<description>Back Panel</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>560</width>
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>600</width>
 			<height>480</height>
-			<texture>common/white.png</texture>
+			<texture>favorites/favorites_panel.png</texture>
 		</control>
 
 		<control type="label">
@@ -63,10 +68,6 @@
 			<posx>200</posx>
 			<posy>390</posy>
 			<label>$LOCALIZE[186]</label>
-			<font>Font_InfoPlot</font>
-			<textcolor>Grey</textcolor>
-			<focusedcolor>Black</focusedcolor>
-			<disabledcolor>Red</disabledcolor>
 			<onleft>5</onleft>
 			<onright>29</onright>
 			<onup>5</onup>
@@ -77,10 +78,6 @@
 			<posx>360</posx>
 			<posy>390</posy>
 			<label>$LOCALIZE[222]</label>
-			<font>Font_InfoPlot</font>
-			<textcolor>Grey</textcolor>
-			<focusedcolor>Black</focusedcolor>
-			<disabledcolor>Red</disabledcolor>
 			<onleft>28</onleft>
 			<onright>5</onright>
 			<onup>5</onup>

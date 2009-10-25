@@ -3,17 +3,22 @@
 <window id="7">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<controls>
 
-		<include>Global_Background</include>
+	<coordinates>
+		<system>1</system>
+		<posx>360</posx>
+		<posy>120</posy>
+	</coordinates>
+
+	<controls>
 
 		<control type="image" id="0">
 			<description>Back Panel</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>560</width>
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>600</width>
 			<height>480</height>
-			<texture>common/white.png</texture>
+			<texture>favorites/favorites_panel.png</texture>
 		</control>
 
 		<control type="label">
@@ -39,73 +44,41 @@
 					<description>General</description>
 					<width>150</width>
 					<label>$LOCALIZE[128]</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 				</control>
 				<control type="button" id="101">
 					<description>Storage</description>
 					<width>150</width>
 					<label>$LOCALIZE[13277]</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 				</control>
 				<control type="button" id="102">
 					<description>HDD</description>
 					<width>150</width>
 					<label>$LOCALIZE[13275]</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 				</control>
 				<control type="button" id="103">
 					<description>DVD</description>
 					<width>150</width>
 					<label>$LOCALIZE[13276]</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 				</control>
 				<control type="button" id="104">
 					<description>Network</description>
 					<width>150</width>
 					<label>$LOCALIZE[13279]</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 				</control>
 				<control type="button" id="105">
 					<description>Video</description>
 					<width>150</width>
 					<label>$LOCALIZE[13280]</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 				</control>
 				<control type="button" id="106">
 					<description>Hardware</description>
 					<width>150</width>
 					<label>$LOCALIZE[13281]</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 				</control>
 				<control type="button" id="107">
 					<description>About</description>
 					<width>150</width>
 					<label>$LOCALIZE[482]</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 				</control>
 			</control>
 

@@ -5,19 +5,19 @@
 
 	<coordinates>
 		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
+		<posx>360</posx>
+		<posy>120</posy>
 	</coordinates>
 
 	<controls>
 
 		<control type="image" id="0">
 			<description>Back Panel</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>560</width>
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>600</width>
 			<height>480</height>
-			<texture>common/white.png</texture>
+			<texture>favorites/favorites_panel.png</texture>
 		</control>
 
 		<control type="label">
@@ -56,10 +56,6 @@
 			<posy>72</posy>
 			<width>150</width>
 			<label>$LOCALIZE[1024]</label>
-			<font>Font_InfoPlot</font>
-			<textcolor>Grey</textcolor>
-			<focusedcolor>Black</focusedcolor>
-			<disabledcolor>Red</disabledcolor>
 			<onup>10</onup>
 			<onleft>11</onleft>
 			<onright>11</onright>
@@ -115,10 +111,6 @@
 			<posx>200</posx>
 			<posy>390</posy>
 			<label>$LOCALIZE[186]</label>
-			<font>Font_InfoPlot</font>
-			<textcolor>Grey</textcolor>
-			<focusedcolor>Black</focusedcolor>
-			<disabledcolor>Red</disabledcolor>
 			<onup>15</onup>
 			<onleft>19</onleft>
 			<onright>19</onright>
@@ -129,10 +121,6 @@
 			<posx>360</posx>
 			<posy>390</posy>
 			<label>$LOCALIZE[222]</label>
-			<font>Font_InfoPlot</font>
-			<textcolor>Grey</textcolor>
-			<focusedcolor>Black</focusedcolor>
-			<disabledcolor>Red</disabledcolor>
 			<onup>15</onup>
 			<onleft>18</onleft>
 			<onright>18</onright>

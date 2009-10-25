@@ -3,17 +3,22 @@
 <window id="29">
 	<defaultcontrol always="true">52</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<controls>
 	
-		<include>Global_Background</include>
+	<coordinates>
+		<system>1</system>
+		<posx>360</posx>
+		<posy>120</posy>
+	</coordinates>
+
+	<controls>
 
 		<control type="image" id="0">
 			<description>Back Panel</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>560</width>
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>600</width>
 			<height>480</height>
-			<texture>common/white.png</texture>
+			<texture>favorites/favorites_panel.png</texture>
 		</control>
 		
 		<control type="label">
@@ -50,8 +55,6 @@
 					<posx>360</posx>
 					<width>250</width>
 					<info>ListItem.Label</info>
-					<font>Large</font>
-					<textcolor>Black</textcolor>
 					<align>center</align>
 				</control>
 			</focusedlayout>

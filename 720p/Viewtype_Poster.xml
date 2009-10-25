@@ -90,7 +90,17 @@
 					<posy>132</posy>
 					<width>25</width>
 					<height>25</height>
-					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>89FFFFFF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>2</posx>
+					<posy>132</posy>
+					<width>25</width>
+					<height>25</height>
+					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
@@ -142,7 +152,7 @@
 					<posy>30</posy>
 					<width>40</width>
 					<height>40</height>
-					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
 					<include>Animation_PosterInfoSlide</include>
 					<animation type="Focus" reversible="false">
@@ -150,6 +160,19 @@
 						<effect type="fade" start="0" end="100" time="600" />
 					</animation>
 				</control>
+				<control type="image">
+					<posx>12</posx>
+					<posy>30</posy>
+					<width>40</width>
+					<height>40</height>
+					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies)</visible>
+					<info>ListItem.Overlay</info>
+					<include>Animation_PosterInfoSlide</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
+						<effect type="fade" start="0" end="100" time="600" />
+					</animation>
+				</control>									
 			</focusedlayout>
 		</control>
 		<!-- Browser label and flags -->

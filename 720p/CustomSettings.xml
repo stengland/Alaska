@@ -262,6 +262,30 @@
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
 						<!-- LOC -->
+						<label>Show Movie Watched Overlay</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(movieoverlays)</onclick>
+						<selected>Skin.HasSetting(movieoverlays)</selected>
+					</control>
+					<control type="radiobutton" id="305">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>Black</focusedcolor>
+						<!-- LOC -->
+						<label>Show TV Watched Overlay</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(tvoverlays)</onclick>
+						<selected>Skin.HasSetting(tvoverlays)</selected>
+					</control>
+					<control type="radiobutton" id="306">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>Black</focusedcolor>
+						<!-- LOC -->
 						<label>File View Focus Line</label>
 						<align>left</align>
 						<aligny>center</aligny>

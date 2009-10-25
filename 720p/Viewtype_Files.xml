@@ -129,12 +129,13 @@
 					<width>440</width>
 					<height>360</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<texture>$INFO[ListItem.Icon]</texture>
 					<bordertexture border="8">common\thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
 					<include>Animation_ZoomInZoomOut</include>
 					<include>Animation_ZoomedByMenu</include>
 					<include>Animation_HiddenByMusicInfo</include>
+					<include>Animation_FilesInfoSlide</include>
 					<visible>!Container.Content(Genres)</visible>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="450,75" start="80" end="100" time="200" tween="cubic" easing="out" />
@@ -153,10 +154,43 @@
 					<include>Animation_ZoomInZoomOut</include>
 					<include>Animation_ZoomedByMenu</include>
 					<include>Animation_HiddenByMusicInfo</include>
+					<include>Animation_FilesInfoSlide</include>
 					<visible>Container.Content(Genres)</visible>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="450,75" start="80" end="100" time="200" tween="cubic" easing="out" />
 						<effect type="fade" start="60" end="100" time="200" />
+					</animation>
+				</control>
+				<control type="image">
+					<posx>520</posx>
+					<posy>45</posy>
+					<width>40</width>
+					<height>40</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<include>Animation_ZoomInZoomOut</include>
+					<include>Animation_ZoomedByMenu</include>
+					<include>Animation_HiddenByMusicInfo</include>
+					<include>Animation_FilesInfoSlide</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="450,75" start="80" end="100" time="200" tween="cubic" easing="out" />
+					</animation>
+				</control>
+				<control type="image">
+					<posx>520</posx>
+					<posy>45</posy>
+					<width>40</width>
+					<height>40</height>
+					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<include>Animation_ZoomInZoomOut</include>
+					<include>Animation_ZoomedByMenu</include>
+					<include>Animation_HiddenByMusicInfo</include>
+					<include>Animation_FilesInfoSlide</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="450,75" start="80" end="100" time="200" tween="cubic" easing="out" />
 					</animation>
 				</control>
 				<control type="label">

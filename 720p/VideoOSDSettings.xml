@@ -22,7 +22,7 @@
 			<posy>0</posy>
 			<width>800</width>
 			<height>544</height>
-			<texture>favorites/favorites_panel.png</texture>
+			<texture>favourites/favourites_panel.png</texture>
 			<colordiffuse>FFFFFFFF</colordiffuse>
 		</control>
 
@@ -57,7 +57,7 @@
 			<description>Button</description>
 			<height>40</height>
 			<width>555</width>
-			<texturefocus border="1">favorites/focus_bar.png</texturefocus>
+			<texturefocus border="1">favourites/focus_bar.png</texturefocus>
 			<texturenofocus border="1"/>
 		</control>
 		<control type="radiobutton" id="8">

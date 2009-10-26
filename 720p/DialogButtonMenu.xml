@@ -46,7 +46,7 @@
 			</control>
 			
 			<control type="button" id="3117">
-				<description>Favorites</description>
+				<description>Favourites</description>
 				<height>40</height>
 				<width>1280</width>
 				<font>Font_MenuValue</font>
@@ -55,7 +55,7 @@
 				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>Favorites</label>
+				<label>Favourites</label>
 				<onclick>XBMC.ActivateWindow(Favourites)</onclick>
 			</control>
 			

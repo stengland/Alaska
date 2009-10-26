@@ -17,7 +17,7 @@
 			<posy>-20</posy>
 			<width>600</width>
 			<height>480</height>
-			<texture>favorites/favorites_panel.png</texture>
+			<texture>favourites/favourites_panel.png</texture>
 		</control>
 
 			<control type="label">

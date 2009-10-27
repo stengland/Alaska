@@ -132,7 +132,7 @@
 	</include>
 
 	<include name="Global_HeadingSectionVars">
-		<width>800</width>
+		<width>960</width>
 		<font>Font_Time</font>
 		<textcolor>Time</textcolor>
 		<align>left</align>
@@ -216,7 +216,13 @@
 				<description>Music</description>
 				<label>$LOCALIZE[2]: $INFO[ListItem.Artist]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>[Window.IsActive(501) | Window.IsActive(502)] + Container.Content(albums) + !Window.IsActive(134)</visible>
+				<visible>[Window.IsActive(501) | Window.IsActive(502)] + Container.Content(albums) + !Window.IsActive(134) + !Control.IsVisible(50)</visible>
+			</control>
+			<control type="label">
+				<description>Music</description>
+				<label>$LOCALIZE[2]: $INFO[ListItem.Artist] - $INFO[ListItem.Album]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>[Window.IsActive(501) | Window.IsActive(502)] + Container.Content(albums) + !Window.IsActive(134) + Control.IsVisible(50)</visible>
 			</control>
 			<control type="label">
 				<description>Music</description>

@@ -129,7 +129,7 @@
 					<width>440</width>
 					<height>360</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<bordertexture border="8">common\thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
 					<include>Animation_ZoomInZoomOut</include>

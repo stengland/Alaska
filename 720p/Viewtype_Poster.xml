@@ -4,19 +4,19 @@
 	<include name="Viewtype_Poster">
 		<!-- Browser -->
 		<control type="wraplist" id="50">
-			<posx>-188</posx>
+			<posx>-20</posx>
 			<posy>65</posy>
 			<height>515</height>
-			<width>1656</width>
+			<width>1320</width>
 			<onleft>300</onleft>
 			<onright>300</onright>
 			<onup>7000</onup>
 			<ondown>7000</ondown>
 			<viewtype label="Poster">list</viewtype>
 			<orientation>horizontal</orientation>
-			<scrolltime>100</scrolltime>
-			<focusposition>4</focusposition>
+			<focusposition>3</focusposition>
 			<scrolltime>200</scrolltime>
+			<preloaditems>2</preloaditems>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<visible>!Container.Content(episodes)</visible>
@@ -46,7 +46,7 @@
 					<posy>131</posy>
 					<width>162</width>
 					<height>241</height>
-					<texture diffuse="postermatteNF.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<texture background="true" diffuse="postermatteNF.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -258,12 +258,13 @@
 			<viewtype label="Poster">icon</viewtype>
 			<posx>-110</posx>
 			<posy>100</posy>
-			<width>1500</width>
+			<width>1400</width>
 			<height>300</height>
 			<pagecontrol>61</pagecontrol>
-			<scrolltime>100</scrolltime>
+			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
 			<focusposition>3</focusposition>
+			<preloaditems>2</preloaditems>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>
@@ -276,7 +277,7 @@
 					<posy>50</posy>
 					<width>200</width>
 					<height>200</height>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordertexture border="8">common/thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
@@ -300,7 +301,7 @@
 					<posy>0</posy>
 					<width>300</width>
 					<height>300</height>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordertexture border="8">common/thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>

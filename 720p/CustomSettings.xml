@@ -303,6 +303,18 @@
 					<onup>9004</onup>
 					<ondown>9004</ondown>
 					<include>Animation_CommonFadeNoHide</include>
+					<control type="radiobutton" id="400">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>Black</focusedcolor>
+						<!-- LOC -->
+						<label>Global Fanart</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(globalfanart)</onclick>
+						<selected>Skin.HasSetting(globalfanart)</selected>
+					</control>
 				</control>
 				<control type="grouplist" id="9005">
 					<visible>Container(9000).Hasfocus(5)</visible>

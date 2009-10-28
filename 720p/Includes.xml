@@ -880,6 +880,7 @@
 	<include name="Home_MainMenuLabel">
 		<posx>345</posx>
 		<posy>286</posy>
+		<height>0</height>
 		<width>280</width>
 		<align>right</align>
 		<aligny>center</aligny>
@@ -989,12 +990,14 @@
 	</include>
 	<include name="SettingsHeadingVars">
 		<width>300</width>
+		<aligny>top</aligny>
 		<font>Font_SettingsHeading</font>
 		<textcolor>SettingsHeading</textcolor>
 	</include>
 	<include name="SettingsDetailVars">
 		<width>300</width>
 		<posy>50</posy>
+		<aligny>top</aligny>
 		<font>Font_SettingsDetail</font>
 		<textcolor>SettingsDetail</textcolor>
 		<wrapmultiline>true</wrapmultiline>

@@ -21,9 +21,6 @@
 	<default type="label">
 		<posx>0</posx>
 		<posy>0</posy>
-		<height>30</height>
-		<align>left</align>
-		<aligny>center</aligny>
 		<label>-</label>
 		<font>Font_Settings</font>
 		<textcolor>Grey</textcolor>

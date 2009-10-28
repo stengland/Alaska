@@ -26,13 +26,11 @@
 			<colordiffuse>FFFFFFFF</colordiffuse>
 		</control>
 
-
-
 		<control type="label" id="2">
 			<description>Settings</description>
 			<posx>750</posx>
 			<posy>435</posy>
-			<width>500</width>
+			<width>700</width>
 			<height>60</height>
 			<align>right</align>
 			<aligny>center</aligny>
@@ -43,7 +41,7 @@
 			<description>Control Area</description>
 			<posx>50</posx>
 			<posy>40</posy>
-			<width>500</width>
+			<width>700</width>
 			<height>350</height>
 			<itemgap>2</itemgap>
 			<orientation>vertical</orientation>
@@ -55,10 +53,8 @@
 		</control>
 		<control type="button" id="7">
 			<description>Button</description>
-			<height>40</height>
+			<height>30</height>
 			<width>555</width>
-			<texturefocus border="1">favourites/focus_bar.png</texturefocus>
-			<texturenofocus border="1"/>
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Radio Button</description>

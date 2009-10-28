@@ -44,7 +44,6 @@
 			<font>Font_Settings</font>
 			<textcolor>ListTrackF</textcolor>
 			<align>left</align>
-			<textoffsetx>5</textoffsetx>
 			<focusedcolor>Black</focusedcolor>
 			<texturefocus>ButtonFo.png</texturefocus>
 		</control>

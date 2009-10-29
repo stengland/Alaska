@@ -101,5 +101,9 @@
 	<color name="FM_ListFocusedAccent">00CCCCCC</color>
 	<color name="FM_Listunfocused">dc777777</color>
 	<color name="FM_ListFocusSelected">CCcccccc</color>
+	
+	<!-- Info Rating  -->
+	
+	<color name="OSDrating">B9202020</color>
 
 </colors>

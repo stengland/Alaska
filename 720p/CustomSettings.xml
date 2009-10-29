@@ -130,7 +130,7 @@
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>Black</focusedcolor>
 						<!-- LOC -->
-						<label>only show RSS on home screen</label>
+						<label>Only show RSS on home screen</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(RSS_only_on_home)</onclick>

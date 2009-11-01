@@ -28,7 +28,7 @@
 				<width>1290</width>
 				<height>165</height>
 				<texture>backdrops/backgroundcolordiffuse.png</texture>
-				<colordiffuse>backgroundColor</colordiffuse>
+				<colordiffuse>BackgroundColor</colordiffuse>
 				<aspectratio aligny="bottom">scale</aspectratio>
 			</control>
 			<control type="label">
@@ -64,7 +64,7 @@
 			<posy>330</posy>
 			<width>1280</width>
 			<height>190</height>
-			<texture>common/black.png</texture>
+			<texture>common/TextFocused.png</texture>
 			<colordiffuse>11FFFFFF</colordiffuse>
 			<visible>Player.Paused | Player.Forwarding | Player.Rewinding</visible>
 		</control>

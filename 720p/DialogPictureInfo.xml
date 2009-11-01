@@ -15,7 +15,7 @@
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture diffuse="list/list_mask_2.png">backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
+			<colordiffuse>BackgroundColor</colordiffuse>
 		</control>
 		<control type="label">
 			<include>DialogID</include>
@@ -52,7 +52,7 @@
 					<posx>5</posx>
 					<width>465</width>
 					<height>30</height>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 					<info>ListItem.Label</info>
 				</control>
 				<control type="label">
@@ -60,7 +60,7 @@
 					<width>465</width>
 					<height>30</height>
 					<align>right</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 					<info>ListItem.Label2</info>
 				</control>
 			</focusedlayout>

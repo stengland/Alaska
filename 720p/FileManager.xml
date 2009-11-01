@@ -54,7 +54,7 @@
 						<height>39</height>
 						<font>Font_FavouritesItemLabel</font>
 						<aligny>center</aligny>
-						<textcolor>FM_Listunfocused</textcolor>
+						<textcolor>FM_ListUnfocused</textcolor>
 						<selectedcolor>FM_ListUnfocusSelected</selectedcolor>
 						<info>ListItem.Label</info>
 					</control>
@@ -66,7 +66,7 @@
 						<font>Font_FavouritesItemLabel</font>
 						<align>right</align>
 						<aligny>center</aligny>
-						<textcolor>FM_Listunfocused</textcolor>
+						<textcolor>FM_ListUnfocused</textcolor>
 						<selectedcolor>FM_ListUnfocusSelected</selectedcolor>
 						<label>[UPPERCASE]$INFO[ListItem.label2][/UPPERCASE]</label>
 					</control>
@@ -87,7 +87,7 @@
 						<height>38</height>
 						<font>Font_FavouritesItemLabel</font>
 						<aligny>center</aligny>
-						<textcolor>FM_Listfocused</textcolor>
+						<textcolor>FM_ListFocused</textcolor>
 						<shadowcolor>FM_ListFocusedAccent</shadowcolor>
 						<selectedcolor>FM_ListFocusSelected</selectedcolor>
 						<info>ListItem.Label</info>
@@ -100,8 +100,8 @@
 						<font>Font_FavouritesItemLabel</font>
 						<align>right</align>
 						<aligny>center</aligny>
-						<textcolor>FM_Listfocused</textcolor>
-						<selectedcolor>FM_Listfocused</selectedcolor>
+						<textcolor>FM_ListFocused</textcolor>
+						<selectedcolor>FM_ListFocused</selectedcolor>
 						<label>[UPPERCASE]$INFO[ListItem.Size][/UPPERCASE]</label>
 					</control>
 				</focusedlayout>
@@ -156,7 +156,7 @@
 						<height>39</height>
 						<font>Font_FavouritesItemLabel</font>
 						<aligny>center</aligny>
-						<textcolor>FM_Listunfocused</textcolor>
+						<textcolor>FM_ListUnfocused</textcolor>
 						<selectedcolor>FM_ListUnfocusSelected</selectedcolor>
 						<info>ListItem.Label</info>
 					</control>
@@ -168,7 +168,7 @@
 						<font>Font_FavouritesItemLabel</font>
 						<align>right</align>
 						<aligny>center</aligny>
-						<textcolor>FM_Listunfocused</textcolor>
+						<textcolor>FM_ListUnfocused</textcolor>
 						<selectedcolor>FM_ListUnfocusSelected</selectedcolor>
 						<label>[UPPERCASE]$INFO[ListItem.label2][/UPPERCASE]</label>
 					</control>
@@ -189,7 +189,7 @@
 						<height>38</height>
 						<font>Font_FavouritesItemLabel</font>
 						<aligny>center</aligny>
-						<textcolor>FM_Listfocused</textcolor>
+						<textcolor>FM_ListFocused</textcolor>
 						<shadowcolor>FM_ListFocusedAccent</shadowcolor>
 						<selectedcolor>FM_ListFocusSelected</selectedcolor>
 						<info>ListItem.Label</info>
@@ -202,8 +202,8 @@
 						<font>Font_FavouritesItemLabel</font>
 						<align>right</align>
 						<aligny>center</aligny>
-						<textcolor>FM_Listfocused</textcolor>
-						<selectedcolor>FM_Listfocused</selectedcolor>
+						<textcolor>FM_ListFocused</textcolor>
+						<selectedcolor>FM_ListFocused</selectedcolor>
 						<label>[UPPERCASE]$INFO[ListItem.label2][/UPPERCASE]</label>
 					</control>
 				</focusedlayout>

@@ -80,7 +80,7 @@
 					<posy>16</posy>
 					<width>721</width>
 					<height>30</height>
-					<textcolor>White</textcolor>
+					<textcolor>TextSelected</textcolor>
 					<shadowcolor>FM_ListFocusedAccent</shadowcolor>
 					<selectedcolor>FavListItemFocusedSelected</selectedcolor>
 

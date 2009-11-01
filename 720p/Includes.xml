@@ -28,14 +28,14 @@
 		<posx>10</posx>
 		<posy>35</posy>
 		<font>Large</font>
-		<textcolor>Red</textcolor>
+		<textcolor>TextDisabled</textcolor>
 		<align>left</align>
 	</include>
 	<include name="WindowID">
 		<posx>10</posx>
 		<posy>10</posy>
 		<font>Large</font>
-		<textcolor>Red</textcolor>
+		<textcolor>TextDisabled</textcolor>
 		<align>left</align>
 	</include>
 	<!-- Global dimensions -->
@@ -54,7 +54,7 @@
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture>backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
+			<colordiffuse>BackgroundColor</colordiffuse>
 		</control>
 	</include>
 	<include name="Global_Filter">
@@ -68,7 +68,7 @@
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture>backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
+			<colordiffuse>BackgroundColor</colordiffuse>
 			<animation effect="fade" start="100" end="90" time="400" condition="[!IsEmpty(ListItem.Property(Fanart_Image)) + !Window.Next(Home)]">Conditional</animation>
 			<animation effect="fade" start="100" end="90" time="400" condition="[Window.IsActive(2) + [substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)] + !Window.Next(Home)]">Conditional</animation>
 			<visible>![Control.IsVisible(53) | Control.IsVisible(55)]</visible>
@@ -87,7 +87,7 @@
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
 				<texture>backdrops/backgroundcolordiffuse.png</texture>
-				<colordiffuse>backgroundColor</colordiffuse>
+				<colordiffuse>BackgroundColor</colordiffuse>
 			</control>
 		</control>
 	</include>
@@ -310,7 +310,7 @@
 			<width>1290</width>
 			<height>165</height>
 			<texture>backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
+			<colordiffuse>BackgroundColor</colordiffuse>
 			<aspectratio aligny="bottom">scale</aspectratio>
 			<animation effect="slide" start="0,0" end="0,82" time="0" condition="Window.IsVisible(115)">Conditional</animation>
 		</control>
@@ -645,7 +645,7 @@
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture diffuse="mainmenu/home_mask.png">backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
+			<colordiffuse>BackgroundColor</colordiffuse>
 		</control>
 	</include>
 	<include name="Home_MenuList">
@@ -719,7 +719,7 @@
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture diffuse="mainmenu/mask.png">backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
+			<colordiffuse>BackgroundColor</colordiffuse>
 		</control>
 	</include>
 	<include name="Home_MenuContent">

@@ -92,7 +92,7 @@
 					<label>$INFO[System.CpuUsage]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>3</description>
@@ -100,7 +100,7 @@
 					<label>$LOCALIZE[139] $INFO[System.CpuTemperature]  -  $INFO[System.GpuTemperature]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>4</description>
@@ -108,7 +108,7 @@
 					<label>$INFO[System.FanSpeed]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>5</description>
@@ -116,7 +116,7 @@
 					<label>$LOCALIZE[158]: $INFO[System.FreeMemory]  -  $LOCALIZE[20161]: $INFO[System.Memory(Total)]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>6</description>
@@ -124,7 +124,7 @@
 					<label>$INFO[Network.IPAddress]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>7</description>
@@ -132,7 +132,7 @@
 					<label>$INFO[System.ScreenResolution]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>8</description>
@@ -140,7 +140,7 @@
 					<label>$INFO[System.KernelVersion]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>9</description>
@@ -148,7 +148,7 @@
 					<label>$INFO[System.UpTime]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>10</description>
@@ -156,14 +156,14 @@
 					<label>$INFO[System.TotalUptime]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label" id="52">
 					<description>XBMC Build Revision</description>
 					<posy>370</posy>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 			</control>
 
@@ -177,7 +177,7 @@
 					<label>$INFO[System.DVDTrayState]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>3</description>
@@ -185,7 +185,7 @@
 					<label>$INFO[System.FreeSpace(c)]  -  $INFO[System.TotalSpace(c)]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>4</description>
@@ -200,7 +200,7 @@
 					<label>$INFO[System.FreeSpace(F)]  -  $INFO[System.TotalSpace(F)]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>6</description>
@@ -208,7 +208,7 @@
 					<label>$INFO[System.FreeSpace(G)]  -  $INFO[System.TotalSpace(G)]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>7</description>
@@ -216,7 +216,7 @@
 					<label>$INFO[System.FreeSpace(X)]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>8</description>
@@ -224,7 +224,7 @@
 					<label>$INFO[System.FreeSpace(Y)]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>9</description>
@@ -232,7 +232,7 @@
 					<label>$INFO[System.FreeSpace(Z)]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>10</description>
@@ -240,7 +240,7 @@
 					<label>$INFO[System.FreeSpace]  -  $INFO[System.TotalSpace]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 			</control>
 
@@ -254,7 +254,7 @@
 					<label>$INFO[System.HddInfoModel]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>3</description>
@@ -262,7 +262,7 @@
 					<label>$INFO[System.HddInfoserial]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>4</description>
@@ -270,7 +270,7 @@
 					<label>$INFO[System.HddInfoFirmware]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>5</description>
@@ -278,7 +278,7 @@
 					<label>$INFO[System.HddInfoPW]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>6</description>
@@ -286,7 +286,7 @@
 					<label>$INFO[System.HddInfoLockState]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>7</description>
@@ -294,7 +294,7 @@
 					<label>$INFO[System.HddLockKey]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>8</description>
@@ -302,7 +302,7 @@
 					<label>$INFO[System.HddBootDate]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>9</description>
@@ -310,14 +310,14 @@
 					<label>$INFO[System.HddCycleCount]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>10</description>
 					<posy>335</posy>
 					<label>$INFO[System.HddTemperature]</label>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 			</control>
 
@@ -331,7 +331,7 @@
 					<label>$INFO[System.DvdInfoModel]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>3</description>
@@ -339,7 +339,7 @@
 					<label>$INFO[System.DvdInfoFirmware]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>4</description>
@@ -347,7 +347,7 @@
 					<label>$INFO[System.DvdZone]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>5</description>
@@ -355,7 +355,7 @@
 					<label>$INFO[System.DvdTrayState]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 			</control>
 
@@ -369,7 +369,7 @@
 					<label>$INFO[Network.IsDhcp]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>3</description>
@@ -377,7 +377,7 @@
 					<label>$INFO[Network.LinkState]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>4</description>
@@ -385,7 +385,7 @@
 					<label>$INFO[Network.MacAddress]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>5</description>
@@ -393,7 +393,7 @@
 					<label>$INFO[Network.IPAddress]</label>
 					<height>30</height>
 					<width>510</width>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>6</description>
@@ -401,7 +401,7 @@
 					<label>$INFO[Network.SubnetAddress]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>7</description>
@@ -409,7 +409,7 @@
 					<label>$INFO[Network.GatewayAddress]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>8</description>
@@ -417,7 +417,7 @@
 					<label>$INFO[Network.Dns1Address]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>9</description>
@@ -425,7 +425,7 @@
 					<label>$INFO[Network.Dns2Address]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>10</description>
@@ -433,7 +433,7 @@
 					<label>$INFO[System.InternetState]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 			</control>
 
@@ -447,7 +447,7 @@
 					<label>$INFO[System.VideoEncoderInfo]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>3</description>
@@ -455,7 +455,7 @@
 					<label>$INFO[System.ScreenResolution]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>4</description>
@@ -463,7 +463,7 @@
 					<label>$INFO[System.AvPackInfo]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>5</description>
@@ -471,7 +471,7 @@
 					<label>$INFO[System.XbeRegion]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 			</control>
 
@@ -485,7 +485,7 @@
 					<label>$INFO[System.XboxVersion]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>3</description>
@@ -493,7 +493,7 @@
 					<label>$INFO[System.XboxSerial]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>4</description>
@@ -501,7 +501,7 @@
 					<label>$INFO[System.CpuFrequency]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>5</description>
@@ -509,7 +509,7 @@
 					<label>$INFO[System.ModChip]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>6</description>
@@ -517,7 +517,7 @@
 					<label>$INFO[System.Bios]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>7</description>
@@ -525,7 +525,7 @@
 					<label>$INFO[System.XboxProduceInfo]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>8</description>
@@ -533,7 +533,7 @@
 					<label>$INFO[System.ControllerPort(1)]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>9</description>
@@ -541,7 +541,7 @@
 					<label>$INFO[System.ControllerPort(2)]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>10</description>
@@ -549,7 +549,7 @@
 					<label>$INFO[System.ControllerPort(3)]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 				<control type="label">
 					<description>11</description>
@@ -557,7 +557,7 @@
 					<label>$INFO[System.ControllerPort(4)]</label>
 					<width>510</width>
 					<align>left</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 				</control>
 			</control>
 		</control>

@@ -59,7 +59,7 @@
 					<posx>5</posx>
 					<width>490</width>
 					<height>30</height>
-					<textcolor>Black</textcolor>
+					<textcolor>TextFocused</textcolor>
 					<info>ListItem.Label</info>
 				</control>
 			</focusedlayout>

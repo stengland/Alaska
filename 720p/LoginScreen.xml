@@ -45,7 +45,7 @@
 					<posx>360</posx>
 					<width>250</width>
 					<info>ListItem.Label</info>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 					<scroll>false</scroll>
 					<align>center</align>
 				</control>

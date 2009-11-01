@@ -44,7 +44,7 @@
 			<font>Font_Settings</font>
 			<textcolor>ListTrackF</textcolor>
 			<align>left</align>
-			<focusedcolor>Black</focusedcolor>
+			<focusedcolor>TextFocused</focusedcolor>
 			<texturefocus>ButtonFo.png</texturefocus>
 		</control>
 
@@ -53,7 +53,7 @@
 			<font>Font_Settings</font>
 			<textcolor>ListTrackF</textcolor>
 			<align>left</align>
-			<focusedcolor>Black</focusedcolor>
+			<focusedcolor>TextFocused</focusedcolor>
 		</control>
 
 		<control type="spincontrolex" id="9">
@@ -61,7 +61,7 @@
 			<font>Font_Settings</font>
 			<textcolor>ListTrackF</textcolor>
 			<align>left</align>
-			<focusedcolor>Black</focusedcolor>
+			<focusedcolor>TextFocused</focusedcolor>
 			<texturefocus>ButtonFo.png</texturefocus>
 			<textureup>ArrowUpNF.png</textureup>
 			<texturedown>ArrowDownNF.png</texturedown>
@@ -75,7 +75,7 @@
 			<font>Font_Settings</font>
 			<textcolor>ListTrackF</textcolor>
 			<texturefocus border="1">ButtonFo.png</texturefocus>
-			<focusedcolor>Black</focusedcolor>
+			<focusedcolor>TextFocused</focusedcolor>
 		</control>
 
 		<include>Global_ContextFilter</include>

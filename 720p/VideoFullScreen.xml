@@ -44,7 +44,7 @@
 				<width>1290</width>
 				<height>165</height>
 				<texture flipx="true">backdrops/backgroundcolordiffuse.png</texture>
-				<colordiffuse>backgroundColor</colordiffuse>
+				<colordiffuse>BackgroundColor</colordiffuse>
 				<aspectratio aligny="bottom">scale</aspectratio>
 			</control>
 			<control type="label" id="10">

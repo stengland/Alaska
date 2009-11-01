@@ -68,7 +68,7 @@
 					<width>633</width>
 					<height>60</height>
 					<align>left</align>
-					<label>AIRED: $INFO[ListItem.Date]</label>
+					<label>AIred: $INFO[ListItem.Date]</label>
 					<font>Font_EpisodeDetailNF</font>
 					<textcolor>EpisodeNumber</textcolor>
 					<include>Animation_HiddenByInfo</include>

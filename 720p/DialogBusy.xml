@@ -14,7 +14,7 @@
 			<posy>40</posy>
 			<include>DialogID</include>
 			<align>right</align>
-			<label>[COLOR=White]$LOCALIZE[20186]...[/COLOR] DialogBusy.xml</label>
+			<label>[COLOR=TextSelected]$LOCALIZE[20186]...[/COLOR] DialogBusy.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
 

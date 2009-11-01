@@ -39,7 +39,7 @@
 						<posy>0</posy>
 						<width>300</width>
 						<font>Font_Settings</font>
-						<textcolor>Black</textcolor>
+						<textcolor>TextFocused</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -92,7 +92,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Scroll Plot</label>
 						<align>left</align>
@@ -104,7 +104,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Global Temp.</label>
 						<align>left</align>
@@ -116,7 +116,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Larger RSS</label>
 						<align>left</align>
@@ -128,7 +128,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Only show RSS on home screen</label>
 						<align>left</align>
@@ -151,7 +151,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Home 2</label>
 						<align>left</align>
@@ -164,7 +164,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Home 3</label>
 						<align>left</align>
@@ -177,7 +177,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Conditional Weather</label>
 						<align>left</align>
@@ -189,7 +189,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Link Programs to Launcher Plugin</label>
 						<align>left</align>
@@ -212,7 +212,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Show Rating Flags</label>
 						<align>left</align>
@@ -224,7 +224,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Show Video Flags</label>
 						<align>left</align>
@@ -236,7 +236,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Show Audio Flags</label>
 						<align>left</align>
@@ -248,7 +248,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Show Studio Flags</label>
 						<align>left</align>
@@ -260,7 +260,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Show Movie Watched Overlay</label>
 						<align>left</align>
@@ -272,7 +272,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Show TV Watched Overlay</label>
 						<align>left</align>
@@ -284,7 +284,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>File View Focus Line</label>
 						<align>left</align>
@@ -330,7 +330,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Debug mode</label>
 						<align>left</align>
@@ -342,7 +342,7 @@
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Debug Grid</label>
 						<align>left</align>

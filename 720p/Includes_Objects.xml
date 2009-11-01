@@ -132,14 +132,14 @@
 		<aligny>center</aligny>
 		<font>Font_FSInfoYear</font>
 		<label fallback="-">$INFO[ListItem.Year]</label>
-		<include>Colour_Grey</include>
+		<include>Colour_Text</include>
 	</include>
 	<include name="Objects_FSInfoGenre">
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>Font_FSInfoGenre</font>
 		<label fallback="31425">[UPPERCASE]$INFO[ListItem.Genre][/UPPERCASE]</label>
-		<include>Colour_Grey</include>
+		<include>Colour_Text</include>
 		<height>56</height>
 	</include>
 	<include name="Objects_FSInfoLabel">
@@ -149,7 +149,7 @@
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>Font_FSInfoLabel</font>
-		<include>Colour_Grey</include>
+		<include>Colour_Text</include>
 	</include>
 	<include name="Objects_FSInfoValue">
 		<posx>120</posx>
@@ -158,7 +158,7 @@
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>Font_FSInfoData</font>
-		<include>Colour_OffWhite</include>
+		<include>Colour_OffTextSelected</include>
 	</include>
 	<!--Dialog Labels-->
 	<include name="Objects_DialogLabel">

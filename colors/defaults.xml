@@ -1,15 +1,8 @@
 <colors>
 
-	<!-- Base colours -->
-
-	<color name="Black">FF262626</color>
-	<color name="Grey">FF686868</color>
-	<color name="Red">FFFF0000</color>
-	<color name="White">FFFFFFFF</color>
-
 	<!-- Global colours -->
 
-	<color name="backgroundColor">FFefc1d4</color>	
+	<color name="BackgroundColor">FFefc1d4</color>	
 	<color name="Time">77686868</color>
 	<color name="Date">77686868</color>
 	<color name="RSSBody">FF686868</color>
@@ -20,6 +13,13 @@
 	<color name="NowPlayingAlbum">cc686868</color>
 	<color name="NowPlayingTrack">FF686868</color>
 	<color name="MediaMenu">77686868</color>
+	<color name="TextFocused">FF262626</color>
+	<color name="Text">FF686868</color>
+	<color name="TextDisabled">FFff5858</color>
+	<color name="TextSelected">FFFFFFFF</color>
+	
+	<!-- Flags -->
+	
 	<color name="FlagDiffuse">CC474747</color>
 	<color name="FlagText">aacdcdcd</color>
 
@@ -64,7 +64,7 @@
 	<color name="SettingsHeading">ab474747</color>	
 	<color name="SettingsDetail">ab474747</color>		
 
-	<!-- List colours -->
+	<!-- List & File colours -->
 
 	<color name="ListTrackNF">FF686868</color>
 	<color name="ListTitleNF">FF474747</color>
@@ -97,9 +97,9 @@
 	<color name="FM_ListTitle">dc777777</color>
 	<color name="FM_ListTitleAccent">CCdadada</color>
 	<color name="FM_ListSelected">dc990000</color>
-	<color name="FM_Listfocused">ffffffff</color>
+	<color name="FM_ListFocused">ffffffff</color>
 	<color name="FM_ListFocusedAccent">00CCCCCC</color>
-	<color name="FM_Listunfocused">dc777777</color>
+	<color name="FM_ListUnfocused">dc777777</color>
 	<color name="FM_ListFocusSelected">CCcccccc</color>
 	
 	<!-- Info Rating  -->

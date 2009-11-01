@@ -9,10 +9,10 @@
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>Font_Settings</font>
-		<textcolor>Grey</textcolor>
-		<focusedcolor>Black</focusedcolor>
-		<selectedcolor>Black</selectedcolor>
-		<disabledcolor>Red</disabledcolor>
+		<textcolor>Text</textcolor>
+		<focusedcolor>TextFocused</focusedcolor>
+		<selectedcolor>TextFocused</selectedcolor>
+		<disabledcolor>TextDisabled</disabledcolor>
 		<texturefocus>ButtonFo.png</texturefocus>
 		<texturenofocus>ButtonNF.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
@@ -23,10 +23,10 @@
 		<posy>0</posy>
 		<label>-</label>
 		<font>Font_Settings</font>
-		<textcolor>Grey</textcolor>
-		<focusedcolor>Black</focusedcolor>
-		<selectedcolor>Black</selectedcolor>
-		<disabledcolor>Red</disabledcolor>
+		<textcolor>Text</textcolor>
+		<focusedcolor>TextFocused</focusedcolor>
+		<selectedcolor>TextFocused</selectedcolor>
+		<disabledcolor>TextDisabled</disabledcolor>
 		<scroll>false</scroll>
 	</default>
 
@@ -49,10 +49,10 @@
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>Font_Settings</font>
-		<textcolor>Grey</textcolor>
-		<focusedcolor>Black</focusedcolor>
-		<selectedcolor>Black</selectedcolor>
-		<disabledcolor>Red</disabledcolor>
+		<textcolor>Text</textcolor>
+		<focusedcolor>TextFocused</focusedcolor>
+		<selectedcolor>TextFocused</selectedcolor>
+		<disabledcolor>TextDisabled</disabledcolor>
 		<texturenofocus>arrowupnf.png</texturenofocus>
 		<texturefocus>arrowupfo.png</texturefocus>
 		<alttexturenofocus>arrowdownnf.png</alttexturenofocus>
@@ -69,10 +69,10 @@
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>Font_Settings</font>
-		<textcolor>Grey</textcolor>
-		<focusedcolor>Black</focusedcolor>
-		<selectedcolor>Black</selectedcolor>
-		<disabledcolor>Red</disabledcolor>
+		<textcolor>Text</textcolor>
+		<focusedcolor>TextFocused</focusedcolor>
+		<selectedcolor>TextFocused</selectedcolor>
+		<disabledcolor>TextDisabled</disabledcolor>
 		<texturefocus>ButtonFo.png</texturefocus>
 		<texturenofocus>ButtonNF.png</texturenofocus>
 		<textureradiofocus>settings/button_radioF.png</textureradiofocus>
@@ -91,10 +91,10 @@
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>Font_Settings</font>
-		<textcolor>Grey</textcolor>
-		<focusedcolor>Black</focusedcolor>
-		<selectedcolor>Black</selectedcolor>
-		<disabledcolor>Red</disabledcolor>
+		<textcolor>Text</textcolor>
+		<focusedcolor>TextFocused</focusedcolor>
+		<selectedcolor>TextFocused</selectedcolor>
+		<disabledcolor>TextDisabled</disabledcolor>
 		<texturenofocus>ButtonNF.png</texturenofocus>
 		<texturefocus>ButtonFo.png</texturefocus>
 		<textureup>ArrowUpNF.png</textureup>
@@ -117,10 +117,10 @@
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>Font_Settings</font>
-		<textcolor>Grey</textcolor>
-		<focusedcolor>Black</focusedcolor>
-		<selectedcolor>Black</selectedcolor>
-		<disabledcolor>Red</disabledcolor>
+		<textcolor>Text</textcolor>
+		<focusedcolor>TextFocused</focusedcolor>
+		<selectedcolor>TextFocused</selectedcolor>
+		<disabledcolor>TextDisabled</disabledcolor>
 		<reverse>yes</reverse>
 		<pulseonselect>false</pulseonselect>
 	</default>
@@ -140,10 +140,10 @@
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>Font_Settings</font>
-		<textcolor>Grey</textcolor>
-		<focusedcolor>Black</focusedcolor>
-		<selectedcolor>Black</selectedcolor>
-		<disabledcolor>Red</disabledcolor>
+		<textcolor>Text</textcolor>
+		<focusedcolor>TextFocused</focusedcolor>
+		<selectedcolor>TextFocused</selectedcolor>
+		<disabledcolor>TextDisabled</disabledcolor>
 	</default>
 
 	<default type="slider">

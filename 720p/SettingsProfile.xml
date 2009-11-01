@@ -93,7 +93,7 @@
 					<posx>30</posx>
 					<width>465</width>
 					<height>30</height>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 					<info>ListItem.Label</info>
 				</control>
 				<control type="label">
@@ -101,7 +101,7 @@
 					<width>465</width>
 					<height>30</height>
 					<align>right</align>
-					<textcolor>Grey</textcolor>
+					<textcolor>Text</textcolor>
 					<info>ListItem.Label2</info>
 				</control>
 			</focusedlayout>

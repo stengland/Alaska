@@ -38,7 +38,7 @@
 				<height>33</height>
 				<texturebg>dialogs/clear.png</texturebg>
 				<lefttexture>-</lefttexture>
-				<midtexture>dialogs/grey.png</midtexture>
+				<midtexture>dialogs/Text.png</midtexture>
 				<righttexture>-</righttexture>
 				<overlaytexture>-</overlaytexture>
 				<info>player.volume</info>

@@ -40,7 +40,7 @@
 				<height>28</height>
 				<texturebg>dialogs/clear.png</texturebg>
 				<lefttexture>-</lefttexture>
-				<midtexture>dialogs/grey.png</midtexture>
+				<midtexture>dialogs/Text.png</midtexture>
 				<righttexture>-</righttexture>
 				<overlaytexture>-</overlaytexture>
 				<animation effect="rotate" center="auto" start="-90" end="-90" time="0" condition="true">Conditional</animation>
@@ -59,7 +59,7 @@
 				<height>28</height>
 				<texturebg>dialogs/clear.png</texturebg>
 				<lefttexture>-</lefttexture>
-				<midtexture>dialogs/grey.png</midtexture>
+				<midtexture>dialogs/Text.png</midtexture>
 				<righttexture>-</righttexture>
 				<overlaytexture>-</overlaytexture>
 				<animation effect="rotate" center="auto" start="-90" end="-90" time="0" condition="true">Conditional</animation>

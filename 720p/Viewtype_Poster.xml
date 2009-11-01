@@ -365,7 +365,7 @@
 				<font>Font_PosterTitle</font>
 				<textcolor>PosterTitle</textcolor>
 				<scrollout>false</scrollout>
-				<pauseatend>200</pauseatend>
+				<pauseatend>600</pauseatend>
 				<scrollspeed>20</scrollspeed>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>!Container.Content(seasons)</visible>
@@ -379,7 +379,7 @@
 				<font>Font_PosterTitle</font>
 				<textcolor>PosterTitle</textcolor>
 				<scrollout>false</scrollout>
-				<pauseatend>200</pauseatend>
+				<pauseatend>600</pauseatend>
 				<scrollspeed>20</scrollspeed>
 				<label>$INFO[ListItem.TVShowTitle]</label>
 				<visible>Container.Content(seasons)</visible>
@@ -438,7 +438,7 @@
 		<control type="wraplist" id="54">
 			<viewtype label="Poster">icon</viewtype>
 			<posx>-110</posx>
-			<posy>100</posy>
+			<posy>150</posy>
 			<width>1400</width>
 			<height>300</height>
 			<pagecontrol>61</pagecontrol>
@@ -496,20 +496,23 @@
 		<!-- label -->
 		<control type="group">
 			<visible>Control.IsVisible(54)</visible>
-			<posx>800</posx>
-			<posy>360</posy>
+			<posx>810</posx>
+			<posy>418</posy>
 			<include>Animation_SlideUpFadeOut</include>
 			<include>Animation_HiddenByInfo</include>
 			<include>Animation_ZoomedByMenu</include>
 			<!-- Artist -->
 			<control type="group">
 				<visible>Container.Content(artists)</visible>
-				<control type="label">
+				<control type="fadelabel">
 					<posx>0</posx>
 					<posy>10</posy>
-					<width>450</width>
+					<width>440</width>
 					<height>25</height>
 					<aligny>center</aligny>
+					<scrollout>false</scrollout>
+					<pauseatend>600</pauseatend>
+					<scrollspeed>20</scrollspeed>
 					<font>Font_ListTitleBig</font>
 					<textcolor>ListTitleF</textcolor>
 					<label>$INFO[ListItem.Label]</label>
@@ -517,7 +520,7 @@
 				<control type="textbox">
 					<posx>0</posx>
 					<posy>35</posy>
-					<width>450</width>
+					<width>440</width>
 					<height>100</height>
 					<font>Font_ListDetail</font>
 					<textcolor>ListTitleF</textcolor>
@@ -527,23 +530,29 @@
 			<!-- Album -->
 			<control type="group">
 				<visible>Container.Content(albums)</visible>
-				<control type="label">
+				<control type="fadelabel">
 					<posx>0</posx>
 					<posy>5</posy>
-					<width>450</width>
+					<width>440</width>
 					<height>90</height>
 					<aligny>center</aligny>
+					<scrollout>false</scrollout>
+					<pauseatend>600</pauseatend>
+					<scrollspeed>20</scrollspeed>
 					<font>Font_ListTitleBigger</font>
 					<textcolor>ListTitleF</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 					<visible>IsEmpty(ListItem.Album)</visible>
 				</control>
-				<control type="label">
+				<control type="fadelabel">
 					<posx>0</posx>
 					<posy>15</posy>
-					<width>450</width>
+					<width>440</width>
 					<height>25</height>
 					<aligny>center</aligny>
+					<scrollout>false</scrollout>
+					<pauseatend>600</pauseatend>
+					<scrollspeed>20</scrollspeed>
 					<font>Font_ListTitleBig</font>
 					<textcolor>ListTitleF</textcolor>
 					<label>$INFO[ListItem.Album]</label>
@@ -551,7 +560,7 @@
 				<control type="label">
 					<posx>0</posx>
 					<posy>45</posy>
-					<width>450</width>
+					<width>440</width>
 					<height>17</height>
 					<aligny>center</aligny>
 					<font>Font_ListDetail</font>
@@ -574,7 +583,7 @@
 				<control type="label">
 					<posx>0</posx>
 					<posy>5</posy>
-					<width>450</width>
+					<width>440</width>
 					<height>90</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleBigger</font>
@@ -585,7 +594,7 @@
 				<control type="label">
 					<posx>0</posx>
 					<posy>15</posy>
-					<width>450</width>
+					<width>440</width>
 					<height>25</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleBig</font>
@@ -597,7 +606,7 @@
 				<control type="label">
 					<posx>0</posx>
 					<posy>35</posy>
-					<width>450</width>
+					<width>440</width>
 					<height>17</height>
 					<aligny>center</aligny>
 					<font>Font_ListDetail</font>
@@ -608,7 +617,7 @@
 				<control type="label">
 					<posx>0</posx>
 					<posy>45</posy>
-					<width>450</width>
+					<width>440</width>
 					<height>17</height>
 					<aligny>center</aligny>
 					<font>Font_ListDetail</font>
@@ -620,7 +629,7 @@
 				<control type="label">
 					<posx>0</posx>
 					<posy>65</posy>
-					<width>450</width>
+					<width>440</width>
 					<height>17</height>
 					<aligny>center</aligny>
 					<font>Font_ListDetail</font>

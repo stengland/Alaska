@@ -25,10 +25,10 @@
 			<control type="image">
 				<width>292</width>
 				<height>166</height>
-				<texture>common/TextFocused.png</texture>
+				<texture>common/white.png</texture>
 				<bordertexture border="8">common/thumb_border.png</bordertexture>
 				<bordersize>8</bordersize>
-				<aspectratio>stretch</aspectratio>
+				<aspectratio>scale</aspectratio>
 			</control>
 			<control type="videowindow" id="1">
 				<description>Video Preview</description>

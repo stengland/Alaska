@@ -22,6 +22,7 @@
 				<onright>9010</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
+				<pagecontrol>-</pagecontrol>
 				<itemlayout height="34" width="300">
 					<control type="label">
 						<posx>0</posx>
@@ -39,11 +40,22 @@
 						<posy>0</posy>
 						<width>300</width>
 						<font>Font_Settings</font>
+						<align>left</align>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>!Control.HasFocus(9000)</visible>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>300</width>
+						<font>Font_Settings</font>
 						<textcolor>TextFocused</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label]</label>
+						<visible>Control.HasFocus(9000)</visible>
 					</control>
 				</focusedlayout>
+
 				<content>
 					<item id="1">
 						<description>General</description>
@@ -56,20 +68,20 @@
 						<onclick>SetFocus(9002)</onclick>
 					</item>
 					<item id="3">
-						<!-- LOC -->
 						<description>Views</description>
+						<!-- LOC -->
 						<label>Views</label>
 						<onclick>SetFocus(9003)</onclick>
 					</item>
 					<item id="4">
+						<description>Artwork</description>
 						<!-- LOC -->
-						<description>Backdrops</description>
-						<label>Backdrops</label>
+						<label>Artwork</label>
 						<onclick>SetFocus(9004)</onclick>
 					</item>
 					<item id="5">
-						<!-- LOC -->
 						<description>Misc.</description>
+						<!-- LOC -->
 						<label>Misc.</label>
 						<onclick>SetFocus(9005)</onclick>
 					</item>
@@ -81,7 +93,7 @@
 				<control type="grouplist" id="9001">
 					<visible>Container(9000).Hasfocus(1)</visible>
 					<width>740</width>
-					<height>600</height>
+					<height>400</height>
 					<itemgap>6</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
@@ -140,52 +152,55 @@
 				<control type="grouplist" id="9002">
 					<visible>Container(9000).Hasfocus(2)</visible>
 					<width>740</width>
-					<height>600</height>
+					<height>400</height>
 					<itemgap>6</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>9002</onup>
 					<ondown>9002</ondown>
+					<pagecontrol>60</pagecontrol>
 					<include>Animation_CommonFadeNoHide</include>
-					<control type="radiobutton" id="200">
+					<control type="button" id="200">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
-						<label>Home 2</label>
+						<label>Home Style 1</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<onclick>Skin.ToggleSetting(home2)</onclick>
-						<onclick>Skin.Reset(home3)</onclick>
-						<selected>Skin.HasSetting(home2)</selected>
+						<onclick>Skin.SetBool(home2)</onclick>
+						<onclick>SetFocus(9000)</onclick>
+						<visible>![Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
 					</control>
-					<control type="radiobutton" id="201">
+					<control type="button" id="201">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
-						<label>Home 3</label>
+						<label>Home Style 2</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<onclick>Skin.ToggleSetting(home3)</onclick>
+						<onclick>Skin.SetBool(home3)</onclick>
 						<onclick>Skin.Reset(home2)</onclick>
-						<selected>Skin.HasSetting(home3)</selected>
+						<onclick>SetFocus(9000)</onclick>
+						<visible>Skin.HasSetting(home2)</visible>
 					</control>
-					<control type="radiobutton" id="202">
+					<control type="button" id="202">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
-						<label>Conditional Weather</label>
+						<label>Home Style 3</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<onclick>Skin.ToggleSetting(homeweather)</onclick>
-						<selected>Skin.HasSetting(homeweather)</selected>
+						<onclick>Skin.Reset(home3)</onclick>
+						<onclick>SetFocus(9000)</onclick>
+						<visible>Skin.HasSetting(home3)</visible>
 					</control>
-					<control type="radiobutton" id="502">
+					<control type="radiobutton" id="250">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
@@ -197,16 +212,178 @@
 						<onclick>Skin.ToggleSetting(launcherforgames)</onclick>
 						<selected>Skin.HasSetting(launcherforgames)</selected>
 					</control>
+					<control type="radiobutton" id="251">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Programs</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(noprograms)</onclick>
+						<selected>Skin.HasSetting(noprograms)</selected>
+						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)] + !Skin.HasSetting(launcherforgames)</visible>
+					</control>
+					<control type="radiobutton" id="252">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Games</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(nogames)</onclick>
+						<selected>Skin.HasSetting(nogames)</selected>
+						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)] + Skin.HasSetting(launcherforgames)</visible>
+					</control>
+					<control type="radiobutton" id="253">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Videos</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(novideos)</onclick>
+						<selected>Skin.HasSetting(novideos)</selected>
+						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+					</control>
+					<control type="radiobutton" id="254">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Music</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(nomusic)</onclick>
+						<selected>Skin.HasSetting(nomusic)</selected>
+						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+					</control>
+					<control type="radiobutton" id="255">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Movies</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(nomovies)</onclick>
+						<selected>Skin.HasSetting(nomovies)</selected>
+						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+					</control>
+					<control type="radiobutton" id="256">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide TV Shows</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(notvshows)</onclick>
+						<selected>Skin.HasSetting(notvshows)</selected>
+						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+					</control>
+					<control type="radiobutton" id="257">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Pictures</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(nopictures)</onclick>
+						<selected>Skin.HasSetting(nopictures)</selected>
+						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+					</control>
+					<control type="radiobutton" id="258">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Weather</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(noweather)</onclick>
+						<selected>Skin.HasSetting(noweather)</selected>
+						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+					</control>
+					<control type="radiobutton" id="259">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Settings</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(nosettings)</onclick>
+						<selected>Skin.HasSetting(nosettings)</selected>
+						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+					</control>
+					<control type="radiobutton" id="260">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Scripts</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(noscripts)</onclick>
+						<selected>Skin.HasSetting(noscripts)</selected>
+						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+					</control>
+					<control type="radiobutton" id="261">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Shutdown</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(noshutdown)</onclick>
+						<selected>Skin.HasSetting(noshutdown)</selected>
+						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+					</control>
 				</control>
+
+				<control type="image" id="99">
+					<posx>708</posx>
+					<posy>0</posy>
+					<height>26</height>
+					<width>26</width>
+					<texture>arrowdownnf.png</texture>
+					<visible>Container(9000).Hasfocus(2)</visible>
+				</control>
+				<control type="image" id="99">
+					<posx>708</posx>
+					<posy>0</posy>
+					<height>26</height>
+					<width>26</width>
+					<texture>arrowdownfo.png</texture>
+					<visible>Container(9000).Hasfocus(2) + [Control.HasFocus(200) | Control.HasFocus(201) | Control.HasFocus(203)]</visible>
+				</control>
+
 				<control type="grouplist" id="9003">
 					<visible>Container(9000).Hasfocus(3)</visible>
 					<width>740</width>
-					<height>600</height>
+					<height>400</height>
 					<itemgap>6</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>9003</onup>
 					<ondown>9003</ondown>
+					<pagecontrol>60</pagecontrol>
 					<include>Animation_CommonFadeNoHide</include>
 					<control type="radiobutton" id="300">
 						<width>740</width>
@@ -296,35 +473,470 @@
 				<control type="grouplist" id="9004">
 					<visible>Container(9000).Hasfocus(4)</visible>
 					<width>740</width>
-					<height>600</height>
+					<height>400</height>
 					<itemgap>6</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>9004</onup>
 					<ondown>9004</ondown>
+					<pagecontrol>60</pagecontrol>
 					<include>Animation_CommonFadeNoHide</include>
 					<control type="radiobutton" id="400">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>ListTrackF</textcolor>
-						<focusedcolor>Black</focusedcolor>
+						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
-						<label>Global Fanart</label>
+						<label>Hide Fanart</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<onclick>Skin.ToggleSetting(globalfanart)</onclick>
-						<selected>Skin.HasSetting(globalfanart)</selected>
+						<onclick>Skin.ToggleSetting(hidefanart)</onclick>
+						<selected>Skin.HasSetting(hidefanart)</selected>
+					</control>
+					<control type="radiobutton" id="401">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Weather Artwork based on current conditions</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(homeweather)</onclick>
+						<selected>Skin.HasSetting(homeweather)</selected>
+					</control>
+					<control type="togglebutton" id="402">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Movie Artwork Folder</label>
+						<altlabel>Reset Home Movie Artwork Folder</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetPath(CustomMoviesFolder)</onclick>
+						<onclick>Skin.Reset(CustomMoviesImage)</onclick>
+						<altclick>Skin.Reset(CustomMoviesFolder)</altclick>
+						<usealttexture>Skin.String(CustomMoviesFolder)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="403">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Movie Artwork Image</label>
+						<altlabel>Reset Home Movie Artwork Image</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetImage(CustomMoviesImage)</onclick>
+						<onclick>Skin.Reset(CustomMoviesFolder)</onclick>
+						<altclick>Skin.Reset(CustomMoviesImage)</altclick>
+						<usealttexture>Skin.String(CustomMoviesImage)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="404">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home TV Artwork Folder</label>
+						<altlabel>Reset Home TV Artwork Folder</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetPath(CustomTVShowsFolder)</onclick>
+						<onclick>Skin.Reset(CustomTVShowsImage)</onclick>
+						<altclick>Skin.Reset(CustomTVShowsFolder)</altclick>
+						<usealttexture>Skin.String(CustomTVShowsFolder)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="405">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home TV Artwork Image</label>
+						<altlabel>Reset Home TV Artwork Image</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetImage(CustomTVShowsImage)</onclick>
+						<onclick>Skin.Reset(CustomTVShowsFolder)</onclick>
+						<altclick>Skin.Reset(CustomTVShowsImage)</altclick>
+						<usealttexture>Skin.String(CustomTVShowsImage)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="406">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Music Artwork Folder</label>
+						<altlabel>Reset Home Music Artwork Folder</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetPath(CustomMusicFolder)</onclick>
+						<onclick>Skin.Reset(CustomMusicImage)</onclick>
+						<altclick>Skin.Reset(CustomMusicFolder)</altclick>
+						<usealttexture>Skin.String(CustomMusicFolder)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="407">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Music Artwork Image</label>
+						<altlabel>Reset Home Music Artwork Image</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetImage(CustomMusicImage)</onclick>
+						<onclick>Skin.Reset(CustomMusicFolder)</onclick>
+						<altclick>Skin.Reset(CustomMusicImage)</altclick>
+						<usealttexture>Skin.String(CustomMusicImage)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="408">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Videos Artwork Folder</label>
+						<altlabel>Reset Home Videos Artwork Folder</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetPath(CustomVideosFolder)</onclick>
+						<onclick>Skin.Reset(CustomVideosImage)</onclick>
+						<altclick>Skin.Reset(CustomVideosFolder)</altclick>
+						<usealttexture>Skin.String(CustomVideosFolder)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="409">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Videos Artwork Image</label>
+						<altlabel>Reset Home Videos Artwork Image</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetImage(CustomVideosImage)</onclick>
+						<onclick>Skin.Reset(CustomVideosFolder)</onclick>
+						<altclick>Skin.Reset(CustomVideosImage)</altclick>
+						<usealttexture>Skin.String(CustomVideosImage)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="410">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Pictures Artwork Folder</label>
+						<altlabel>Reset Home Pictures Artwork Folder</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetPath(CustomPicturesFolder)</onclick>
+						<onclick>Skin.Reset(CustomPicturesImage)</onclick>
+						<altclick>Skin.Reset(CustomPicturesFolder)</altclick>
+						<usealttexture>Skin.String(CustomPicturesFolder)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="411">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Pictures Artwork Image</label>
+						<altlabel>Reset Home Pictures Artwork Image</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetImage(CustomPicturesImage)</onclick>
+						<onclick>Skin.Reset(CustomPicturesFolder)</onclick>
+						<altclick>Skin.Reset(CustomPicturesImage)</altclick>
+						<usealttexture>Skin.String(CustomPicturesImage)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="412">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Weather Artwork Folder</label>
+						<altlabel>Reset Home Weather Artwork Folder</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetPath(CustomWeatherFolder)</onclick>
+						<onclick>Skin.Reset(CustomWeatherImage)</onclick>
+						<altclick>Skin.Reset(CustomWeatherFolder)</altclick>
+						<usealttexture>Skin.String(CustomWeatherFolder)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+						<visible>!Skin.HasSetting(homeweather)</visible>
+					</control>
+					<control type="togglebutton" id="413">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Weather Artwork Image</label>
+						<altlabel>Reset Home Weather Artwork Image</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetImage(CustomWeatherImage)</onclick>
+						<onclick>Skin.Reset(CustomWeatherFolder)</onclick>
+						<altclick>Skin.Reset(CustomWeatherImage)</altclick>
+						<usealttexture>Skin.String(CustomWeatherImage)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+						<visible>!Skin.HasSetting(homeweather)</visible>
+					</control>
+					<control type="togglebutton" id="414">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Programs Artwork Folder</label>
+						<altlabel>Reset Home Programs Artwork Folder</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetPath(CustomProgramsFolder)</onclick>
+						<onclick>Skin.Reset(CustomProgramsImage)</onclick>
+						<altclick>Skin.Reset(CustomProgramsFolder)</altclick>
+						<usealttexture>Skin.String(CustomProgramsFolder)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="415">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Programs Artwork Image</label>
+						<altlabel>Reset Home Programs Artwork Image</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetImage(CustomProgramsImage)</onclick>
+						<onclick>Skin.Reset(CustomProgramsFolder)</onclick>
+						<altclick>Skin.Reset(CustomProgramsImage)</altclick>
+						<usealttexture>Skin.String(CustomProgramsImage)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="416">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Games Artwork Folder</label>
+						<altlabel>Reset Home Games Artwork Folder</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetPath(CustomGamesFolder)</onclick>
+						<onclick>Skin.Reset(CustomGamesImage)</onclick>
+						<altclick>Skin.Reset(CustomGamesFolder)</altclick>
+						<usealttexture>Skin.String(CustomGamesFolder)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="417">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Games Artwork Image</label>
+						<altlabel>Reset Home Games Artwork Image</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetImage(CustomGamesImage)</onclick>
+						<onclick>Skin.Reset(CustomGamesFolder)</onclick>
+						<altclick>Skin.Reset(CustomGamesImage)</altclick>
+						<usealttexture>Skin.String(CustomGamesImage)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="418">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Scripts Artwork Folder</label>
+						<altlabel>Reset Home Scripts Artwork Folder</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetPath(CustomScriptsFolder)</onclick>
+						<onclick>Skin.Reset(CustomScriptsImage)</onclick>
+						<altclick>Skin.Reset(CustomScriptsFolder)</altclick>
+						<usealttexture>Skin.String(CustomScriptsFolder)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="419">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Scripts Artwork Image</label>
+						<altlabel>Reset Home Scripts Artwork Image</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetImage(CustomScriptsImage)</onclick>
+						<onclick>Skin.Reset(CustomScriptsFolder)</onclick>
+						<altclick>Skin.Reset(CustomScriptsImage)</altclick>
+						<usealttexture>Skin.String(CustomScriptsImage)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="420">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home PlayDisc Artwork Folder</label>
+						<altlabel>Reset Home PlayDisc Artwork Folder</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetPath(CustomPlayDiscFolder)</onclick>
+						<onclick>Skin.Reset(CustomPlayDiscImage)</onclick>
+						<altclick>Skin.Reset(CustomPlayDiscFolder)</altclick>
+						<usealttexture>Skin.String(CustomPlayDiscFolder)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="421">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home PlayDisc Artwork Image</label>
+						<altlabel>Reset Home PlayDisc Artwork Image</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetImage(CustomPlayDiscImage)</onclick>
+						<onclick>Skin.Reset(CustomPlayDiscFolder)</onclick>
+						<altclick>Skin.Reset(CustomPlayDiscImage)</altclick>
+						<usealttexture>Skin.String(CustomPlayDiscImage)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="422">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Shutdown Artwork Folder</label>
+						<altlabel>Reset Home Shutdown Artwork Folder</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetPath(CustomShutdownFolder)</onclick>
+						<onclick>Skin.Reset(CustomShutdownImage)</onclick>
+						<altclick>Skin.Reset(CustomShutdownFolder)</altclick>
+						<usealttexture>Skin.String(CustomShutdownFolder)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="423">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>ListTrackF</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Shutdown Artwork Image</label>
+						<altlabel>Reset Home Shutdown Artwork Image</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetImage(CustomShutdownImage)</onclick>
+						<onclick>Skin.Reset(CustomShutdownFolder)</onclick>
+						<altclick>Skin.Reset(CustomShutdownImage)</altclick>
+						<usealttexture>Skin.String(CustomShutdownImage)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
 					</control>
 				</control>
+
 				<control type="grouplist" id="9005">
 					<visible>Container(9000).Hasfocus(5)</visible>
 					<width>740</width>
-					<height>600</height>
+					<height>400</height>
 					<itemgap>6</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>9005</onup>
 					<ondown>9005</ondown>
+					<pagecontrol>60</pagecontrol>
 					<include>Animation_CommonFadeNoHide</include>
 					<control type="radiobutton" id="500">
 						<width>740</width>
@@ -351,6 +963,23 @@
 						<selected>Skin.HasSetting(debuggrid)</selected>
 					</control>
 				</control>
+
+				<control type="scrollbar" id="60">
+					<include>Animation_ZoomInZoomOut</include>
+					<include>Animation_ZoomedByMenu</include>
+					<posx>760</posx>
+					<posy>0</posy>
+					<width>25</width>
+					<height>390</height>
+					<visible>Container(9000).Hasfocus(4)</visible>
+					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+					<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
+					<textureslidernib>ScrollBarV_Nib_Focus.png</textureslidernib>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<include>Animation_CommonFade</include>
+				</control>
+
 			</control>
 		</control>
 		<include>Global_ContextFilter</include>

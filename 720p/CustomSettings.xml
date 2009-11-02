@@ -93,7 +93,7 @@
 				<control type="grouplist" id="9001">
 					<visible>Container(9000).Hasfocus(1)</visible>
 					<width>740</width>
-					<height>400</height>
+					<height>394</height>
 					<itemgap>6</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
@@ -152,7 +152,7 @@
 				<control type="grouplist" id="9002">
 					<visible>Container(9000).Hasfocus(2)</visible>
 					<width>740</width>
-					<height>400</height>
+					<height>394</height>
 					<itemgap>6</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
@@ -369,13 +369,13 @@
 				<control type="grouplist" id="9003">
 					<visible>Container(9000).Hasfocus(3)</visible>
 					<width>740</width>
-					<height>400</height>
+					<height>394</height>
 					<itemgap>6</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>9003</onup>
 					<ondown>9003</ondown>
-					<pagecontrol>60</pagecontrol>
+					<pagecontrol>-</pagecontrol>
 					<include>Animation_CommonFadeNoHide</include>
 					<control type="radiobutton" id="300">
 						<width>740</width>
@@ -465,7 +465,7 @@
 				<control type="grouplist" id="9004">
 					<visible>Container(9000).Hasfocus(4)</visible>
 					<width>740</width>
-					<height>400</height>
+					<height>394</height>
 					<itemgap>6</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
@@ -922,13 +922,13 @@
 				<control type="grouplist" id="9005">
 					<visible>Container(9000).Hasfocus(5)</visible>
 					<width>740</width>
-					<height>400</height>
+					<height>394</height>
 					<itemgap>6</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>9005</onup>
 					<ondown>9005</ondown>
-					<pagecontrol>60</pagecontrol>
+					<pagecontrol>-</pagecontrol>
 					<include>Animation_CommonFadeNoHide</include>
 					<control type="radiobutton" id="500">
 						<width>740</width>
@@ -963,7 +963,7 @@
 					<posy>0</posy>
 					<width>25</width>
 					<height>390</height>
-					<visible>Container(9000).Hasfocus(4)</visible>
+					<visible>Container(9000).Hasfocus(4) | Container(9000).Hasfocus(2)</visible>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
 					<textureslidernib>ScrollBarV_Nib_Focus.png</textureslidernib>

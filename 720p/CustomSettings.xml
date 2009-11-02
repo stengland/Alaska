@@ -362,16 +362,8 @@
 					<posy>0</posy>
 					<height>26</height>
 					<width>26</width>
-					<texture>arrowdownnf.png</texture>
-					<visible>Container(9000).Hasfocus(2)</visible>
-				</control>
-				<control type="image" id="99">
-					<posx>708</posx>
-					<posy>0</posy>
-					<height>26</height>
-					<width>26</width>
 					<texture>arrowdownfo.png</texture>
-					<visible>Container(9000).Hasfocus(2) + [Control.HasFocus(200) | Control.HasFocus(201) | Control.HasFocus(203)]</visible>
+					<visible>Container(9000).Hasfocus(2) + [Control.HasFocus(200) | Control.HasFocus(201) | Control.HasFocus(202)]</visible>
 				</control>
 
 				<control type="grouplist" id="9003">

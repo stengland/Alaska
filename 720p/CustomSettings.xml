@@ -812,6 +812,7 @@
 						<texturefocus>-</texturefocus>
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
+						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
 					<control type="togglebutton" id="419">
 						<width>740</width>
@@ -831,6 +832,7 @@
 						<texturefocus>-</texturefocus>
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
+						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
 					<control type="togglebutton" id="420">
 						<width>740</width>
@@ -850,6 +852,7 @@
 						<texturefocus>-</texturefocus>
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
+						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
 					<control type="togglebutton" id="421">
 						<width>740</width>
@@ -869,6 +872,7 @@
 						<texturefocus>-</texturefocus>
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
+						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
 					<control type="togglebutton" id="422">
 						<width>740</width>
@@ -888,6 +892,7 @@
 						<texturefocus>-</texturefocus>
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
+						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
 					<control type="togglebutton" id="423">
 						<width>740</width>
@@ -907,6 +912,7 @@
 						<texturefocus>-</texturefocus>
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
+						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
 				</control>
 

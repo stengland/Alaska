@@ -186,6 +186,12 @@
 				<colordiffuse>OSDrating</colordiffuse>
 				<visible>substring(listitem.mpaa,Australia:G)</visible>
 			</control>
+			<control type="image">
+				<include>Objects_FSInfoCertificate</include>
+				<texture>$INFO[listitem.mpaa,flags/Rating/,.png]</texture>
+				<colordiffuse>OSDrating</colordiffuse>
+				<visible>substring(listitem.mpaa,TV-,Left)</visible>
+			</control>
 			<control type="label">
 				<posx>0</posx>
 				<posy>140</posy>

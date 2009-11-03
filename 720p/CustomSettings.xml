@@ -93,7 +93,7 @@
 				<control type="grouplist" id="9001">
 					<visible>Container(9000).Hasfocus(1)</visible>
 					<width>740</width>
-					<height>394</height>
+					<height>320</height>
 					<itemgap>6</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
@@ -152,7 +152,7 @@
 				<control type="grouplist" id="9002">
 					<visible>Container(9000).Hasfocus(2)</visible>
 					<width>740</width>
-					<height>394</height>
+					<height>320</height>
 					<itemgap>6</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
@@ -357,19 +357,10 @@
 					</control>
 				</control>
 
-				<control type="image" id="99">
-					<posx>708</posx>
-					<posy>0</posy>
-					<height>26</height>
-					<width>26</width>
-					<texture>arrowdownfo.png</texture>
-					<visible>Container(9000).Hasfocus(2) + [Control.HasFocus(200) | Control.HasFocus(201) | Control.HasFocus(202)]</visible>
-				</control>
-
 				<control type="grouplist" id="9003">
 					<visible>Container(9000).Hasfocus(3)</visible>
 					<width>740</width>
-					<height>394</height>
+					<height>320</height>
 					<itemgap>6</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
@@ -465,7 +456,7 @@
 				<control type="grouplist" id="9004">
 					<visible>Container(9000).Hasfocus(4)</visible>
 					<width>740</width>
-					<height>394</height>
+					<height>320</height>
 					<itemgap>6</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
@@ -922,7 +913,7 @@
 				<control type="grouplist" id="9005">
 					<visible>Container(9000).Hasfocus(5)</visible>
 					<width>740</width>
-					<height>394</height>
+					<height>320</height>
 					<itemgap>6</itemgap>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
@@ -956,20 +947,35 @@
 					</control>
 				</control>
 
-				<control type="scrollbar" id="60">
-					<include>Animation_ZoomInZoomOut</include>
-					<include>Animation_ZoomedByMenu</include>
-					<posx>760</posx>
+				<control type="image">
+					<posx>708</posx>
 					<posy>0</posy>
-					<width>25</width>
-					<height>390</height>
-					<visible>Container(9000).Hasfocus(4) | Container(9000).Hasfocus(2)</visible>
-					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-					<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
-					<textureslidernib>ScrollBarV_Nib_Focus.png</textureslidernib>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
-					<include>Animation_CommonFade</include>
+					<height>24</height>
+					<width>24</width>
+					<texture>arrowdownfo.png</texture>
+					<visible>Container(9000).Hasfocus(2) + [Control.HasFocus(200) | Control.HasFocus(201) | Control.HasFocus(202)]</visible>
+				</control>
+
+				<control type="image">
+					<include>Animation_ZoomOutZoomIn</include>
+					<include>Animation_ZoomedByMenu</include>
+					<posx>170</posx>
+					<posy>-30</posy>
+					<height>24</height>
+					<width>24</width>
+					<texture>arrowupnf.png</texture>
+					<visible>Container(9000).Hasfocus(4) | [Container(9000).Hasfocus(2) + [Skin.HasSetting(home2) | Skin.HasSetting(home3)]]</visible>
+				</control>
+
+				<control type="image">
+					<include>Animation_ZoomOutZoomIn</include>
+					<include>Animation_ZoomedByMenu</include>
+					<posx>170</posx>
+					<posy>328</posy>
+					<height>24</height>
+					<width>24</width>
+					<texture>arrowdownnf.png</texture>
+					<visible>Container(9000).Hasfocus(4) | [Container(9000).Hasfocus(2) + [Skin.HasSetting(home2) | Skin.HasSetting(home3)]]</visible>
 				</control>
 
 			</control>

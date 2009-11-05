@@ -223,7 +223,7 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(noprograms)</onclick>
 						<selected>Skin.HasSetting(noprograms)</selected>
-						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)] + !Skin.HasSetting(launcherforgames)</visible>
+						<visible>!Skin.HasSetting(launcherforgames)</visible>
 					</control>
 					<control type="radiobutton" id="252">
 						<width>740</width>
@@ -236,7 +236,7 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(nogames)</onclick>
 						<selected>Skin.HasSetting(nogames)</selected>
-						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)] + Skin.HasSetting(launcherforgames)</visible>
+						<visible>Skin.HasSetting(launcherforgames)</visible>
 					</control>
 					<control type="radiobutton" id="253">
 						<width>740</width>
@@ -249,7 +249,6 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(novideos)</onclick>
 						<selected>Skin.HasSetting(novideos)</selected>
-						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
 					</control>
 					<control type="radiobutton" id="254">
 						<width>740</width>
@@ -301,7 +300,6 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(nopictures)</onclick>
 						<selected>Skin.HasSetting(nopictures)</selected>
-						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
 					</control>
 					<control type="radiobutton" id="258">
 						<width>740</width>
@@ -314,7 +312,6 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(noweather)</onclick>
 						<selected>Skin.HasSetting(noweather)</selected>
-						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
 					</control>
 					<control type="radiobutton" id="259">
 						<width>740</width>
@@ -327,7 +324,6 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(nosettings)</onclick>
 						<selected>Skin.HasSetting(nosettings)</selected>
-						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
 					</control>
 					<control type="radiobutton" id="260">
 						<width>740</width>

@@ -1,12 +1,13 @@
 <!--Alaska-->
+
 <window id="113">
 	<defaultcontrol>901</defaultcontrol>
 	<animation type="WindowOpen" reversible="false">
-		<effect type="zoom" start="80" end="100" center="auto" delay="200" easing="out" tween="back" time="300" />
+		<effect type="zoom" start="80" end="100" center="1580,125" delay="200" easing="out" tween="back" time="300" />
 		<effect type="fade" delay="200" start="0" end="100" time="300" />
 	</animation>
 	<animation type="WindowClose" reversible="false">
-		<effect type="zoom" start="100" end="80" center="auto" easing="in" tween="back" time="300" />
+		<effect type="zoom" start="100" end="80" center="1580,125" easing="in" tween="back" time="300" />
 		<effect type="fade" start="100" end="0" time="300" />
 	</animation>
 	<controls>
@@ -16,12 +17,21 @@
 			<label>DialogMuteBug.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
-		
+
 		<control type="group">
 			<posx>880</posx>
 			<posy>90</posy>
 			<width>707</width>
 			<height>183</height>
+			<control type="image">
+				<posx>200</posx>
+				<posy>-2</posy>
+				<width>222</width>
+				<height>74</height>
+				<texture>dialogs/back.png</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>Window.IsActive(2005) | Window.IsActive(2006)</visible>
+			</control>
 			<control type="image">
 				<posx>322</posx>
 				<posy>10</posy>
@@ -51,8 +61,8 @@
 				<label>MUTE</label>
 			</control>
 		</control>
-		
+
 		<include>Object_DebugGrid</include>
-		
+
 	</controls>
 </window>

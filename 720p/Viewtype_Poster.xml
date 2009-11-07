@@ -176,7 +176,7 @@
 			</focusedlayout>
 		</control>
 		<!-- Browser -->
-		<control type="fixedlist" id="50">
+		<control type="fixedlist" id="57">
 			<posx>-20</posx>
 			<posy>65</posy>
 			<height>515</height>

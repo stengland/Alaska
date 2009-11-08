@@ -28,8 +28,7 @@
 				<posy>-2</posy>
 				<width>222</width>
 				<height>74</height>
-				<texture>dialogs/back.png</texture>
-				<aspectratio>scale</aspectratio>
+				<texture border="37,0,0,0">dialogs/back.png</texture>
 				<visible>Window.IsActive(2005) | Window.IsActive(2006)</visible>
 			</control>
 			<control type="image">

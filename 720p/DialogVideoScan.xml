@@ -1,6 +1,7 @@
 <!--Alaska-->
 
 <window id="133">
+	<defaultcontrol>1111</defaultcontrol>
 	<animation type="WindowOpen" reversible="false">
 		<effect type="zoom" start="80" end="100" center="auto" delay="200" easing="out" tween="back" time="300" />
 		<effect type="fade" delay="200" start="0" end="100" time="300" />
@@ -15,6 +16,16 @@
 			<include>WindowID</include>
 			<label>DialogVideoScan.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
+		</control>
+
+		<control type="button" id="1111">
+			<posx>-10</posx>
+			<posy>-10</posy>
+			<height>1</height>
+			<width>1</width>
+			<texturefocus/>
+			<texturenofocus/>
+			<onfocus>Skin.SetBool(LibraryUpdated)</onfocus>
 		</control>
 
 		<control type="group">

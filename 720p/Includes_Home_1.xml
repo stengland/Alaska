@@ -23,38 +23,38 @@
 			<content>
 				<item id="1">
 					<description>Programs</description>
-					<onclick>XBMC.ActivateWindow(MyPrograms)</onclick>
+					<onclick>ActivateWindow(Programs)</onclick>
 					<visible>!Skin.HasSetting(noprograms)</visible>
 				</item>
 				<item id="2">
 					<description>Videos</description>
-					<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
+					<onclick>ActivateWindow(MyVideoFiles)</onclick>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
 				<item id="3">
 					<description>Music</description>
-					<onclick>XBMC.ActivateWindow(MyMusicLibrary,albums,return)</onclick>
+					<onclick>ActivateWindow(MyMusicLibrary,albums,return)</onclick>
 				</item>
 				<item id="4">
 					<description>Movies</description>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
+					<onclick>ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
 				</item>
 				<item id="5">
 					<description>Tv Shows</description>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
+					<onclick>ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
 				</item>
 				<item id="6">
 					<description>Pictures</description>
-					<onclick>XBMC.ActivateWindow(MyPictures)</onclick>
+					<onclick>ActivateWindow(MyPictures)</onclick>
 					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
 				<item id="7">
 					<description>Weather</description>
-					<onclick>XBMC.Activatewindow(2600)</onclick>
+					<onclick>ActivateWindow(2600)</onclick>
 				</item>		
 				<item id="8">
 					<description>Settings</description>
-					<onclick>XBMC.ActivateWindow(4)</onclick>
+					<onclick>ActivateWindow(4)</onclick>
 					<visible>!Skin.HasSetting(nosettings)</visible>
 				</item>
 			</content>
@@ -743,7 +743,7 @@
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3101">
 				<label>Games</label>
-				<onclick>XBMC.ActivateWindow(1,plugin://programs/Launcher/)</onclick>
+				<onclick>ActivateWindow(1,plugin://programs/Launcher/)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3102">
@@ -773,12 +773,12 @@
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3201">
 				<label>1037</label>
-				<onclick>XBMC.ActivateWindow(25,plugin://video/)</onclick>
+				<onclick>ActivateWindow(25,plugin://video/)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3202">
 				<label>Music Videos</label>
-				<onclick>XBMC.ActivateWindow(MyVideoLibrary,musicvideotitles,return)</onclick>
+				<onclick>ActivateWindow(MyVideoLibrary,musicvideotitles,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3203">
@@ -804,22 +804,22 @@
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3301">
 				<label>New Albums</label>
-				<onclick>XBMC.ActivateWindow(MyMusicLibrary,recentlyaddedalbums,return)</onclick>
+				<onclick>ActivateWindow(MyMusicLibrary,recentlyaddedalbums,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3302">
 				<label>31922</label>
-				<onclick>XBMC.ActivateWindow(MyMusicLibrary,genres,return)</onclick>
+				<onclick>ActivateWindow(MyMusicLibrary,genres,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3303">
 				<label>Artists</label>
-				<onclick>XBMC.ActivateWindow(MyMusicLibrary,artists,return)</onclick>
+				<onclick>ActivateWindow(MyMusicLibrary,artists,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3304">
 				<label>31923</label>
-				<onclick>XBMC.ActivateWindow(MyMusicLibrary,years,return)</onclick>
+				<onclick>ActivateWindow(MyMusicLibrary,years,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3305">
@@ -902,22 +902,22 @@
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3401">
 				<label>New Movies</label>
-				<onclick>XBMC.ActivateWindow(MyVideoLibrary,recentlyaddedmovies,return)</onclick>
+				<onclick>ActivateWindow(MyVideoLibrary,recentlyaddedmovies,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3402">
 				<label>31922</label>
-				<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviegenres,return)</onclick>
+				<onclick>ActivateWindow(MyVideoLibrary,moviegenres,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3403">
 				<label>31924</label>
-				<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieactors,return)</onclick>
+				<onclick>ActivateWindow(MyVideoLibrary,movieactors,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3404">
 				<label>31923</label>
-				<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieyears,return)</onclick>
+				<onclick>ActivateWindow(MyVideoLibrary,movieyears,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3405">
@@ -999,22 +999,22 @@
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3501">
 				<label>New Episodes</label>
-				<onclick>XBMC.ActivateWindow(MyVideoLibrary,recentlyaddedepisodes,return)</onclick>
+				<onclick>ActivateWindow(MyVideoLibrary,recentlyaddedepisodes,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3502">
 				<label>31922</label>
-				<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowgenres,return)</onclick>
+				<onclick>ActivateWindow(MyVideoLibrary,tvshowgenres,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3503">
 				<label>31924</label>
-				<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowactors,return)</onclick>
+				<onclick>ActivateWindow(MyVideoLibrary,tvshowactors,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3504">
 				<label>31923</label>
-				<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowyears,return)</onclick>
+				<onclick>ActivateWindow(MyVideoLibrary,tvshowyears,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3505">
@@ -1115,22 +1115,22 @@
 			<onright>999</onright>
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3701">
-				<onclick>XBMC.Activatewindow(2600)</onclick>
+				<onclick>ActivateWindow(2600)</onclick>
 				<label fallback="Not Available">$INFO[Window(Weather).Property(Day0.Title)]: $INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3702">
-				<onclick>XBMC.Activatewindow(2600)</onclick>
+				<onclick>ActivateWindow(2600)</onclick>
 				<label fallback="Not Available">$INFO[Window(Weather).Property(Day1.Title)]: $INFO[Window(Weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3703">
-				<onclick>XBMC.Activatewindow(2600)</onclick>
+				<onclick>ActivateWindow(2600)</onclick>
 				<label fallback="Not Available">$INFO[Window(Weather).Property(Day2.Title)]: $INFO[Window(Weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3704">
-				<onclick>XBMC.Activatewindow(2600)</onclick>
+				<onclick>ActivateWindow(2600)</onclick>
 				<label fallback="Not Available">$INFO[Window(Weather).Property(Day3.Title)]: $INFO[Window(Weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</label>
 				<include>Home_MainMenuLabel</include> 
 			</control>
@@ -1181,7 +1181,7 @@
 			</control>
 			<control type="button" id="3806">
 				<label>31070</label>
-				<onclick>XBMC.ActivateWindow(7)</onclick>
+				<onclick>ActivateWindow(7)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 		</control>

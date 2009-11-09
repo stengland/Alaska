@@ -29,7 +29,7 @@
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>Settings</label>
-				<onclick>XBMC.ActivateWindow(4)</onclick>
+				<onclick>ActivateWindow(4)</onclick>
 			</control>
 			<control type="button" id="3111">
 				<description>Filemanager</description>
@@ -42,7 +42,7 @@
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>Filemanager</label>
-				<onclick>XBMC.ActivateWindow(3)</onclick>
+				<onclick>ActivateWindow(3)</onclick>
 			</control>
 			
 			<control type="button" id="3117">
@@ -56,7 +56,7 @@
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>$LOCALIZE[1036]</label>
-				<onclick>XBMC.ActivateWindow(Favourites)</onclick>
+				<onclick>ActivateWindow(Favourites)</onclick>
 			</control>
 			
 			<control type="button" id="3112">
@@ -70,7 +70,7 @@
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>$LOCALIZE[13313]</label>
-				<onclick>XBMC.Reset()</onclick>
+				<onclick>Reset()</onclick>
 			</control>
 			<control type="button" id="3113">
 				<description>Shutdown</description>
@@ -83,7 +83,7 @@
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>$LOCALIZE[13005]</label>
-				<onclick>XBMC.ShutDown()</onclick>
+				<onclick>ShutDown()</onclick>
 			</control>
 			<control type="button" id="3114">
 				<description>Restart Xbmc</description>
@@ -96,7 +96,7 @@
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>$LOCALIZE[13313] XBMC</label>
-				<onclick>xbmc.RestartApp()</onclick>
+				<onclick>RestartApp()</onclick>
 			</control>
 			<control type="button" id="3115">
 				<description>System Info Button</description>
@@ -109,7 +109,7 @@
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>$LOCALIZE[130]</label>
-				<onclick>XBMC.ActivateWindow(7)</onclick>
+				<onclick>ActivateWindow(7)</onclick>
 			</control>
 			<control type="button" id="3116">
 				<description>Reload Skin</description>
@@ -122,7 +122,7 @@
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>RELOAD SKIN</label>
-				<onclick>XBMC.ReloadSkin()</onclick>
+				<onclick>ReloadSkin()</onclick>
 				<visible>Skin.HasSetting(debugmode)</visible>
 			</control>
 		</control>

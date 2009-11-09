@@ -48,61 +48,61 @@
 					<description>Video</description>
 					<label>3</label>
 					<icon>special://skin/media/settings/settings_video.png</icon>
-					<onclick>XBMC.ActivateWindow(MyVideosSettings)</onclick>
+					<onclick>ActivateWindow(MyVideosSettings)</onclick>
 				</item>
 				<item id="2">
 					<description>Music</description>
 					<label>2</label>
 					<icon>special://skin/media/settings/settings_music.png</icon>
-					<onclick>XBMC.ActivateWindow(MyMusicSettings)</onclick>
+					<onclick>ActivateWindow(MyMusicSettings)</onclick>
 				</item>
 				<item id="3">
 					<description>Pictures</description>
 					<label>1</label>
 					<icon>special://skin/media/settings/settings_pictures.png</icon>
-					<onclick>XBMC.ActivateWindow(MyPicturesSettings)</onclick>
+					<onclick>ActivateWindow(MyPicturesSettings)</onclick>
 				</item>
 				<!--item id="4">
 					<description>Programs</description>
 					<label>0</label>
 					<icon>special://skin/media/settings/settings_programs.png</icon>
-					<onclick>XBMC.ActivateWindow(MyProgramsSettings)</onclick>
+					<onclick>ActivateWindow(MyProgramsSettings)</onclick>
 				</item-->
 				<item id="4">
 					<description>Profiles</description>
 					<label>13200</label>
 					<icon>special://skin/media/settings/settings_profiles.png</icon>
-					<onclick>XBMC.ActivateWindow(Profiles)</onclick>
+					<onclick>ActivateWindow(Profiles)</onclick>
 				</item>
 				<item id="5">
 					<description>Weather</description>
 					<label>8</label>
 					<icon>special://skin/media/settings/settings_weather.png</icon>
-					<onclick>XBMC.ActivateWindow(MyWeatherSettings)</onclick>
+					<onclick>ActivateWindow(MyWeatherSettings)</onclick>
 				</item>
 				<item id="6">
 					<description>Network</description>
 					<label>705</label>
 					<icon>special://skin/media/settings/settings_network.png</icon>
-					<onclick>XBMC.ActivateWindow(NetworkSettings)</onclick>
+					<onclick>ActivateWindow(NetworkSettings)</onclick>
 				</item>
 				<item id="7">
 					<description>System</description>
 					<label>13000</label>
 					<icon>special://skin/media/settings/settings_system.png</icon>
-					<onclick>xbmc.activatewindow(SystemSettings)</onclick>
+					<onclick>ActivateWindow(SystemSettings)</onclick>
 				</item>
 				<item id="8">
 					<description>Appearence</description>
 					<label>480</label>
 					<icon>special://skin/media/settings/settings_appearance.png</icon>
-					<onclick>XBMC.ActivateWindow(AppearanceSettings)</onclick>
+					<onclick>ActivateWindow(AppearanceSettings)</onclick>
 				</item>
 				<item id="9">
 					<description>Alaska</description>
 <!-- LOC -->		<label>Alaska</label>
 					<icon>special://skin/media/settings/settings_alaska.png</icon>
-					<onclick>XBMC.ActivateWindow(56)</onclick>
+					<onclick>ActivateWindow(56)</onclick>
 				</item>
 			</content>
 		</control>

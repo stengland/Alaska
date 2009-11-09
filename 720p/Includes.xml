@@ -368,42 +368,42 @@
 					<description>Videos</description>
 					<label>3</label>
 					<icon>homeicons/videosicon.png</icon>
-					<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
+					<onclick>ActivateWindow(MyVideoFiles)</onclick>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
 				<item id="2">
 					<description>Music</description>
 					<label>2</label>
 					<icon>homeicons/musicicon.png</icon>
-					<onclick>XBMC.ActivateWindow(MyMusic)</onclick>
+					<onclick>ActivateWindow(MyMusic)</onclick>
 					<visible>!Skin.HasSetting(nomusic)</visible>
 				</item>
 				<item id="3">
 					<description>Movies</description>
 					<label>342</label>
 					<icon>homeicons/moviesicon.png</icon>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles)</onclick>
+					<onclick>ActivateWindow(MyVideoLibrary,movietitles)</onclick>
 					<visible>!Skin.HasSetting(nomovies)</visible>
 				</item>
 				<item id="4">
 					<description>TV Shows</description>
 					<label>20343</label>
 					<icon>homeicons/tvshowsicon.png</icon>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
+					<onclick>ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
 					<visible>!Skin.HasSetting(notvshows)</visible>
 				</item>
 				<item id="5">
 					<description>Pictures</description>
 					<label>1</label>
 					<icon>homeicons/picturesicon.png</icon>
-					<onclick>XBMC.ActivateWindow(MyPictures)</onclick>
+					<onclick>ActivateWindow(MyPictures)</onclick>
 					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
 				<item id="6">
 					<description>Weather</description>
 					<label>8</label>
 					<icon>homeicons/weathericon.png</icon>
-					<onclick>xbmc.activatewindow(2600)</onclick>
+					<onclick>ActivateWindow(2600)</onclick>
 					<visible>!Skin.HasSetting(noweather)</visible>
 				</item>
 				<item id="7">
@@ -411,42 +411,42 @@
 					<!-- LOC -->
 					<label>GAMES</label>
 					<icon>homeicons/gamesicon.png</icon>
-					<onclick>XBMC.ActivateWindow(1,plugin://programs/Launcher/)</onclick>
+					<onclick>ActivateWindow(1,plugin://programs/Launcher/)</onclick>
 					<visible>!Skin.HasSetting(nogames) + Skin.HasSetting(launcherforgames)</visible>
 				</item>
 				<item id="7">
 					<description>Programs</description>
 					<label>0</label>
 					<icon>homeicons/programsicon.png</icon>
-					<onclick>XBMC.ActivateWindow(MyPrograms)</onclick>
+					<onclick>ActivateWindow(Programs)</onclick>
 					<visible>!Skin.HasSetting(nogames) + !Skin.HasSetting(launcherforgames)</visible>
 				</item>
 				<item id="8">
 					<description>Settings</description>
 					<label>5</label>
 					<icon>homeicons/settingsicon.png</icon>
-					<onclick>XBMC.ActivateWindow(4)</onclick>
+					<onclick>ActivateWindow(4)</onclick>
 					<visible>!Skin.HasSetting(nosettings)</visible>
 				</item>
 				<item id="9">
 					<description>Scripts</description>
 					<label>31020</label>
 					<icon>homeicons/scriptsicon.png</icon>
-					<onclick>XBMC.ActivateWindow(20)</onclick>
+					<onclick>ActivateWindow(20)</onclick>
 					<visible>!Skin.HasSetting(nosettings)</visible>
 				</item>
 				<item id="10">
 					<description>Shutdown</description>
 					<label>31019</label>
 					<icon>homeicons/shutdownicon.png</icon>
-					<onclick>XBMC.Shutdown()</onclick>
+					<onclick>Shutdown()</onclick>
 					<visible>!Skin.HasSetting(noshutdown)</visible>
 				</item>
 				<item id="11">
 					<description>Play Disc</description>
 					<label>31018</label>
 					<icon>homeicons/playdiscicon.png</icon>
-					<onclick>XBMC.PlayDVD</onclick>
+					<onclick>PlayDVD</onclick>
 					<visible>System.HasMediadvd</visible>
 				</item>
 			</content>
@@ -530,7 +530,7 @@
 					<label>3</label>
 					<icon>special://skin/media/backdrops/videos.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomVideosImage)]</thumb>
-					<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
+					<onclick>ActivateWindow(MyVideoFiles)</onclick>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
 				<item id="2">
@@ -538,7 +538,7 @@
 					<label>2</label>
 					<icon>special://skin/media/backdrops/music.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMusicImage)]</thumb>
-					<onclick>XBMC.ActivateWindow(MyMusic)</onclick>
+					<onclick>ActivateWindow(MyMusic)</onclick>
 					<visible>!Skin.HasSetting(nomusic)</visible>
 				</item>
 				<item id="3">
@@ -546,7 +546,7 @@
 					<label>342</label>
 					<icon>special://skin/media/backdrops/movies.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMoviesImage)]</thumb>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles)</onclick>
+					<onclick>ActivateWindow(MyVideoLibrary,movietitles)</onclick>
 					<visible>!Skin.HasSetting(nomovies)</visible>
 				</item>
 				<item id="4">
@@ -554,7 +554,7 @@
 					<label>20343</label>
 					<icon>special://skin/media/backdrops/tvshows.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTVShowsImage)]</thumb>
-					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
+					<onclick>ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
 					<visible>!Skin.HasSetting(notvshows)</visible>
 				</item>
 				<item id="5">
@@ -562,7 +562,7 @@
 					<label>1</label>
 					<icon>special://skin/media/backdrops/pictures.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomPicturesImage)]</thumb>
-					<onclick>XBMC.ActivateWindow(MyPictures)</onclick>
+					<onclick>ActivateWindow(MyPictures)</onclick>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
 				<item id="6">
@@ -570,14 +570,14 @@
 					<label>8</label>
 					<icon>special://skin/media/backdrops/weather.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomWeatherImage)]</thumb>
-					<onclick>XBMC.Activatewindow(2600)</onclick>
+					<onclick>ActivateWindow(2600)</onclick>
 					<visible>!Skin.HasSetting(noweather) + !Skin.HasSetting(homeweather)]</visible>
 				</item>
 				<item id="6">
 					<description>Weather</description>
 					<label>8</label>
 					<icon>special://skin/media/extras/weather/$INFO[Weather.FanartCode]/</icon>
-					<onclick>XBMC.Activatewindow(2600)</onclick>
+					<onclick>ActivateWindow(2600)</onclick>
 					<visible>!Skin.HasSetting(noweather) + Skin.HasSetting(homeweather)</visible>
 				</item>
 				<item id="7">
@@ -585,7 +585,7 @@
 					<label>0</label>
 					<icon>special://skin/media/backdrops/programs.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomProgramsImage)]</thumb>
-					<onclick>XBMC.ActivateWindow(MyPrograms)</onclick>
+					<onclick>ActivateWindow(Programs)</onclick>
 					<visible>!Skin.HasSetting(nogames) + !Skin.HasSetting(launcherforgames)</visible>
 				</item>
 				<item id="7">
@@ -593,7 +593,7 @@
 					<label>GAMES</label>
 					<icon>special://skin/media/backdrops/games.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomGamesImage)]</thumb>
-					<onclick>XBMC.ActivateWindow(1,plugin://programs/Launcher/)</onclick>
+					<onclick>ActivateWindow(1,plugin://programs/Launcher/)</onclick>
 					<visible>!Skin.HasSetting(nogames) + Skin.HasSetting(launcherforgames)</visible>
 				</item>				
 				<item id="8">
@@ -601,7 +601,7 @@
 					<label>5</label>
 					<icon>special://skin/media/backdrops/settings.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomSettingsImage)]</thumb>
-					<onclick>XBMC.ActivateWindow(4)</onclick>
+					<onclick>ActivateWindow(4)</onclick>
 					<visible>!Skin.HasSetting(nosettings)</visible>
 				</item>
 				<item id="9">
@@ -609,7 +609,7 @@
 					<label>31020</label>
 					<icon>special://skin/media/backdrops/scripts.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomScriptsImage)]</thumb>
-					<onclick>XBMC.ActivateWindow(20)</onclick>
+					<onclick>ActivateWindow(20)</onclick>
 					<visible>!Skin.HasSetting(noscripts)</visible>
 				</item>
 				<item id="10">
@@ -617,7 +617,7 @@
 					<label>31019</label>
 					<icon>special://skin/media/backdrops/shutdown.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomShutdownImage)]</thumb>
-					<onclick>XBMC.Shutdown()</onclick>
+					<onclick>Shutdown()</onclick>
 					<visible>!Skin.HasSetting(noshutdown)</visible>
 				</item>
 				<item id="11">
@@ -625,7 +625,7 @@
 					<label>31018</label>
 					<icon>special://skin/media/backdrops/playdisc.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomPlayDiscImage)]</thumb>
-					<onclick>XBMC.PlayDVD</onclick>
+					<onclick>PlayDVD</onclick>
 					<visible>System.HasMediadvd</visible>
 				</item>
 			</content>

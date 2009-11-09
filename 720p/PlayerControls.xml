@@ -33,49 +33,49 @@
 				<label>&lt; &lt;</label>
 				<texturefocus border="1">ButtonFo.png</texturefocus>
 				<texturenofocus border="1">ButtonNF.png</texturenofocus>
-				<onclick>xbmc.playercontrol(previous)</onclick>
+				<onclick>PlayerControl(previous)</onclick>
 			</control>
 			<control type="button" id="401">
 				<description>Rewind</description>
 				<label>&lt;</label>
 				<texturefocus border="1">ButtonFo.png</texturefocus>
 				<texturenofocus border="1">ButtonNF.png</texturenofocus>
-				<onclick>xbmc.playercontrol(rewind)</onclick>
+				<onclick>PlayerControl(rewind)</onclick>
 			</control>
 			<control type="button" id="402">
 				<description>Play</description>
 				<label>$LOCALIZE[208]</label>
 				<texturefocus border="1">ButtonFo.png</texturefocus>
 				<texturenofocus border="1">ButtonNF.png</texturenofocus>
-				<onclick>xbmc.playercontrol(play)</onclick>
+				<onclick>PlayerControl(play)</onclick>
 			</control>
 			<control type="button" id="403">
 				<description>Forward</description>
 				<label>&gt;</label>
 				<texturefocus border="1">ButtonFo.png</texturefocus>
 				<texturenofocus border="1">ButtonNF.png</texturenofocus>
-				<onclick>xbmc.playercontrol(forward)</onclick>
+				<onclick>PlayerControl(forward)</onclick>
 			</control>
 			<control type="button" id="404">
 				<description>Skip Forward</description>
 				<label>&gt; &gt;</label>
 				<texturefocus border="1">ButtonFo.png</texturefocus>
 				<texturenofocus border="1">ButtonNF.png</texturenofocus>
-				<onclick>xbmc.playercontrol(next)</onclick>
+				<onclick>PlayerControl(next)</onclick>
 			</control>
 			<control type="button" id="405">
 				<description>Repeat</description>
 				<label>$LOCALIZE[486]</label>
 				<texturefocus border="1">ButtonFo.png</texturefocus>
 				<texturenofocus border="1">ButtonNF.png</texturenofocus>
-				<onclick>xbmc.playercontrol(repeat)</onclick>
+				<onclick>PlayerControl(repeat)</onclick>
 			</control>
 			<control type="button" id="406">
 				<description>Random</description>
 				<label>$LOCALIZE[590]</label>
 				<texturefocus border="1">ButtonFo.png</texturefocus>
 				<texturenofocus border="1">ButtonNF.png</texturenofocus>
-				<onclick>xbmc.playercontrol(random)</onclick>
+				<onclick>PlayerControl(random)</onclick>
 			</control>
 		</control>
 

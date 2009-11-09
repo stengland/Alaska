@@ -47,7 +47,7 @@
 					<width>75</width>
 					<texturefocus border="1">osd/button_dvd_fo.png</texturefocus>
 					<texturenofocus border="1">osd/button_dvd_nf.png</texturenofocus>
-					<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
+					<onclick>PlayerControl(ShowVideoMenu)</onclick>
 					<visible>VideoPlayer.HasMenu</visible>
 				</control>
 				<control type="button" id="3">
@@ -56,7 +56,7 @@
 					<width>75</width>
 					<texturefocus border="1">osd/button_rew_fo.png</texturefocus>
 					<texturenofocus border="1">osd/button_rew_nf.png</texturenofocus>
-					<onclick>xbmc.playercontrol(rewind)</onclick>
+					<onclick>PlayerControl(rewind)</onclick>
 				</control>
 				<control type="button" id="4">
 					<description>Play</description>
@@ -64,7 +64,7 @@
 					<width>75</width>
 					<texturefocus border="1">osd/button_play_fo.png</texturefocus>
 					<texturenofocus border="1">osd/button_play_nf.png</texturenofocus>
-					<onclick>xbmc.playercontrol(play)</onclick>
+					<onclick>PlayerControl(play)</onclick>
 				</control>
 				<control type="button" id="5">
 					<description>Stop</description>
@@ -72,7 +72,7 @@
 					<width>75</width>
 					<texturefocus border="1">osd/button_stop_fo.png</texturefocus>
 					<texturenofocus border="1">osd/button_stop_nf.png</texturenofocus>
-					<onclick>xbmc.playercontrol(stop)</onclick>
+					<onclick>PlayerControl(stop)</onclick>
 				</control>
 				<control type="button" id="6">
 					<description>Forward</description>
@@ -80,7 +80,7 @@
 					<width>75</width>
 					<texturefocus border="1">osd/button_ff_fo.png</texturefocus>
 					<texturenofocus border="1">osd/button_ff_nf.png</texturenofocus>
-					<onclick>xbmc.playercontrol(forward)</onclick>
+					<onclick>PlayerControl(forward)</onclick>
 				</control>
 			</control>
 		<!--Second Button Group-->
@@ -111,7 +111,7 @@
 					<width>75</width>
 					<texturefocus border="1">osd/button_prev_fo.png</texturefocus>
 					<texturenofocus border="1">osd/button_prev_nf.png</texturenofocus>
-					<onclick>xbmc.playercontrol(Previous)</onclick>
+					<onclick>PlayerControl(Previous)</onclick>
 				</control>
 				<control type="button" id="10">
 					<description>Next</description>
@@ -119,7 +119,7 @@
 					<width>75</width>
 					<texturefocus border="1">osd/button_next_fo.png</texturefocus>
 					<texturenofocus border="1">osd/button_next_nf.png</texturenofocus>
-					<onclick>xbmc.playercontrol(Next)</onclick>
+					<onclick>PlayerControl(Next)</onclick>
 				</control>
 				<control type="button" id="11">
 					<description>Playlists</description>
@@ -127,7 +127,7 @@
 					<width>75</width>
 					<texturefocus border="1">osd/button_playlist_fo.png</texturefocus>
 					<texturenofocus border="1">osd/button_playlist_nf.png</texturenofocus>
-					<onclick>xbmc.activatewindow(28)</onclick>
+					<onclick>ActivateWindow(28)</onclick>
 				</control>
 				<control type="button" id="12">
 					<description>Bookmarks</description>
@@ -135,7 +135,7 @@
 					<width>75</width>
 					<texturefocus border="1">osd/button_bookmark_fo.png</texturefocus>
 					<texturenofocus border="1">osd/button_bookmark_nf.png</texturenofocus>
-					<onclick>xbmc.activatewindow(125)</onclick>
+					<onclick>ActivateWindow(125)</onclick>
 				</control>
 				<control type="button" id="13">
 					<description>Video Settings</description>
@@ -143,7 +143,7 @@
 					<width>75</width>
 					<texturefocus border="1">osd/button_settings_fo.png</texturefocus>
 					<texturenofocus border="1">osd/button_settings_nf.png</texturenofocus>
-					<onclick>XBMC.ActivateWindow(123)</onclick>
+					<onclick>ActivateWindow(123)</onclick>
 				</control>
 				<control type="button" id="800">
 					<description>audio Settings</description>
@@ -151,7 +151,7 @@
 					<width>75</width>
 					<texturefocus border="1">osd/button_audio_fo.png</texturefocus>
 					<texturenofocus border="1">osd/button_audio_nf.png</texturenofocus>
-					<onclick>XBMC.ActivateWindow(124)</onclick>
+					<onclick>ActivateWindow(124)</onclick>
 				</control>
 			</control>
 			<control type="progress" id="23">

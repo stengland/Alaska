@@ -1,0 +1,1190 @@
+<!--Alaska-->
+
+<includes>
+
+	<!-- Home 1 -->
+
+	<include name="Home_MenuImage">
+		<control type="wraplist" id="300">
+			<posx>0</posx>
+			<posy>0</posy>
+			<height>2</height>
+			<width>8</width>
+			<onup>SetFocus(3998)</onup>
+			<ondown>SetFocus(3999)</ondown>
+			<viewtype>list</viewtype>
+			<scrolltime>0</scrolltime>
+			<orientation>horizontal</orientation>
+			<focusposition>3</focusposition>
+			<itemlayout width="2" height="2">
+			</itemlayout>
+			<focusedlayout width="2" height="2">
+			</focusedlayout>
+			<content>
+				<item id="1">
+					<description>Programs</description>
+					<onclick>XBMC.ActivateWindow(MyPrograms)</onclick>
+					<visible>!Skin.HasSetting(noprograms)</visible>
+				</item>
+				<item id="2">
+					<description>Videos</description>
+					<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
+					<visible>!Skin.HasSetting(novideos)</visible>
+				</item>
+				<item id="3">
+					<description>Music</description>
+					<onclick>XBMC.ActivateWindow(MyMusicLibrary,albums,return)</onclick>
+				</item>
+				<item id="4">
+					<description>Movies</description>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
+				</item>
+				<item id="5">
+					<description>Tv Shows</description>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
+				</item>
+				<item id="6">
+					<description>Pictures</description>
+					<onclick>XBMC.ActivateWindow(MyPictures)</onclick>
+					<visible>!Skin.HasSetting(nopictures)</visible>
+				</item>
+				<item id="7">
+					<description>Weather</description>
+					<onclick>XBMC.Activatewindow(2600)</onclick>
+				</item>		
+				<item id="8">
+					<description>Settings</description>
+					<onclick>XBMC.ActivateWindow(4)</onclick>
+					<visible>!Skin.HasSetting(nosettings)</visible>
+				</item>
+			</content>
+		</control>
+		<control type="group">
+			<posx>-600</posx>
+			<posy>170</posy>
+			<include>Animation_HomeSlide</include>
+			<include>Animation_ZoomOutZoomIn</include>
+			<include>Animation_ZoomedByMenu</include>
+
+			<control type="group">
+				<description>Programs</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<animation type="conditional" condition="!Container(300).HasFocus(1)">
+					<effect type="zoom" center="185,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/programs.jpg">$INFO[Skin.String(CustomProgramsImage)]</texture>
+					<visible>!Skin.String(CustomProgramsFolder)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/programs.jpg">$INFO[Skin.String(CustomProgramsFolder)]</imagepath>
+					<visible>Skin.String(CustomProgramsFolder)</visible>
+				</control>
+				<include>Home_MainMenuFrame</include>
+				<control type="label">
+					<include>Home_MainMenuLabel</include>
+					<label>Programs</label>
+					<visible>!ControlGroup(3100).HasFocus()</visible>
+				</control>
+				<include>SubMenu_Programs</include>
+				<include>Home_MainMenuShade</include>
+				<control type="image" id="398">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomeup.png</texture>
+					<visible>Container(300).HasFocus(1) + [Control.HasFocus(3101) | Control.HasFocus(3102) | Control.HasFocus(3103)]</visible>
+					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
+				</control>
+				<control type="image" id="399">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomedown.png</texture>
+					<visible>Container(300).HasFocus(1) + !Control.HasFocus(3103)</visible>
+					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
+				</control>
+				<visible>!Skin.HasSetting(noprograms)</visible>
+			</control>
+
+			<control type="group">
+				<description>Videos</description>
+				<posx>350</posx>
+				<posy>0</posy>
+				<animation type="conditional" condition="!Container(300).HasFocus(2)">
+					<effect type="zoom" center="535,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/videos.jpg">$INFO[Skin.String(CustomVideosImage)]</texture>
+					<visible>!Skin.String(CustomVideosFolder)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/videos.jpg">$INFO[Skin.String(CustomVideosFolder)]</imagepath>
+					<visible>Skin.String(CustomVideosFolder)</visible>
+				</control>
+				<include>Home_MainMenuFrame</include>
+				<control type="label">
+					<include>Home_MainMenuLabel</include>
+					<label>3</label>
+					<visible>!ControlGroup(3200).HasFocus()</visible>
+				</control>
+				<include>SubMenu_Videos</include>
+				<include>Home_MainMenuShade</include>
+				<control type="image" id="398">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomeup.png</texture>
+					<visible>Container(300).HasFocus(2) + [Control.HasFocus(3201) | Control.HasFocus(3202) | Control.HasFocus(3203)]</visible>
+					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
+				</control>
+				<control type="image" id="399">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomedown.png</texture>
+					<visible>Container(300).HasFocus(2) + !Control.HasFocus(3202) + !System.HasMediaDVD</visible>
+					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
+				</control>
+				<control type="image" id="399">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomedown.png</texture>
+					<visible>Container(300).HasFocus(2) + !Control.HasFocus(3203) + System.HasMediaDVD</visible>
+					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
+				</control>
+				<visible>!Skin.HasSetting(novideos)</visible>
+			</control>
+
+			<control type="group">
+				<description>Music</description>
+				<include condition="Skin.HasSetting(novideos)">pos350</include>
+				<include condition="!Skin.HasSetting(novideos)">pos700</include>
+				<posy>0</posy>
+				<animation type="conditional" condition="!Container(300).HasFocus(3) + !Skin.HasSetting(novideos)">
+					<effect type="zoom" center="885,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(3) + Skin.HasSetting(novideos)">
+					<effect type="zoom" center="535,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/music.jpg">$INFO[Window.Property(LatestSong.1.Thumb)]</texture>
+					<visible>ControlGroup(3310).HasFocus(3315)</visible>
+				</control>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/music.jpg">$INFO[Window.Property(LatestSong.2.Thumb)]</texture>
+					<visible>ControlGroup(3310).HasFocus(3314)</visible>
+				</control>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/music.jpg">$INFO[Window.Property(LatestSong.3.Thumb)]</texture>
+					<visible>ControlGroup(3310).HasFocus(3313)</visible>
+				</control>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/music.jpg">$INFO[Window.Property(LatestSong.4.Thumb)]</texture>
+					<visible>ControlGroup(3310).HasFocus(3312)</visible>
+				</control>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/music.jpg">$INFO[Window.Property(LatestSong.5.Thumb)]</texture>
+					<visible>ControlGroup(3310).HasFocus(3311)</visible>
+				</control>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/music.jpg">$INFO[Skin.String(CustomMusicImage)]</texture>
+					<visible>!Skin.String(CustomMusicFolder) + !ControlGroup(3310).HasFocus()</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/music.jpg">$INFO[Skin.String(CustomMusicFolder)]</imagepath>
+					<visible>Skin.String(CustomMusicFolder) + !ControlGroup(3310).HasFocus()</visible>
+				</control>
+				<include>Home_MainMenuFrame</include>
+				<control type="label">
+					<include>Home_MainMenuLabel</include>
+					<label>2</label>
+					<visible>![ControlGroup(3300).HasFocus() | ControlGroup(3310).HasFocus()]</visible>
+				</control>
+				<include>SubMenu_Music</include>
+				<include>Home_MainMenuShade</include>
+				<control type="image" id="398">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomeup.png</texture>
+					<visible>Container(300).HasFocus(3) + !Control.HasFocus(3311)</visible>
+					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
+				</control>
+				<control type="image" id="399">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomedown.png</texture>
+					<visible>Container(300).HasFocus(3) + !Control.HasFocus(3306)</visible>
+					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
+				</control>
+			</control>
+
+			<control type="group">
+				<description>Movies</description>
+				<include condition="Skin.HasSetting(novideos)">pos700</include>
+				<include condition="!Skin.HasSetting(novideos)">pos1050</include>
+				<posy>0</posy>
+				<animation type="conditional" condition="!Container(300).HasFocus(4) + !Skin.HasSetting(novideos)">
+					<effect type="zoom" center="1235,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(4) + Skin.HasSetting(novideos)">
+					<effect type="zoom" center="885,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/movies.jpg">$INFO[Window.Property(LatestMovie.1.Fanart)]</texture>
+					<visible>ControlGroup(3410).HasFocus(3415)</visible>
+				</control>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/movies.jpg">$INFO[Window.Property(LatestMovie.2.Fanart)]</texture>
+					<visible>ControlGroup(3410).HasFocus(3414)</visible>
+				</control>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/movies.jpg">$INFO[Window.Property(LatestMovie.3.Fanart)]</texture>
+					<visible>ControlGroup(3410).HasFocus(3413)</visible>
+				</control>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/movies.jpg">$INFO[Window.Property(LatestMovie.4.Fanart)]</texture>
+					<visible>ControlGroup(3410).HasFocus(3412)</visible>
+				</control>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/movies.jpg">$INFO[Window.Property(LatestMovie.5.Fanart)]</texture>
+					<visible>ControlGroup(3410).HasFocus(3411)</visible>
+				</control>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/movies.jpg">$INFO[Skin.String(CustomMoviesImage)]</texture>
+					<visible>!Skin.String(CustomMoviesFolder) + !ControlGroup(3410).HasFocus()</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/movies.jpg">$INFO[Skin.String(CustomMoviesFolder)]</imagepath>
+					<visible>Skin.String(CustomMoviesFolder) + !ControlGroup(3410).HasFocus()</visible>
+				</control>
+				<include>Home_MainMenuFrame</include>
+				<control type="label">
+					<include>Home_MainMenuLabel</include>
+					<label>342</label>
+					<visible>![ControlGroup(3400).HasFocus() | ControlGroup(3410).HasFocus()])</visible>
+				</control>
+				<include>SubMenu_Movies</include>
+				<include>Home_MainMenuShade</include>
+				<control type="image" id="398">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomeup.png</texture>
+					<visible>Container(300).HasFocus(4) + !Control.HasFocus(3411)</visible>
+					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
+				</control>
+				<control type="image" id="399">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomedown.png</texture>
+					<visible>Container(300).HasFocus(4) + !Control.HasFocus(3406)</visible>
+					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
+				</control>
+			</control>
+
+			<control type="group">
+				<description>TV Shows</description>
+				<include condition="Skin.HasSetting(novideos)">pos1050</include>
+				<include condition="!Skin.HasSetting(novideos)">pos1400</include>
+				<posy>0</posy>
+				<animation type="conditional" condition="!Container(300).HasFocus(5) + !Skin.HasSetting(novideos)">
+					<effect type="zoom" center="1585,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(5) + Skin.HasSetting(novideos)">
+					<effect type="zoom" center="1235,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/tvshows.jpg">$INFO[Window.Property(LatestEpisode.1.Thumb)]</texture>
+					<visible>ControlGroup(3510).HasFocus(3515)</visible>
+				</control>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/tvshows.jpg">$INFO[Window.Property(LatestEpisode.2.Thumb)]</texture>
+					<visible>ControlGroup(3510).HasFocus(3514)</visible>
+				</control>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/tvshows.jpg">$INFO[Window.Property(LatestEpisode.3.Thumb)]</texture>
+					<visible>ControlGroup(3510).HasFocus(3513)</visible>
+				</control>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/tvshows.jpg">$INFO[Window.Property(LatestEpisode.4.Thumb)]</texture>
+					<visible>ControlGroup(3510).HasFocus(3512)</visible>
+				</control>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/tvshows.jpg">$INFO[Window.Property(LatestEpisode.5.Thumb)]</texture>
+					<visible>ControlGroup(3510).HasFocus(3511)</visible>
+				</control>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/tvshows.jpg">$INFO[Skin.String(CustomTVShowsImage)]</texture>
+					<visible>!Skin.String(CustomTVShowsFolder) + !ControlGroup(3510).HasFocus()</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/tvshows.jpg">$INFO[Skin.String(CustomTVShowsFolder)]</imagepath>
+					<visible>Skin.String(CustomTVShowsFolder) + !ControlGroup(3510).HasFocus()</visible>
+				</control>
+				<include>Home_MainMenuFrame</include>
+				<control type="label">
+					<include>Home_MainMenuLabel</include>
+					<label>20343</label>
+					<visible>![ControlGroup(3500).HasFocus() | ControlGroup(3510).HasFocus()]</visible>
+				</control>
+				<include>SubMenu_TVShows</include>
+				<include>Home_MainMenuShade</include>
+				<control type="image" id="398">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomeup.png</texture>
+					<visible>Container(300).HasFocus(5) + !Control.HasFocus(3511)</visible>
+					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
+				</control>
+				<control type="image" id="399">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomedown.png</texture>
+					<visible>Container(300).HasFocus(5) + !Control.HasFocus(3506)</visible>
+					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
+				</control>
+			</control>
+
+			<control type="group">
+				<description>Pictures</description>
+				<include condition="Skin.HasSetting(novideos)">pos1400</include>
+				<include condition="!Skin.HasSetting(novideos)">pos1750</include>
+				<posy>0</posy>
+				<animation type="conditional" condition="!Container(300).HasFocus(6) + !Skin.HasSetting(novideos)">
+					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(6) + Skin.HasSetting(novideos)">
+					<effect type="zoom" center="1585,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/pictures.jpg">$INFO[Skin.String(CustomPicturesImage)]</texture>
+					<visible>!Skin.String(CustomPicturesFolder)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/pictures.jpg">$INFO[Skin.String(CustomPicturesFolder)]</imagepath>
+					<visible>Skin.String(CustomPicturesFolder)</visible>
+				</control>
+				<include>Home_MainMenuFrame</include>
+				<control type="label">
+					<include>Home_MainMenuLabel</include>
+					<label>1</label>
+					<visible>!ControlGroup(3600).HasFocus()</visible>
+				</control>
+				<include>SubMenu_Pictures</include>
+				<include>Home_MainMenuShade</include>
+				<control type="image" id="398">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomeup.png</texture>
+					<visible>Container(300).HasFocus(6) + Control.HasFocus(3601)</visible>
+					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
+				</control>
+				<control type="image" id="399">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomedown.png</texture>
+					<visible>Container(300).HasFocus(6) + !Control.HasFocus(3601)</visible>
+					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
+				</control>
+				<visible>!Skin.HasSetting(nopictures)</visible>
+			</control>
+
+			<control type="group">
+				<description>Weather</description>
+				<include condition="Skin.HasSetting(novideos) + Skin.HasSetting(nopictures)">pos1400</include>
+				<include condition="Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures)">pos1750</include>
+				<include condition="!Skin.HasSetting(novideos) + Skin.HasSetting(nopictures)">pos1750</include>
+				<include condition="!Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures)">pos2100</include>
+				<posy>0</posy>
+				<animation type="conditional" condition="!Container(300).HasFocus(7) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures)">
+					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(7) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures)">
+					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(7) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures)">
+					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(7) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures)">
+					<effect type="zoom" center="1585,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">backdrops/weather.jpg</texture>
+					<visible>ControlGroup(3700).HasFocus(3705)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">extras/weather/$INFO[Window(Weather).Property(Day3.FanartCode)]/</imagepath>
+					<visible>ControlGroup(3700).HasFocus(3704)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">extras/weather/$INFO[Window(Weather).Property(Day2.FanartCode)]/</imagepath>
+					<visible>ControlGroup(3700).HasFocus(3703)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">extras/weather/$INFO[Window(Weather).Property(Day1.FanartCode)]/</imagepath>
+					<visible>ControlGroup(3700).HasFocus(3702)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">extras/weather/$INFO[Window(Weather).Property(Day0.FanartCode)]/</imagepath>
+					<visible>ControlGroup(3700).HasFocus(3701)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">$INFO[Skin.String(CustomWeatherImage)]</imagepath>
+					<visible>!Skin.String(CustomWeatherFolder)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">$INFO[Skin.String(CustomWeatherFolder)]</imagepath>
+					<visible>Skin.String(CustomWeatherFolder) + !Skin.HasSetting(homeweather) + !ControlGroup(3700).HasFocus()</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">extras/weather/$INFO[Weather.FanartCode]/</imagepath>
+					<visible>Skin.HasSetting(homeweather) + !ControlGroup(3700).HasFocus()</visible>
+				</control>
+				<include>Home_MainMenuFrame</include>
+				<control type="label">
+					<include>Home_MainMenuLabel</include>
+					<label>8</label>
+					<visible>!ControlGroup(3700).HasFocus()</visible>
+				</control>
+				<include>SubMenu_Weather</include>
+				<include>Home_MainMenuShade</include>
+				<control type="image" id="398">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomeup.png</texture>
+					<visible>Container(300).HasFocus(7) + [Control.HasFocus(3701) | Control.HasFocus(3702) | Control.HasFocus(3703) | Control.HasFocus(3704) | Control.HasFocus(3705)]</visible>
+					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
+				</control>
+				<control type="image" id="399">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomedown.png</texture>
+					<visible>Container(300).HasFocus(7) + !Control.HasFocus(3705)</visible>
+					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
+				</control>
+				<visible>!Skin.HasSetting(noweather)</visible>
+			</control>
+
+			<control type="group">
+				<description>Settings</description>
+				<include condition="Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos1400</include>
+				<include condition="Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2100</include>
+				<include condition="!Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2100</include>
+				<include condition="!Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos2100</include>
+				<include condition="Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos1750</include>
+				<include condition="!Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos1750</include>
+				<include condition="Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos1750</include>
+				<include condition="!Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2450</include>
+				<posy>0</posy>
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
+					<effect type="zoom" center="2635,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
+					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
+					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
+					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
+					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
+					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
+					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
+					<effect type="zoom" center="1585,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<control type="image">
+					<include>Home_MainMenuIconF</include>
+					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/settings.jpg">$INFO[Skin.String(CustomSettingsImage)]</texture>
+					<visible>!Skin.String(CustomSettingsFolder)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/settings.jpg">$INFO[Skin.String(CustomSettingsFolder)]</imagepath>
+					<visible>Skin.String(CustomSettingsFolder)</visible>
+				</control>
+				<include>Home_MainMenuFrame</include>
+				<control type="label">
+					<include>Home_MainMenuLabel</include>
+					<label>5</label>
+					<visible>!ControlGroup(3800).HasFocus()</visible>
+				</control>
+				<include>SubMenu_Settings</include>
+				<include>Home_MainMenuShade</include>
+				<control type="image" id="398">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomeup.png</texture>
+					<visible>Container(300).HasFocus(8) + [Control.HasFocus(3801) | Control.HasFocus(3802) | Control.HasFocus(3803) | Control.HasFocus(3804) | Control.HasFocus(3805) | Control.HasFocus(3806)]</visible>
+					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
+				</control>
+				<control type="image" id="399">
+					<posx>340</posx>
+					<posy>274</posy>
+					<width>12</width>
+					<height>24</height>
+					<texture>arrowhomedown.png</texture>
+					<visible>Container(300).HasFocus(8) + !Control.HasFocus(3806)</visible>
+					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
+				</control>
+				<visible>!Skin.HasSetting(nosettings)</visible>
+			</control>
+		</control>
+		<include>DummyButtons</include>
+	</include>
+
+	<include name="Home_MainMenuIconF">
+		<width>349</width>
+		<height>260</height>
+		<posx>10</posx>
+		<posy>10</posy>
+		<timeperimage>20000</timeperimage>
+		<randomize>true</randomize>
+		<fadetime>400</fadetime>
+		<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+	</include>
+	<include name="Home_MainMenuShade">
+		<control type="image">
+			<posx>10</posx>
+			<posy>264</posy>
+			<width>351</width>
+			<height>47</height>
+			<texture>mainmenu/homeshade.png</texture>
+		</control>
+	</include>
+	<include name="Home_MainMenuFrame">
+		<control type="image">
+			<width>370</width>
+			<height>320</height>
+			<posx>0</posx>
+			<posy>0</posy>
+			<texture>mainmenu/frame.png</texture>
+		</control>
+	</include>
+	<include name="Home_MainMenuLabel">
+		<posx>330</posx>
+		<posy>286</posy>
+		<width>305</width>
+		<align>right</align>
+		<aligny>center</aligny>
+		<scrollout>false</scrollout>
+		<pauseatend>200</pauseatend>
+		<scrollspeed>30</scrollspeed>
+		<scroll>true</scroll>
+		<font>Font_MainMenuLabel</font>
+		<textcolor>MainMenuLabel</textcolor>
+	</include>
+
+	<include name="pos350">
+		<posx>350</posx>
+	</include>
+	<include name="pos700">
+		<posx>700</posx>
+	</include>
+	<include name="pos1050">
+		<posx>1050</posx>
+	</include>
+	<include name="pos1400">
+		<posx>1400</posx>
+	</include>
+	<include name="pos1750">
+		<posx>1750</posx>
+	</include>
+	<include name="pos2100">
+		<posx>2100</posx>
+	</include>
+	<include name="pos2450">
+		<posx>2450</posx>
+	</include>
+
+	<include name="DummyButtons">
+		<!-- OnUp Controls -->
+		<control type="button" id="3998">
+			<onfocus>SetFocus(3315)</onfocus>
+			<visible>Container(300).HasFocus(3)</visible>
+		</control>
+		<control type="button" id="3998">
+			<onfocus>SetFocus(3415)</onfocus>
+			<visible>Container(300).HasFocus(4)</visible>
+		</control>
+		<control type="button" id="3998">
+			<onfocus>SetFocus(3515)</onfocus>
+			<visible>Container(300).HasFocus(5)</visible>
+		</control>
+		<!-- OnDown Controls -->
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3101)</onfocus>
+			<visible>Container(300).HasFocus(1)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3201)</onfocus>
+			<visible>Container(300).HasFocus(2)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3301)</onfocus>
+			<visible>Container(300).HasFocus(3)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3401)</onfocus>
+			<visible>Container(300).HasFocus(4)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3501)</onfocus>
+			<visible>Container(300).HasFocus(5)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3601)</onfocus>
+			<visible>Container(300).HasFocus(6)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3701)</onfocus>
+			<visible>Container(300).HasFocus(7)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3801)</onfocus>
+			<visible>Container(300).HasFocus(8)</visible>
+		</control>
+		<!-- OnLeft Controls -->
+		<control type="button" id="998">
+			<onfocus>Control.Move(300,-1)</onfocus>
+			<onfocus>SetFocus(300)</onfocus>
+		</control>
+		<!-- OnRight Controls -->
+		<control type="button" id="999">
+			<onfocus>Control.Move(300,1)</onfocus>
+			<onfocus>SetFocus(300)</onfocus>
+		</control>
+	</include>
+
+	<!-- Sub Menus -->
+
+	<include name="SubMenu_Programs">
+		<control type="grouplist" id="3100">
+			<posx>25</posx>
+			<posy>271</posy>
+			<visible>ControlGroup(3100).HasFocus() + Container(300).HasFocus(1)</visible>
+			<width>320</width>
+			<height>30</height>
+			<onup>300</onup>
+			<ondown>-</ondown>
+			<onleft>998</onleft>
+			<onright>999</onright>
+			<scrolltime>0</scrolltime>
+			<control type="button" id="3101">
+				<label>Games</label>
+				<onclick>XBMC.ActivateWindow(1,plugin://programs/Launcher/)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3102">
+				<label>247</label>
+				<onclick>ActivateWindow(Scripts)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3103">
+				<label>1036</label>
+				<onclick>ActivateWindow(Favourites)</onclick>
+				<include>Home_MainMenuLabel</include>
+			</control>
+		</control>
+	</include>
+
+	<include name="SubMenu_Videos">
+		<control type="grouplist" id="3200">
+			<posx>25</posx>
+			<posy>271</posy>
+			<visible>ControlGroup(3200).HasFocus() + Container(300).HasFocus(2)</visible>
+			<width>320</width>
+			<height>30</height>
+			<onup>300</onup>
+			<ondown>-</ondown>
+			<onleft>998</onleft>
+			<onright>999</onright>
+			<scrolltime>0</scrolltime>
+			<control type="button" id="3201">
+				<label>1037</label>
+				<onclick>XBMC.ActivateWindow(25,plugin://video/)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3202">
+				<label>Music Videos</label>
+				<onclick>XBMC.ActivateWindow(MyVideoLibrary,musicvideotitles,return)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3203">
+				<label>Play Disc</label>
+				<onclick>PlayDVD()</onclick>
+				<include>Home_MainMenuLabel</include>
+				<visible>System.HasMediaDVD</visible>
+			</control>
+		</control>
+	</include>
+
+	<include name="SubMenu_Music">
+		<control type="grouplist" id="3300">
+			<posx>25</posx>
+			<posy>271</posy>
+			<visible>ControlGroup(3300).HasFocus() + Container(300).HasFocus(3)</visible>
+			<width>315</width>
+			<height>30</height>
+			<onup>300</onup>
+			<ondown>-</ondown>
+			<onleft>998</onleft>
+			<onright>999</onright>
+			<scrolltime>0</scrolltime>
+			<control type="button" id="3301">
+				<label>New Albums</label>
+				<onclick>XBMC.ActivateWindow(MyMusicLibrary,recentlyaddedalbums,return)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3302">
+				<label>31922</label>
+				<onclick>XBMC.ActivateWindow(MyMusicLibrary,genres,return)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3303">
+				<label>Artists</label>
+				<onclick>XBMC.ActivateWindow(MyMusicLibrary,artists,return)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3304">
+				<label>31923</label>
+				<onclick>XBMC.ActivateWindow(MyMusicLibrary,years,return)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3305">
+				<label>Files</label>
+				<onclick>ActivateWindow(MusicFiles)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3306">
+				<label>Music Settings</label>
+				<onclick>ActivateWindow(MusicSettings)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+		</control>
+		<control type="grouplist" id="3310">
+			<posx>0</posx>
+			<posy>271</posy>
+			<visible>ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
+			<width>315</width>
+			<height>30</height>
+			<onup>-</onup>
+			<ondown>300</ondown>
+			<onleft>998</onleft>
+			<onright>999</onright>
+			<scrolltime>0</scrolltime>
+			<control type="button" id="3311">
+				<onclick>$INFO[Window.Property(LatestSong.5.Path),PlayMedia(,)]</onclick>
+			</control>
+			<control type="button" id="3312">
+				<onclick>$INFO[Window.Property(LatestSong.4.Path),PlayMedia(,)]</onclick>
+			</control>
+			<control type="button" id="3313">
+				<onclick>$INFO[Window.Property(LatestSong.3.Path),PlayMedia(,)]</onclick> 
+			</control>
+			<control type="button" id="3314">
+				<onclick>$INFO[Window.Property(LatestSong.2.Path),PlayMedia(,)]</onclick>
+			</control>
+			<control type="button" id="3315">
+				<onclick>$INFO[Window.Property(LatestSong.1.Path),PlayMedia(,)]</onclick>
+			</control>
+		</control>
+		<control type="label">
+			<label>$INFO[Window.Property(LatestSong.5.Title)]</label>
+			<visible>ControlGroup(3310).HasFocus(3311) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
+			<include>Home_MainMenuLabel</include>
+		</control>
+		<control type="label">
+			<label>$INFO[Window.Property(LatestSong.4.Title)]</label>
+			<visible>ControlGroup(3310).HasFocus(3312) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
+			<include>Home_MainMenuLabel</include>
+		</control>
+		<control type="label">
+			<label>$INFO[Window.Property(LatestSong.3.Title)]</label>
+			<visible>ControlGroup(3310).HasFocus(3313) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
+			<include>Home_MainMenuLabel</include>
+		</control>
+		<control type="label">
+			<label>$INFO[Window.Property(LatestSong.2.Title)]</label>
+			<visible>ControlGroup(3310).HasFocus(3314) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
+			<include>Home_MainMenuLabel</include>
+		</control>
+		<control type="label">
+			<label>$INFO[Window.Property(LatestSong.1.Title)]</label>
+			<visible>ControlGroup(3310).HasFocus(3315) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
+			<include>Home_MainMenuLabel</include>
+		</control>
+
+	</include>
+
+	<include name="SubMenu_Movies">
+		<control type="grouplist" id="3400">
+			<posx>25</posx>
+			<posy>271</posy>
+			<visible>ControlGroup(3400).HasFocus() + Container(300).HasFocus(4)</visible>
+			<width>320</width>
+			<height>30</height>
+			<onup>300</onup>
+			<ondown>-</ondown>
+			<onleft>998</onleft>
+			<onright>999</onright>
+			<scrolltime>0</scrolltime>
+			<control type="button" id="3401">
+				<label>New Movies</label>
+				<onclick>XBMC.ActivateWindow(MyVideoLibrary,recentlyaddedmovies,return)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3402">
+				<label>31922</label>
+				<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviegenres,return)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3403">
+				<label>31924</label>
+				<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieactors,return)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3404">
+				<label>31923</label>
+				<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieyears,return)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3405">
+				<label>Files</label>
+				<onclick>ActivateWindow(VideoFiles)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3406">
+				<label>13395</label>
+				<onclick>ActivateWindow(VideosSettings)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+		</control>
+		<control type="grouplist" id="3410">
+			<posx>0</posx>
+			<posy>271</posy>
+			<visible>ControlGroup(3410).HasFocus() + Container(300).HasFocus(4)</visible>
+			<width>320</width>
+			<height>30</height>
+			<onup>-</onup>
+			<ondown>300</ondown>
+			<onleft>998</onleft>
+			<onright>999</onright>
+			<scrolltime>0</scrolltime>
+			<control type="button" id="3411">
+				<onclick>$INFO[Window.Property(LatestMovie.5.Path),PlayMedia(,)]</onclick>
+			</control>
+			<control type="button" id="3412">
+				<onclick>$INFO[Window.Property(LatestMovie.4.Path),PlayMedia(,)]</onclick> 
+			</control>
+			<control type="button" id="3413">
+				<onclick>$INFO[Window.Property(LatestMovie.3.Path),PlayMedia(,)]</onclick>
+			</control>
+			<control type="button" id="3414">
+				<onclick>$INFO[Window.Property(LatestMovie.2.Path),PlayMedia(,)]</onclick>
+			</control>
+			<control type="button" id="3415">
+				<onclick>$INFO[Window.Property(LatestMovie.1.Path),PlayMedia(,)]</onclick>
+			</control>
+		</control>
+		<control type="label">
+			<label>$INFO[Window.Property(LatestMovie.5.Title)]</label>
+			<visible>ControlGroup(3410).HasFocus(3411) + ControlGroup(3410).HasFocus() + Container(300).HasFocus(4)</visible>
+			<include>Home_MainMenuLabel</include>
+		</control>
+		<control type="label">
+			<label>$INFO[Window.Property(LatestMovie.4.Title)]</label>
+			<visible>ControlGroup(3410).HasFocus(3412) + ControlGroup(3410).HasFocus() + Container(300).HasFocus(4)</visible>
+			<include>Home_MainMenuLabel</include>
+		</control>
+		<control type="label">
+			<label>$INFO[Window.Property(LatestMovie.3.Title)]</label>
+			<visible>ControlGroup(3410).HasFocus(3413) + ControlGroup(3410).HasFocus() + Container(300).HasFocus(4)</visible>
+			<include>Home_MainMenuLabel</include>
+		</control>
+		<control type="label">
+			<label>$INFO[Window.Property(LatestMovie.2.Title)]</label>
+			<visible>ControlGroup(3410).HasFocus(3414) + ControlGroup(3410).HasFocus() + Container(300).HasFocus(4)</visible>
+			<include>Home_MainMenuLabel</include>
+		</control>
+		<control type="label">
+			<label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
+			<visible>ControlGroup(3410).HasFocus(3415) + ControlGroup(3410).HasFocus() + Container(300).HasFocus(4)</visible>
+			<include>Home_MainMenuLabel</include>
+		</control>
+	</include>
+
+	<include name="SubMenu_TVShows">
+		<control type="grouplist" id="3500">
+			<posx>25</posx>
+			<posy>271</posy>
+			<visible>ControlGroup(3500).HasFocus() + Container(300).HasFocus(5)</visible>
+			<width>320</width>
+			<height>30</height>
+			<onup>300</onup>
+			<ondown>-</ondown>
+			<onleft>998</onleft>
+			<onright>999</onright>
+			<scrolltime>0</scrolltime>
+			<control type="button" id="3501">
+				<label>New Episodes</label>
+				<onclick>XBMC.ActivateWindow(MyVideoLibrary,recentlyaddedepisodes,return)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3502">
+				<label>31922</label>
+				<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowgenres,return)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3503">
+				<label>31924</label>
+				<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowactors,return)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3504">
+				<label>31923</label>
+				<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowyears,return)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3505">
+				<label>Files</label>
+				<onclick>ActivateWindow(VideoFiles)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3506">
+				<label>13395</label>
+				<onclick>ActivateWindow(VideosSettings)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+		</control>
+		<control type="grouplist" id="3510">
+			<posx>0</posx>
+			<posy>271</posy>
+			<visible>ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
+			<width>320</width>
+			<height>30</height>
+			<onup>-</onup>
+			<ondown>300</ondown>
+			<onleft>998</onleft>
+			<onright>999</onright>
+			<scrolltime>0</scrolltime>
+			<control type="button" id="3511">
+				<onclick>$INFO[Window.Property(LatestEpisode.5.Path),PlayMedia(,)]</onclick>
+			</control>
+			<control type="button" id="3512">
+				<onclick>$INFO[Window.Property(LatestEpisode.4.Path),PlayMedia(,)]</onclick>
+			</control>
+			<control type="button" id="3513">
+				<onclick>$INFO[Window.Property(LatestEpisode.3.Path),PlayMedia(,)]</onclick> 
+			</control>
+			<control type="button" id="3514">
+				<onclick>$INFO[Window.Property(LatestEpisode.2.Path),PlayMedia(,)]</onclick>
+			</control>
+			<control type="button" id="3515">
+				<onclick>$INFO[Window.Property(LatestEpisode.1.Path),PlayMedia(,)]</onclick>
+			</control>
+		</control>
+		<control type="label">
+			<label>$INFO[Window.Property(LatestEpisode.5.ShowTitle)] - $INFO[Window.Property(LatestEpisode.5.EpisodeNo)]</label>
+			<visible>ControlGroup(3510).HasFocus(3511) + ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
+			<include>Home_MainMenuLabel</include>
+		</control>
+		<control type="label">
+			<label>$INFO[Window.Property(LatestEpisode.4.ShowTitle)] - $INFO[Window.Property(LatestEpisode.4.EpisodeNo)]</label>
+			<visible>ControlGroup(3510).HasFocus(3512) + ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
+			<include>Home_MainMenuLabel</include>
+		</control>
+		<control type="label">
+			<label>$INFO[Window.Property(LatestEpisode.3.ShowTitle)] - $INFO[Window.Property(LatestEpisode.3.EpisodeNo)]</label>
+			<visible>ControlGroup(3510).HasFocus(3513) + ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
+			<include>Home_MainMenuLabel</include>
+		</control>
+		<control type="label">
+			<label>$INFO[Window.Property(LatestEpisode.2.ShowTitle)] - $INFO[Window.Property(LatestEpisode.2.EpisodeNo)]</label>
+			<visible>ControlGroup(3510).HasFocus(3514) + ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
+			<include>Home_MainMenuLabel</include>
+		</control>
+		<control type="label">
+			<label>$INFO[Window.Property(LatestEpisode.1.ShowTitle)] - $INFO[Window.Property(LatestEpisode.1.EpisodeNo)]</label>
+			<visible>ControlGroup(3510).HasFocus(3515) + ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
+			<include>Home_MainMenuLabel</include>
+		</control>
+	</include>
+
+	<include name="SubMenu_Pictures">
+		<control type="grouplist" id="3600">
+			<posx>25</posx>
+			<posy>271</posy>
+			<visible>ControlGroup(3600).HasFocus() + Container(300).HasFocus(6)</visible>
+			<width>320</width>
+			<height>30</height>
+			<onup>300</onup>
+			<ondown>-</ondown>
+			<onleft>998</onleft>
+			<onright>999</onright>
+			<scrolltime>0</scrolltime>
+			<control type="button" id="3601">
+				<label>Picture Settings</label>
+				<onclick>ActivateWindow(PicturesSettings)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+		</control>
+	</include>
+
+	<include name="SubMenu_Weather">
+		<control type="grouplist" id="3700">
+			<posx>25</posx>
+			<posy>271</posy>
+			<visible>ControlGroup(3700).HasFocus() + Container(300).HasFocus(7)</visible>
+			<width>320</width>
+			<height>30</height>
+			<onup>300</onup>
+			<ondown>-</ondown>
+			<onleft>998</onleft>
+			<onright>999</onright>
+			<scrolltime>0</scrolltime>
+			<control type="button" id="3701">
+				<onclick>XBMC.Activatewindow(2600)</onclick>
+				<label>$INFO[Window(Weather).Property(Day0.Title)]: $INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3702">
+				<onclick>XBMC.Activatewindow(2600)</onclick>
+				<label>$INFO[Window(Weather).Property(Day1.Title)]: $INFO[Window(Weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3703">
+				<onclick>XBMC.Activatewindow(2600)</onclick>
+				<label>$INFO[Window(Weather).Property(Day2.Title)]: $INFO[Window(Weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3704">
+				<onclick>XBMC.Activatewindow(2600)</onclick>
+				<label>$INFO[Window(Weather).Property(Day3.Title)]: $INFO[Window(Weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</label>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3705">
+				<label>Weather Settings</label>
+				<onclick>ActivateWindow(WeatherSettings)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+		</control>
+	</include>
+
+	<include name="SubMenu_Settings">
+		<control type="grouplist" id="3800">
+			<posx>25</posx>
+			<posy>271</posy>
+			<visible>ControlGroup(3800).HasFocus() + Container(300).HasFocus(8)</visible>
+			<width>320</width>
+			<height>30</height>
+			<onup>300</onup>
+			<ondown>-</ondown>
+			<onleft>998</onleft>
+			<onright>999</onright>
+			<scrolltime>0</scrolltime>
+			<control type="button" id="3801">
+				<label>31208</label>
+				<onclick>Shutdown</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3802">
+				<label>13013</label>
+				<onclick>RestartApp</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3803">
+				<label>13011</label>
+				<onclick>Suspend</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3804">
+				<label>13010</label>
+				<onclick>Hibernate</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3805">
+				<label>31209</label>
+				<onclick>System.LogOff</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3806">
+				<label>31070</label>
+				<onclick>XBMC.ActivateWindow(7)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+		</control>
+	</include>
+
+</includes>

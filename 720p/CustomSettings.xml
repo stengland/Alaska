@@ -171,7 +171,7 @@
 						<aligny>center</aligny>
 						<onclick>Skin.SetBool(home2)</onclick>
 						<onclick>SetFocus(9000)</onclick>
-						<visible>![Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+						<visible>!Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
 					<control type="button" id="201">
 						<width>740</width>
@@ -211,6 +211,7 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(launcherforgames)</onclick>
 						<selected>Skin.HasSetting(launcherforgames)</selected>
+						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
 					<control type="radiobutton" id="251">
 						<width>740</width>
@@ -223,7 +224,7 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(noprograms)</onclick>
 						<selected>Skin.HasSetting(noprograms)</selected>
-						<visible>!Skin.HasSetting(launcherforgames)</visible>
+						<visible>!Skin.HasSetting(launcherforgames) + Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
 					<control type="radiobutton" id="252">
 						<width>740</width>
@@ -261,7 +262,7 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(nomusic)</onclick>
 						<selected>Skin.HasSetting(nomusic)</selected>
-						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
 					<control type="radiobutton" id="255">
 						<width>740</width>
@@ -274,7 +275,7 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(nomovies)</onclick>
 						<selected>Skin.HasSetting(nomovies)</selected>
-						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
 					<control type="radiobutton" id="256">
 						<width>740</width>
@@ -287,7 +288,7 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(notvshows)</onclick>
 						<selected>Skin.HasSetting(notvshows)</selected>
-						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
 					<control type="radiobutton" id="257">
 						<width>740</width>
@@ -336,7 +337,7 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(noscripts)</onclick>
 						<selected>Skin.HasSetting(noscripts)</selected>
-						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
 					<control type="radiobutton" id="261">
 						<width>740</width>
@@ -349,7 +350,7 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(noshutdown)</onclick>
 						<selected>Skin.HasSetting(noshutdown)</selected>
-						<visible>[Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
 				</control>
 
@@ -966,7 +967,7 @@
 					<height>24</height>
 					<width>24</width>
 					<texture>arrowupnf.png</texture>
-					<visible>Container(9000).Hasfocus(4) | [Container(9000).Hasfocus(2) + [Skin.HasSetting(home2) | Skin.HasSetting(home3)]]</visible>
+					<visible>Container(9000).Hasfocus(4) | [Container(9000).Hasfocus(2) + Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
 				</control>
 
 				<control type="image">
@@ -977,7 +978,7 @@
 					<height>24</height>
 					<width>24</width>
 					<texture>arrowdownnf.png</texture>
-					<visible>Container(9000).Hasfocus(4) | [Container(9000).Hasfocus(2) + [Skin.HasSetting(home2) | Skin.HasSetting(home3)]]</visible>
+					<visible>Container(9000).Hasfocus(4) | [Container(9000).Hasfocus(2) + Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
 				</control>
 
 			</control>

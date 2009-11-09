@@ -1,7 +1,7 @@
 <!--Alaska-->
 
 <window id="0">
-	<defaultcontrol always="true">300</defaultcontrol>
+	<defaultcontrol always="true">666</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
@@ -11,6 +11,12 @@
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
 
+		<control type="button" id="666">
+			<description>Run Latest Added Script</description>
+			<onfocus>XBMC.RunScript(special://skin/720p/RecentlyAdded.py,limit=5&amp;albums=True&amp;unplayed=True&amp;totals=True)</onfocus>
+			<onfocus>SetFocus(300,4)</onfocus>
+		</control>
+		
 		<include condition="![Skin.HasSetting(home2) | Skin.HasSetting(home3)]">Home_MenuImage</include>
 		<include condition="Skin.HasSetting(home2)">Home_MenuIcon</include>
 		<include condition="Skin.HasSetting(home3)">Home_MenuList</include>

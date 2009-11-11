@@ -1,8 +1,16 @@
 <colors>
 
-	<!-- Global colours -->
-
-	<color name="BackgroundColor">FFefc1d4</color>	
+	<!-- Global Colours -->
+	<color name="BackgroundColor">ccFFFFFF</color>
+	<color name="BackgroundFilterColor">bbb8b8b8</color>	
+	<!-- Blue Test
+	<color name="BackgroundColor">dd000025</color>
+	<color name="BackgroundFilterColor">cc151579</color>	
+	-->
+	<!-- Green Test
+	<color name="BackgroundColor">bb4aff46</color>
+	<color name="BackgroundFilterColor">dd024d00</color>
+	-->
 	<color name="Time">77686868</color>
 	<color name="Date">77686868</color>
 	<color name="RSSBody">FF686868</color>
@@ -14,12 +22,12 @@
 	<color name="NowPlayingTrack">FF686868</color>
 	<color name="MediaMenu">77686868</color>
 	<color name="TextFocused">FF262626</color>
-	<color name="Text">FF686868</color>
+	<color name="Text">aa686868</color>
 	<color name="TextDisabled">FFff5858</color>
 	<color name="TextSelected">FFFFFFFF</color>
-	
+
 	<!-- Flags -->
-	
+
 	<color name="FlagDiffuse">CC474747</color>
 	<color name="FlagText">aacdcdcd</color>
 
@@ -101,9 +109,9 @@
 	<color name="FM_ListFocusedAccent">00CCCCCC</color>
 	<color name="FM_ListUnfocused">dc777777</color>
 	<color name="FM_ListFocusSelected">CCcccccc</color>
-	
+
 	<!-- Info Rating  -->
-	
+
 	<color name="OSDrating">B9202020</color>
 
 </colors>

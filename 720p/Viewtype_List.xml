@@ -30,7 +30,7 @@
 					<aligny>center</aligny>
 					<align>right</align>
 					<font>Font_ListTrackNF</font>
-					<textcolor>FileTitleNF</textcolor>
+					<textcolor>Text</textcolor>
 					<selectedcolor>ListTrackNF</selectedcolor>					
 					<label>$INFO[ListItem.TrackNumber]</label>
 					<visible>Container.Content(songs)</visible>
@@ -42,7 +42,7 @@
 					<height>25</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
-					<textcolor>FileTitleNF</textcolor>
+					<textcolor>Text</textcolor>
 					<selectedcolor>ListTitleNF</selectedcolor>					
 					<label>$INFO[ListItem.Title]</label>
 					<visible>Container.Content(songs)</visible>
@@ -54,7 +54,7 @@
 					<height>49</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
-					<textcolor>FileTitleNF</textcolor>
+					<textcolor>Text</textcolor>
 					<selectedcolor>ListTitleNF</selectedcolor>					
 					<label>$INFO[ListItem.Label]</label>
 					<visible>IsEmpty(ListItem.Title)</visible>
@@ -66,7 +66,7 @@
 					<height>17</height>
 					<aligny>center</aligny>
 					<font>Font_ListDetailNF</font>
-					<textcolor>FileTitleNF</textcolor>
+					<textcolor>Text</textcolor>
 					<selectedcolor>ListTitleNF</selectedcolor>					
 					<label>$INFO[ListItem.Artist] - $INFO[ListItem.Album] - $INFO[ListItem.Duration]</label>
 					<visible>!IsEmpty(ListItem.Title)</visible>

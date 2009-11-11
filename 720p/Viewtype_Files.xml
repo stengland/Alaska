@@ -31,7 +31,7 @@
 					<height>46</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
-					<textcolor>FileTitleNF</textcolor>
+					<textcolor>Text</textcolor>
 					<label>$INFO[ListItem.TrackNumber]. $INFO[ListItem.Title] [COLOR Date]$INFO[ListItem.Duration][/COLOR]</label>
 					<visible>!IsEmpty(ListItem.Duration) + !IsEmpty(ListItem.TrackNumber) + [Container.Content(songs) | Window.IsActive(500) | [Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]]</visible>
 				</control>
@@ -42,7 +42,7 @@
 					<height>46</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
-					<textcolor>FileTitleNF</textcolor>
+					<textcolor>Text</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 					<visible>![Window.IsActive(25) | Window.IsActive(502) | Window.IsActive(500)]</visible>
 				</control>
@@ -53,7 +53,7 @@
 					<height>46</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
-					<textcolor>FileTitleNF</textcolor>
+					<textcolor>Text</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 					<visible>IsEmpty(ListItem.Title) + [Window.IsActive(25) | Window.IsActive(502)]</visible>
 				</control>
@@ -64,7 +64,7 @@
 					<height>46</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
-					<textcolor>FileTitleNF</textcolor>
+					<textcolor>Text</textcolor>
 					<label>$INFO[ListItem.Title]</label>
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + !Container.Content(episodes)</visible>
 				</control>
@@ -75,7 +75,7 @@
 					<height>46</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
-					<textcolor>FileTitleNF</textcolor>
+					<textcolor>Text</textcolor>
 					<label>$INFO[ListItem.Episode]. $INFO[ListItem.Title]</label>
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + Container.Content(episodes)</visible>
 				</control>

@@ -31,7 +31,7 @@
 						<posy>0</posy>
 						<width>300</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -42,6 +42,7 @@
 						<posy>0</posy>
 						<width>300</width>
 						<font>Font_Settings</font>
+						<textcolor>TextFocused</textcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>!Control.HasFocus(9000)</visible>
@@ -105,7 +106,7 @@
 					<control type="radiobutton" id="100">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Scroll Plot</label>
@@ -117,7 +118,7 @@
 					<control type="radiobutton" id="101">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Global Temp.</label>
@@ -129,7 +130,7 @@
 					<control type="radiobutton" id="102">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Larger RSS</label>
@@ -141,7 +142,7 @@
 					<control type="radiobutton" id="103">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Only show RSS on home screen</label>
@@ -165,7 +166,7 @@
 					<control type="button" id="200">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Home Style 1</label>
@@ -178,7 +179,7 @@
 					<control type="button" id="201">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Home Style 2</label>
@@ -192,7 +193,7 @@
 					<control type="button" id="202">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Home Style 3</label>
@@ -205,7 +206,7 @@
 					<control type="radiobutton" id="250">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Link Programs to Launcher Plugin</label>
@@ -218,7 +219,7 @@
 					<control type="radiobutton" id="251">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Hide Programs</label>
@@ -231,7 +232,7 @@
 					<control type="radiobutton" id="252">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Hide Games</label>
@@ -244,7 +245,7 @@
 					<control type="radiobutton" id="253">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Hide Videos</label>
@@ -256,7 +257,7 @@
 					<control type="radiobutton" id="254">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Hide Music</label>
@@ -269,7 +270,7 @@
 					<control type="radiobutton" id="255">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Hide Movies</label>
@@ -282,7 +283,7 @@
 					<control type="radiobutton" id="256">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Hide TV Shows</label>
@@ -295,7 +296,7 @@
 					<control type="radiobutton" id="257">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Hide Pictures</label>
@@ -307,7 +308,7 @@
 					<control type="radiobutton" id="258">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Hide Weather</label>
@@ -319,7 +320,7 @@
 					<control type="radiobutton" id="259">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Hide Settings</label>
@@ -331,7 +332,7 @@
 					<control type="radiobutton" id="260">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Hide Scripts</label>
@@ -344,7 +345,7 @@
 					<control type="radiobutton" id="261">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Hide Shutdown</label>
@@ -370,7 +371,7 @@
 					<control type="radiobutton" id="300">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Show Rating Flags</label>
@@ -382,7 +383,7 @@
 					<control type="radiobutton" id="301">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Show Video Flags</label>
@@ -394,7 +395,7 @@
 					<control type="radiobutton" id="302">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Show Audio Flags</label>
@@ -406,7 +407,7 @@
 					<control type="radiobutton" id="303">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Show Studio Flags</label>
@@ -418,7 +419,7 @@
 					<control type="radiobutton" id="304">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Show Movie Watched Overlay</label>
@@ -430,7 +431,7 @@
 					<control type="radiobutton" id="305">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Show TV Watched Overlay</label>
@@ -442,7 +443,7 @@
 					<control type="radiobutton" id="306">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>File View Focus Line</label>
@@ -466,7 +467,7 @@
 					<control type="radiobutton" id="400">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Hide Fanart</label>
@@ -478,7 +479,7 @@
 					<control type="radiobutton" id="401">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Weather Artwork based on current conditions</label>
@@ -490,7 +491,7 @@
 					<control type="togglebutton" id="402">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Movie Artwork Folder</label>
@@ -509,7 +510,7 @@
 					<control type="togglebutton" id="403">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Movie Artwork Image</label>
@@ -528,7 +529,7 @@
 					<control type="togglebutton" id="404">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home TV Artwork Folder</label>
@@ -547,7 +548,7 @@
 					<control type="togglebutton" id="405">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home TV Artwork Image</label>
@@ -566,7 +567,7 @@
 					<control type="togglebutton" id="406">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Music Artwork Folder</label>
@@ -585,7 +586,7 @@
 					<control type="togglebutton" id="407">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Music Artwork Image</label>
@@ -604,7 +605,7 @@
 					<control type="togglebutton" id="408">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Videos Artwork Folder</label>
@@ -623,7 +624,7 @@
 					<control type="togglebutton" id="409">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Videos Artwork Image</label>
@@ -642,7 +643,7 @@
 					<control type="togglebutton" id="410">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Pictures Artwork Folder</label>
@@ -661,7 +662,7 @@
 					<control type="togglebutton" id="411">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Pictures Artwork Image</label>
@@ -680,7 +681,7 @@
 					<control type="togglebutton" id="412">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Weather Artwork Folder</label>
@@ -700,7 +701,7 @@
 					<control type="togglebutton" id="413">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Weather Artwork Image</label>
@@ -720,7 +721,7 @@
 					<control type="togglebutton" id="414">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Programs Artwork Folder</label>
@@ -739,7 +740,7 @@
 					<control type="togglebutton" id="415">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Programs Artwork Image</label>
@@ -758,7 +759,7 @@
 					<control type="togglebutton" id="416">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Games Artwork Folder</label>
@@ -777,7 +778,7 @@
 					<control type="togglebutton" id="417">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Games Artwork Image</label>
@@ -796,7 +797,7 @@
 					<control type="togglebutton" id="418">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Scripts Artwork Folder</label>
@@ -816,7 +817,7 @@
 					<control type="togglebutton" id="419">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Scripts Artwork Image</label>
@@ -836,7 +837,7 @@
 					<control type="togglebutton" id="420">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home PlayDisc Artwork Folder</label>
@@ -856,7 +857,7 @@
 					<control type="togglebutton" id="421">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home PlayDisc Artwork Image</label>
@@ -876,7 +877,7 @@
 					<control type="togglebutton" id="422">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Shutdown Artwork Folder</label>
@@ -896,7 +897,7 @@
 					<control type="togglebutton" id="423">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Set Home Shutdown Artwork Image</label>
@@ -929,7 +930,7 @@
 					<control type="radiobutton" id="500">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Debug mode</label>
@@ -941,7 +942,7 @@
 					<control type="radiobutton" id="501">
 						<width>740</width>
 						<font>Font_Settings</font>
-						<textcolor>ListTrackF</textcolor>
+						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Debug Grid</label>

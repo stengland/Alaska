@@ -350,9 +350,10 @@
 		</control>
 		<!-- Browser label and flags -->
 		<control type="group">
-			<visible>Control.IsVisible(50) | Control.IsVisible(57)</visible>
+			<visible>Control.IsVisible(50) | Control.IsVisible(57) | Control.IsVisible(54)</visible>
 			<posx>840</posx>
 			<posy>460</posy>
+			<animation effect="slide" end="-20,-56" condition="Control.IsVisible(54)">Conditional</animation>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByInfo</include>
@@ -383,7 +384,6 @@
 				<scrollspeed>20</scrollspeed>
 				<label>$INFO[ListItem.TVShowTitle]</label>
 				<visible>Container.Content(seasons)</visible>
-				<animation effect="fade" start="60" end="60" time="0" condition="true">Conditional</animation>
 			</control>
 			<control type="label">
 				<posx>5</posx>
@@ -429,7 +429,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(50) | Control.IsVisible(57)</visible>
+			<visible>Control.IsVisible(50) | Control.IsVisible(57) | [Control.IsVisible(54) + Container.Content(movies)]</visible>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>PosterMediaFlags</include>
@@ -437,7 +437,7 @@
 	</include>
 	<include name="Viewtype_MusicPoster">
 		<control type="wraplist" id="54">
-			<viewtype label="Poster">icon</viewtype>
+			<viewtype label="Square">icon</viewtype>
 			<posx>-110</posx>
 			<posy>150</posy>
 			<width>1400</width>

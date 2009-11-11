@@ -21,6 +21,7 @@
 		<include>Viewtype_Fanart</include>
 		<include>Viewtype_Landscape</include>
 		<include>Viewtype_Episode</include>
+		<include>Viewtype_MusicPoster</include>
 
 		<include>Global_ContextFilter</include>
 

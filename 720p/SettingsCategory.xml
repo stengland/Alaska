@@ -5,6 +5,7 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
+		<include>Global_CommonFilter</include>
 
 		<control type="grouplist" id="3">
 			<description>Button Area</description>

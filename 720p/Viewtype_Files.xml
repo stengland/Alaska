@@ -3,15 +3,6 @@
 <includes>
 	<include name="Viewtype_Files">
 
-		<!-- Background Diffuse -->
-
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<animation effect="fade" start="100" end="90" time="400" condition="true">Conditional</animation>
-			<texture>list/maskback.png</texture>
-			<visible>Control.IsVisible(55)</visible>
-		</control>
-
 		<!-- Browser -->
 
 		<control type="fixedlist" id="55">
@@ -425,15 +416,6 @@
 			</focusedlayout>
 		</control>
 
-		<!-- List Diffuse -->
-
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<animation effect="fade" start="100" end="90" time="400" condition="true">Conditional</animation>
-			<texture>list/maskfront.png</texture>
-			<visible>Control.IsVisible(55)</visible>
-		</control>
-
 		<!-- Media Flags -->
 
 		<control type="group">
@@ -461,13 +443,6 @@
 			<include>Animation_CommonFade</include>
 			<animation effect="slide" start="0,0" end="-50,0" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(60)">Conditional</animation>
 		</control>
-		
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="list/list_mask_1.png">backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>BackgroundColor</colordiffuse>
-			<visible>Control.IsVisible(55)</visible>
-		</control>
-		
+
 	</include>
 </includes>

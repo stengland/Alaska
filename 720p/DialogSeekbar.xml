@@ -19,7 +19,7 @@
 				<posy>112</posy>
 				<width>1290</width>
 				<height>165</height>
-				<texture>backdrops/background.png</texture>
+				<texture>common/white.png</texture>
 				<aspectratio aligny="bottom">scale</aspectratio>
 			</control>
 			<control type="image">
@@ -27,7 +27,7 @@
 				<posy>112</posy>
 				<width>1290</width>
 				<height>165</height>
-				<texture>backdrops/backgroundcolordiffuse.png</texture>
+				<texture>backdrops/filter.png</texture>
 				<colordiffuse>BackgroundColor</colordiffuse>
 				<aspectratio aligny="bottom">scale</aspectratio>
 			</control>

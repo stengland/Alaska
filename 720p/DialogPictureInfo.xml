@@ -10,12 +10,13 @@
 		</control-->
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="list/list_mask_2.png">backdrops/background.png</texture>
+			<colordiffuse>BackgroundColor</colordiffuse>
+			<texture diffuse="backdrops/mask_2.png">common/white.png</texture>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="list/list_mask_2.png">backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>BackgroundColor</colordiffuse>
+			<texture>backdrops/mask_2.png</texture>
+			<colordiffuse>BackgroundFilterColor</colordiffuse>
 		</control>
 		<control type="label">
 			<include>DialogID</include>

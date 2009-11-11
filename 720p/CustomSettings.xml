@@ -5,6 +5,8 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
+		<include>Global_CommonFilter</include>
+		
 		<control type="group">
 			<posy>0</posy>
 			<posx>0</posx>

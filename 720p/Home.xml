@@ -10,6 +10,7 @@
 			<label>Home.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
+		<include>Global_Filter</include>
 
 		<control type="button" id="5043">
 			<description>visible at startup</description>

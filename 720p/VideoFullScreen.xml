@@ -35,7 +35,7 @@
 				<posy>0</posy>
 				<width>1290</width>
 				<height>165</height>
-				<texture flipx="true">backdrops/background.png</texture>
+				<texture flipx="true">common/white.png</texture>
 				<aspectratio aligny="bottom">scale</aspectratio>
 			</control>
 			<control type="image">
@@ -43,7 +43,7 @@
 				<posy>0</posy>
 				<width>1290</width>
 				<height>165</height>
-				<texture flipx="true">backdrops/backgroundcolordiffuse.png</texture>
+				<texture flipx="true">backdrops/filter.png</texture>
 				<colordiffuse>BackgroundColor</colordiffuse>
 				<aspectratio aligny="bottom">scale</aspectratio>
 			</control>

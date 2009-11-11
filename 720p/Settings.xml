@@ -100,7 +100,8 @@
 				</item>
 				<item id="9">
 					<description>Alaska</description>
-<!-- LOC -->		<label>Alaska</label>
+					<!-- LOC -->
+					<label>Alaska</label>
 					<icon>special://skin/media/settings/settings_alaska.png</icon>
 					<onclick>ActivateWindow(56)</onclick>
 				</item>
@@ -109,14 +110,16 @@
 
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="mainmenu/home_mask.png">backdrops/background.png</texture>
+			<texture diffuse="backdrops/mask_1.png">common/white.png</texture>
+			<colordiffuse>BackgroundColor</colordiffuse>
 		</control>
 
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="mainmenu/home_mask.png">backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>BackgroundColor</colordiffuse>
+			<texture diffuse="backdrops/mask_1.png">backdrops/filter.png</texture>
+			<colordiffuse>BackgroundFilterColor</colordiffuse>
 		</control>
+
 		<control type="group">
 			<description>Video</description>
 			<posx>130</posx>

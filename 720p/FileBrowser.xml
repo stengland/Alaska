@@ -5,6 +5,7 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
+		<include>Global_Filter</include>
 		<control type="label">
 			<include>DialogID</include>
 			<label>FileBrowser.xml</label>
@@ -68,15 +69,6 @@
 					<label fallback="-">[UPPERCASE]$INFO[ListItem.Size][/UPPERCASE]</label>
 				</control>
 			</focusedlayout>
-		</control>
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="list/list_mask_1.png">backdrops/background.png</texture>
-		</control>
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="list/list_mask_1.png">backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>BackgroundColor</colordiffuse>
 		</control>
 		<control type="image">
 			<posx>0</posx>

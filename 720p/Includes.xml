@@ -571,7 +571,7 @@
 				<item id="6">
 					<description>Weather</description>
 					<label>8</label>
-					<icon>special://skin/media/extras/weather/$INFO[Weather.FanartCode]/</icon>
+					<icon>special://skin/extras/weather/$INFO[Weather.FanartCode]/</icon>
 					<onclick>ActivateWindow(2600)</onclick>
 					<visible>!Skin.HasSetting(noweather) + Skin.HasSetting(homeweather)</visible>
 				</item>

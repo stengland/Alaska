@@ -46,7 +46,7 @@
 					<posy>131</posy>
 					<width>162</width>
 					<height>241</height>
-					<texture diffuse="postermatteNF.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<texture diffuse="postermatteNF.png" fallback="defaultmoviegenre.jpg">special://skin/extras/moviegenres/$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -78,7 +78,7 @@
 					<posy>373</posy>
 					<width>162</width>
 					<height>241</height>
-					<texture flipy="true" diffuse="postermatteNF_reflect.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<texture flipy="true" diffuse="postermatteNF_reflect.png" fallback="defaultmoviegenre.jpg">special://skin/extras/moviegenres/$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -126,7 +126,7 @@
 					<posy>20</posy>
 					<width>320</width>
 					<height>476</height>
-					<texture diffuse="postermatte.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<texture diffuse="postermatte.png" fallback="defaultmoviegenre.jpg">special://skin/extras/moviegenres/$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_PosterInfoSlide</include>
@@ -219,7 +219,7 @@
 					<posy>131</posy>
 					<width>162</width>
 					<height>241</height>
-					<texture diffuse="postermatteNF.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<texture diffuse="postermatteNF.png" fallback="defaultmoviegenre.jpg">special://skin/extras/moviegenres/$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -251,7 +251,7 @@
 					<posy>373</posy>
 					<width>162</width>
 					<height>241</height>
-					<texture flipy="true" diffuse="postermatteNF_reflect.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<texture flipy="true" diffuse="postermatteNF_reflect.png" fallback="defaultmoviegenre.jpg">special://skin/extras/moviegenres/$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -299,7 +299,7 @@
 					<posy>20</posy>
 					<width>320</width>
 					<height>476</height>
-					<texture diffuse="postermatte.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<texture diffuse="postermatte.png" fallback="defaultmoviegenre.jpg">special://skin/extras/moviegenres/$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_PosterInfoSlide</include>

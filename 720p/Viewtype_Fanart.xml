@@ -37,7 +37,7 @@
 					<posy>131</posy>
 					<width>270</width>
 					<height>152</height>
-					<texture background="true" fallback="special:\\skin\media\backdrops\movies.jpg" diffuse="episodematteNF.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<texture background="true" fallback="special://skin/media/backdrops/movies.jpg" diffuse="episodematteNF.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<fadetime>200</fadetime>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>

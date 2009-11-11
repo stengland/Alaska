@@ -121,7 +121,7 @@
 					<height>360</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<bordertexture border="8">common\thumb_border.png</bordertexture>
+					<bordertexture border="8">common/thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
 					<include>Animation_ZoomInZoomOut</include>
 					<include>Animation_ZoomedByMenu</include>
@@ -139,8 +139,8 @@
 					<width>440</width>
 					<height>360</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<texture fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
-					<bordertexture border="8">common\thumb_border.png</bordertexture>
+					<texture fallback="defaultmoviegenre.jpg">special://skin/extras/moviegenres/$INFO[ListItem.Label].jpg</texture>
+					<bordertexture border="8">common/thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
 					<include>Animation_ZoomInZoomOut</include>
 					<include>Animation_ZoomedByMenu</include>

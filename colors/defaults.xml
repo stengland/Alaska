@@ -1,8 +1,9 @@
 <colors>
 
-	<!-- Global Colours -->
+	<!-- Theme Colours -->
 	<color name="BackgroundColor">ccFFFFFF</color>
-	<color name="BackgroundFilterColor">44434343</color>	
+	<color name="BackgroundFilterColor">44434343</color>
+	<color name="ButtonFilterColor">FFc30000</color>	
 	<!-- Background Test Colours
 	<color name="BackgroundColor">ee000025</color>
 	<color name="BackgroundFilterColor">44009ACD</color>
@@ -11,6 +12,8 @@
 	<color name="BackgroundColor">bb4aff46</color>
 	<color name="BackgroundFilterColor">dd024d00</color>
 	-->
+	
+	<!-- Global Colours -->
 	<color name="Time">77686868</color>
 	<color name="Date">77686868</color>
 	<color name="RSSBody">FF686868</color>

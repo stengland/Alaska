@@ -35,7 +35,7 @@
 				<posy>10</posy>
 				<width>50</width>
 				<height>50</height>
-				<texture>dialogs/slider_back.png</texture>
+				<texture>dialogs/dialog_back.png</texture>
 			</control>
 			<control type="slider" id="11">
 				<description>Slider</description>
@@ -63,6 +63,7 @@
 				<width>50</width>
 				<height>50</height>
 				<texture>dialogs/slider.png</texture>
+				<colordiffuse>ButtonFilterColor</colordiffuse>
 			</control>
 
 			<control type="label" id="10">

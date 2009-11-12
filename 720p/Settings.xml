@@ -26,12 +26,33 @@
 					<posy>0</posy>
 					<width>200</width>
 					<height>200</height>
+					<texture>settings/button.png</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<animation effect="zoom" start="80" end="80" center="100,100" time="0" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>200</height>
 					<texture>$INFO[ListItem.Icon]</texture>
-					<colordiffuse>5EFFFFFF</colordiffuse>
+					<colordiffuse>FFFFFFFF</colordiffuse>
 					<animation effect="zoom" start="80" end="80" center="100,100" time="0" condition="true">Conditional</animation>
 				</control>
 			</itemlayout>
 			<focusedlayout height="200" width="200">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>200</height>
+					<texture>settings/button.png</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" start="80" end="100" center="100,100" time="300" tween="cubic" easing="in" />
+						<effect type="fade" start="40" end="100" time="300" />
+					</animation>
+				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>

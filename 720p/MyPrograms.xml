@@ -4,6 +4,8 @@
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
+		<include>Global_Filter</include>
+
 		<include>Global_Background</include>
 		<include>Viewtype_Files</include>
 		<include>Viewtype_Poster</include>

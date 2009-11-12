@@ -11,6 +11,7 @@
 	</coordinates>
 
 	<controls>
+		<include>Global_Filter</include>
 
 		<control type="image" id="0">
 			<description>Back Panel</description>

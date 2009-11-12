@@ -84,19 +84,6 @@
 		</control>
 	</include>
 
-	<include name="Global_CommonFilter">
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture>common/white.png</texture>
-			<colordiffuse>BackgroundColor</colordiffuse>
-		</control>
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture>backdrops/filter.png</texture>
-			<colordiffuse>BackgroundFilterColor</colordiffuse>
-		</control>	
-	</include>
-
 	<include name="Global_Time">
 		<control type="group">
 			<posx>1250</posx>

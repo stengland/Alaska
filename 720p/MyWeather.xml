@@ -4,8 +4,8 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
+		<include>Global_Filter</include>
 		<include>Global_Background</include>
-		<include>Global_CommonFilter</include>
 		<control type="label">
 			<include>WindowID</include>
 			<label>MyWeather.xml</label>

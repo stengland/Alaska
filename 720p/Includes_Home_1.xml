@@ -461,7 +461,6 @@
 				<control type="image">
 					<include>Home_MainMenuIconF</include>
 					<texture diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">backdrops/weather.jpg</texture>
-					<visible>ControlGroup(3700).HasFocus(3705)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
@@ -486,7 +485,7 @@
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">$INFO[Skin.String(CustomWeatherImage)]</imagepath>
-					<visible>!Skin.String(CustomWeatherFolder)</visible>
+					<visible>!Skin.String(CustomWeatherFolder) + !Skin.HasSetting(homeweather)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>

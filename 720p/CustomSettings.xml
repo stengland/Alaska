@@ -486,6 +486,7 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(homeweather)</onclick>
 						<selected>Skin.HasSetting(homeweather)</selected>
+						<visible>!Skin.HasSetting(home2)</visible>
 					</control>
 					<control type="togglebutton" id="402">
 						<width>740</width>

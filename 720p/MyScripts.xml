@@ -3,8 +3,8 @@
 <window id="20">
 	<defaultcontrol always="yes">50</defaultcontrol>
 	<controls>
-		<include>Global_Filter</include>
 		<include>Global_Background</include>
+		<include>Global_Filter</include>
 		<include>Viewtype_Files</include>
 		<include>Viewtype_Poster</include>
 		<include>Viewtype_List</include>

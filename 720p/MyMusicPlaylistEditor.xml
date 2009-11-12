@@ -2,8 +2,8 @@
 
 <window id="503">
 	<controls>
-		<include>Global_Filter</include>
 		<include>Global_Background</include>
+		<include>Global_Filter</include>
 		<control type="label">
 			<include>DialogID</include>
 			<label>MyMusicPlaylistEditor.xml</label>

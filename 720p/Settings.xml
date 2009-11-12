@@ -4,8 +4,8 @@
 	<defaultcontrol always="true">60</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-		<include>Global_Filter</include>
 		<include>Global_Background</include>
+		<include>Global_Filter</include>
 		<control type="panel" id="60">
 			<posx>200</posx>
 			<posy>200</posy>

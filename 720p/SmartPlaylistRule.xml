@@ -3,6 +3,7 @@
 <window id="129">
 	<controls>
 		<include>Global_Background</include>
+		<include>Global_Filter</include>
 		<control type="label">
 			<include>DialogID</include>
 			<label>SmartPlaylistRule.xml</label>

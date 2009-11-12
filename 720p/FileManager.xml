@@ -5,6 +5,7 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
+		<include>Global_Filter</include>
 		<!-- LEFT PANEL -->
 		<control type="group">
 			<include>Animation_ZoomedByMenu</include>

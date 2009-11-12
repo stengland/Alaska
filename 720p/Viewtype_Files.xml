@@ -414,6 +414,19 @@
 					</control>
 				</control>
 			</focusedlayout>
+		</control>		
+		
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<texture diffuse="backdrops/mask_3.png">common/white.png</texture>
+			<colordiffuse>BackgroundColor</colordiffuse>
+			<visible>Control.IsVisible(55)</visible>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<texture diffuse="backdrops/mask_3.png">backdrops/filter.png</texture>
+			<colordiffuse>BackgroundFilterColor</colordiffuse>
+			<visible>Control.IsVisible(55)</visible>
 		</control>
 
 		<!-- Media Flags -->

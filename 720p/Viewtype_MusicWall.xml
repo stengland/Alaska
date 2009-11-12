@@ -149,13 +149,13 @@
 		
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="wall/music_wall_mask.png">common/white.png</texture>
+			<texture diffuse="backdrops/mask_4.png">common/white.png</texture>
 			<colordiffuse>BackgroundColor</colordiffuse>
 			<visible>Control.IsVisible(50)</visible>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="wall/music_wall_mask.png">backdrops/filter.png</texture>
+			<texture diffuse="backdrops/mask_4.png">backdrops/filter.png</texture>
 			<colordiffuse>BackgroundFilterColor</colordiffuse>
 			<visible>Control.IsVisible(50)</visible>
 		</control>

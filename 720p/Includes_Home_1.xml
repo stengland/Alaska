@@ -236,7 +236,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>Container(300).HasFocus(3) + !Control.HasFocus(3306)</visible>
+					<visible>Container(300).HasFocus(3) + !Control.HasFocus(3307)</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 			</control>
@@ -464,22 +464,22 @@
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Window(Weather).Property(Day3.FanartCode)]/</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Window(Weather).Property(Day3.FanartCode)]</imagepath>
 					<visible>ControlGroup(3700).HasFocus(3704)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Window(Weather).Property(Day2.FanartCode)]/</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Window(Weather).Property(Day2.FanartCode)]</imagepath>
 					<visible>ControlGroup(3700).HasFocus(3703)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Window(Weather).Property(Day1.FanartCode)]/</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Window(Weather).Property(Day1.FanartCode)]</imagepath>
 					<visible>ControlGroup(3700).HasFocus(3702)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Window(Weather).Property(Day0.FanartCode)]/</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Window(Weather).Property(Day0.FanartCode)]</imagepath>
 					<visible>ControlGroup(3700).HasFocus(3701)</visible>
 				</control>
 				<control type="multiimage">
@@ -494,7 +494,7 @@
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Weather.FanartCode]/</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Weather.FanartCode]</imagepath>
 					<visible>Skin.HasSetting(homeweather) + !ControlGroup(3700).HasFocus()</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -807,26 +807,33 @@
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3302">
+				<label>589</label>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onclick>PlayerControl(Partymode(music))</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+			<control type="button" id="3303">
 				<label>31922</label>
 				<onclick>ActivateWindow(MyMusicLibrary,genres,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
-			<control type="button" id="3303">
+			<control type="button" id="3304">
 				<label>Artists</label>
 				<onclick>ActivateWindow(MyMusicLibrary,artists,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
-			<control type="button" id="3304">
+			<control type="button" id="3305">
 				<label>31923</label>
 				<onclick>ActivateWindow(MyMusicLibrary,years,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
-			<control type="button" id="3305">
+			<control type="button" id="3306">
 				<label>Files</label>
 				<onclick>ActivateWindow(MusicFiles)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
-			<control type="button" id="3306">
+			<control type="button" id="3307">
 				<label>Music Settings</label>
 				<onclick>ActivateWindow(MusicSettings)</onclick>
 				<include>Home_MainMenuLabel</include> 

@@ -360,35 +360,35 @@
 					<description>Videos</description>
 					<label>3</label>
 					<icon>homeicons/videosicon.png</icon>
-					<onclick>ActivateWindow(MyVideoFiles)</onclick>
+					<onclick>ActivateWindow(VideoFiles)</onclick>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
 				<item id="2">
 					<description>Music</description>
 					<label>2</label>
 					<icon>homeicons/musicicon.png</icon>
-					<onclick>ActivateWindow(MyMusic)</onclick>
+					<onclick>ActivateWindow(Music)</onclick>
 					<visible>!Skin.HasSetting(nomusic)</visible>
 				</item>
 				<item id="3">
 					<description>Movies</description>
 					<label>342</label>
 					<icon>homeicons/moviesicon.png</icon>
-					<onclick>ActivateWindow(MyVideoLibrary,movietitles)</onclick>
+					<onclick>ActivateWindow(VideoLibrary,movietitles)</onclick>
 					<visible>!Skin.HasSetting(nomovies)</visible>
 				</item>
 				<item id="4">
 					<description>TV Shows</description>
 					<label>20343</label>
 					<icon>homeicons/tvshowsicon.png</icon>
-					<onclick>ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
+					<onclick>ActivateWindow(VideoLibrary,tvshowtitles)</onclick>
 					<visible>!Skin.HasSetting(notvshows)</visible>
 				</item>
 				<item id="5">
 					<description>Pictures</description>
 					<label>1</label>
 					<icon>homeicons/picturesicon.png</icon>
-					<onclick>ActivateWindow(MyPictures)</onclick>
+					<onclick>ActivateWindow(Pictures)</onclick>
 					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
 				<item id="6">
@@ -512,7 +512,7 @@
 					<label>3</label>
 					<icon>special://skin/media/backdrops/videos.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomVideosImage)]</thumb>
-					<onclick>ActivateWindow(MyVideoFiles)</onclick>
+					<onclick>ActivateWindow(VideoFiles)</onclick>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
 				<item id="2">
@@ -520,7 +520,7 @@
 					<label>2</label>
 					<icon>special://skin/media/backdrops/music.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMusicImage)]</thumb>
-					<onclick>ActivateWindow(MyMusic)</onclick>
+					<onclick>ActivateWindow(Music)</onclick>
 					<visible>!Skin.HasSetting(nomusic)</visible>
 				</item>
 				<item id="3">
@@ -528,7 +528,7 @@
 					<label>342</label>
 					<icon>special://skin/media/backdrops/movies.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomMoviesImage)]</thumb>
-					<onclick>ActivateWindow(MyVideoLibrary,movietitles)</onclick>
+					<onclick>ActivateWindow(VideoLibrary,movietitles)</onclick>
 					<visible>!Skin.HasSetting(nomovies)</visible>
 				</item>
 				<item id="4">
@@ -536,7 +536,7 @@
 					<label>20343</label>
 					<icon>special://skin/media/backdrops/tvshows.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomTVShowsImage)]</thumb>
-					<onclick>ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
+					<onclick>ActivateWindow(VideoLibrary,tvshowtitles)</onclick>
 					<visible>!Skin.HasSetting(notvshows)</visible>
 				</item>
 				<item id="5">
@@ -544,7 +544,7 @@
 					<label>1</label>
 					<icon>special://skin/media/backdrops/pictures.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomPicturesImage)]</thumb>
-					<onclick>ActivateWindow(MyPictures)</onclick>
+					<onclick>ActivateWindow(Pictures)</onclick>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
 				<item id="6">

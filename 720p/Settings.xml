@@ -49,25 +49,25 @@
 					<description>Video</description>
 					<label>3</label>
 					<icon>special://skin/media/settings/settings_video.png</icon>
-					<onclick>ActivateWindow(MyVideosSettings)</onclick>
+					<onclick>ActivateWindow(VideosSettings)</onclick>
 				</item>
 				<item id="2">
 					<description>Music</description>
 					<label>2</label>
 					<icon>special://skin/media/settings/settings_music.png</icon>
-					<onclick>ActivateWindow(MyMusicSettings)</onclick>
+					<onclick>ActivateWindow(MusicSettings)</onclick>
 				</item>
 				<item id="3">
 					<description>Pictures</description>
 					<label>1</label>
 					<icon>special://skin/media/settings/settings_pictures.png</icon>
-					<onclick>ActivateWindow(MyPicturesSettings)</onclick>
+					<onclick>ActivateWindow(PicturesSettings)</onclick>
 				</item>
 				<!--item id="4">
 					<description>Programs</description>
 					<label>0</label>
 					<icon>special://skin/media/settings/settings_programs.png</icon>
-					<onclick>ActivateWindow(MyProgramsSettings)</onclick>
+					<onclick>ActivateWindow(ProgramsSettings)</onclick>
 				</item-->
 				<item id="4">
 					<description>Profiles</description>
@@ -79,7 +79,7 @@
 					<description>Weather</description>
 					<label>8</label>
 					<icon>special://skin/media/settings/settings_weather.png</icon>
-					<onclick>ActivateWindow(MyWeatherSettings)</onclick>
+					<onclick>ActivateWindow(WeatherSettings)</onclick>
 				</item>
 				<item id="6">
 					<description>Network</description>

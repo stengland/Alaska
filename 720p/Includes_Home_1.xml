@@ -28,24 +28,24 @@
 				</item>
 				<item id="2">
 					<description>Videos</description>
-					<onclick>ActivateWindow(MyVideoFiles)</onclick>
+					<onclick>ActivateWindow(VideoFiles)</onclick>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
 				<item id="3">
 					<description>Music</description>
-					<onclick>ActivateWindow(MyMusicLibrary,albums,return)</onclick>
+					<onclick>ActivateWindow(MusicLibrary,albums,return)</onclick>
 				</item>
 				<item id="4">
 					<description>Movies</description>
-					<onclick>ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
+					<onclick>ActivateWindow(VideoLibrary,movietitles,return)</onclick>
 				</item>
 				<item id="5">
 					<description>Tv Shows</description>
-					<onclick>ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
+					<onclick>ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
 				</item>
 				<item id="6">
 					<description>Pictures</description>
-					<onclick>ActivateWindow(MyPictures)</onclick>
+					<onclick>ActivateWindow(Pictures)</onclick>
 					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
 				<item id="7">
@@ -777,7 +777,7 @@
 			</control>
 			<control type="button" id="3202">
 				<label>Music Videos</label>
-				<onclick>ActivateWindow(MyVideoLibrary,musicvideotitles,return)</onclick>
+				<onclick>ActivateWindow(VideoLibrary,musicvideotitles,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3203">
@@ -803,7 +803,7 @@
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3301">
 				<label>New Albums</label>
-				<onclick>ActivateWindow(MyMusicLibrary,recentlyaddedalbums,return)</onclick>
+				<onclick>ActivateWindow(MusicLibrary,recentlyaddedalbums,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3302">
@@ -815,17 +815,17 @@
 			</control>
 			<control type="button" id="3303">
 				<label>31922</label>
-				<onclick>ActivateWindow(MyMusicLibrary,genres,return)</onclick>
+				<onclick>ActivateWindow(MusicLibrary,genres,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3304">
 				<label>Artists</label>
-				<onclick>ActivateWindow(MyMusicLibrary,artists,return)</onclick>
+				<onclick>ActivateWindow(MusicLibrary,artists,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3305">
 				<label>31923</label>
-				<onclick>ActivateWindow(MyMusicLibrary,years,return)</onclick>
+				<onclick>ActivateWindow(MusicLibrary,years,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3306">
@@ -908,22 +908,22 @@
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3401">
 				<label>New Movies</label>
-				<onclick>ActivateWindow(MyVideoLibrary,recentlyaddedmovies,return)</onclick>
+				<onclick>ActivateWindow(VideoLibrary,recentlyaddedmovies,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3402">
 				<label>31922</label>
-				<onclick>ActivateWindow(MyVideoLibrary,moviegenres,return)</onclick>
+				<onclick>ActivateWindow(VideoLibrary,moviegenres,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3403">
 				<label>31924</label>
-				<onclick>ActivateWindow(MyVideoLibrary,movieactors,return)</onclick>
+				<onclick>ActivateWindow(VideoLibrary,movieactors,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3404">
 				<label>31923</label>
-				<onclick>ActivateWindow(MyVideoLibrary,movieyears,return)</onclick>
+				<onclick>ActivateWindow(VideoLibrary,movieyears,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3405">
@@ -1005,22 +1005,22 @@
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3501">
 				<label>New Episodes</label>
-				<onclick>ActivateWindow(MyVideoLibrary,recentlyaddedepisodes,return)</onclick>
+				<onclick>ActivateWindow(VideoLibrary,recentlyaddedepisodes,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3502">
 				<label>31922</label>
-				<onclick>ActivateWindow(MyVideoLibrary,tvshowgenres,return)</onclick>
+				<onclick>ActivateWindow(VideoLibrary,tvshowgenres,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3503">
 				<label>31924</label>
-				<onclick>ActivateWindow(MyVideoLibrary,tvshowactors,return)</onclick>
+				<onclick>ActivateWindow(VideoLibrary,tvshowactors,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3504">
 				<label>31923</label>
-				<onclick>ActivateWindow(MyVideoLibrary,tvshowyears,return)</onclick>
+				<onclick>ActivateWindow(VideoLibrary,tvshowyears,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3505">

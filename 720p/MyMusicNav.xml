@@ -53,7 +53,7 @@
 			<control type="button" id="21">
 				<include>WindowMenuButton</include>
 				<label>Library</label>
-				<onclick>ReplaceWindow(MyMusicFiles)</onclick>
+				<onclick>ReplaceWindow(MusicFiles)</onclick>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(21)">
 					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />					

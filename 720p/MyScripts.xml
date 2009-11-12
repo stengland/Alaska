@@ -8,10 +8,6 @@
 		<include>Viewtype_Files</include>
 		<include>Viewtype_Poster</include>
 		<include>Viewtype_List</include>
-
-		<control type="fixedlist" id="50">
-			<visible>false</visible>
-		</control>
 		<include>Global_ContextFilter</include>
 
 		<!--control type="grouplist" id="7000">

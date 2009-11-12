@@ -11,7 +11,10 @@
 	</coordinates>
 
 	<controls>
+		<include>Global_Background</include>
+		<include>Global_Filter</include>
 
+		<include>Viewtype_List</include>
 		<control type="image" id="0">
 			<description>Back Panel</description>
 			<posx>-20</posx>
@@ -47,8 +50,6 @@
 				<altlabel>$LOCALIZE[585]</altlabel>
 			</control>
 		</control>
-
-		<include>list</include>
 
 		<include>Object_DebugGrid</include>
 

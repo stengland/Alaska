@@ -14,7 +14,6 @@
 	<include file="Includes_MediaFlags.xml" />
 	<include file="Includes_Animations.xml" />
 	<include file="Includes_Backgrounds.xml" />
-	<include file="Includes_Filemanager.xml" />
 	<include file="Includes_Objects.xml" />
 	<include file="Includes_Home_1.xml" />
 	<!-- Debug objects -->

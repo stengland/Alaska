@@ -28,15 +28,15 @@
 				<posy>10</posy>
 				<width>50</width>
 				<height>50</height>
-				<texture>dialogs/scanprogress_back.png</texture>
+				<texture>dialogs/dialog_back.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="progress" id="404">
 				<description>Progressbar</description>
 				<info>System.Progressbar</info>
-				<posx>327</posx>
+				<posx>330</posx>
 				<posy>20</posy>
-				<width>38</width>
+				<width>35</width>
 				<height>28</height>
 				<texturebg>dialogs/clear.png</texturebg>
 				<lefttexture>-</lefttexture>

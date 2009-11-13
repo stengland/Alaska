@@ -45,9 +45,9 @@
 			</control>
 			<control type="progress" id="404">
 				<description>Progressbar</description>
-				<posx>327</posx>
+				<posx>330</posx>
 				<posy>20</posy>
-				<width>38</width>
+				<width>35</width>
 				<height>28</height>
 				<texturebg>dialogs/clear.png</texturebg>
 				<lefttexture>-</lefttexture>
@@ -64,9 +64,9 @@
 			</control>
 			<control type="progress" id="403">
 				<description>Progressbar</description>
-				<posx>327</posx>
+				<posx>330</posx>
 				<posy>20</posy>
-				<width>38</width>
+				<width>35</width>
 				<height>28</height>
 				<texturebg>dialogs/clear.png</texturebg>
 				<lefttexture>-</lefttexture>

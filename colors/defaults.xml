@@ -4,7 +4,7 @@
 	<color name="BackgroundColor">ccFFFFFF</color>
 	<color name="BackgroundFilterColor">44434343</color>
 	<color name="ButtonFilterColor">FFc30000</color>
-	<color name="HomeFrameColor">FFFFFFFF</color>
+	<color name="HomeFrameColor">FFE0E0E0</color>
 	
 	<!-- Background Test Colours
 	<color name="BackgroundColor">ee000025</color>

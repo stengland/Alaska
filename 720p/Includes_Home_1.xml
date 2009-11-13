@@ -97,7 +97,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
-					<visible>Container(300).HasFocus(1) + [Control.HasFocus(3101) | Control.HasFocus(3102) | Control.HasFocus(3103)]</visible>
+					<visible>[Container(3100).HasNext + ControlGroup(3100).HasFocus()] | [!Container(3100).HasNext + ControlGroup(3100).HasFocus()]</visible>
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
@@ -106,7 +106,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>Container(300).HasFocus(1) + !Control.HasFocus(3103)</visible>
+					<visible>[Container(300).HasFocus(1) + !ControlGroup(3100).HasFocus()] | [Container(3100).HasNext + ControlGroup(3100).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 				<visible>!Skin.HasSetting(noprograms)</visible>
@@ -143,7 +143,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
-					<visible>Container(300).HasFocus(2) + [Control.HasFocus(3201) | Control.HasFocus(3202) | Control.HasFocus(3203)]</visible>
+					<visible>[Container(3200).HasNext + ControlGroup(3200).HasFocus()] | [!Container(3200).HasNext + ControlGroup(3200).HasFocus()]</visible>
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
@@ -152,16 +152,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>Container(300).HasFocus(2) + !Control.HasFocus(3202) + !System.HasMediaDVD</visible>
-					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
-				</control>
-				<control type="image" id="399">
-					<posx>340</posx>
-					<posy>274</posy>
-					<width>12</width>
-					<height>24</height>
-					<texture>arrowhomedown.png</texture>
-					<visible>Container(300).HasFocus(2) + !Control.HasFocus(3203) + System.HasMediaDVD</visible>
+					<visible>[Container(300).HasFocus(2) + !ControlGroup(3200).HasFocus()] | [Container(3200).HasNext + ControlGroup(3200).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 				<visible>!Skin.HasSetting(novideos)</visible>
@@ -227,7 +218,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
-					<visible>Container(300).HasFocus(3) + !Control.HasFocus(3311)</visible>
+					<visible>[Container(300).HasFocus(3) + ![ControlGroup(3300).HasFocus() | ControlGroup(3310).HasFocus()]] | [Container(3310).HasPrevious + ControlGroup(3310).HasFocus()] | [Container(3300).HasNext + ControlGroup(3300).HasFocus()] | [!Container(3300).HasNext + ControlGroup(3300).HasFocus()]</visible>
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
@@ -236,7 +227,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>Container(300).HasFocus(3) + !Control.HasFocus(3307)</visible>
+					<visible>[Container(300).HasFocus(3) + ![ControlGroup(3300).HasFocus() | ControlGroup(3310).HasFocus()]] | [Container(3300).HasNext + ControlGroup(3300).HasFocus()] | [Container(3310).HasPrevious + ControlGroup(3310).HasFocus()] | [!Container(3310).HasPrevious + ControlGroup(3310).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 			</control>
@@ -301,7 +292,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
-					<visible>Container(300).HasFocus(4) + !Control.HasFocus(3411)</visible>
+					<visible>[Container(300).HasFocus(4) + ![ControlGroup(3400).HasFocus() | ControlGroup(3410).HasFocus()]] | [Container(3410).HasPrevious + ControlGroup(3410).HasFocus()] | [Container(3400).HasNext + ControlGroup(3400).HasFocus()] | [!Container(3400).HasNext + ControlGroup(3400).HasFocus()]</visible>
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
@@ -310,7 +301,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>Container(300).HasFocus(4) + !Control.HasFocus(3406)</visible>
+					<visible>[Container(300).HasFocus(4) + ![ControlGroup(3400).HasFocus() | ControlGroup(3410).HasFocus()]] | [Container(3400).HasNext + ControlGroup(3400).HasFocus()] | [Container(3410).HasPrevious + ControlGroup(3410).HasFocus()] | [!Container(3410).HasPrevious + ControlGroup(3410).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 			</control>
@@ -375,7 +366,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
-					<visible>Container(300).HasFocus(5) + !Control.HasFocus(3511)</visible>
+					<visible>[Container(300).HasFocus(5) + ![ControlGroup(3500).HasFocus() | ControlGroup(3510).HasFocus()]] | [Container(3510).HasPrevious + ControlGroup(3510).HasFocus()] | [Container(3500).HasNext + ControlGroup(3500).HasFocus()] | [!Container(3500).HasNext + ControlGroup(3500).HasFocus()]</visible>
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
@@ -384,7 +375,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>Container(300).HasFocus(5) + !Control.HasFocus(3506)</visible>
+					<visible>[Container(300).HasFocus(5) + ![ControlGroup(3500).HasFocus() | ControlGroup(3510).HasFocus()]] | [Container(3500).HasNext + ControlGroup(3500).HasFocus()] | [Container(3510).HasPrevious + ControlGroup(3510).HasFocus()] | [!Container(3510).HasPrevious + ControlGroup(3510).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 			</control>
@@ -424,7 +415,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
-					<visible>Container(300).HasFocus(6) + Control.HasFocus(3601)</visible>
+					<visible>[Container(3600).HasNext + ControlGroup(3600).HasFocus()] | [!Container(3600).HasNext + ControlGroup(3600).HasFocus()]</visible>
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
@@ -433,7 +424,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>Container(300).HasFocus(6) + !Control.HasFocus(3601)</visible>
+					<visible>[Container(300).HasFocus(6) + !ControlGroup(3600).HasFocus()] | [Container(3600).HasNext + ControlGroup(3600).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 				<visible>!Skin.HasSetting(nopictures)</visible>
@@ -511,7 +502,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
-					<visible>Container(300).HasFocus(7) + [Control.HasFocus(3701) | Control.HasFocus(3702) | Control.HasFocus(3703) | Control.HasFocus(3704) | Control.HasFocus(3705)]</visible>
+					<visible>[Container(3700).HasNext + ControlGroup(3700).HasFocus()] | [!Container(3700).HasNext + ControlGroup(3700).HasFocus()]</visible>
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
@@ -520,7 +511,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>Container(300).HasFocus(7) + !Control.HasFocus(3705)</visible>
+					<visible>[Container(300).HasFocus(7) + !ControlGroup(3700).HasFocus()] | [Container(3700).HasNext + ControlGroup(3700).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 				<visible>!Skin.HasSetting(noweather)</visible>
@@ -585,7 +576,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
-					<visible>Container(300).HasFocus(8) + [Control.HasFocus(3801) | Control.HasFocus(3802) | Control.HasFocus(3803) | Control.HasFocus(3804) | Control.HasFocus(3805) | Control.HasFocus(3806)]</visible>
+					<visible>[Container(3800).HasNext + ControlGroup(3800).HasFocus()] | [!Container(3800).HasNext + ControlGroup(3800).HasFocus()]</visible>
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
@@ -594,7 +585,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>Container(300).HasFocus(8) + !Control.HasFocus(3806)</visible>
+					<visible>[Container(300).HasFocus(8) + !ControlGroup(3800).HasFocus()] | [Container(3800).HasNext + ControlGroup(3800).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 				<visible>!Skin.HasSetting(nosettings)</visible>
@@ -688,6 +679,10 @@
 		<control type="button" id="3998">
 			<onfocus>SetFocus(3515)</onfocus>
 			<visible>Container(300).HasFocus(5)</visible>
+		</control>
+		<control type="button" id="3998">
+			<onfocus>SetFocus(300)</onfocus>
+			<visible>![Container(300).HasFocus(3) | Container(300).HasFocus(4) | Container(300).HasFocus(5)]</visible>
 		</control>
 		<!-- OnDown Controls -->
 		<control type="button" id="3999">
@@ -1131,7 +1126,7 @@
 			<control type="button" id="3701">
 				<onclick>ActivateWindow(2600)</onclick>
 				<label fallback="Not Available">$INFO[Window(Weather).Property(Day0.Title)]: $INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
-				<include>Home_MainMenuLabel</include> 
+				<include>Home_MainMenuLabel</include>
 			</control>
 			<control type="button" id="3702">
 				<onclick>ActivateWindow(2600)</onclick>
@@ -1151,7 +1146,7 @@
 			<control type="button" id="3705">
 				<label>Weather Settings</label>
 				<onclick>ActivateWindow(WeatherSettings)</onclick>
-				<include>Home_MainMenuLabel</include> 
+				<include>Home_MainMenuLabel</include>
 			</control>
 		</control>
 	</include>
@@ -1169,31 +1164,41 @@
 			<onright>999</onright>
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3801">
-				<label>31208</label>
-				<onclick>Shutdown</onclick>
+				<label>13012</label>
+				<onclick>Quit()</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
 			<control type="button" id="3802">
-				<label>13013</label>
-				<onclick>RestartApp</onclick>
+				<label>13005</label>
+				<onclick>Shutdown()</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible>System.CanPowerdown</visible>
 			</control>
 			<control type="button" id="3803">
-				<label>13011</label>
-				<onclick>Suspend</onclick>
-				<include>Home_MainMenuLabel</include> 
+				<label>13013</label>
+				<onclick>Reset()</onclick>
+				<include>Home_MainMenuLabel</include>
+				<visible>System.CanReboot</visible> 
 			</control>
 			<control type="button" id="3804">
-				<label>13010</label>
-				<onclick>Hibernate</onclick>
+				<label>13011</label>
+				<onclick>Suspend()</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible>System.CanSuspend</visible>
 			</control>
 			<control type="button" id="3805">
+				<label>13010</label>
+				<onclick>Hibernate()</onclick>
+				<include>Home_MainMenuLabel</include> 
+				<visible>System.CanHibernate</visible>
+			</control>
+			<control type="button" id="3806">
 				<label>31209</label>
 				<onclick>System.LogOff</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible>System.HasLoginScreen</visible>
 			</control>
-			<control type="button" id="3806">
+			<control type="button" id="3807">
 				<label>31070</label>
 				<onclick>ActivateWindow(7)</onclick>
 				<include>Home_MainMenuLabel</include> 

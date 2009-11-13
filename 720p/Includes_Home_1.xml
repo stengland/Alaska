@@ -88,7 +88,7 @@
 					<include>Home_MainMenuLabel</include>
 					<label>Programs</label>
 					<visible>!ControlGroup(3100).HasFocus()</visible>
-					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(1)">Conditional</animation>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(1) | ![Control.IsVisible(398) | Control.IsVisible(399)]">Conditional</animation>
 				</control>
 				<include>SubMenu_Programs</include>
 				<include>Home_MainMenuShade</include>
@@ -107,7 +107,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>[Container(300).HasFocus(1) + !ControlGroup(3100).HasFocus()] | [Container(3100).HasNext + ControlGroup(3100).HasFocus()]</visible>
+					<visible>[[Container(300).HasFocus(1) + !ControlGroup(3100).HasFocus()] + ![Skin.HasSetting(hidegames) + Skin.HasSetting(hidescripts) + Skin.HasSetting(hidefavs)]] | [Container(3100).HasNext + ControlGroup(3100).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 				<visible>!Skin.HasSetting(noprograms)</visible>
@@ -695,7 +695,15 @@
 		<!-- OnDown Controls -->
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3101)</onfocus>
-			<visible>Container(300).HasFocus(1)</visible>
+			<visible>Container(300).HasFocus(1) + !Skin.HasSetting(hidegames)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3102)</onfocus>
+			<visible>Container(300).HasFocus(1) + !Skin.HasSetting(hidescripts)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3103)</onfocus>
+			<visible>Container(300).HasFocus(1) + !Skin.HasSetting(hidefavs)</visible>
 		</control>
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3201)</onfocus>
@@ -754,17 +762,20 @@
 			<control type="button" id="3101">
 				<label>Games</label>
 				<onclick>ActivateWindow(1,plugin://programs/Launcher/)</onclick>
-				<include>Home_MainMenuLabel</include> 
+				<include>Home_MainMenuLabel</include>
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidegames)</visible>
 			</control>
 			<control type="button" id="3102">
 				<label>247</label>
 				<onclick>ActivateWindow(Scripts)</onclick>
-				<include>Home_MainMenuLabel</include> 
+				<include>Home_MainMenuLabel</include>
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidescripts)</visible>
 			</control>
 			<control type="button" id="3103">
 				<label>1036</label>
 				<onclick>ActivateWindow(Favourites)</onclick>
 				<include>Home_MainMenuLabel</include>
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidefavs)</visible>
 			</control>
 		</control>
 	</include>
@@ -1044,6 +1055,17 @@
 				<onclick>ActivateWindow(VideosSettings)</onclick>
 				<include>Home_MainMenuLabel</include> 
 			</control>
+
+
+			<control type="button" id="3507">
+				<label>$INFO[Skin.String(VideoSub1_Name)]</label>
+				<onclick>Skin.Reset(submenu)</onclick>
+				<onclick>$INFO[Skin.String(VideoSub1_Path)]</onclick>
+				<visible>Skin.HasSetting(VideoSub1)</visible>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+
+
 		</control>
 		<control type="grouplist" id="3510">
 			<posx>0</posx>

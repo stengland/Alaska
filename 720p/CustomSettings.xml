@@ -82,10 +82,17 @@
 						<onclick>SetFocus(9004)</onclick>
 					</item>
 					<item id="5">
-						<description>Misc.</description>
+						<description>Sub Menus</description>
 						<!-- LOC -->
-						<label>Misc.</label>
+						<label>Sub Menus</label>
 						<onclick>SetFocus(9005)</onclick>
+						<visible>![Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+					</item>
+					<item id="6">
+						<description>Debug</description>
+						<!-- LOC -->
+						<label>Debug</label>
+						<onclick>SetFocus(9006)</onclick>
 					</item>
 				</content>
 			</control>
@@ -940,7 +947,84 @@
 					<ondown>9005</ondown>
 					<pagecontrol>-</pagecontrol>
 					<include>Animation_CommonFadeNoHide</include>
-					<control type="radiobutton" id="500">
+					<control type="button" id="500">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Programs - Hide Items</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onfocus>Skin.ToggleSetting(openprogramsub)</onfocus>
+						<selected>Skin.HasSetting(debugmode)</selected>
+					</control>
+					<control type="radiobutton" id="501">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Games</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidegames)</onclick>
+						<selected>Skin.HasSetting(hidegames)</selected>
+						<visible>Skin.HasSetting(openprogramsub)</visible>
+					</control>
+					<control type="radiobutton" id="502">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Scripts</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidescripts)</onclick>
+						<selected>Skin.HasSetting(hidescripts)</selected>
+						<visible>Skin.HasSetting(openprogramsub)</visible>
+					</control>
+					<control type="radiobutton" id="503">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Favourites</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<selected>Skin.HasSetting(hidefavs)</selected>
+						<onclick>Skin.ToggleSetting(hidefavs)</onclick>
+						<visible>Skin.HasSetting(openprogramsub)</visible>
+					</control>
+					<control type="radiobutton" id="504">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Programs - Add Items</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>-</onclick>
+						<onfocus>Skin.Reset(openprogramsub)</onfocus>
+						<selected>-</selected>
+					</control>
+				</control>
+
+				<control type="grouplist" id="9006">
+					<visible>Container(9000).Hasfocus(6)</visible>
+					<width>740</width>
+					<height>320</height>
+					<itemgap>6</itemgap>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>9006</onup>
+					<ondown>9006</ondown>
+					<pagecontrol>-</pagecontrol>
+					<include>Animation_CommonFadeNoHide</include>
+					<control type="radiobutton" id="600">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -952,7 +1036,7 @@
 						<onclick>Skin.ToggleSetting(debugmode)</onclick>
 						<selected>Skin.HasSetting(debugmode)</selected>
 					</control>
-					<control type="radiobutton" id="501">
+					<control type="radiobutton" id="601">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>

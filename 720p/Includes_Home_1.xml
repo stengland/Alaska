@@ -889,27 +889,27 @@
 			</control>
 		</control>
 		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestSong.5.Title)]</label>
+			<label fallback="Not Available">$INFO[Window.Property(LatestSong.5.Album)]$INFO[Window.Property(LatestSong.5.Title), - ]</label>
 			<visible>ControlGroup(3310).HasFocus(3311) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
 		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestSong.4.Title)]</label>
+			<label fallback="Not Available">$INFO[Window.Property(LatestSong.4.Album)]$INFO[Window.Property(LatestSong.4.Title), - ]</label>
 			<visible>ControlGroup(3310).HasFocus(3312) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
 		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestSong.3.Title)]</label>
+			<label fallback="Not Available">$INFO[Window.Property(LatestSong.3.Album)]$INFO[Window.Property(LatestSong.3.Title), - ]</label>
 			<visible>ControlGroup(3310).HasFocus(3313) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
 		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestSong.2.Title)]</label>
+			<label fallback="Not Available">$INFO[Window.Property(LatestSong.2.Album)]$INFO[Window.Property(LatestSong.2.Title), - ]</label>
 			<visible>ControlGroup(3310).HasFocus(3314) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
 		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestSong.1.Title)]</label>
+			<label fallback="Not Available">$INFO[Window.Property(LatestSong.1.Album)]$INFO[Window.Property(LatestSong.1.Title), - ]</label>
 			<visible>ControlGroup(3310).HasFocus(3315) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
@@ -1095,27 +1095,27 @@
 			</control>
 		</control>
 		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestEpisode.5.ShowTitle)] - $INFO[Window.Property(LatestEpisode.5.EpisodeNo)]</label>
+			<label fallback="Not Available">$INFO[Window.Property(LatestEpisode.5.ShowTitle)]$INFO[Window.Property(LatestEpisode.5.EpisodeNo), - ]</label>
 			<visible>ControlGroup(3510).HasFocus(3511) + ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
 		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestEpisode.4.ShowTitle)] - $INFO[Window.Property(LatestEpisode.4.EpisodeNo)]</label>
+			<label fallback="Not Available">$INFO[Window.Property(LatestEpisode.4.ShowTitle)]$INFO[Window.Property(LatestEpisode.4.EpisodeNo), - ]</label>
 			<visible>ControlGroup(3510).HasFocus(3512) + ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
 		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestEpisode.3.ShowTitle)] - $INFO[Window.Property(LatestEpisode.3.EpisodeNo)]</label>
+			<label fallback="Not Available">$INFO[Window.Property(LatestEpisode.3.ShowTitle)]$INFO[Window.Property(LatestEpisode.3.EpisodeNo), - ]</label>
 			<visible>ControlGroup(3510).HasFocus(3513) + ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
 		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestEpisode.2.ShowTitle)] - $INFO[Window.Property(LatestEpisode.2.EpisodeNo)]</label>
+			<label fallback="Not Available">$INFO[Window.Property(LatestEpisode.2.ShowTitle)]$INFO[Window.Property(LatestEpisode.2.EpisodeNo), - ]</label>
 			<visible>ControlGroup(3510).HasFocus(3514) + ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
 		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestEpisode.1.ShowTitle)] - $INFO[Window.Property(LatestEpisode.1.EpisodeNo)]</label>
+			<label fallback="Not Available">$INFO[Window.Property(LatestEpisode.1.ShowTitle)]$INFO[Window.Property(LatestEpisode.1.EpisodeNo), - ]</label>
 			<visible>ControlGroup(3510).HasFocus(3515) + ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>

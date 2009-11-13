@@ -164,7 +164,7 @@
 				<description>Name of Plugin</description>
 				<label>$INFO[Container.PluginName]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>!IsEmpty(Container.PluginName) + !Window.IsActive(134)</visible>
+				<visible>!IsEmpty(Container.PluginName) + !Window.IsActive(134) + !Container.Content(episodes)</visible>
 			</control>
 			<control type="label">
 				<description>Plugins</description>

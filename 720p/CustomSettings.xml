@@ -967,6 +967,7 @@
 				</control>
 
 				<control type="image">
+					<include>Animation_CommonFadeNoHide</include>
 					<posx>708</posx>
 					<posy>0</posy>
 					<height>24</height>
@@ -976,6 +977,7 @@
 				</control>
 
 				<control type="image">
+					<include>Animation_CommonFadeNoHide</include>
 					<include>Animation_ZoomOutZoomIn</include>
 					<include>Animation_ZoomedByMenu</include>
 					<posx>170</posx>
@@ -987,6 +989,7 @@
 				</control>
 
 				<control type="image">
+					<include>Animation_CommonFadeNoHide</include>
 					<include>Animation_ZoomOutZoomIn</include>
 					<include>Animation_ZoomedByMenu</include>
 					<posx>170</posx>

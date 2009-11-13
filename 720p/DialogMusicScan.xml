@@ -35,10 +35,10 @@
 			<width>707</width>
 			<height>183</height>
 			<control type="image">
-				<posx>322</posx>
-				<posy>10</posy>
-				<width>50</width>
-				<height>50</height>
+				<posx>324</posx>
+				<posy>12</posy>
+				<width>46</width>
+				<height>46</height>
 				<texture>dialogs/dialog_back.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>

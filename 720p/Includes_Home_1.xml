@@ -88,11 +88,12 @@
 					<include>Home_MainMenuLabel</include>
 					<label>Programs</label>
 					<visible>!ControlGroup(3100).HasFocus()</visible>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(1)">Conditional</animation>
 				</control>
 				<include>SubMenu_Programs</include>
 				<include>Home_MainMenuShade</include>
 				<control type="image" id="398">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>
@@ -101,7 +102,7 @@
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>
@@ -134,11 +135,12 @@
 					<include>Home_MainMenuLabel</include>
 					<label>3</label>
 					<visible>!ControlGroup(3200).HasFocus()</visible>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(2)">Conditional</animation>
 				</control>
 				<include>SubMenu_Videos</include>
 				<include>Home_MainMenuShade</include>
 				<control type="image" id="398">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>
@@ -147,7 +149,7 @@
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>
@@ -209,11 +211,12 @@
 					<include>Home_MainMenuLabel</include>
 					<label>2</label>
 					<visible>![ControlGroup(3300).HasFocus() | ControlGroup(3310).HasFocus()]</visible>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(3)">Conditional</animation>
 				</control>
 				<include>SubMenu_Music</include>
 				<include>Home_MainMenuShade</include>
 				<control type="image" id="398">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>
@@ -222,7 +225,7 @@
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>
@@ -283,11 +286,12 @@
 					<include>Home_MainMenuLabel</include>
 					<label>342</label>
 					<visible>![ControlGroup(3400).HasFocus() | ControlGroup(3410).HasFocus()])</visible>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(4)">Conditional</animation>
 				</control>
 				<include>SubMenu_Movies</include>
 				<include>Home_MainMenuShade</include>
 				<control type="image" id="398">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>
@@ -296,7 +300,7 @@
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>
@@ -357,11 +361,12 @@
 					<include>Home_MainMenuLabel</include>
 					<label>20343</label>
 					<visible>![ControlGroup(3500).HasFocus() | ControlGroup(3510).HasFocus()]</visible>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(5)">Conditional</animation>
 				</control>
 				<include>SubMenu_TVShows</include>
 				<include>Home_MainMenuShade</include>
 				<control type="image" id="398">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>
@@ -370,7 +375,7 @@
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>
@@ -406,11 +411,12 @@
 					<include>Home_MainMenuLabel</include>
 					<label>1</label>
 					<visible>!ControlGroup(3600).HasFocus()</visible>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(6)">Conditional</animation>
 				</control>
 				<include>SubMenu_Pictures</include>
 				<include>Home_MainMenuShade</include>
 				<control type="image" id="398">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>
@@ -419,7 +425,7 @@
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>
@@ -493,11 +499,12 @@
 					<include>Home_MainMenuLabel</include>
 					<label>8</label>
 					<visible>!ControlGroup(3700).HasFocus()</visible>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(7)">Conditional</animation>
 				</control>
 				<include>SubMenu_Weather</include>
 				<include>Home_MainMenuShade</include>
 				<control type="image" id="398">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>
@@ -506,7 +513,7 @@
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>
@@ -567,11 +574,12 @@
 					<include>Home_MainMenuLabel</include>
 					<label>5</label>
 					<visible>!ControlGroup(3800).HasFocus()</visible>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(8)">Conditional</animation>
 				</control>
 				<include>SubMenu_Settings</include>
 				<include>Home_MainMenuShade</include>
 				<control type="image" id="398">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>
@@ -580,7 +588,7 @@
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
-					<posx>340</posx>
+					<posx>338</posx>
 					<posy>274</posy>
 					<width>12</width>
 					<height>24</height>

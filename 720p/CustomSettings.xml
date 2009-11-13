@@ -481,14 +481,27 @@
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
-						<label>Weather Artwork based on current conditions</label>
+						<label>Show current Weather in panel</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(homeweather)</onclick>
 						<selected>Skin.HasSetting(homeweather)</selected>
-						<visible>!Skin.HasSetting(home2)</visible>
+						<visible>![Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
 					</control>
-					<control type="togglebutton" id="402">
+					<control type="radiobutton" id="402">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Show current Weather in background</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(homeweather)</onclick>
+						<selected>Skin.HasSetting(homeweather)</selected>
+						<visible>Skin.HasSetting(home3)</visible>
+					</control>
+					<control type="togglebutton" id="403">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -507,7 +520,7 @@
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
 					</control>
-					<control type="togglebutton" id="403">
+					<control type="togglebutton" id="404">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -526,7 +539,7 @@
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
 					</control>
-					<control type="togglebutton" id="404">
+					<control type="togglebutton" id="405">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -545,7 +558,7 @@
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
 					</control>
-					<control type="togglebutton" id="405">
+					<control type="togglebutton" id="406">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -564,7 +577,7 @@
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
 					</control>
-					<control type="togglebutton" id="406">
+					<control type="togglebutton" id="407">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -583,7 +596,7 @@
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
 					</control>
-					<control type="togglebutton" id="407">
+					<control type="togglebutton" id="408">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -602,7 +615,7 @@
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
 					</control>
-					<control type="togglebutton" id="408">
+					<control type="togglebutton" id="409">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -621,7 +634,7 @@
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
 					</control>
-					<control type="togglebutton" id="409">
+					<control type="togglebutton" id="410">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -640,7 +653,7 @@
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
 					</control>
-					<control type="togglebutton" id="410">
+					<control type="togglebutton" id="411">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -659,7 +672,7 @@
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
 					</control>
-					<control type="togglebutton" id="411">
+					<control type="togglebutton" id="412">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -678,7 +691,7 @@
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
 					</control>
-					<control type="togglebutton" id="412">
+					<control type="togglebutton" id="413">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -698,7 +711,7 @@
 						<alttexturefocus>-</alttexturefocus>
 						<visible>!Skin.HasSetting(homeweather)</visible>
 					</control>
-					<control type="togglebutton" id="413">
+					<control type="togglebutton" id="414">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -718,7 +731,7 @@
 						<alttexturefocus>-</alttexturefocus>
 						<visible>!Skin.HasSetting(homeweather)</visible>
 					</control>
-					<control type="togglebutton" id="414">
+					<control type="togglebutton" id="415">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -737,7 +750,7 @@
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
 					</control>
-					<control type="togglebutton" id="415">
+					<control type="togglebutton" id="416">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -756,7 +769,7 @@
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
 					</control>
-					<control type="togglebutton" id="416">
+					<control type="togglebutton" id="417">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -775,7 +788,7 @@
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
 					</control>
-					<control type="togglebutton" id="417">
+					<control type="togglebutton" id="418">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -794,7 +807,7 @@
 						<alttexturenofocus>-</alttexturenofocus>
 						<alttexturefocus>-</alttexturefocus>
 					</control>
-					<control type="togglebutton" id="418">
+					<control type="togglebutton" id="419">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -814,7 +827,7 @@
 						<alttexturefocus>-</alttexturefocus>
 						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
-					<control type="togglebutton" id="419">
+					<control type="togglebutton" id="420">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -834,7 +847,7 @@
 						<alttexturefocus>-</alttexturefocus>
 						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
-					<control type="togglebutton" id="420">
+					<control type="togglebutton" id="421">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -854,7 +867,7 @@
 						<alttexturefocus>-</alttexturefocus>
 						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
-					<control type="togglebutton" id="421">
+					<control type="togglebutton" id="422">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -874,7 +887,7 @@
 						<alttexturefocus>-</alttexturefocus>
 						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
-					<control type="togglebutton" id="422">
+					<control type="togglebutton" id="423">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -894,7 +907,7 @@
 						<alttexturefocus>-</alttexturefocus>
 						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
-					<control type="togglebutton" id="423">
+					<control type="togglebutton" id="424">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>

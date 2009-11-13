@@ -494,7 +494,7 @@
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Weather.FanartCode]</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="backdrops/weather.jpg">special://skin/extras/weather/$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
 					<visible>Skin.HasSetting(homeweather) + !ControlGroup(3700).HasFocus()</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>

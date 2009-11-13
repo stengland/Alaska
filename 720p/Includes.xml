@@ -552,12 +552,12 @@
 					<icon>special://skin/media/backdrops/weather.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomWeatherImage)]</thumb>
 					<onclick>ActivateWindow(2600)</onclick>
-					<visible>!Skin.HasSetting(noweather) + !Skin.HasSetting(homeweather)]</visible>
+					<visible>!Skin.HasSetting(noweather) + !Skin.HasSetting(homeweather)</visible>
 				</item>
 				<item id="6">
 					<description>Weather</description>
 					<label>8</label>
-					<icon>special://skin/extras/weather/$INFO[Weather.FanartCode]/</icon>
+					<icon>special://skin/extras/weather/$INFO[Window(Weather).Property(Current.FanartCode)]</icon>
 					<onclick>ActivateWindow(2600)</onclick>
 					<visible>!Skin.HasSetting(noweather) + Skin.HasSetting(homeweather)</visible>
 				</item>

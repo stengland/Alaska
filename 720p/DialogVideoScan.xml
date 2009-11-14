@@ -30,7 +30,8 @@
 
 		<control type="group">
 			<animation effect="slide" end="0,-200" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(2005) | Window.IsVisible(2006) | Window.IsVisible(2007)">Conditional</animation>
-			<animation effect="slide" end="0,-64" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(112)">Conditional</animation>
+			<animation effect="slide" end="0,-76" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(104) | Window.IsVisible(113)">Conditional</animation>
+			<animation effect="slide" end="0,-76" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(112)">Conditional</animation>
 			<posx>880</posx>
 			<posy>90</posy>
 			<width>707</width>
@@ -48,7 +49,7 @@
 				<posx>330</posx>
 				<posy>20</posy>
 				<width>35</width>
-				<height>28</height>
+				<height>32</height>
 				<texturebg>dialogs/clear.png</texturebg>
 				<lefttexture>-</lefttexture>
 				<midtexture>dialogs/grey.png</midtexture>
@@ -67,7 +68,7 @@
 				<posx>330</posx>
 				<posy>20</posy>
 				<width>35</width>
-				<height>28</height>
+				<height>32</height>
 				<texturebg>dialogs/clear.png</texturebg>
 				<lefttexture>-</lefttexture>
 				<midtexture>dialogs/grey.png</midtexture>

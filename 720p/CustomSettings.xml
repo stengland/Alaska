@@ -1217,14 +1217,298 @@
 						<onclick>Skin.ToggleSetting(hidemoviesettings)</onclick>
 						<selected>Skin.HasSetting(hidemoviesettings)</selected>
 					</control>
-					<!-- Add Music Items -->
+					<!-- Add Movie Items -->
 					<control type="button" id="537">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
-						<label>Music - Add Items</label>
+						<label>Movie - Add Items</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>-</onclick>
+						<selected>-</selected>
+					</control>
+					<!-- Hide TV Items -->
+					<control type="radiobutton" id="540">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide New Epiodes</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidetvnew)</onclick>
+						<selected>Skin.HasSetting(hidetvnew)</selected>
+					</control>
+					<control type="radiobutton" id="541">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Movie Genres</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidetvgenres)</onclick>
+						<selected>Skin.HasSetting(hidetvgenres)</selected>
+					</control>
+					<control type="radiobutton" id="542">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide TV Actors</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidetvactors)</onclick>
+						<selected>Skin.HasSetting(hidetvactors)</selected>
+					</control>
+					<control type="radiobutton" id="543">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide TV Years</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidetvyears)</onclick>
+						<selected>Skin.HasSetting(hidetvyears)</selected>
+					</control>
+					<control type="radiobutton" id="544">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide TV Files</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidetvfiles)</onclick>
+						<selected>Skin.HasSetting(hidetvfiles)</selected>
+					</control>
+					<control type="radiobutton" id="545">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide TV Settings</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidetvsettings)</onclick>
+						<selected>Skin.HasSetting(hidetvsettings)</selected>
+					</control>
+					<!-- Add TV Items -->
+					<control type="button" id="546">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>TV - Add Items</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>-</onclick>
+						<selected>-</selected>
+					</control>
+					<!-- Hide Picture Items -->
+					<control type="radiobutton" id="550">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Picture Setting</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidepicturesettings)</onclick>
+						<selected>Skin.HasSetting(hidepicturesettings)</selected>
+					</control>
+					<!-- Add Picture Items -->
+					<control type="button" id="551">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Picture - Add Items</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>-</onclick>
+						<selected>-</selected>
+					</control>
+					<!-- Hide Weather Items -->
+					<control type="radiobutton" id="560">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Today</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hideday0)</onclick>
+						<selected>Skin.HasSetting(hideday0)</selected>
+					</control>
+					<control type="radiobutton" id="561">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Tomorrow</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hideday1)</onclick>
+						<selected>Skin.HasSetting(hideday1)</selected>
+					</control>
+					<control type="radiobutton" id="562">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Next Day</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hideday2)</onclick>
+						<selected>Skin.HasSetting(hideday2)</selected>
+					</control>
+					<control type="radiobutton" id="563">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide The Day After</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hideday3)</onclick>
+						<selected>Skin.HasSetting(hideday3)</selected>
+					</control>
+					<control type="radiobutton" id="564">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Weather Settings</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hideweathersettings)</onclick>
+						<selected>Skin.HasSetting(hideweathersettings)</selected>
+					</control>
+					<!-- Add Weather Items -->
+					<control type="button" id="565">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Weather - Add Items</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>-</onclick>
+						<selected>-</selected>
+					</control>
+					<!-- Hide Settings Items -->
+					<control type="radiobutton" id="570">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Quit</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidequit)</onclick>
+						<selected>Skin.HasSetting(hidequit)</selected>
+					</control>
+					<control type="radiobutton" id="571">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Shutdown</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hideshutdown)</onclick>
+						<selected>Skin.HasSetting(hideshutdown)</selected>
+					</control>
+					<control type="radiobutton" id="572">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Reset</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidereset)</onclick>
+						<selected>Skin.HasSetting(hidereset)</selected>
+					</control>
+					<control type="radiobutton" id="573">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Suspend</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidesuspend)</onclick>
+						<selected>Skin.HasSetting(hidesuspend)</selected>
+					</control>
+					<control type="radiobutton" id="574">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Hibernate</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidehibernate)</onclick>
+						<selected>Skin.HasSetting(hidehibernate)</selected>
+					</control>
+					<control type="radiobutton" id="575">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Logoff</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidelogoff)</onclick>
+						<selected>Skin.HasSetting(hidelogoff)</selected>
+					</control>
+					<control type="radiobutton" id="576">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Info</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hideinfo)</onclick>
+						<selected>Skin.HasSetting(hideinfo)</selected>
+					</control>
+					<!-- Add Settings Items -->
+					<control type="button" id="577">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Settings - Add Items</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>-</onclick>

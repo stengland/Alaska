@@ -305,7 +305,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>[Container(300).HasFocus(4) + ![ControlGroup(3400).HasFocus() | ControlGroup(3410).HasFocus()]] | [Container(3400).HasNext + ControlGroup(3400).HasFocus()] | [Container(3410).HasPrevious + ControlGroup(3410).HasFocus()] | [!Container(3410).HasPrevious + ControlGroup(3410).HasFocus()]</visible>
+					<visible>[[Container(300).HasFocus(4) + ![ControlGroup(3400).HasFocus() | ControlGroup(3410).HasFocus()]] + ![Skin.HasSetting(hidemovienew) + Skin.HasSetting(hidemoviestudios) + Skin.HasSetting(hidemoviegenres) + Skin.HasSetting(hidemovieactors) + Skin.HasSetting(hidemovieyears) + Skin.HasSetting(hidemoviefiles) + Skin.HasSetting(hidemoviesettings)]] | [Container(3400).HasNext + ControlGroup(3400).HasFocus()] | [Container(3410).HasPrevious + ControlGroup(3410).HasFocus()] | [!Container(3410).HasPrevious + ControlGroup(3410).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 			</control>
@@ -380,7 +380,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>[Container(300).HasFocus(5) + ![ControlGroup(3500).HasFocus() | ControlGroup(3510).HasFocus()]] | [Container(3500).HasNext + ControlGroup(3500).HasFocus()] | [Container(3510).HasPrevious + ControlGroup(3510).HasFocus()] | [!Container(3510).HasPrevious + ControlGroup(3510).HasFocus()]</visible>
+					<visible>[[Container(300).HasFocus(5) + ![ControlGroup(3500).HasFocus() | ControlGroup(3510).HasFocus()]] + ![Skin.HasSetting(hidetvnew) + Skin.HasSetting(hidetvgenres) + Skin.HasSetting(hidetvactors) + Skin.HasSetting(hidetvyears) + Skin.HasSetting(hidetvfiles) + Skin.HasSetting(hidetvsettings)]] | [Container(3500).HasNext + ControlGroup(3500).HasFocus()] | [Container(3510).HasPrevious + ControlGroup(3510).HasFocus()] | [!Container(3510).HasPrevious + ControlGroup(3510).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 			</control>
@@ -430,7 +430,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>[Container(300).HasFocus(6) + !ControlGroup(3600).HasFocus()] | [Container(3600).HasNext + ControlGroup(3600).HasFocus()]</visible>
+					<visible>[[Container(300).HasFocus(6) + !ControlGroup(3600).HasFocus()] + !Skin.HasSetting(hidepicturesettings)] | [Container(3600).HasNext + ControlGroup(3600).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 				<visible>!Skin.HasSetting(nopictures)</visible>
@@ -518,7 +518,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>[Container(300).HasFocus(7) + !ControlGroup(3700).HasFocus()] | [Container(3700).HasNext + ControlGroup(3700).HasFocus()]</visible>
+					<visible>[[Container(300).HasFocus(7) + !ControlGroup(3700).HasFocus()] + ![Skin.HasSetting(hideday0) + Skin.HasSetting(hideday1) + Skin.HasSetting(hideday2) + Skin.HasSetting(hideday3) + Skin.HasSetting(hideweathersettings)]] | [Container(3700).HasNext + ControlGroup(3700).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 				<visible>!Skin.HasSetting(noweather)</visible>
@@ -593,7 +593,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>[Container(300).HasFocus(8) + !ControlGroup(3800).HasFocus()] | [Container(3800).HasNext + ControlGroup(3800).HasFocus()]</visible>
+					<visible>[[Container(300).HasFocus(8) + !ControlGroup(3800).HasFocus()] + ![Skin.HasSetting(hidequit) + Skin.HasSetting(hideshutdown) + Skin.HasSetting(hidereset) + Skin.HasSetting(hidesuspend) + Skin.HasSetting(hidehibernate) + Skin.HasSetting(hidelogoff) + Skin.HasSetting(hideinfo)]] | [Container(3800).HasNext + ControlGroup(3800).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 				<visible>!Skin.HasSetting(nosettings)</visible>
@@ -780,22 +780,86 @@
 		<!-- TV Shows -->
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3501)</onfocus>
-			<visible>Container(300).HasFocus(5)</visible>
+			<visible>Container(300).HasFocus(5) + !Skin.HasSetting(hidetvnew)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3502)</onfocus>
+			<visible>Container(300).HasFocus(5) + !Skin.HasSetting(hidetvstudios)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3503)</onfocus>
+			<visible>Container(300).HasFocus(5) + !Skin.HasSetting(hidetvgenres)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3504)</onfocus>
+			<visible>Container(300).HasFocus(5) + !Skin.HasSetting(hidetvactors)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3505)</onfocus>
+			<visible>Container(300).HasFocus(5) + !Skin.HasSetting(hidetvyears)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3506)</onfocus>
+			<visible>Container(300).HasFocus(5) + !Skin.HasSetting(hidetvfiles)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3507)</onfocus>
+			<visible>Container(300).HasFocus(5) + !Skin.HasSetting(hidetvsettings)</visible>
 		</control>
 		<!-- Pictures -->
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3601)</onfocus>
-			<visible>Container(300).HasFocus(6)</visible>
+			<visible>Container(300).HasFocus(6) + !Skin.HasSetting(hidepicturesettings)</visible>
 		</control>
 		<!-- Weather -->
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3701)</onfocus>
-			<visible>Container(300).HasFocus(7)</visible>
+			<visible>Container(300).HasFocus(7) + !Skin.HasSetting(hideday0)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3702)</onfocus>
+			<visible>Container(300).HasFocus(7) + !Skin.HasSetting(hideday1)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3703)</onfocus>
+			<visible>Container(300).HasFocus(7) + !Skin.HasSetting(hideday2)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3704)</onfocus>
+			<visible>Container(300).HasFocus(7) + !Skin.HasSetting(hideday3)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3705)</onfocus>
+			<visible>Container(300).HasFocus(7) + !Skin.HasSetting(hideweathersettings)</visible>
 		</control>
 		<!-- Settings -->
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3801)</onfocus>
-			<visible>Container(300).HasFocus(8)</visible>
+			<visible>Container(300).HasFocus(8) + !Skin.HasSetting(hidequit)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3802)</onfocus>
+			<visible>Container(300).HasFocus(8) + !Skin.HasSetting(hideshutdown)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3803)</onfocus>
+			<visible>Container(300).HasFocus(8) + !Skin.HasSetting(hidereset)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3804)</onfocus>
+			<visible>Container(300).HasFocus(8) + !Skin.HasSetting(hidesuspend)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3805)</onfocus>
+			<visible>Container(300).HasFocus(8) + !Skin.HasSetting(hidehibernate)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3806)</onfocus>
+			<visible>Container(300).HasFocus(8) + !Skin.HasSetting(hidelogoff)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3807)</onfocus>
+			<visible>Container(300).HasFocus(8) + !Skin.HasSetting(hideinfo)</visible>
 		</control>
 		<!-- OnLeft Controls -->
 		<control type="button" id="998">
@@ -1234,7 +1298,7 @@
 				<label>Picture Settings</label>
 				<onclick>ActivateWindow(PicturesSettings)</onclick>
 				<include>Home_MainMenuLabel</include>
-				<visible allowhiddenfocus="false">!Skin.HasSetting(hideopicturesettings)</visible>
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidepicturesettings)</visible>
 			</control>
 		</control>
 	</include>

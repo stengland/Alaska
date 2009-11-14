@@ -233,20 +233,6 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(noprograms)</onclick>
 						<selected>Skin.HasSetting(noprograms)</selected>
-						<visible>!Skin.HasSetting(launcherforgames) + Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
-					</control>
-					<control type="radiobutton" id="252">
-						<width>740</width>
-						<font>Font_Settings</font>
-						<textcolor>Text</textcolor>
-						<focusedcolor>TextFocused</focusedcolor>
-						<!-- LOC -->
-						<label>Hide Games</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<onclick>Skin.ToggleSetting(nogames)</onclick>
-						<selected>Skin.HasSetting(nogames)</selected>
-						<visible>Skin.HasSetting(launcherforgames)</visible>
 					</control>
 					<control type="radiobutton" id="253">
 						<width>740</width>
@@ -936,6 +922,7 @@
 					</control>
 				</control>
 
+				<!-- Sub Menus -->
 				<control type="grouplist" id="9005">
 					<visible>Container(9000).Hasfocus(5)</visible>
 					<width>740</width>
@@ -947,19 +934,8 @@
 					<ondown>9005</ondown>
 					<pagecontrol>-</pagecontrol>
 					<include>Animation_CommonFadeNoHide</include>
-					<control type="button" id="500">
-						<width>740</width>
-						<font>Font_Settings</font>
-						<textcolor>Text</textcolor>
-						<focusedcolor>TextFocused</focusedcolor>
-						<!-- LOC -->
-						<label>Programs - Hide Items</label>
-						<align>left</align>
-						<aligny>center</aligny>
-						<onfocus>Skin.ToggleSetting(openprogramsub)</onfocus>
-						<selected>Skin.HasSetting(debugmode)</selected>
-					</control>
-					<control type="radiobutton" id="501">
+					<!-- Hide Program Items -->
+					<control type="radiobutton" id="500">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -970,9 +946,8 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidegames)</onclick>
 						<selected>Skin.HasSetting(hidegames)</selected>
-						<visible>Skin.HasSetting(openprogramsub)</visible>
 					</control>
-					<control type="radiobutton" id="502">
+					<control type="radiobutton" id="501">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -983,9 +958,8 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidescripts)</onclick>
 						<selected>Skin.HasSetting(hidescripts)</selected>
-						<visible>Skin.HasSetting(openprogramsub)</visible>
 					</control>
-					<control type="radiobutton" id="503">
+					<control type="radiobutton" id="502">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -996,9 +970,9 @@
 						<aligny>center</aligny>
 						<selected>Skin.HasSetting(hidefavs)</selected>
 						<onclick>Skin.ToggleSetting(hidefavs)</onclick>
-						<visible>Skin.HasSetting(openprogramsub)</visible>
 					</control>
-					<control type="radiobutton" id="504">
+					<!-- Add Program Items -->
+					<control type="button" id="504">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -1008,7 +982,252 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>-</onclick>
-						<onfocus>Skin.Reset(openprogramsub)</onfocus>
+						<selected>-</selected>
+					</control>
+					<!-- Hide Video Items -->
+					<control type="radiobutton" id="510">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Plugins</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hideplugins)</onclick>
+						<selected>Skin.HasSetting(hideplugins)</selected>
+					</control>
+					<control type="radiobutton" id="511">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Music Vids</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidemusicvids)</onclick>
+						<selected>Skin.HasSetting(hidemusicvids)</selected>
+					</control>
+					<control type="radiobutton" id="512">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Video Settings</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidevideosettings)</onclick>
+						<selected>Skin.HasSetting(hidevideosettings)</selected>
+					</control>
+					<!-- Add Video Items -->
+					<control type="radiobutton" id="513">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Videos - Add Items</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>-</onclick>
+						<selected>-</selected>
+					</control>
+					<!-- Hide Music Items -->
+					<control type="radiobutton" id="520">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide New Albums</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidemusicnew)</onclick>
+						<selected>Skin.HasSetting(hidemusicnew)</selected>
+					</control>
+					<control type="radiobutton" id="521">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Party Mode</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidepartymode)</onclick>
+						<selected>Skin.HasSetting(hidepartymode)</selected>
+					</control>
+					<control type="radiobutton" id="522">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Music Genres</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidemusicgenres)</onclick>
+						<selected>Skin.HasSetting(hidemusicgenres)</selected>
+					</control>
+					<control type="radiobutton" id="523">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Music Artists</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidemusicartists)</onclick>
+						<selected>Skin.HasSetting(hidemusicartists)</selected>
+					</control>
+					<control type="radiobutton" id="524">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Music Years</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidemusicyears)</onclick>
+						<selected>Skin.HasSetting(hidemusicyears)</selected>
+					</control>
+					<control type="radiobutton" id="525">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Music Files</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidemusicfiles)</onclick>
+						<selected>Skin.HasSetting(hidemusicfiles)</selected>
+					</control>
+					<control type="radiobutton" id="526">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Music Settings</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidemusicsettings)</onclick>
+						<selected>Skin.HasSetting(hidemusicsettings)</selected>
+					</control>
+					<!-- Add Music Items -->
+					<control type="button" id="527">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Music - Add Items</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>-</onclick>
+						<selected>-</selected>
+					</control>
+					<!-- Hide Movie Items -->
+					<control type="radiobutton" id="530">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide New Movies</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidemovienew)</onclick>
+						<selected>Skin.HasSetting(hidemovienew)</selected>
+					</control>
+					<control type="radiobutton" id="531">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Movie Studios</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidemoviestudios)</onclick>
+						<selected>Skin.HasSetting(hidemoviestudios)</selected>
+					</control>
+					<control type="radiobutton" id="532">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Movie Genres</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidemoviegenres)</onclick>
+						<selected>Skin.HasSetting(hidemoviegenres)</selected>
+					</control>
+					<control type="radiobutton" id="533">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Movie Actors</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidemovieactors)</onclick>
+						<selected>Skin.HasSetting(hidemovieactors)</selected>
+					</control>
+					<control type="radiobutton" id="534">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Movie Years</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidemovieyears)</onclick>
+						<selected>Skin.HasSetting(hidemovieyears)</selected>
+					</control>
+					<control type="radiobutton" id="535">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Movie Files</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidemoviefiles)</onclick>
+						<selected>Skin.HasSetting(hidemoviefiles)</selected>
+					</control>
+					<control type="radiobutton" id="536">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Hide Movie Settings</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(hidemoviesettings)</onclick>
+						<selected>Skin.HasSetting(hidemoviesettings)</selected>
+					</control>
+					<!-- Add Music Items -->
+					<control type="button" id="537">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Music - Add Items</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>-</onclick>
 						<selected>-</selected>
 					</control>
 				</control>

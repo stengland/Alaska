@@ -107,7 +107,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>[Container(300).HasFocus(1) + !ControlGroup(3100).HasFocus()] | [Container(3100).HasNext + ControlGroup(3100).HasFocus()]</visible>
+					<visible>[[Container(300).HasFocus(1) + !ControlGroup(3100).HasFocus()] + ![Skin.HasSetting(hidegames) + Skin.HasSetting(hidescripts) + Skin.HasSetting(hidefavs)]] | [Container(3100).HasNext + ControlGroup(3100).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 				<visible>!Skin.HasSetting(noprograms)</visible>
@@ -154,7 +154,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>[Container(300).HasFocus(2) + !ControlGroup(3200).HasFocus()] | [Container(3200).HasNext + ControlGroup(3200).HasFocus()]</visible>
+					<visible>[[Container(300).HasFocus(2) + !ControlGroup(3200).HasFocus()] + ![Skin.HasSetting(hideplugins) + Skin.HasSetting(hidemusicvids) + Skin.HasSetting(hidevideosettings)]] | [Container(3200).HasNext + ControlGroup(3200).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 				<visible>!Skin.HasSetting(novideos)</visible>
@@ -230,7 +230,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>[Container(300).HasFocus(3) + ![ControlGroup(3300).HasFocus() | ControlGroup(3310).HasFocus()]] | [Container(3300).HasNext + ControlGroup(3300).HasFocus()] | [Container(3310).HasPrevious + ControlGroup(3310).HasFocus()] | [!Container(3310).HasPrevious + ControlGroup(3310).HasFocus()]</visible>
+					<visible>[[Container(300).HasFocus(3) + ![ControlGroup(3300).HasFocus() | ControlGroup(3310).HasFocus()]] + ![Skin.HasSetting(hidemusicnew) + Skin.HasSetting(hidepartymode) + Skin.HasSetting(hidemusicgenres) + Skin.HasSetting(hidemusicartists) + Skin.HasSetting(hidemusicyears) + Skin.HasSetting(hidemusicfiles) + Skin.HasSetting(hidemusicsettings)]] | [Container(3300).HasNext + ControlGroup(3300).HasFocus()] | [Container(3310).HasPrevious + ControlGroup(3310).HasFocus()] | [!Container(3310).HasPrevious + ControlGroup(3310).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 			</control>
@@ -693,6 +693,7 @@
 			<visible>![Container(300).HasFocus(3) | Container(300).HasFocus(4) | Container(300).HasFocus(5)]</visible>
 		</control>
 		<!-- OnDown Controls -->
+		<!-- Programs -->
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3101)</onfocus>
 			<visible>Container(300).HasFocus(1) + !Skin.HasSetting(hidegames)</visible>
@@ -705,30 +706,93 @@
 			<onfocus>SetFocus(3103)</onfocus>
 			<visible>Container(300).HasFocus(1) + !Skin.HasSetting(hidefavs)</visible>
 		</control>
+		<!-- Videos -->
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3201)</onfocus>
-			<visible>Container(300).HasFocus(2)</visible>
+			<visible>Container(300).HasFocus(2) + !Skin.HasSetting(hideplugins)</visible>
 		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3202)</onfocus>
+			<visible>Container(300).HasFocus(2) + !Skin.HasSetting(hidemusicvids)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3203)</onfocus>
+			<visible>Container(300).HasFocus(2) + !Skin.HasSetting(hidevideosettings)</visible>
+		</control>
+		<!-- Music -->
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3301)</onfocus>
-			<visible>Container(300).HasFocus(3)</visible>
+			<visible>Container(300).HasFocus(3) + !Skin.HasSetting(hidemusicnew)</visible>
 		</control>
 		<control type="button" id="3999">
-			<onfocus>SetFocus(3401)</onfocus>
-			<visible>Container(300).HasFocus(4)</visible>
+			<onfocus>SetFocus(3302)</onfocus>
+			<visible>Container(300).HasFocus(3) + !Skin.HasSetting(hidepartymode)</visible>
 		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3303)</onfocus>
+			<visible>Container(300).HasFocus(3) + !Skin.HasSetting(hidemusicgenres)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3304)</onfocus>
+			<visible>Container(300).HasFocus(3) + !Skin.HasSetting(hidemusicartists)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3305)</onfocus>
+			<visible>Container(300).HasFocus(3) + !Skin.HasSetting(hidemusicyears)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3306)</onfocus>
+			<visible>Container(300).HasFocus(3) + !Skin.HasSetting(hidemusicfiles)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3307)</onfocus>
+			<visible>Container(300).HasFocus(3) + !Skin.HasSetting(hidemusicsettings)</visible>
+		</control>
+		<!-- Movies -->
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3401)</onfocus>
+			<visible>Container(300).HasFocus(4) + !Skin.HasSetting(hidemovienew)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3402)</onfocus>
+			<visible>Container(300).HasFocus(4) + !Skin.HasSetting(hidemoviestudios)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3403)</onfocus>
+			<visible>Container(300).HasFocus(4) + !Skin.HasSetting(hidemoviegenres)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3404)</onfocus>
+			<visible>Container(300).HasFocus(4) + !Skin.HasSetting(hidemovieactors)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3405)</onfocus>
+			<visible>Container(300).HasFocus(4) + !Skin.HasSetting(hidemovieyears)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3406)</onfocus>
+			<visible>Container(300).HasFocus(4) + !Skin.HasSetting(hidemoviefiles)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3407)</onfocus>
+			<visible>Container(300).HasFocus(4) + !Skin.HasSetting(hidemoviesettings)</visible>
+		</control>
+		<!-- TV Shows -->
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3501)</onfocus>
 			<visible>Container(300).HasFocus(5)</visible>
 		</control>
+		<!-- Pictures -->
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3601)</onfocus>
 			<visible>Container(300).HasFocus(6)</visible>
 		</control>
+		<!-- Weather -->
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3701)</onfocus>
 			<visible>Container(300).HasFocus(7)</visible>
 		</control>
+		<!-- Settings -->
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3801)</onfocus>
 			<visible>Container(300).HasFocus(8)</visible>
@@ -950,30 +1014,36 @@
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemovienew)</visible>
 			</control>
 			<control type="button" id="3402">
+				<label>Studios</label>
+				<onclick>ActivateWindow(VideoLibrary,moviestudios,return)</onclick>
+				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemoviestudios)</visible>
+			</control>
+			<control type="button" id="3403">
 				<label>31922</label>
 				<onclick>ActivateWindow(VideoLibrary,moviegenres,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemoviegenres)</visible>
 			</control>
-			<control type="button" id="3403">
+			<control type="button" id="3404">
 				<label>31924</label>
 				<onclick>ActivateWindow(VideoLibrary,movieactors,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemovieactors)</visible>
 			</control>
-			<control type="button" id="3404">
+			<control type="button" id="3405">
 				<label>31923</label>
 				<onclick>ActivateWindow(VideoLibrary,movieyears,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemovieyears)</visible>
 			</control>
-			<control type="button" id="3405">
+			<control type="button" id="3406">
 				<label>Files</label>
 				<onclick>ActivateWindow(VideoFiles)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemoviefiles)</visible>
 			</control>
-			<control type="button" id="3406">
+			<control type="button" id="3407">
 				<label>13395</label>
 				<onclick>ActivateWindow(VideosSettings)</onclick>
 				<include>Home_MainMenuLabel</include> 

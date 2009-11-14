@@ -107,7 +107,7 @@
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
-					<visible>[[Container(300).HasFocus(1) + !ControlGroup(3100).HasFocus()] + ![Skin.HasSetting(hidegames) + Skin.HasSetting(hidescripts) + Skin.HasSetting(hidefavs)]] | [Container(3100).HasNext + ControlGroup(3100).HasFocus()]</visible>
+					<visible>[Container(300).HasFocus(1) + !ControlGroup(3100).HasFocus()] | [Container(3100).HasNext + ControlGroup(3100).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 				<visible>!Skin.HasSetting(noprograms)</visible>
@@ -135,7 +135,7 @@
 					<include>Home_MainMenuLabel</include>
 					<label>3</label>
 					<visible>!ControlGroup(3200).HasFocus()</visible>
-					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(2)">Conditional</animation>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(2) | ![Control.IsVisible(398) | Control.IsVisible(399)]">Conditional</animation>
 				</control>
 				<include>SubMenu_Videos</include>
 				<include>Home_MainMenuShade</include>
@@ -211,7 +211,7 @@
 					<include>Home_MainMenuLabel</include>
 					<label>2</label>
 					<visible>![ControlGroup(3300).HasFocus() | ControlGroup(3310).HasFocus()]</visible>
-					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(3)">Conditional</animation>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(3) | ![Control.IsVisible(398) | Control.IsVisible(399)]">Conditional</animation>
 				</control>
 				<include>SubMenu_Music</include>
 				<include>Home_MainMenuShade</include>
@@ -286,7 +286,7 @@
 					<include>Home_MainMenuLabel</include>
 					<label>342</label>
 					<visible>![ControlGroup(3400).HasFocus() | ControlGroup(3410).HasFocus()])</visible>
-					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(4)">Conditional</animation>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(4) | ![Control.IsVisible(398) | Control.IsVisible(399)]">Conditional</animation>
 				</control>
 				<include>SubMenu_Movies</include>
 				<include>Home_MainMenuShade</include>
@@ -361,7 +361,7 @@
 					<include>Home_MainMenuLabel</include>
 					<label>20343</label>
 					<visible>![ControlGroup(3500).HasFocus() | ControlGroup(3510).HasFocus()]</visible>
-					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(5)">Conditional</animation>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(5) | ![Control.IsVisible(398) | Control.IsVisible(399)]">Conditional</animation>
 				</control>
 				<include>SubMenu_TVShows</include>
 				<include>Home_MainMenuShade</include>
@@ -411,7 +411,7 @@
 					<include>Home_MainMenuLabel</include>
 					<label>1</label>
 					<visible>!ControlGroup(3600).HasFocus()</visible>
-					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(6)">Conditional</animation>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(6) | ![Control.IsVisible(398) | Control.IsVisible(399)]">Conditional</animation>
 				</control>
 				<include>SubMenu_Pictures</include>
 				<include>Home_MainMenuShade</include>
@@ -499,7 +499,7 @@
 					<include>Home_MainMenuLabel</include>
 					<label>8</label>
 					<visible>!ControlGroup(3700).HasFocus()</visible>
-					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(7)">Conditional</animation>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(7) | ![Control.IsVisible(398) | Control.IsVisible(399)]">Conditional</animation>
 				</control>
 				<include>SubMenu_Weather</include>
 				<include>Home_MainMenuShade</include>
@@ -574,7 +574,7 @@
 					<include>Home_MainMenuLabel</include>
 					<label>5</label>
 					<visible>!ControlGroup(3800).HasFocus()</visible>
-					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(8)">Conditional</animation>
+					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(8) | ![Control.IsVisible(398) | Control.IsVisible(399)]">Conditional</animation>
 				</control>
 				<include>SubMenu_Settings</include>
 				<include>Home_MainMenuShade</include>
@@ -795,14 +795,22 @@
 			<control type="button" id="3201">
 				<label>1037</label>
 				<onclick>ActivateWindow(25,plugin://video/)</onclick>
-				<include>Home_MainMenuLabel</include> 
+				<include>Home_MainMenuLabel</include>
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hideplugins)</visible>
 			</control>
 			<control type="button" id="3202">
 				<label>Music Videos</label>
 				<onclick>ActivateWindow(VideoLibrary,musicvideotitles,return)</onclick>
-				<include>Home_MainMenuLabel</include> 
+				<include>Home_MainMenuLabel</include>
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemusicvids)</visible>
 			</control>
-			<control type="button" id="3203">
+			<control type="button" id="3503">
+				<label>13395</label>
+				<onclick>ActivateWindow(VideosSettings)</onclick>
+				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidevideosettings)</visible>
+			</control>
+			<control type="button" id="3204">
 				<label>Play Disc</label>
 				<onclick>PlayDVD()</onclick>
 				<include>Home_MainMenuLabel</include>
@@ -826,7 +834,8 @@
 			<control type="button" id="3301">
 				<label>New Albums</label>
 				<onclick>ActivateWindow(MusicLibrary,recentlyaddedalbums,return)</onclick>
-				<include>Home_MainMenuLabel</include> 
+				<include>Home_MainMenuLabel</include>
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemusicnew)</visible>
 			</control>
 			<control type="button" id="3302">
 				<label>589</label>
@@ -834,31 +843,37 @@
 				<texturenofocus>-</texturenofocus>
 				<onclick>PlayerControl(Partymode(music))</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidepartymode)</visible>
 			</control>
 			<control type="button" id="3303">
 				<label>31922</label>
 				<onclick>ActivateWindow(MusicLibrary,genres,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemusicgenres)</visible>
 			</control>
 			<control type="button" id="3304">
 				<label>Artists</label>
 				<onclick>ActivateWindow(MusicLibrary,artists,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemusicartists)</visible>
 			</control>
 			<control type="button" id="3305">
 				<label>31923</label>
 				<onclick>ActivateWindow(MusicLibrary,years,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemusicyears)</visible>
 			</control>
 			<control type="button" id="3306">
 				<label>Files</label>
 				<onclick>ActivateWindow(MusicFiles)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemusicfiles)</visible>
 			</control>
 			<control type="button" id="3307">
 				<label>Music Settings</label>
 				<onclick>ActivateWindow(MusicSettings)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemusicsettings)</visible>
 			</control>
 		</control>
 		<control type="grouplist" id="3310">
@@ -932,31 +947,37 @@
 				<label>New Movies</label>
 				<onclick>ActivateWindow(VideoLibrary,recentlyaddedmovies,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemovienew)</visible>
 			</control>
 			<control type="button" id="3402">
 				<label>31922</label>
 				<onclick>ActivateWindow(VideoLibrary,moviegenres,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemoviegenres)</visible>
 			</control>
 			<control type="button" id="3403">
 				<label>31924</label>
 				<onclick>ActivateWindow(VideoLibrary,movieactors,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemovieactors)</visible>
 			</control>
 			<control type="button" id="3404">
 				<label>31923</label>
 				<onclick>ActivateWindow(VideoLibrary,movieyears,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemovieyears)</visible>
 			</control>
 			<control type="button" id="3405">
 				<label>Files</label>
 				<onclick>ActivateWindow(VideoFiles)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemoviefiles)</visible>
 			</control>
 			<control type="button" id="3406">
 				<label>13395</label>
 				<onclick>ActivateWindow(VideosSettings)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemoviesettings)</visible>
 			</control>
 		</control>
 		<control type="grouplist" id="3410">
@@ -1029,41 +1050,47 @@
 				<label>New Episodes</label>
 				<onclick>ActivateWindow(VideoLibrary,recentlyaddedepisodes,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidetvnew)</visible>
 			</control>
 			<control type="button" id="3502">
 				<label>31922</label>
 				<onclick>ActivateWindow(VideoLibrary,tvshowgenres,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidetvgenres)</visible>
 			</control>
 			<control type="button" id="3503">
 				<label>31924</label>
 				<onclick>ActivateWindow(VideoLibrary,tvshowactors,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidetvactors)</visible>
 			</control>
 			<control type="button" id="3504">
 				<label>31923</label>
 				<onclick>ActivateWindow(VideoLibrary,tvshowyears,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidetvyears)</visible>
 			</control>
 			<control type="button" id="3505">
 				<label>Files</label>
 				<onclick>ActivateWindow(VideoFiles)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidetvfiles)</visible>
 			</control>
 			<control type="button" id="3506">
 				<label>13395</label>
 				<onclick>ActivateWindow(VideosSettings)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidetvsettings)</visible>
 			</control>
 
 
-			<control type="button" id="3507">
+			<!--control type="button" id="3507">
 				<label>$INFO[Skin.String(VideoSub1_Name)]</label>
 				<onclick>Skin.Reset(submenu)</onclick>
 				<onclick>$INFO[Skin.String(VideoSub1_Path)]</onclick>
 				<visible>Skin.HasSetting(VideoSub1)</visible>
 				<include>Home_MainMenuLabel</include> 
-			</control>
+			</control-->
 
 
 		</control>
@@ -1136,7 +1163,8 @@
 			<control type="button" id="3601">
 				<label>Picture Settings</label>
 				<onclick>ActivateWindow(PicturesSettings)</onclick>
-				<include>Home_MainMenuLabel</include> 
+				<include>Home_MainMenuLabel</include>
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hideopicturesettings)</visible>
 			</control>
 		</control>
 	</include>
@@ -1155,28 +1183,33 @@
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3701">
 				<onclick>ActivateWindow(2600)</onclick>
-				<label fallback="Not Available">$INFO[Window(Weather).Property(Day0.Title)]: $INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
+				<label fallback="Not Available">$INFO[Window(Weather).Property(Current.Temperature),TODAY: ]$INFO[System.TemperatureUnits]</label>
 				<include>Home_MainMenuLabel</include>
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hideday0)</visible>
 			</control>
 			<control type="button" id="3702">
 				<onclick>ActivateWindow(2600)</onclick>
-				<label fallback="Not Available">$INFO[Window(Weather).Property(Day1.Title)]: $INFO[Window(Weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
+				<label fallback="Not Available">$INFO[Window(Weather).Property(Day1.HighTemp),TOMORROW: ]$INFO[System.TemperatureUnits]</label>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hideday1)</visible>
 			</control>
 			<control type="button" id="3703">
 				<onclick>ActivateWindow(2600)</onclick>
-				<label fallback="Not Available">$INFO[Window(Weather).Property(Day2.Title)]: $INFO[Window(Weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
+				<label fallback="Not Available">$INFO[Window(Weather).Property(Day2.Title)]$INFO[Window(Weather).Property(Day2.HighTemp),: ]$INFO[System.TemperatureUnits]</label>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hideday2)</visible>
 			</control>
 			<control type="button" id="3704">
 				<onclick>ActivateWindow(2600)</onclick>
-				<label fallback="Not Available">$INFO[Window(Weather).Property(Day3.Title)]: $INFO[Window(Weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</label>
+				<label fallback="Not Available">$INFO[Window(Weather).Property(Day3.Title)]$INFO[Window(Weather).Property(Day3.HighTemp),: ]$INFO[System.TemperatureUnits]</label>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hideday3)</visible>
 			</control>
 			<control type="button" id="3705">
 				<label>Weather Settings</label>
 				<onclick>ActivateWindow(WeatherSettings)</onclick>
 				<include>Home_MainMenuLabel</include>
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hideweathersettings)</visible>
 			</control>
 		</control>
 	</include>
@@ -1197,41 +1230,48 @@
 				<label>13012</label>
 				<onclick>Quit()</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidequit)</visible>
 			</control>
 			<control type="button" id="3802">
 				<label>13005</label>
 				<onclick>Shutdown()</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible>System.CanPowerdown</visible>
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hideshutdown)</visible>
 			</control>
 			<control type="button" id="3803">
 				<label>13013</label>
 				<onclick>Reset()</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible>System.CanReboot</visible> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidereset)</visible>
 			</control>
 			<control type="button" id="3804">
 				<label>13011</label>
 				<onclick>Suspend()</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible>System.CanSuspend</visible>
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidesuspend)</visible>
 			</control>
 			<control type="button" id="3805">
 				<label>13010</label>
 				<onclick>Hibernate()</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible>System.CanHibernate</visible>
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidehibernate)</visible>
 			</control>
 			<control type="button" id="3806">
 				<label>31209</label>
 				<onclick>System.LogOff</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible>System.HasLoginScreen</visible>
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidelogoff)</visible>
 			</control>
 			<control type="button" id="3807">
 				<label>31070</label>
 				<onclick>ActivateWindow(7)</onclick>
 				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hideinfo)</visible>
 			</control>
 		</control>
 	</include>

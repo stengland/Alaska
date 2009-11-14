@@ -1,7 +1,7 @@
 <!--Alaska-->
 
 <window id="0">
-	<defaultcontrol always="true">5042</defaultcontrol>
+	<defaultcontrol always="true">300</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
@@ -11,70 +11,6 @@
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
 		<include>Global_Filter</include>
-
-		<control type="button" id="5042">
-			<description>Trigger Weather update</description>
-			<posx>-20</posx>
-			<posy>-20</posy>
-			<width>1</width>
-			<height>1</height>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<label>$INFO[Weather.Conditions]</label>
-			<font>-</font>
-			<onfocus>SetFocus(5043)</onfocus>
-			<visible>Skin.HasSetting(Startup)</visible>
-		</control>
-		<control type="button" id="5042">
-			<description>Trigger Weather update</description>
-			<posx>-20</posx>
-			<posy>-20</posy>
-			<width>1</width>
-			<height>1</height>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<label>-</label>
-			<font>-</font>
-			<onfocus>SetFocus(5043)</onfocus>
-			<visible>!Skin.HasSetting(Startup)</visible>
-		</control>
-		<control type="button" id="5043">
-			<description>visible at startup</description>
-			<posx>-20</posx>
-			<posy>-20</posy>
-			<width>1</width>
-			<height>1</height>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<onfocus>XBMC.RunScript(special://skin/scripts/RecentlyAdded.py,limit=5&amp;albums=True&amp;unplayed=True)</onfocus>
-			<onfocus>Skin.Reset(Startup)</onfocus>
-			<onfocus>SetFocus(300,4)</onfocus>
-			<visible>Skin.HasSetting(Startup)</visible>
-		</control>
-		<control type="button" id="5043">
-			<description>visible after library update has finished</description>
-			<posx>-20</posx>
-			<posy>-20</posy>
-			<width>1</width>
-			<height>1</height>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<onfocus>XBMC.RunScript(special://skin/scripts/RecentlyAdded.py,limit=5&amp;albums=True&amp;unplayed=True)</onfocus>
-			<onfocus>Skin.Reset(LibraryUpdated)</onfocus>
-			<onfocus>SetFocus(300,4)</onfocus>
-			<visible>!Skin.HasSetting(Startup) + Skin.HasSetting(LibraryUpdated) + !Window.IsVisible(112) + !Window.IsVisible(133)</visible>
-		</control>
-		<control type="button" id="5043">
-			<description>visible in all other cases</description>
-			<posx>-20</posx>
-			<posy>-20</posy>
-			<width>1</width>
-			<height>1</height>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<onfocus>SetFocus(300,4)</onfocus>
-			<visible>!Skin.HasSetting(Startup) + [!Skin.HasSetting(LibraryUpdated) |  [Skin.HasSetting(LibraryUpdated) + [Window.IsVisible(112) | Window.IsVisible(133)]]]</visible>
-		</control>
 
 		<include condition="![Skin.HasSetting(home2) | Skin.HasSetting(home3)]">Home_MenuImage</include>
 		<include condition="Skin.HasSetting(home2)">Home_MenuIcon</include>

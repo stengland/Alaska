@@ -32,7 +32,7 @@
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
 					<textcolor>Text</textcolor>
-					<label>$INFO[ListItem.TrackNumber]. $INFO[ListItem.Title] [COLOR Date]$INFO[ListItem.Duration][/COLOR]</label>
+					<label>$INFO[ListItem.TrackNumber]$INFO[ListItem.Title,. ][COLOR Date]$INFO[ListItem.Duration, ][/COLOR]</label>
 					<visible>!IsEmpty(ListItem.Duration) + !IsEmpty(ListItem.TrackNumber) + [Container.Content(songs) | Window.IsActive(500) | [Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]]</visible>
 				</control>
 				<control type="label">
@@ -76,7 +76,7 @@
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
 					<textcolor>Text</textcolor>
-					<label>$INFO[ListItem.Episode]. $INFO[ListItem.Title]</label>
+					<label>$INFO[ListItem.Episode]$INFO[ListItem.Title,. ]</label>
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + Container.Content(episodes)</visible>
 				</control>
 			</itemlayout>
@@ -127,7 +127,7 @@
 					<include>Animation_ZoomedByMenu</include>
 					<include>Animation_HiddenByMusicInfo</include>
 					<include>Animation_FilesInfoSlide</include>
-					<visible>!Container.Content(Genres)</visible>
+					<visible>![Window.IsActive(25) + Container.Content(Genres)]</visible>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="450,75" start="80" end="100" time="200" tween="cubic" easing="out" />
 						<effect type="fade" start="60" end="100" time="200" />
@@ -146,7 +146,7 @@
 					<include>Animation_ZoomedByMenu</include>
 					<include>Animation_HiddenByMusicInfo</include>
 					<include>Animation_FilesInfoSlide</include>
-					<visible>Container.Content(Genres)</visible>
+					<visible>Window.IsActive(25) + Container.Content(Genres)</visible>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="450,75" start="80" end="100" time="200" tween="cubic" easing="out" />
 						<effect type="fade" start="60" end="100" time="200" />
@@ -214,7 +214,7 @@
 					<aligny>center</aligny>
 					<font>Font_ListTitleBig</font>
 					<textcolor>ListTitleF</textcolor>
-					<label>$INFO[ListItem.Episode]. $INFO[ListItem.Title]</label>
+					<label>$INFO[ListItem.Episode]$INFO[ListItem.Title,. ]</label>
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + Container.Content(episodes)</visible>
 					<animation effect="slide" start="0,46" end="0,46" time="0" condition="IsEmpty(ListItem.Plot)">Conditional</animation>
 				</control>
@@ -227,7 +227,7 @@
 					<font>Font_ListDetail</font>
 					<textcolor>ListTitleF</textcolor>
 					<label>$INFO[ListItem.Genre]</label>
-					<visible>!IsEmpty(ListItem.Genre) + Window.IsActive(25) + !Container.Content(seasons)</visible>
+					<visible>!IsEmpty(ListItem.Genre) + Window.IsActive(25) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 				</control>
 				<control type="textbox">
 					<posx>690</posx>
@@ -256,7 +256,7 @@
 					<aligny>center</aligny>
 					<font>Font_ListDetail</font>
 					<textcolor>ListTitleF</textcolor>
-					<label>[B]Runtime:[/B] $INFO[ListItem.Duration]</label>
+					<label>$INFO[ListItem.Duration,[B]Runtime:[/B] ]</label>
 					<visible>!IsEmpty(ListItem.Title) + Container.Content(movies)</visible>
 				</control>
 				<!-- Programs -->
@@ -339,7 +339,7 @@
 						<aligny>center</aligny>
 						<font>Font_ListDetail</font>
 						<textcolor>ListTitleF</textcolor>
-						<label>[B]$LOCALIZE[515]:[/B] $INFO[ListItem.Genre]</label>
+						<label>$INFO[ListItem.Genre,[B]$LOCALIZE[515]:[/B] ]</label>
 						<visible>!IsEmpty(ListItem.Album)</visible>
 					</control>
 					<control type="image">
@@ -373,7 +373,7 @@
 						<aligny>center</aligny>
 						<font>Font_ListTitleBigger</font>
 						<textcolor>ListTitleF</textcolor>
-						<label>$INFO[ListItem.TrackNumber]. $INFO[ListItem.Title]</label>
+						<label>$INFO[ListItem.TrackNumber]$INFO[ListItem.Title,. ]</label>
 						<visible>!IsEmpty(ListItem.Title)</visible>
 						<animation effect="slide" start="0,-10" end="0,-10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
 					</control>
@@ -385,7 +385,7 @@
 						<aligny>center</aligny>
 						<font>Font_ListDetail</font>
 						<textcolor>ListTitleF</textcolor>
-						<label>[B]Album:[/B] $INFO[ListItem.Album]</label>
+						<label>$INFO[ListItem.Album,[B]Album:[/B] ]</label>
 						<visible>[Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]] + !IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="label">
@@ -396,7 +396,7 @@
 						<aligny>center</aligny>
 						<font>Font_ListDetail</font>
 						<textcolor>ListTitleF</textcolor>
-						<label>[B]Artist:[/B] $INFO[ListItem.Artist]</label>
+						<label>$INFO[ListItem.Artist,[B]Artist:[/B] ]</label>
 						<visible>!IsEmpty(ListItem.Title)</visible>
 						<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
 					</control>
@@ -408,7 +408,7 @@
 						<aligny>center</aligny>
 						<font>Font_ListDetail</font>
 						<textcolor>ListTitleF</textcolor>
-						<label>[B]Duration:[/B] $INFO[ListItem.Duration]</label>
+						<label>$INFO[ListItem.Duration,[B]Duration:[/B] ]</label>
 						<visible>!IsEmpty(ListItem.Title)</visible>
 						<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
 					</control>

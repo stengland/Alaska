@@ -211,6 +211,7 @@
 					</control>
 					<control type="radiobutton" id="250">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>

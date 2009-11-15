@@ -922,7 +922,7 @@
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3201">
 				<label>1037</label>
-				<onclick>ActivateWindow(25,plugin://video/)</onclick>
+				<onclick>ActivateWindow(24,plugin://video/)</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hideplugins)</visible>
 			</control>

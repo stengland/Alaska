@@ -806,5 +806,16 @@
 		<textcolor>MenuValue</textcolor>
 		<aligny>bottom</aligny>
 	</include>
+	<!-- Sub Menu -->
+	<include name="ResetItems">
+		<onfocus>Skin.Reset(programitems)</onfocus>
+		<onfocus>Skin.Reset(videoitems)</onfocus>
+		<onfocus>Skin.Reset(musicitems)</onfocus>
+		<onfocus>Skin.Reset(movieitems)</onfocus>
+		<onfocus>Skin.Reset(tvitems)</onfocus>
+		<onfocus>Skin.Reset(pictureitems)</onfocus>
+		<onfocus>Skin.Reset(weatheritems)</onfocus>
+		<onfocus>Skin.Reset(settingitems)</onfocus>
+	</include>
 
 </includes>

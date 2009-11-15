@@ -224,6 +224,7 @@
 					</control>
 					<control type="radiobutton" id="251">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -236,6 +237,7 @@
 					</control>
 					<control type="radiobutton" id="253">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -248,6 +250,7 @@
 					</control>
 					<control type="radiobutton" id="254">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -261,6 +264,7 @@
 					</control>
 					<control type="radiobutton" id="255">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -274,6 +278,7 @@
 					</control>
 					<control type="radiobutton" id="256">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -287,6 +292,7 @@
 					</control>
 					<control type="radiobutton" id="257">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -299,6 +305,7 @@
 					</control>
 					<control type="radiobutton" id="258">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -311,6 +318,7 @@
 					</control>
 					<control type="radiobutton" id="259">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -323,6 +331,7 @@
 					</control>
 					<control type="radiobutton" id="260">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -336,6 +345,7 @@
 					</control>
 					<control type="radiobutton" id="261">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -941,14 +951,30 @@
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
+						<label>Edit Programs</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<include>ResetItems</include>
+						<onclick>Skin.ToggleSetting(programitems)</onclick>
+						<selected>Skin.HasSetting(programitems)</selected>
+					</control>
+					<control type="radiobutton" id="501">
+						<width>740</width>
+						<textoffsetx>20</textoffsetx>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
 						<label>Hide Games</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidegames)</onclick>
 						<selected>Skin.HasSetting(hidegames)</selected>
+						<visible>Skin.HasSetting(programitems)</visible>
 					</control>
-					<control type="radiobutton" id="501">
+					<control type="radiobutton" id="502">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -958,9 +984,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidescripts)</onclick>
 						<selected>Skin.HasSetting(hidescripts)</selected>
+						<visible>Skin.HasSetting(programitems)</visible>
 					</control>
-					<control type="radiobutton" id="502">
+					<control type="radiobutton" id="503">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -970,10 +998,12 @@
 						<aligny>center</aligny>
 						<selected>Skin.HasSetting(hidefavs)</selected>
 						<onclick>Skin.ToggleSetting(hidefavs)</onclick>
+						<visible>Skin.HasSetting(programitems)</visible>
 					</control>
 					<!-- Add Program Items -->
 					<control type="button" id="504">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -983,10 +1013,25 @@
 						<aligny>center</aligny>
 						<onclick>-</onclick>
 						<selected>-</selected>
+						<visible>false</visible>
 					</control>
 					<!-- Hide Video Items -->
 					<control type="radiobutton" id="510">
 						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Edit Videos</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<include>ResetItems</include>
+						<onclick>Skin.ToggleSetting(videoitems)</onclick>
+						<selected>Skin.HasSetting(videoitems)</selected>
+					</control>
+					<control type="radiobutton" id="511">
+						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -996,9 +1041,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hideplugins)</onclick>
 						<selected>Skin.HasSetting(hideplugins)</selected>
+						<visible>Skin.HasSetting(videoitems)</visible>
 					</control>
-					<control type="radiobutton" id="511">
+					<control type="radiobutton" id="512">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1008,9 +1055,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidemusicvids)</onclick>
 						<selected>Skin.HasSetting(hidemusicvids)</selected>
+						<visible>Skin.HasSetting(videoitems)</visible>
 					</control>
-					<control type="radiobutton" id="512">
+					<control type="radiobutton" id="513">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1020,10 +1069,12 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidevideosettings)</onclick>
 						<selected>Skin.HasSetting(hidevideosettings)</selected>
+						<visible>Skin.HasSetting(videoitems)</visible>
 					</control>
 					<!-- Add Video Items -->
-					<control type="radiobutton" id="513">
+					<control type="radiobutton" id="514">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1033,10 +1084,25 @@
 						<aligny>center</aligny>
 						<onclick>-</onclick>
 						<selected>-</selected>
+						<visible>false</visible>
 					</control>
 					<!-- Hide Music Items -->
 					<control type="radiobutton" id="520">
 						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Edit Music</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<include>ResetItems</include>
+						<onclick>Skin.ToggleSetting(musicitems)</onclick>
+						<selected>Skin.HasSetting(musicitems)</selected>
+					</control>
+					<control type="radiobutton" id="521">
+						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1046,9 +1112,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidemusicnew)</onclick>
 						<selected>Skin.HasSetting(hidemusicnew)</selected>
+						<visible>Skin.HasSetting(musicitems)</visible>
 					</control>
-					<control type="radiobutton" id="521">
+					<control type="radiobutton" id="522">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1058,9 +1126,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidepartymode)</onclick>
 						<selected>Skin.HasSetting(hidepartymode)</selected>
+						<visible>Skin.HasSetting(musicitems)</visible>
 					</control>
-					<control type="radiobutton" id="522">
+					<control type="radiobutton" id="523">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1070,9 +1140,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidemusicgenres)</onclick>
 						<selected>Skin.HasSetting(hidemusicgenres)</selected>
+						<visible>Skin.HasSetting(musicitems)</visible>
 					</control>
-					<control type="radiobutton" id="523">
+					<control type="radiobutton" id="524">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1082,9 +1154,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidemusicartists)</onclick>
 						<selected>Skin.HasSetting(hidemusicartists)</selected>
+						<visible>Skin.HasSetting(musicitems)</visible>
 					</control>
-					<control type="radiobutton" id="524">
+					<control type="radiobutton" id="525">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1094,9 +1168,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidemusicyears)</onclick>
 						<selected>Skin.HasSetting(hidemusicyears)</selected>
+						<visible>Skin.HasSetting(musicitems)</visible>
 					</control>
-					<control type="radiobutton" id="525">
+					<control type="radiobutton" id="526">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1106,9 +1182,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidemusicfiles)</onclick>
 						<selected>Skin.HasSetting(hidemusicfiles)</selected>
+						<visible>Skin.HasSetting(musicitems)</visible>
 					</control>
-					<control type="radiobutton" id="526">
+					<control type="radiobutton" id="527">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1118,10 +1196,12 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidemusicsettings)</onclick>
 						<selected>Skin.HasSetting(hidemusicsettings)</selected>
+						<visible>Skin.HasSetting(musicitems)</visible>
 					</control>
 					<!-- Add Music Items -->
-					<control type="button" id="527">
+					<control type="button" id="528">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1131,10 +1211,25 @@
 						<aligny>center</aligny>
 						<onclick>-</onclick>
 						<selected>-</selected>
+						<visible>false</visible>
 					</control>
 					<!-- Hide Movie Items -->
 					<control type="radiobutton" id="530">
 						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Edit Movies</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<include>ResetItems</include>
+						<onclick>Skin.ToggleSetting(movieitems)</onclick>
+						<selected>Skin.HasSetting(movieitems)</selected>
+					</control>
+					<control type="radiobutton" id="531">
+						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1144,9 +1239,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidemovienew)</onclick>
 						<selected>Skin.HasSetting(hidemovienew)</selected>
+						<visible>Skin.HasSetting(movieitems)</visible>
 					</control>
-					<control type="radiobutton" id="531">
+					<control type="radiobutton" id="532">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1156,9 +1253,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidemoviestudios)</onclick>
 						<selected>Skin.HasSetting(hidemoviestudios)</selected>
+						<visible>Skin.HasSetting(movieitems)</visible>
 					</control>
-					<control type="radiobutton" id="532">
+					<control type="radiobutton" id="533">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1168,21 +1267,26 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidemoviegenres)</onclick>
 						<selected>Skin.HasSetting(hidemoviegenres)</selected>
+						<visible>Skin.HasSetting(movieitems)</visible>
 					</control>
-					<control type="radiobutton" id="533">
+					<control type="radiobutton" id="534">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
 						<label>Hide Movie Actors</label>
 						<align>left</align>
+						<textoffsetx>20</textoffsetx>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidemovieactors)</onclick>
 						<selected>Skin.HasSetting(hidemovieactors)</selected>
+						<visible>Skin.HasSetting(movieitems)</visible>
 					</control>
-					<control type="radiobutton" id="534">
+					<control type="radiobutton" id="535">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1192,9 +1296,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidemovieyears)</onclick>
 						<selected>Skin.HasSetting(hidemovieyears)</selected>
+						<visible>Skin.HasSetting(movieitems)</visible>
 					</control>
-					<control type="radiobutton" id="535">
+					<control type="radiobutton" id="536">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1204,9 +1310,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidemoviefiles)</onclick>
 						<selected>Skin.HasSetting(hidemoviefiles)</selected>
+						<visible>Skin.HasSetting(movieitems)</visible>
 					</control>
-					<control type="radiobutton" id="536">
+					<control type="radiobutton" id="537">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1216,10 +1324,12 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidemoviesettings)</onclick>
 						<selected>Skin.HasSetting(hidemoviesettings)</selected>
+						<visible>Skin.HasSetting(movieitems)</visible>
 					</control>
 					<!-- Add Movie Items -->
-					<control type="button" id="537">
+					<control type="button" id="538">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1229,10 +1339,25 @@
 						<aligny>center</aligny>
 						<onclick>-</onclick>
 						<selected>-</selected>
+						<visible>false</visible>
 					</control>
 					<!-- Hide TV Items -->
 					<control type="radiobutton" id="540">
 						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Edit TV Shows</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<include>ResetItems</include>
+						<onclick>Skin.ToggleSetting(tvitems)</onclick>
+						<selected>Skin.HasSetting(tvitems)</selected>
+					</control>
+					<control type="radiobutton" id="541">
+						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1242,21 +1367,25 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidetvnew)</onclick>
 						<selected>Skin.HasSetting(hidetvnew)</selected>
+						<visible>Skin.HasSetting(tvitems)</visible>
 					</control>
-					<control type="radiobutton" id="541">
+					<control type="radiobutton" id="542">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
-						<label>Hide Movie Genres</label>
+						<label>Hide TV Genres</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidetvgenres)</onclick>
 						<selected>Skin.HasSetting(hidetvgenres)</selected>
+						<visible>Skin.HasSetting(tvitems)</visible>
 					</control>
-					<control type="radiobutton" id="542">
+					<control type="radiobutton" id="543">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1266,9 +1395,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidetvactors)</onclick>
 						<selected>Skin.HasSetting(hidetvactors)</selected>
+						<visible>Skin.HasSetting(tvitems)</visible>
 					</control>
-					<control type="radiobutton" id="543">
+					<control type="radiobutton" id="544">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1278,9 +1409,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidetvyears)</onclick>
 						<selected>Skin.HasSetting(hidetvyears)</selected>
+						<visible>Skin.HasSetting(tvitems)</visible>
 					</control>
-					<control type="radiobutton" id="544">
+					<control type="radiobutton" id="545">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1290,9 +1423,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidetvfiles)</onclick>
 						<selected>Skin.HasSetting(hidetvfiles)</selected>
+						<visible>Skin.HasSetting(tvitems)</visible>
 					</control>
-					<control type="radiobutton" id="545">
+					<control type="radiobutton" id="546">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1302,10 +1437,12 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidetvsettings)</onclick>
 						<selected>Skin.HasSetting(hidetvsettings)</selected>
+						<visible>Skin.HasSetting(tvitems)</visible>
 					</control>
 					<!-- Add TV Items -->
-					<control type="button" id="546">
+					<control type="button" id="547">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1315,10 +1452,25 @@
 						<aligny>center</aligny>
 						<onclick>-</onclick>
 						<selected>-</selected>
+						<visible>false</visible>
 					</control>
 					<!-- Hide Picture Items -->
 					<control type="radiobutton" id="550">
 						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Edit Pictures</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<include>ResetItems</include>
+						<onclick>Skin.ToggleSetting(pictureitems)</onclick>
+						<selected>Skin.HasSetting(pictureitems)</selected>
+					</control>
+					<control type="radiobutton" id="551">
+						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1328,10 +1480,12 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidepicturesettings)</onclick>
 						<selected>Skin.HasSetting(hidepicturesettings)</selected>
+						<visible>Skin.HasSetting(pictureitems)</visible>
 					</control>
 					<!-- Add Picture Items -->
-					<control type="button" id="551">
+					<control type="button" id="552">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1341,10 +1495,25 @@
 						<aligny>center</aligny>
 						<onclick>-</onclick>
 						<selected>-</selected>
+						<visible>false</visible>
 					</control>
 					<!-- Hide Weather Items -->
 					<control type="radiobutton" id="560">
 						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Edit Weather</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<include>ResetItems</include>
+						<onclick>Skin.ToggleSetting(weatheritems)</onclick>
+						<selected>Skin.HasSetting(weatheritems)</selected>
+					</control>
+					<control type="radiobutton" id="561">
+						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1354,9 +1523,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hideday0)</onclick>
 						<selected>Skin.HasSetting(hideday0)</selected>
+						<visible>Skin.HasSetting(weatheritems)</visible>
 					</control>
-					<control type="radiobutton" id="561">
+					<control type="radiobutton" id="562">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1366,9 +1537,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hideday1)</onclick>
 						<selected>Skin.HasSetting(hideday1)</selected>
+						<visible>Skin.HasSetting(weatheritems)</visible>
 					</control>
-					<control type="radiobutton" id="562">
+					<control type="radiobutton" id="563">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1378,9 +1551,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hideday2)</onclick>
 						<selected>Skin.HasSetting(hideday2)</selected>
+						<visible>Skin.HasSetting(weatheritems)</visible>
 					</control>
-					<control type="radiobutton" id="563">
+					<control type="radiobutton" id="564">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1390,9 +1565,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hideday3)</onclick>
 						<selected>Skin.HasSetting(hideday3)</selected>
+						<visible>Skin.HasSetting(weatheritems)</visible>
 					</control>
-					<control type="radiobutton" id="564">
+					<control type="radiobutton" id="565">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1402,10 +1579,12 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hideweathersettings)</onclick>
 						<selected>Skin.HasSetting(hideweathersettings)</selected>
+						<visible>Skin.HasSetting(weatheritems)</visible>
 					</control>
 					<!-- Add Weather Items -->
-					<control type="button" id="565">
+					<control type="button" id="566">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1415,10 +1594,25 @@
 						<aligny>center</aligny>
 						<onclick>-</onclick>
 						<selected>-</selected>
+						<visible>false</visible>
 					</control>
 					<!-- Hide Settings Items -->
 					<control type="radiobutton" id="570">
 						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Edit Settings</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<include>ResetItems</include>
+						<onclick>Skin.ToggleSetting(settingitems)</onclick>
+						<selected>Skin.HasSetting(settingitems)</selected>
+					</control>
+					<control type="radiobutton" id="571">
+						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1428,9 +1622,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidequit)</onclick>
 						<selected>Skin.HasSetting(hidequit)</selected>
+						<visible>Skin.HasSetting(settingitems)</visible>
 					</control>
-					<control type="radiobutton" id="571">
+					<control type="radiobutton" id="572">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1440,9 +1636,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hideshutdown)</onclick>
 						<selected>Skin.HasSetting(hideshutdown)</selected>
+						<visible>Skin.HasSetting(settingitems)</visible>
 					</control>
-					<control type="radiobutton" id="572">
+					<control type="radiobutton" id="573">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1452,9 +1650,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidereset)</onclick>
 						<selected>Skin.HasSetting(hidereset)</selected>
+						<visible>Skin.HasSetting(settingitems)</visible>
 					</control>
-					<control type="radiobutton" id="573">
+					<control type="radiobutton" id="574">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1464,9 +1664,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidesuspend)</onclick>
 						<selected>Skin.HasSetting(hidesuspend)</selected>
+						<visible>Skin.HasSetting(settingitems)</visible>
 					</control>
-					<control type="radiobutton" id="574">
+					<control type="radiobutton" id="575">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1476,9 +1678,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidehibernate)</onclick>
 						<selected>Skin.HasSetting(hidehibernate)</selected>
+						<visible>Skin.HasSetting(settingitems)</visible>
 					</control>
-					<control type="radiobutton" id="575">
+					<control type="radiobutton" id="576">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1488,9 +1692,11 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidelogoff)</onclick>
 						<selected>Skin.HasSetting(hidelogoff)</selected>
+						<visible>Skin.HasSetting(settingitems)</visible>
 					</control>
-					<control type="radiobutton" id="576">
+					<control type="radiobutton" id="577">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1500,10 +1706,12 @@
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hideinfo)</onclick>
 						<selected>Skin.HasSetting(hideinfo)</selected>
+						<visible>Skin.HasSetting(settingitems)</visible>
 					</control>
 					<!-- Add Settings Items -->
-					<control type="button" id="577">
+					<control type="button" id="578">
 						<width>740</width>
+						<textoffsetx>20</textoffsetx>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
@@ -1513,6 +1721,7 @@
 						<aligny>center</aligny>
 						<onclick>-</onclick>
 						<selected>-</selected>
+						<visible>false</visible>
 					</control>
 				</control>
 
@@ -1555,7 +1764,7 @@
 
 				<control type="image">
 					<include>Animation_CommonFadeNoHide</include>
-					<posx>708</posx>
+					<posx>710</posx>
 					<posy>0</posy>
 					<height>24</height>
 					<width>24</width>
@@ -1572,7 +1781,7 @@
 					<height>24</height>
 					<width>24</width>
 					<texture>arrowupnf.png</texture>
-					<visible>Container(9000).Hasfocus(4) | [Container(9000).Hasfocus(2) + Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+					<visible>Container(9000).Hasfocus(4) | [Container(9000).Hasfocus(2) + [Skin.HasSetting(home2) | Skin.HasSetting(home3)]]</visible>
 				</control>
 
 				<control type="image">
@@ -1584,7 +1793,7 @@
 					<height>24</height>
 					<width>24</width>
 					<texture>arrowdownnf.png</texture>
-					<visible>Container(9000).Hasfocus(4) | [Container(9000).Hasfocus(2) + Skin.HasSetting(home2) | Skin.HasSetting(home3)]</visible>
+					<visible>Container(9000).Hasfocus(4) | [Container(9000).Hasfocus(2) + [Skin.HasSetting(home2) | Skin.HasSetting(home3)]]</visible>
 				</control>
 
 			</control>

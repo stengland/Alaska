@@ -406,14 +406,14 @@
 					<label>GAMES</label>
 					<icon>homeicons/gamesicon.png</icon>
 					<onclick>ActivateWindow(1,plugin://programs/Launcher/)</onclick>
-					<visible>!Skin.HasSetting(nogames) + Skin.HasSetting(launcherforgames)</visible>
+					<visible>!Skin.HasSetting(noprograms) + Skin.HasSetting(launcherforgames)</visible>
 				</item>
 				<item id="7">
 					<description>Programs</description>
 					<label>0</label>
 					<icon>homeicons/programsicon.png</icon>
 					<onclick>ActivateWindow(Programs)</onclick>
-					<visible>!Skin.HasSetting(nogames) + !Skin.HasSetting(launcherforgames)</visible>
+					<visible>!Skin.HasSetting(noprograms) + !Skin.HasSetting(launcherforgames)</visible>
 				</item>
 				<item id="8">
 					<description>Settings</description>
@@ -547,7 +547,7 @@
 					<icon>special://skin/media/backdrops/pictures.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomPicturesImage)]</thumb>
 					<onclick>ActivateWindow(Pictures)</onclick>
-					<visible>!Skin.HasSetting(novideos)</visible>
+					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
 				<item id="6">
 					<description>Weather</description>
@@ -570,7 +570,7 @@
 					<icon>special://skin/media/backdrops/programs.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomProgramsImage)]</thumb>
 					<onclick>ActivateWindow(Programs)</onclick>
-					<visible>!Skin.HasSetting(nogames) + !Skin.HasSetting(launcherforgames)</visible>
+					<visible>!Skin.HasSetting(noprograms) + !Skin.HasSetting(launcherforgames)</visible>
 				</item>
 				<item id="7">
 					<description>Games</description>
@@ -578,7 +578,7 @@
 					<icon>special://skin/media/backdrops/games.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomGamesImage)]</thumb>
 					<onclick>ActivateWindow(1,plugin://programs/Launcher/)</onclick>
-					<visible>!Skin.HasSetting(nogames) + Skin.HasSetting(launcherforgames)</visible>
+					<visible>!Skin.HasSetting(noprograms) + Skin.HasSetting(launcherforgames)</visible>
 				</item>				
 				<item id="8">
 					<description>Settings</description>

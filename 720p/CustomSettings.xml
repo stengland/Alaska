@@ -952,10 +952,12 @@
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
-						<label>Edit Programs</label>
+						<label>Programs (Click to open)</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<include>ResetItems</include>
+						<textureradiofocus>arrowdownfo.png</textureradiofocus>
+						<textureradionofocus>arrowdownnf.png</textureradionofocus>
 						<onclick>Skin.ToggleSetting(programitems)</onclick>
 						<selected>Skin.HasSetting(programitems)</selected>
 					</control>
@@ -1022,8 +1024,10 @@
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
+						<textureradiofocus>arrowdownfo.png</textureradiofocus>
+						<textureradionofocus>arrowdownnf.png</textureradionofocus>
 						<!-- LOC -->
-						<label>Edit Videos</label>
+						<label>Videos (Click to open)</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<include>ResetItems</include>
@@ -1093,8 +1097,10 @@
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
+						<textureradiofocus>arrowdownfo.png</textureradiofocus>
+						<textureradionofocus>arrowdownnf.png</textureradionofocus>
 						<!-- LOC -->
-						<label>Edit Music</label>
+						<label>Music (Click to open)</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<include>ResetItems</include>
@@ -1220,8 +1226,10 @@
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
+						<textureradiofocus>arrowdownfo.png</textureradiofocus>
+						<textureradionofocus>arrowdownnf.png</textureradionofocus>
 						<!-- LOC -->
-						<label>Edit Movies</label>
+						<label>Movies (Click to open)</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<include>ResetItems</include>
@@ -1348,8 +1356,10 @@
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
+						<textureradiofocus>arrowdownfo.png</textureradiofocus>
+						<textureradionofocus>arrowdownnf.png</textureradionofocus>
 						<!-- LOC -->
-						<label>Edit TV Shows</label>
+						<label>TV Shows (Click to open)</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<include>ResetItems</include>
@@ -1461,8 +1471,10 @@
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
+						<textureradiofocus>arrowdownfo.png</textureradiofocus>
+						<textureradionofocus>arrowdownnf.png</textureradionofocus>
 						<!-- LOC -->
-						<label>Edit Pictures</label>
+						<label>Pictures (Click to open)</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<include>ResetItems</include>
@@ -1504,8 +1516,10 @@
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
+						<textureradiofocus>arrowdownfo.png</textureradiofocus>
+						<textureradionofocus>arrowdownnf.png</textureradionofocus>
 						<!-- LOC -->
-						<label>Edit Weather</label>
+						<label>Weather (Click to open)</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<include>ResetItems</include>
@@ -1603,8 +1617,10 @@
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
+						<textureradiofocus>arrowdownfo.png</textureradiofocus>
+						<textureradionofocus>arrowdownnf.png</textureradionofocus>
 						<!-- LOC -->
-						<label>Edit Settings</label>
+						<label>Settings (Click to open)</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<include>ResetItems</include>
@@ -1770,6 +1786,7 @@
 					<height>24</height>
 					<width>24</width>
 					<texture>arrowdownfo.png</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
 					<visible>Container(9000).Hasfocus(2) + [Control.HasFocus(200) | Control.HasFocus(201) | Control.HasFocus(202)]</visible>
 				</control>
 
@@ -1781,7 +1798,8 @@
 					<posy>-30</posy>
 					<height>24</height>
 					<width>24</width>
-					<texture>arrowupnf.png</texture>
+					<texture>arrowupfo.png</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
 					<visible>Container(9000).Hasfocus(4) | [Container(9000).Hasfocus(2) + [Skin.HasSetting(home2) | Skin.HasSetting(home3)]]</visible>
 				</control>
 
@@ -1793,7 +1811,8 @@
 					<posy>328</posy>
 					<height>24</height>
 					<width>24</width>
-					<texture>arrowdownnf.png</texture>
+					<texture>arrowdownfo.png</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
 					<visible>Container(9000).Hasfocus(4) | [Container(9000).Hasfocus(2) + [Skin.HasSetting(home2) | Skin.HasSetting(home3)]]</visible>
 				</control>
 

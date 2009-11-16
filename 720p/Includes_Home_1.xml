@@ -619,6 +619,7 @@
 			<width>348</width>
 			<height>44</height>
 			<texture>mainmenu/homeshade.png</texture>
+	<colordiffuse>HomeFrameDiffuseColor</colordiffuse>
 		</control>
 	</include>
 	<include name="Home_MainMenuFrame">
@@ -650,6 +651,7 @@
 		<scroll>true</scroll>
 		<font>Font_MainMenuLabel</font>
 		<textcolor>MainMenuLabel</textcolor>
+		<focusedcolor>MainMenuLabel</focusedcolor>
 	</include>
 
 	<include name="pos350">

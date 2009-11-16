@@ -94,8 +94,7 @@
 				<info>System.Time</info>
 				<align>right</align>
 				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Skin.HasSetting(ShowGlobalTemp)">Conditional</animation>
-				<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="[Window.IsVisible(112) + [Window.IsVisible(104) | Window.IsVisible(113)  | Window.IsVisible(133)]] | [Window.IsVisible(133) + [Window.IsVisible(104) | Window.IsVisible(113)  | Window.IsVisible(112)]]">Conditional</animation>
-				<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(133) + Window.IsVisible(112)">Conditional</animation>
+				<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="[Window.IsVisible(104) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(113) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(112) + [Window.IsVisible(101) | Window.IsVisible(133)]] | [[Window.IsVisible(101) + Window.IsVisible(133)]]">Conditional</animation>
 			</control>
 			<control type="label">
 				<posy>40</posy>
@@ -104,8 +103,7 @@
 				<textcolor>Date</textcolor>
 				<info>System.Date</info>
 				<align>right</align>
-				<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="[Window.IsVisible(112) + [Window.IsVisible(104) | Window.IsVisible(113)  | Window.IsVisible(133)]] | Window.IsVisible(133) + [Window.IsVisible(104) | Window.IsVisible(113)  | Window.IsVisible(112)]">Conditional</animation>
-				<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(133) + Window.IsVisible(112)">Conditional</animation>
+				<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="[Window.IsVisible(104) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(113) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(112) + [Window.IsVisible(101) | Window.IsVisible(133)]] | [[Window.IsVisible(101) + Window.IsVisible(133)]]">Conditional</animation>
 			</control>
 		</control>
 		<control type="group">
@@ -120,9 +118,8 @@
 				<visible effect="fade" time="250">system.hasnetwork</visible>
 			</control>
 			<visible>Skin.HasSetting(ShowGlobalTemp)</visible>
-			<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="[Window.IsVisible(112) + [Window.IsVisible(104) | Window.IsVisible(113)  | Window.IsVisible(133)]] | Window.IsVisible(133) + [Window.IsVisible(104) | Window.IsVisible(113)  | Window.IsVisible(112)]">Conditional</animation>
-			<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(133) + Window.IsVisible(112)">Conditional</animation>
-		</control>
+				<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="[Window.IsVisible(104) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(113) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(112) + [Window.IsVisible(101) | Window.IsVisible(133)]] | [[Window.IsVisible(101) + Window.IsVisible(133)]]">Conditional</animation>
+			</control>
 	</include>
 
 	<include name="Global_HeadingSectionVars">

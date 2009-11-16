@@ -453,6 +453,7 @@
 			<include>Animation_HiddenByInfo</include>
 			<onup>7000</onup>
 			<ondown>7000</ondown>
+			<visible>!Container.Content(episodes)</visible>
 			<itemlayout width="200" height="200">
 				<control type="image">
 					<posx>0</posx>

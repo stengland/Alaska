@@ -16,9 +16,9 @@
 	</include>
 
 	<include name="FlagsSlideAnimations">
-		<animation effect="slide" start="0,0" end="-98,0" condition="Skin.HasSetting(noratingpanel)">Conditional</animation>
-		<animation effect="slide" start="0,0" end="-170,0" condition="Skin.HasSetting(novideopanel)">Conditional</animation>
-		<animation effect="slide" start="0,0" end="-108,0" condition="Skin.HasSetting(noaudiopanel)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-98,0" condition="Skin.HasSetting(noratingpanel) | IsEmpty(ListItem.rating)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-170,0" condition="Skin.HasSetting(novideopanel) | IsEmpty(ListItem.VideoResolution)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-108,0" condition="Skin.HasSetting(noaudiopanel) | IsEmpty(ListItem.AudioChannels)">Conditional</animation>
 	</include>
 
 	<include name="PosterMediaFlags">
@@ -36,18 +36,19 @@
 
 			<!-- Rating Panel -->
 
-			<control type="group">
+			<control type="group" id="600">
 				<description>IMDB rating</description>
 				<posx>780</posx>
 				<posy>0</posy>
 				<visible>!Skin.HasSetting(noratingpanel)</visible>
-				<control type="image">
+				<control type="image" id="601">
 					<width>88</width>
 					<include>PosterMediaFlagsVars</include>
 					<texture>flags/Rating/IMDB.png</texture>
+					<visible>!IsEmpty(ListItem.rating)</visible>
 				</control>
-				<control type="label">
-					<label fallback="?">$INFO[ListItem.rating]</label>
+				<control type="label" id="602">
+					<label>$INFO[ListItem.rating]</label>
 					<posx>30</posx>
 					<posy>525</posy>
 					<width>56</width>
@@ -56,6 +57,7 @@
 					<aligny>center</aligny>
 					<font>Font_PosterRating</font>
 					<colordiffuse>FlagDiffuse</colordiffuse>
+					<visible>!IsEmpty(ListItem.rating)</visible>
 				</control>
 			</control>
 
@@ -69,9 +71,10 @@
 					<width>161</width>
 					<include>PosterMediaFlagsVars</include>
 					<texture>flags/AspectRatio/frame.png</texture>
+					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
 				</control>
 				<control type="label">
-					<label fallback="?">$INFO[ListItem.VideoResolution]</label>
+					<label>$INFO[ListItem.VideoResolution]</label>
 					<posx>3</posx>
 					<posy>525</posy>
 					<width>50</width>
@@ -80,6 +83,7 @@
 					<aligny>center</aligny>
 					<font>Font_Res</font>
 					<textcolor>FlagText</textcolor>
+					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
 				</control>
 				<control type="label">
 					<label fallback="?">$INFO[ListItem.VideoAspect]</label>
@@ -91,31 +95,37 @@
 					<aligny>center</aligny>
 					<font>Font_Aspect</font>
 					<textcolor>FlagText</textcolor>
+					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
 				</control>
 				<control type="image">
 					<include>PosterMediaFlagsVars2</include>
 					<texture fallback="flags/default.png">$INFO[Listitem.VideoCodec,flags/VideoCodec/,.png]</texture>
 					<visible>!substring(listitem.filename,hdtv) + !substring(listitem.filename,dvd) + !substring(listitem.filename,bluray) + !substring(listitem.filename,blu-ray) + !substring(listitem.filename,bdrip) + !substring(listitem.filename,.iso,Right) + !substring(listitem.filename,.ifo,Right)</visible>
+					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
 				</control>
 				<control type="image">
 					<include>PosterMediaFlagsVars2</include>
 					<texture>flags/Source/hdtv.png</texture>
 					<visible>substring(listitem.filename,hdtv)</visible>
+					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
 				</control>
 				<control type="image">
 					<include>PosterMediaFlagsVars2</include>
 					<texture>flags/Source/hddvd.png</texture>
 					<visible>substring(listitem.filename,hddvd) | substring(listitem.filename,hd-dvd)</visible>
+					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
 				</control>
 				<control type="image">
 					<include>PosterMediaFlagsVars2</include>
 					<texture>flags/Source/bluray.png</texture>
 					<visible>substring(listitem.filename,bluray) | substring(listitem.filename,blu-ray) | substring(listitem.filename,bdrip)</visible>
+					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
 				</control>
 				<control type="image">
 					<include>PosterMediaFlagsVars2</include>
 					<texture>flags/Source/dvd.png</texture>
 					<visible>[substring(listitem.filename,dvd) + !substring(listitem.filename,hddvd) + !substring(listitem.filename,hd-dvd) + !substring(listitem.filename,bluray)] | [substring(listitem.filename,.iso,Right) + !substring(listitem.filename,bluray)] | substring(listitem.filename,.ifo,Right)</visible>
+					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
 				</control>
 			</control>
 
@@ -129,6 +139,7 @@
 					<width>100</width>
 					<include>PosterMediaFlagsVars</include>
 					<texture>flags/AudioCodec/frame.png</texture>
+					<visible>!IsEmpty(ListItem.AudioChannels)</visible>
 				</control>
 				<control type="label">
 					<label fallback="?">$INFO[ListItem.AudioChannels,,.0]</label>
@@ -141,6 +152,7 @@
 					<font>Font_Channels</font>
 					<textcolor>FlagText</textcolor>
 					<visible>!substring(ListItem.AudioChannels,6) + !substring(ListItem.AudioChannels,8)</visible>
+					<visible>!IsEmpty(ListItem.AudioChannels)</visible>
 				</control>
 				<control type="label">
 					<label>5.1</label>
@@ -153,6 +165,7 @@
 					<font>Font_Channels</font>
 					<textcolor>FlagText</textcolor>
 					<visible>!IsEmpty(ListItem.AudioChannels) + substring(ListItem.AudioChannels,6)</visible>
+					<visible>!IsEmpty(ListItem.AudioChannels)</visible>
 				</control>
 				<control type="label">
 					<label>7.1</label>
@@ -165,11 +178,13 @@
 					<font>Font_Channels</font>
 					<textcolor>FlagText</textcolor>
 					<visible>!IsEmpty(ListItem.AudioChannels) + substring(ListItem.AudioChannels,8)</visible>
+					<visible>!IsEmpty(ListItem.AudioChannels)</visible>
 				</control>
 				<control type="image">
 					<posx>5</posx>
 					<include>PosterMediaFlagsVars2</include>
 					<texture fallback="flags/default.png">$INFO[Listitem.AudioCodec,flags/AudioCodec/,.png]</texture>
+					<visible>!IsEmpty(ListItem.AudioChannels)</visible>
 				</control>
 			</control>
 

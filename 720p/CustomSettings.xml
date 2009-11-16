@@ -1373,7 +1373,7 @@
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
-						<label>Hide New Epiodes</label>
+						<label>Hide New Episodes</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(hidetvnew)</onclick>

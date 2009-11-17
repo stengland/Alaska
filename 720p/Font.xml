@@ -46,7 +46,7 @@
 
 		<font>
 			<name>Font_Settings</name>
-			<filename>alaska_black.ttf</filename>
+			<filename>alaska_nocaps.ttf</filename>
 			<size>28</size>
 			<linespacing>1</linespacing>
 		</font>

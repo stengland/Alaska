@@ -48,8 +48,8 @@
 				<description>Progressbar</description>
 				<posx>330</posx>
 				<posy>20</posy>
-				<width>35</width>
-				<height>32</height>
+				<width>34</width>
+				<height>30</height>
 				<texturebg>dialogs/clear.png</texturebg>
 				<lefttexture>-</lefttexture>
 				<midtexture>dialogs/grey.png</midtexture>
@@ -67,8 +67,8 @@
 				<description>Progressbar</description>
 				<posx>330</posx>
 				<posy>20</posy>
-				<width>35</width>
-				<height>32</height>
+				<width>34</width>
+				<height>30</height>
 				<texturebg>dialogs/clear.png</texturebg>
 				<lefttexture>-</lefttexture>
 				<midtexture>dialogs/grey.png</midtexture>

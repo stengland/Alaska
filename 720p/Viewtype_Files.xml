@@ -79,6 +79,32 @@
 					<label>$INFO[ListItem.Episode]$INFO[ListItem.Title,. ]</label>
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + Container.Content(episodes)</visible>
 				</control>
+				<control type="image">
+					<posx>688</posx>
+					<posy>8</posy>
+					<width>30</width>
+					<height>30</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
+					<include>Animation_ZoomInZoomOut</include>
+					<include>Animation_ZoomedByMenu</include>
+					<include>Animation_HiddenByMusicInfo</include>
+					<include>Animation_FilesInfoSlide</include>
+				</control>
+				<control type="image">
+					<posx>688</posx>
+					<posy>8</posy>
+					<width>30</width>
+					<height>30</height>
+					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies)</visible>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
+					<include>Animation_ZoomInZoomOut</include>
+					<include>Animation_ZoomedByMenu</include>
+					<include>Animation_HiddenByMusicInfo</include>
+					<include>Animation_FilesInfoSlide</include>
+				</control>
 			</itemlayout>
 			<focusedlayout width="720" height="120">
 				<control type="group">
@@ -129,7 +155,7 @@
 					<include>Animation_FilesInfoSlide</include>
 					<visible>![Window.IsActive(25) + Container.Content(Genres)]</visible>
 					<animation type="Focus" reversible="false">
-						<effect type="zoom" center="450,75" start="80" end="100" time="200" tween="cubic" easing="out" />
+						<effect type="zoom" center="450,75" start="80" end="94" time="200" tween="cubic" easing="out" />
 						<effect type="fade" start="60" end="100" time="200" />
 					</animation>
 				</control>
@@ -148,41 +174,36 @@
 					<include>Animation_FilesInfoSlide</include>
 					<visible>Window.IsActive(25) + Container.Content(Genres)</visible>
 					<animation type="Focus" reversible="false">
-						<effect type="zoom" center="450,75" start="80" end="100" time="200" tween="cubic" easing="out" />
+						<effect type="zoom" center="450,75" start="80" end="94" time="200" tween="cubic" easing="out" />
 						<effect type="fade" start="60" end="100" time="200" />
 					</animation>
 				</control>
 				<control type="image">
-					<posx>520</posx>
-					<posy>45</posy>
+					<posx>650</posx>
+					<posy>40</posy>
 					<width>40</width>
 					<height>40</height>
-					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
-					<colordiffuse>CCFFFFFF</colordiffuse>
+					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
 					<include>Animation_ZoomInZoomOut</include>
 					<include>Animation_ZoomedByMenu</include>
 					<include>Animation_HiddenByMusicInfo</include>
 					<include>Animation_FilesInfoSlide</include>
-					<animation type="Focus" reversible="false">
-						<effect type="zoom" center="450,75" start="80" end="100" time="200" tween="cubic" easing="out" />
-					</animation>
 				</control>
 				<control type="image">
-					<posx>520</posx>
-					<posy>45</posy>
+					<posx>650</posx>
+					<posy>40</posy>
 					<width>40</width>
 					<height>40</height>
-					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
-					<colordiffuse>CCFFFFFF</colordiffuse>
+					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
 					<include>Animation_ZoomInZoomOut</include>
 					<include>Animation_ZoomedByMenu</include>
 					<include>Animation_HiddenByMusicInfo</include>
 					<include>Animation_FilesInfoSlide</include>
-					<animation type="Focus" reversible="false">
-						<effect type="zoom" center="450,75" start="80" end="100" time="200" tween="cubic" easing="out" />
-					</animation>
+					<animation effect="slide" end="4,-42" time="0" condition="Container.Content(episodes)">Conditional</animation>
 				</control>
 				<control type="label">
 					<posx>690</posx>
@@ -415,7 +436,7 @@
 				</control>
 			</focusedlayout>
 		</control>		
-		
+
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture diffuse="backdrops/mask_3.png">common/white.png</texture>

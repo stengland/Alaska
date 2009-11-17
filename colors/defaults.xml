@@ -1,13 +1,15 @@
 <colors>
 
 	<!-- Theme Colours -->
+	
 	<color name="BackgroundColor">ccFFFFFF</color>
 	<color name="BackgroundFilterColor">44434343</color>
 	<color name="ButtonFilterColor">FFc30000</color>
 	<color name="HomeFrameColor">FFE0E0E0</color>
 	<color name="HomeFrameDiffuseColor">FFFFFFFF</color>
-	
+
 	<!-- Background Test Colours
+	
 	<color name="BackgroundColor">ee000025</color>
 	<color name="BackgroundFilterColor">44009ACD</color>
 	<color name="BackgroundColor">dd000025</color>
@@ -15,8 +17,9 @@
 	<color name="BackgroundColor">bb4aff46</color>
 	<color name="BackgroundFilterColor">dd024d00</color>
 	-->
-	
+
 	<!-- Global Colours -->
+	
 	<color name="Time">77686868</color>
 	<color name="Date">77686868</color>
 	<color name="RSSBody">FF686868</color>
@@ -86,9 +89,12 @@
 	<color name="ListTitleF">FF474747</color>
 	<color name="FileTitleNF">ab474747</color>	
 
-	<!-- Wall colours -->
+	<!-- Poster colours -->
 
 	<color name="WallIconDiffuse">48FFFFFF</color>
+	<color name="IconDiffuse">89FFFFFF</color>
+	<color name="WatchedIconDiffuseNF">68c30000</color>
+	<color name="WatchedIconDiffuseFO">FFc30000</color>
 
 	<!-- Fanart colours -->
 

@@ -21,7 +21,7 @@
 			<onleft>7000</onleft>
 			<onright>7000</onright>
 			<focusposition>2</focusposition>
-			<movement>2</movement>
+			<movement>3</movement>
 			<visible>Container.Content(episodes)</visible>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_EpisodeFloat</include>
@@ -124,12 +124,13 @@
 					<visible>!IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="image">
-					<posx>14</posx>
-					<posy>14</posy>
-					<width>20</width>
-					<height>20</height>
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>28</width>
+					<height>28</height>
 					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay)</visible>
 					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" />
 						<effect type="fade" start="0" end="100" time="200" />

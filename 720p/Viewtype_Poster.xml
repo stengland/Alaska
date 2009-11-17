@@ -36,7 +36,7 @@
 					<height>241</height>
 					<texture background="true" diffuse="postermatteNF.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<colordiffuse>IconDiffuse</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>!Container.Content(Genres)</visible>
@@ -48,7 +48,7 @@
 					<height>241</height>
 					<texture diffuse="postermatteNF.png" fallback="defaultmoviegenre.jpg">special://skin/extras/moviegenres/$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<colordiffuse>IconDiffuse</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>Container.Content(Genres)</visible>
@@ -68,7 +68,7 @@
 					<height>241</height>
 					<texture background="true" flipy="true" diffuse="postermatteNF_reflect.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<colordiffuse>IconDiffuse</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>!Container.Content(Genres)</visible>
@@ -80,7 +80,7 @@
 					<height>241</height>
 					<texture flipy="true" diffuse="postermatteNF_reflect.png" fallback="defaultmoviegenre.jpg">special://skin/extras/moviegenres/$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<colordiffuse>IconDiffuse</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>Container.Content(Genres)</visible>
@@ -92,7 +92,7 @@
 					<height>25</height>
 					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="image">
@@ -102,7 +102,7 @@
 					<height>25</height>
 					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 			</itemlayout>
@@ -148,12 +148,13 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>12</posx>
-					<posy>30</posy>
-					<width>40</width>
-					<height>40</height>
+					<posx>8</posx>
+					<posy>24</posy>
+					<width>50</width>
+					<height>50</height>
 					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
 					<include>Animation_PosterInfoSlide</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
@@ -161,12 +162,13 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>12</posx>
-					<posy>30</posy>
+					<posx>8</posx>
+					<posy>24</posy>
 					<width>40</width>
 					<height>40</height>
 					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
 					<include>Animation_PosterInfoSlide</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
@@ -209,7 +211,7 @@
 					<height>241</height>
 					<texture background="true" diffuse="postermatteNF.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<colordiffuse>IconDiffuse</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>!Container.Content(Genres)</visible>
@@ -221,7 +223,7 @@
 					<height>241</height>
 					<texture diffuse="postermatteNF.png" fallback="defaultmoviegenre.jpg">special://skin/extras/moviegenres/$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<colordiffuse>IconDiffuse</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>Container.Content(Genres)</visible>
@@ -241,7 +243,7 @@
 					<height>241</height>
 					<texture background="true" flipy="true" diffuse="postermatteNF_reflect.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<colordiffuse>IconDiffuse</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>!Container.Content(Genres)</visible>
@@ -253,7 +255,7 @@
 					<height>241</height>
 					<texture flipy="true" diffuse="postermatteNF_reflect.png" fallback="defaultmoviegenre.jpg">special://skin/extras/moviegenres/$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<colordiffuse>IconDiffuse</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>Container.Content(Genres)</visible>
@@ -265,7 +267,7 @@
 					<height>25</height>
 					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="image">
@@ -275,7 +277,7 @@
 					<height>25</height>
 					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 			</itemlayout>
@@ -321,12 +323,13 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>12</posx>
-					<posy>30</posy>
-					<width>40</width>
-					<height>40</height>
+					<posx>8</posx>
+					<posy>24</posy>
+					<width>50</width>
+					<height>50</height>
 					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
 					<include>Animation_PosterInfoSlide</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
@@ -334,12 +337,13 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>12</posx>
-					<posy>30</posy>
-					<width>40</width>
-					<height>40</height>
+					<posx>8</posx>
+					<posy>24</posy>
+					<width>50</width>
+					<height>50</height>
 					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
 					<include>Animation_PosterInfoSlide</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
@@ -474,8 +478,18 @@
 					<height>184</height>
 					<texture background="true" flipy="true" diffuse="postermatteNF_reflect.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<colordiffuse>IconDiffuse</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
+				</control>
+				<control type="image">
+					<posx>6</posx>
+					<posy>54</posy>
+					<width>30</width>
+					<height>30</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
 				</control>
 			</itemlayout>
 			<focusedlayout width="300" height="300">
@@ -488,6 +502,21 @@
 					<aspectratio>scale</aspectratio>
 					<bordertexture border="8">common/thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
+					<include>Animation_HiddenByInfo</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="150,150" start="67" end="100" time="600" tween="back" easing="out" />
+						<effect type="fade" start="60" end="100" time="600" />
+					</animation>
+				</control>
+				<control type="image">
+					<posx>6</posx>
+					<posy>4</posy>
+					<width>50</width>
+					<height>50</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="150,150" start="67" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="60" end="100" time="600" />

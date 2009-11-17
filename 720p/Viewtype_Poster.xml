@@ -435,7 +435,7 @@
 			<include>PosterMediaFlags</include>
 		</control>
 	</include>
-	<include name="Viewtype_MusicPoster">
+	<include name="Viewtype_SquarePoster">
 		<control type="wraplist" id="54">
 			<viewtype label="Square">icon</viewtype>
 			<posx>-110</posx>

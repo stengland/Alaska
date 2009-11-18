@@ -71,13 +71,14 @@
 
 		<control type="button" id="10">
 			<description>no</description>
-			<posx>660</posx>
+			<posx>420</posx>
 			<posy>400</posy>
 			<height>39</height>
 			<width>200</width>
 			<font>Font_MenuValue</font>
 			<textcolor>MenuValue</textcolor>
 			<focusedcolor>MenuValueFO</focusedcolor>
+			<animation effect="zoom" start="100" end="120" tween="back" time="400" center="auto" reversible="false">Focus</animation>
 			<label>$LOCALIZE[106]</label>
 			<align>center</align>
 			<aligny>center</aligny>
@@ -88,7 +89,7 @@
 		</control>
 		<control type="button" id="11">
 			<description>yes</description>
-			<posx>420</posx>
+			<posx>660</posx>
 			<posy>400</posy>
 			<height>39</height>
 			<width>200</width>
@@ -97,41 +98,12 @@
 			<font>Font_MenuValue</font>
 			<textcolor>MenuValue</textcolor>
 			<focusedcolor>MenuValueFO</focusedcolor>
+			<animation effect="zoom" start="100" end="120" tween="back" time="400" center="auto" reversible="false">Focus</animation>
 			<label>$LOCALIZE[107]</label>
 			<onleft>10</onleft>
 			<onright>10</onright>
 			<onup>10</onup>
 			<ondown>10</ondown>
-		</control>
-
-		<control type="label">
-			<description>underline no</description>
-			<posx>660</posx>
-			<posy>402</posy>
-			<height>39</height>
-			<width>200</width>
-			<font>Font_MenuValue</font>
-			<textcolor>MenuValue</textcolor>
-			<focusedcolor>MenuValueFO</focusedcolor>
-			<align>center</align>
-			<aligny>center</aligny>
-			<label>__</label>
-			<visible>Control.HasFocus(10)</visible>
-		</control>
-
-		<control type="label">
-			<description>underline yes</description>
-			<posx>420</posx>
-			<posy>402</posy>
-			<height>39</height>
-			<width>200</width>
-			<font>Font_MenuValue</font>
-			<textcolor>MenuValue</textcolor>
-			<focusedcolor>MenuValueFO</focusedcolor>
-			<align>center</align>
-			<aligny>center</aligny>
-			<label>__</label>
-			<visible>Control.HasFocus(11)</visible>
 		</control>
 
 		<include>Object_DebugGrid</include>

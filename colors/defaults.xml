@@ -60,6 +60,7 @@
 	<color name="MainMenuNF">28686868</color>	
 	<color name="MainMenu">193c3c3c</color>	
 	<color name="MainMenuLabel">FF383737</color>	
+	<color name="MainMenuArrows">FF706e6e</color>	
 
 	<!-- Poster view colours -->
 

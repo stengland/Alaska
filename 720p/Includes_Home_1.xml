@@ -51,6 +51,7 @@
 				<item id="7">
 					<description>Weather</description>
 					<onclick>ActivateWindow(2600)</onclick>
+					<visible>!Skin.HasSetting(noweather)</visible>
 				</item>		
 				<item id="8">
 					<description>Settings</description>

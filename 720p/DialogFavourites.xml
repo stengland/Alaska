@@ -2,14 +2,15 @@
 
 <window type="dialog" id="134">
 	<defaultcontrol always="true">450</defaultcontrol>
-	<include>Animation_ZoomInZoomOut</include>
 
 	<controls>
 		<control type="label">
 			<include>WindowID</include>
-			<label>Favourites.xml</label>
+			<label>DialogFavourites.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
+		<include>Animation_ZoomedByMenu</include>
+			<include>Animation_ZoomInZoomOut</include>
 
 		<control type="image">
 			<description>Panel</description>
@@ -18,6 +19,7 @@
 			<width>800</width>
 			<height>544</height>
 			<texture>favourites/favourites_panel.png</texture>
+			<colordiffuse>FavListPanel</colordiffuse>
 		</control>
 
 		<control type="image">
@@ -73,6 +75,7 @@
 					<width>740</width>
 					<height>66</height>
 					<texture>favourites/focus_bar.png</texture>
+					<colordiffuse>FavListItemSelected</colordiffuse>
 				</control>
 
 				<control type="label">

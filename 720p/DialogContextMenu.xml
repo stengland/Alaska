@@ -16,7 +16,7 @@
 			<label>DialogContextMenu.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
-		
+
 		<control type="button" id="1000">
 			<description>button template</description>
 			<posx>0</posx>
@@ -25,8 +25,8 @@
 			<width>1280</width>
 			<font>Font_MenuValue</font>
 			<textcolor>MenuValue</textcolor>
-			<focusedcolor>MenuValue</focusedcolor>
-			<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+			<focusedcolor>MenuValueFO</focusedcolor>
+			<animation effect="zoom" start="100" end="120" tween="back" time="400" center="auto" reversible="false">Focus</animation>
 			<align>center</align>
 			<aligny>middle</aligny>
 		</control>

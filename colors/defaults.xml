@@ -30,10 +30,10 @@
 	<color name="NowPlayingAlbum">cc686868</color>
 	<color name="NowPlayingTrack">FF686868</color>
 	<color name="MediaMenu">77686868</color>
-	<color name="TextFocused">FF262626</color>
-	<color name="Text">aa686868</color>
+	<color name="TextFocused">FF454545</color>
+	<color name="Text">FFa1a1a1</color>
 	<color name="TextDisabled">FFff5858</color>
-	<color name="TextSelected">FFFFFFFF</color>
+	<color name="TextSelected">FFb8b8b8</color>
 
 	<!-- Flags -->
 
@@ -52,12 +52,13 @@
 
 	<!-- Window menu colours -->
 
-	<color name="MenuValue">FF5b5b5b</color>
+	<color name="MenuValue">FFa1a1a1</color>
+	<color name="MenuValueFO">FF454545</color>
 
 	<!-- Home page colours -->
 
 	<color name="MainMenuNF">28686868</color>	
-	<color name="MainMenu">193c3c3c</color>
+	<color name="MainMenu">193c3c3c</color>	
 	<color name="MainMenuLabel">FF383737</color>	
 
 	<!-- Poster view colours -->
@@ -108,9 +109,10 @@
 
 	<!-- Favorites -->
 
+	<color name="FavListPanel">CCCCCCCC</color>
 	<color name="FavListItem">FF929191</color>
-	<color name="FavListItemSelected">ffcc0000</color>
-	<color name="FavListItemFocusedSelected">CCcccccc</color>
+	<color name="FavListItemSelected">FF800000</color>
+	<color name="FavListItemFocusedSelected">CCCCCCCC</color>
 
 	<!-- Filemanager -->
 

@@ -482,6 +482,15 @@
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 				</control>
 				<control type="image">
+					<posx>47</posx>
+					<posy>120</posy>
+					<width>110</width>
+					<height>75</height>
+					<texture>$INFO[ListItem.Label,special://skin/extras/Studios/,.png]</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<visible>Container.Content(studios)</visible>
+				</control>
+				<control type="image">
 					<posx>6</posx>
 					<posy>54</posy>
 					<width>30</width>
@@ -507,6 +516,19 @@
 						<effect type="zoom" center="150,150" start="67" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="60" end="100" time="600" />
 					</animation>
+				</control>
+				<control type="image">
+					<posx>67</posx>
+					<posy>105</posy>
+					<width>170</width>
+					<height>115</height>
+					<texture>$INFO[ListItem.Label,special://skin/extras/Studios/,.png]</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="150,150" start="67" end="100" time="600" tween="back" easing="out" />
+						<effect type="fade" start="60" end="100" time="600" />
+					</animation>
+					<visible>Container.Content(studios)</visible>
 				</control>
 				<control type="image">
 					<posx>6</posx>

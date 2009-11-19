@@ -20,6 +20,7 @@
 				<width>1290</width>
 				<height>165</height>
 				<texture>common/white.png</texture>
+				<colordiffuse>BackgroundColor</colordiffuse>
 				<aspectratio aligny="bottom">scale</aspectratio>
 			</control>
 			<control type="image">
@@ -28,7 +29,7 @@
 				<width>1290</width>
 				<height>165</height>
 				<texture>backdrops/filter.png</texture>
-				<colordiffuse>BackgroundColor</colordiffuse>
+				<colordiffuse>BackgroundFilterColor</colordiffuse>
 				<aspectratio aligny="bottom">scale</aspectratio>
 			</control>
 			<control type="label">

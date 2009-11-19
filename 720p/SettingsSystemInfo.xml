@@ -1,25 +1,12 @@
-<!--Empty-->
+<!--Alaska-->
 
 <window id="7">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 
-	<coordinates>
-		<system>1</system>
-		<posx>360</posx>
-		<posy>120</posy>
-	</coordinates>
-
 	<controls>
-
-		<control type="image" id="0">
-			<description>Back Panel</description>
-			<posx>-20</posx>
-			<posy>-20</posy>
-			<width>600</width>
-			<height>480</height>
-			<texture>favourites/favourites_panel.png</texture>
-		</control>
+		<include>Global_Background</include>
+		<include>Global_Filter</include>
 
 		<control type="label">
 			<include>WindowID</include>
@@ -28,11 +15,9 @@
 		</control>
 
 		<control type="group">
-			<posy>-20</posy>
-
 			<control type="grouplist" id="9000">
-				<posx>10</posx>
-				<posy>60</posy>
+				<posx>200</posx>
+				<posy>150</posy>
 				<width>150</width>
 				<height>345</height>
 				<itemgap>2</itemgap>
@@ -83,12 +68,13 @@
 			</control>
 
 			<control type="group">
-				<posx>170</posx>
+				<posx>450</posx>
+				<posy>150</posy>
 				<description>General</description>
 				<visible>ControlGroup(9000).HasFocus(100)</visible>
 				<control type="label">
 					<description>2</description>
-					<posy>55</posy>
+					<posy>0</posy>
 					<label>$INFO[System.CpuUsage]</label>
 					<width>510</width>
 					<align>left</align>
@@ -96,7 +82,7 @@
 				</control>
 				<control type="label">
 					<description>3</description>
-					<posy>90</posy>
+					<posy>35</posy>
 					<label>$LOCALIZE[139] $INFO[System.CpuTemperature]  -  $INFO[System.GpuTemperature]</label>
 					<width>510</width>
 					<align>left</align>
@@ -104,7 +90,7 @@
 				</control>
 				<control type="label">
 					<description>4</description>
-					<posy>125</posy>
+					<posy>70</posy>
 					<label>$INFO[System.FanSpeed]</label>
 					<width>510</width>
 					<align>left</align>
@@ -112,7 +98,7 @@
 				</control>
 				<control type="label">
 					<description>5</description>
-					<posy>160</posy>
+					<posy>105</posy>
 					<label>$LOCALIZE[158]: $INFO[System.FreeMemory]  -  $LOCALIZE[20161]: $INFO[System.Memory(Total)]</label>
 					<width>510</width>
 					<align>left</align>
@@ -120,7 +106,7 @@
 				</control>
 				<control type="label">
 					<description>6</description>
-					<posy>195</posy>
+					<posy>140</posy>
 					<label>$INFO[Network.IPAddress]</label>
 					<width>510</width>
 					<align>left</align>
@@ -128,7 +114,7 @@
 				</control>
 				<control type="label">
 					<description>7</description>
-					<posy>230</posy>
+					<posy>175</posy>
 					<label>$INFO[System.ScreenResolution]</label>
 					<width>510</width>
 					<align>left</align>
@@ -136,7 +122,7 @@
 				</control>
 				<control type="label">
 					<description>8</description>
-					<posy>265</posy>
+					<posy>210</posy>
 					<label>$INFO[System.KernelVersion]</label>
 					<width>510</width>
 					<align>left</align>
@@ -144,7 +130,7 @@
 				</control>
 				<control type="label">
 					<description>9</description>
-					<posy>300</posy>
+					<posy>245</posy>
 					<label>$INFO[System.UpTime]</label>
 					<width>510</width>
 					<align>left</align>
@@ -152,7 +138,7 @@
 				</control>
 				<control type="label">
 					<description>10</description>
-					<posy>335</posy>
+					<posy>280</posy>
 					<label>$INFO[System.TotalUptime]</label>
 					<width>510</width>
 					<align>left</align>
@@ -160,7 +146,7 @@
 				</control>
 				<control type="label" id="52">
 					<description>XBMC Build Revision</description>
-					<posy>370</posy>
+					<posy>315</posy>
 					<width>510</width>
 					<align>left</align>
 					<textcolor>Text</textcolor>
@@ -168,12 +154,13 @@
 			</control>
 
 			<control type="group">
-				<posx>170</posx>
+				<posx>450</posx>
+				<posy>150</posy>
 				<description>Storage Contents</description>
 				<visible>controlgroup(9000).hasfocus(101)</visible>
 				<control type="label">
 					<description>2</description>
-					<posy>55</posy>
+					<posy>0</posy>
 					<label>$INFO[System.DVDTrayState]</label>
 					<width>510</width>
 					<align>left</align>
@@ -181,7 +168,7 @@
 				</control>
 				<control type="label">
 					<description>3</description>
-					<posy>90</posy>
+					<posy>35</posy>
 					<label>$INFO[System.FreeSpace(c)]  -  $INFO[System.TotalSpace(c)]</label>
 					<width>510</width>
 					<align>left</align>
@@ -189,14 +176,14 @@
 				</control>
 				<control type="label">
 					<description>4</description>
-					<posy>125</posy>
+					<posy>70</posy>
 					<label>$INFO[System.FreeSpace(e)]  -  $INFO[System.TotalSpace(e)]</label>
 					<width>510</width>
 					<align>left</align>
 				</control>
 				<control type="label">
 					<description>5</description>
-					<posy>160</posy>
+					<posy>105</posy>
 					<label>$INFO[System.FreeSpace(F)]  -  $INFO[System.TotalSpace(F)]</label>
 					<width>510</width>
 					<align>left</align>
@@ -204,7 +191,7 @@
 				</control>
 				<control type="label">
 					<description>6</description>
-					<posy>195</posy>
+					<posy>140</posy>
 					<label>$INFO[System.FreeSpace(G)]  -  $INFO[System.TotalSpace(G)]</label>
 					<width>510</width>
 					<align>left</align>
@@ -212,7 +199,7 @@
 				</control>
 				<control type="label">
 					<description>7</description>
-					<posy>230</posy>
+					<posy>175</posy>
 					<label>$INFO[System.FreeSpace(X)]</label>
 					<width>510</width>
 					<align>left</align>
@@ -220,7 +207,7 @@
 				</control>
 				<control type="label">
 					<description>8</description>
-					<posy>265</posy>
+					<posy>210</posy>
 					<label>$INFO[System.FreeSpace(Y)]</label>
 					<width>510</width>
 					<align>left</align>
@@ -228,7 +215,7 @@
 				</control>
 				<control type="label">
 					<description>9</description>
-					<posy>300</posy>
+					<posy>245</posy>
 					<label>$INFO[System.FreeSpace(Z)]</label>
 					<width>510</width>
 					<align>left</align>
@@ -236,7 +223,7 @@
 				</control>
 				<control type="label">
 					<description>10</description>
-					<posy>335</posy>
+					<posy>280</posy>
 					<label>$INFO[System.FreeSpace]  -  $INFO[System.TotalSpace]</label>
 					<width>510</width>
 					<align>left</align>
@@ -245,12 +232,13 @@
 			</control>
 
 			<control type="group">
-				<posx>170</posx>
+				<posx>450</posx>
+				<posy>150</posy>
 				<description>Harddisk Contents</description>
 				<visible>controlgroup(9000).hasfocus(102)</visible>
 				<control type="label">
 					<description>2</description>
-					<posy>55</posy>
+					<posy>0</posy>
 					<label>$INFO[System.HddInfoModel]</label>
 					<width>510</width>
 					<align>left</align>
@@ -258,7 +246,7 @@
 				</control>
 				<control type="label">
 					<description>3</description>
-					<posy>90</posy>
+					<posy>35</posy>
 					<label>$INFO[System.HddInfoserial]</label>
 					<width>510</width>
 					<align>left</align>
@@ -266,7 +254,7 @@
 				</control>
 				<control type="label">
 					<description>4</description>
-					<posy>125</posy>
+					<posy>70</posy>
 					<label>$INFO[System.HddInfoFirmware]</label>
 					<width>510</width>
 					<align>left</align>
@@ -274,7 +262,7 @@
 				</control>
 				<control type="label">
 					<description>5</description>
-					<posy>160</posy>
+					<posy>105</posy>
 					<label>$INFO[System.HddInfoPW]</label>
 					<width>510</width>
 					<align>left</align>
@@ -282,7 +270,7 @@
 				</control>
 				<control type="label">
 					<description>6</description>
-					<posy>195</posy>
+					<posy>140</posy>
 					<label>$INFO[System.HddInfoLockState]</label>
 					<width>510</width>
 					<align>left</align>
@@ -290,7 +278,7 @@
 				</control>
 				<control type="label">
 					<description>7</description>
-					<posy>230</posy>
+					<posy>175</posy>
 					<label>$INFO[System.HddLockKey]</label>
 					<width>510</width>
 					<align>left</align>
@@ -298,7 +286,7 @@
 				</control>
 				<control type="label">
 					<description>8</description>
-					<posy>265</posy>
+					<posy>210</posy>
 					<label>$INFO[System.HddBootDate]</label>
 					<width>510</width>
 					<align>left</align>
@@ -306,7 +294,7 @@
 				</control>
 				<control type="label">
 					<description>9</description>
-					<posy>300</posy>
+					<posy>245</posy>
 					<label>$INFO[System.HddCycleCount]</label>
 					<width>510</width>
 					<align>left</align>
@@ -314,7 +302,7 @@
 				</control>
 				<control type="label">
 					<description>10</description>
-					<posy>335</posy>
+					<posy>280</posy>
 					<label>$INFO[System.HddTemperature]</label>
 					<align>left</align>
 					<textcolor>Text</textcolor>
@@ -322,12 +310,13 @@
 			</control>
 
 			<control type="group">
-				<posx>170</posx>
+				<posx>450</posx>
+				<posy>150</posy>
 				<description>DVD Rom Contents</description>
 				<visible>controlgroup(9000).hasfocus(103)</visible>
 				<control type="label">
 					<description>2</description>
-					<posy>55</posy>
+					<posy>0</posy>
 					<label>$INFO[System.DvdInfoModel]</label>
 					<width>510</width>
 					<align>left</align>
@@ -335,7 +324,7 @@
 				</control>
 				<control type="label">
 					<description>3</description>
-					<posy>90</posy>
+					<posy>35</posy>
 					<label>$INFO[System.DvdInfoFirmware]</label>
 					<width>510</width>
 					<align>left</align>
@@ -343,7 +332,7 @@
 				</control>
 				<control type="label">
 					<description>4</description>
-					<posy>125</posy>
+					<posy>70</posy>
 					<label>$INFO[System.DvdZone]</label>
 					<width>510</width>
 					<align>left</align>
@@ -351,7 +340,7 @@
 				</control>
 				<control type="label">
 					<description>5</description>
-					<posy>160</posy>
+					<posy>105</posy>
 					<label>$INFO[System.DvdTrayState]</label>
 					<width>510</width>
 					<align>left</align>
@@ -360,12 +349,13 @@
 			</control>
 
 			<control type="group">
-				<posx>170</posx>
+				<posx>450</posx>
+				<posy>150</posy>
 				<description>Network Contents</description>
 				<visible>controlgroup(9000).hasfocus(104)</visible>
 				<control type="label">
 					<description>2</description>
-					<posy>55</posy>
+					<posy>0</posy>
 					<label>$INFO[Network.IsDhcp]</label>
 					<width>510</width>
 					<align>left</align>
@@ -373,7 +363,7 @@
 				</control>
 				<control type="label">
 					<description>3</description>
-					<posy>90</posy>
+					<posy>35</posy>
 					<label>$INFO[Network.LinkState]</label>
 					<width>510</width>
 					<align>left</align>
@@ -381,7 +371,7 @@
 				</control>
 				<control type="label">
 					<description>4</description>
-					<posy>125</posy>
+					<posy>70</posy>
 					<label>$INFO[Network.MacAddress]</label>
 					<width>510</width>
 					<align>left</align>
@@ -389,7 +379,7 @@
 				</control>
 				<control type="label">
 					<description>5</description>
-					<posy>160</posy>
+					<posy>105</posy>
 					<label>$INFO[Network.IPAddress]</label>
 					<height>30</height>
 					<width>510</width>
@@ -397,7 +387,7 @@
 				</control>
 				<control type="label">
 					<description>6</description>
-					<posy>195</posy>
+					<posy>140</posy>
 					<label>$INFO[Network.SubnetAddress]</label>
 					<width>510</width>
 					<align>left</align>
@@ -405,7 +395,7 @@
 				</control>
 				<control type="label">
 					<description>7</description>
-					<posy>230</posy>
+					<posy>175</posy>
 					<label>$INFO[Network.GatewayAddress]</label>
 					<width>510</width>
 					<align>left</align>
@@ -413,7 +403,7 @@
 				</control>
 				<control type="label">
 					<description>8</description>
-					<posy>265</posy>
+					<posy>210</posy>
 					<label>$INFO[Network.Dns1Address]</label>
 					<width>510</width>
 					<align>left</align>
@@ -421,7 +411,7 @@
 				</control>
 				<control type="label">
 					<description>9</description>
-					<posy>300</posy>
+					<posy>245</posy>
 					<label>$INFO[Network.Dns2Address]</label>
 					<width>510</width>
 					<align>left</align>
@@ -429,7 +419,7 @@
 				</control>
 				<control type="label">
 					<description>10</description>
-					<posy>335</posy>
+					<posy>280</posy>
 					<label>$INFO[System.InternetState]</label>
 					<width>510</width>
 					<align>left</align>
@@ -438,12 +428,13 @@
 			</control>
 
 			<control type="group">
-				<posx>170</posx>
+				<posx>450</posx>
+				<posy>150</posy>
 				<description>Video Contents</description>
 				<visible>controlgroup(9000).hasfocus(105)</visible>
 				<control type="label">
 					<description>2</description>
-					<posy>55</posy>
+					<posy>0</posy>
 					<label>$INFO[System.VideoEncoderInfo]</label>
 					<width>510</width>
 					<align>left</align>
@@ -451,7 +442,7 @@
 				</control>
 				<control type="label">
 					<description>3</description>
-					<posy>90</posy>
+					<posy>35</posy>
 					<label>$INFO[System.ScreenResolution]</label>
 					<width>510</width>
 					<align>left</align>
@@ -459,7 +450,7 @@
 				</control>
 				<control type="label">
 					<description>4</description>
-					<posy>125</posy>
+					<posy>70</posy>
 					<label>$INFO[System.AvPackInfo]</label>
 					<width>510</width>
 					<align>left</align>
@@ -467,7 +458,7 @@
 				</control>
 				<control type="label">
 					<description>5</description>
-					<posy>160</posy>
+					<posy>105</posy>
 					<label>$INFO[System.XbeRegion]</label>
 					<width>510</width>
 					<align>left</align>
@@ -476,12 +467,13 @@
 			</control>
 
 			<control type="group">
-				<posx>170</posx>
+				<posx>450</posx>
+				<posy>150</posy>
 				<description>Hardware Contents</description>
 				<visible>controlgroup(9000).hasfocus(106)</visible>
 				<control type="label">
 					<description>2</description>
-					<posy>55</posy>
+					<posy>0</posy>
 					<label>$INFO[System.XboxVersion]</label>
 					<width>510</width>
 					<align>left</align>
@@ -489,7 +481,7 @@
 				</control>
 				<control type="label">
 					<description>3</description>
-					<posy>90</posy>
+					<posy>35</posy>
 					<label>$INFO[System.XboxSerial]</label>
 					<width>510</width>
 					<align>left</align>
@@ -497,7 +489,7 @@
 				</control>
 				<control type="label">
 					<description>4</description>
-					<posy>125</posy>
+					<posy>70</posy>
 					<label>$INFO[System.CpuFrequency]</label>
 					<width>510</width>
 					<align>left</align>
@@ -505,7 +497,7 @@
 				</control>
 				<control type="label">
 					<description>5</description>
-					<posy>160</posy>
+					<posy>105</posy>
 					<label>$INFO[System.ModChip]</label>
 					<width>510</width>
 					<align>left</align>
@@ -513,7 +505,7 @@
 				</control>
 				<control type="label">
 					<description>6</description>
-					<posy>195</posy>
+					<posy>140</posy>
 					<label>$INFO[System.Bios]</label>
 					<width>510</width>
 					<align>left</align>
@@ -521,7 +513,7 @@
 				</control>
 				<control type="label">
 					<description>7</description>
-					<posy>230</posy>
+					<posy>175</posy>
 					<label>$INFO[System.XboxProduceInfo]</label>
 					<width>510</width>
 					<align>left</align>
@@ -529,7 +521,7 @@
 				</control>
 				<control type="label">
 					<description>8</description>
-					<posy>265</posy>
+					<posy>210</posy>
 					<label>$INFO[System.ControllerPort(1)]</label>
 					<width>510</width>
 					<align>left</align>
@@ -537,7 +529,7 @@
 				</control>
 				<control type="label">
 					<description>9</description>
-					<posy>300</posy>
+					<posy>245</posy>
 					<label>$INFO[System.ControllerPort(2)]</label>
 					<width>510</width>
 					<align>left</align>
@@ -545,7 +537,7 @@
 				</control>
 				<control type="label">
 					<description>10</description>
-					<posy>335</posy>
+					<posy>280</posy>
 					<label>$INFO[System.ControllerPort(3)]</label>
 					<width>510</width>
 					<align>left</align>
@@ -553,7 +545,7 @@
 				</control>
 				<control type="label">
 					<description>11</description>
-					<posy>370</posy>
+					<posy>315</posy>
 					<label>$INFO[System.ControllerPort(4)]</label>
 					<width>510</width>
 					<align>left</align>
@@ -561,6 +553,11 @@
 				</control>
 			</control>
 		</control>
+
+		<include>Global_ContextFilter</include>
+		<include>Global_Time</include>
+		<include>Setting_Heading</include>
+		<include>Global_RSS</include>
 
 		<include>Object_DebugGrid</include>
 

@@ -301,7 +301,7 @@
 			<posy>0</posy>
 			<width>1290</width>
 			<height>165</height>
-			<texture>backdrops/filter.png</texture>
+			<texture>backdrops/filter_2.png</texture>
 			<colordiffuse>BackgroundFilterColor</colordiffuse>
 			<aspectratio aligny="bottom">scale</aspectratio>
 			<animation effect="slide" start="0,0" end="0,82" time="0" condition="Window.IsVisible(115)">Conditional</animation>

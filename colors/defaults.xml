@@ -1,12 +1,19 @@
 <colors>
 
 	<!-- Theme Colours -->
-	
+
 	<color name="BackgroundColor">ccFFFFFF</color>
 	<color name="BackgroundFilterColor">dd727272</color>
 	<color name="ButtonFilterColor">FFc30000</color>
+
+	<!-- Home 1 Colours -->
+
 	<color name="HomeFrameColor">FFE0E0E0</color>
 	<color name="HomeFrameDiffuseColor">FFFFFFFF</color>
+	<color name="MainMenuLabel">bb383737</color>
+
+	<!-- Home 2 & 3 Colour -->
+	<color name="MainMenu">193c3c3c</color>
 
 	<!-- Background Test Colours
 	
@@ -19,7 +26,7 @@
 	-->
 
 	<!-- Global Colours -->
-	
+
 	<color name="Time">77686868</color>
 	<color name="Date">77686868</color>
 	<color name="RSSBody">FF686868</color>
@@ -49,18 +56,12 @@
 	<color name="OSDDetails">FF686868</color>
 	<color name="OSDTime">B9202020</color>
 	<color name="OSDProgress">55686868</color>
+	<color name="OSDProgressBar">bbFFFFFF</color>
 
 	<!-- Window menu colours -->
 
 	<color name="MenuValue">FFa1a1a1</color>
-	<color name="MenuValueFO">FF454545</color>
-
-	<!-- Home page colours -->
-
-	<color name="MainMenuNF">28686868</color>	
-	<color name="MainMenu">193c3c3c</color>	
-	<color name="MainMenuLabel">FF383737</color>	
-	<color name="MainMenuArrows">FF706e6e</color>	
+	<color name="MenuValueFO">FF454545</color>	
 
 	<!-- Poster view colours -->
 

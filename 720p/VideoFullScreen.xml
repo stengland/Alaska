@@ -36,6 +36,7 @@
 				<width>1290</width>
 				<height>165</height>
 				<texture flipx="true">common/white.png</texture>
+				<colordiffuse>BackgroundColor</colordiffuse>
 				<aspectratio aligny="bottom">scale</aspectratio>
 			</control>
 			<control type="image">
@@ -43,8 +44,8 @@
 				<posy>0</posy>
 				<width>1290</width>
 				<height>165</height>
-				<texture flipx="true">backdrops/filter.png</texture>
-				<colordiffuse>BackgroundColor</colordiffuse>
+				<texture flipx="true">backdrops/filter_2.png</texture>
+				<colordiffuse>BackgroundColorDiffuse</colordiffuse>
 				<aspectratio aligny="bottom">scale</aspectratio>
 			</control>
 			<control type="label" id="10">

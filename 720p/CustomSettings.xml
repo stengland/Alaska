@@ -931,6 +931,44 @@
 						<alttexturefocus>-</alttexturefocus>
 						<visible>Skin.HasSetting(home2) | Skin.HasSetting(home3)</visible>
 					</control>
+					<control type="togglebutton" id="425">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Settings Artwork Folder</label>
+						<altlabel>Reset Home Settings Artwork Folder</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetPath(CustomSettingsFolder)</onclick>
+						<onclick>Skin.Reset(CustomSettingsImage)</onclick>
+						<altclick>Skin.Reset(CustomSettingsFolder)</altclick>
+						<usealttexture>Skin.String(CustomSettingsFolder)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
+					<control type="togglebutton" id="426">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Set Home Settings Artwork Image</label>
+						<altlabel>Reset Home Settings Artwork Image</altlabel>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.SetImage(CustomSettingsImage)</onclick>
+						<onclick>Skin.Reset(CustomSettingsFolder)</onclick>
+						<altclick>Skin.Reset(CustomSettingsImage)</altclick>
+						<usealttexture>Skin.String(CustomSettingsImage)</usealttexture>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<alttexturefocus>-</alttexturefocus>
+					</control>
 				</control>
 
 				<!-- Sub Menus -->

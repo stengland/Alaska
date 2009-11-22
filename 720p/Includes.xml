@@ -90,9 +90,20 @@
 			<control type="label">
 				<width>300</width>
 				<font>Font_Time</font>
-				<textcolor>Time</textcolor>
-				<info>System.Time</info>
+				<textcolor>TimeAMPM</textcolor>
+				<info>System.Time(hh:mm xx)</info>
 				<align>right</align>
+				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Skin.HasSetting(ShowGlobalTemp)">Conditional</animation>
+				<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="[Window.IsVisible(104) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(113) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(112) + [Window.IsVisible(101) | Window.IsVisible(133)]] | [[Window.IsVisible(101) + Window.IsVisible(133)]]">Conditional</animation>
+				<visible>substring(system.time,M,right)</visible>
+			</control>
+			<control type="label">
+				<width>300</width>
+				<font>Font_Time</font>
+				<textcolor>Time</textcolor>
+				<info>System.Time(hh:mm)</info>
+				<align>right</align>
+				<animation effect="slide" start="0,0" end="-64,0" time="0" condition="substring(system.time,M,right)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Skin.HasSetting(ShowGlobalTemp)">Conditional</animation>
 				<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="[Window.IsVisible(104) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(113) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(112) + [Window.IsVisible(101) | Window.IsVisible(133)]] | [[Window.IsVisible(101) + Window.IsVisible(133)]]">Conditional</animation>
 			</control>

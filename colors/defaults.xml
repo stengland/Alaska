@@ -13,6 +13,7 @@
 	<color name="MainMenuLabel">bb383737</color>
 
 	<!-- Home 2 & 3 Colour -->
+	
 	<color name="MainMenu">193c3c3c</color>
 
 	<!-- Background Test Colours
@@ -27,8 +28,9 @@
 
 	<!-- Global Colours -->
 
-	<color name="Time">77686868</color>
-	<color name="Date">77686868</color>
+	<color name="Time">FF686868</color>
+	<color name="TimeAMPM">77686868</color>
+	<color name="Date">FF686868</color>
 	<color name="RSSBody">FF686868</color>
 	<color name="RSSHighlight">FF686868</color>
 	<color name="RSSHeadline">FF686868</color>

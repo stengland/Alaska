@@ -1,6 +1,7 @@
 <colors>
 
 	<!-- Theme Colours -->
+	
 	<color name="BackgroundColor">d7000000</color>
 	<color name="BackgroundFilterColor">ff009ACD</color>
 	<color name="ButtonFilterColor">ff009ACD</color>
@@ -12,9 +13,11 @@
 	<color name="MainMenuLabel">FFFFFFFF</color>	
 
 	<!-- Home 2 & 3 Colour -->
+	
 	<color name="MainMenu">193c3c3c</color>
 
 	<!-- Background Test Colours
+	
 	<color name="BackgroundColor">ee000025</color>
 	<color name="BackgroundFilterColor">44009ACD</color>
 	<color name="BackgroundColor">dd000025</color>
@@ -24,7 +27,9 @@
 	-->
 
 	<!-- Global Colours -->
+	
 	<color name="Time">FFFFFFFF</color>
+	<color name="TimeAMPM">ff009ACD</color>
 	<color name="Date">ff009ACD</color>
 	<color name="RSSBody">ff009ACD</color>
 	<color name="RSSHighlight">ff009ACD</color>

@@ -1,9 +1,10 @@
 <colors>
 
 	<!-- Theme Colours -->
-
+<!--
 	<color name="BackgroundColor">ccffffc0</color>
 	<color name="BackgroundFilterColor">cc250000</color>
+-->
 	<color name="ButtonFilterColor">FFc89008</color>		<!--  FFad0909 is red, FFc89008 is yellow -->
 	<color name="HomeFrameColor">FFE0E0E0</color>			<!-- FFE0E0E0 -->
 	<color name="HomeFrameDiffuseColor">FFFFFFFF</color>
@@ -21,6 +22,7 @@
 	<!-- Global Colours -->
 
 	<color name="Time">bbffffff</color>
+	<color name="TimeAMPM">FFc89008</color>
 	<color name="Date">FFf5b522</color>						<!-- ccb10000 is a Red color -->
 	<color name="RSSBody">bbffffff</color>
 	<color name="RSSHighlight">bbffffff</color>
@@ -49,17 +51,19 @@
 	<color name="OSDDetails">bbffffff</color>
 	<color name="OSDTime">ccffffff</color>
 	<color name="OSDProgress">eeb10000</color>
+	<color name="OSDProgressBar">CBc89008</color>
 	
 	<!-- Window menu colours -->
 
 	<color name="MenuValue">FFc7c7c7</color>				<!--FFebebeb-->
-	<color name="MenuValueFocused">ccf21c1c</color>			<!--cce90707-->
+	<color name="MenuValueFO">FFc89008</color>
 	
 	<!-- Home page colours -->
 	
 	<color name="MainMenuNF">28a8a8a8</color>	
 	<color name="MainMenu">198c8c8c</color>
 	<color name="MainMenuLabel">cc250000</color>			<!--  cc250000-->	
+	<color name="MainMenuArrows">cc250000</color>	
 
 	<!-- Poster view colours -->
 	
@@ -94,8 +98,8 @@
 
 	<color name="WallIconDiffuse">ccb10000</color>			<!-- ccb10000 -->
 	<color name="IconDiffuse">89FFFFFF</color>
-	<color name="WatchedIconDiffuseNF">cc966f10</color>
-	<color name="WatchedIconDiffuseFO">FFf5b522</color>
+	<color name="WatchedIconDiffuseNF">86ad0909</color>
+	<color name="WatchedIconDiffuseFO">FFad0909</color>
 
 	<!-- Fanart colours -->
 
@@ -109,6 +113,7 @@
 
 	<!-- Favorites -->
 
+	<color name="FavListPanel">FF400000</color>					<!-- CCCCCCCC -->
 	<color name="FavListItem">FF929191</color>
 	<color name="FavListItemSelected">ffcc0000</color>
 	<color name="FavListItemFocusedSelected">CCcccccc</color>

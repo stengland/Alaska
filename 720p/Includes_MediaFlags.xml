@@ -16,7 +16,7 @@
 	</include>
 
 	<include name="FlagsSlideAnimations">
-		<animation effect="slide" start="0,0" end="-98,0" condition="Skin.HasSetting(noratingpanel) | IsEmpty(ListItem.rating)">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-98,0" condition="Skin.HasSetting(noratingpanel) | IsEmpty(ListItem.Rating)">Conditional</animation>
 		<animation effect="slide" start="0,0" end="-170,0" condition="Skin.HasSetting(novideopanel) | IsEmpty(ListItem.VideoResolution)">Conditional</animation>
 		<animation effect="slide" start="0,0" end="-108,0" condition="Skin.HasSetting(noaudiopanel) | IsEmpty(ListItem.AudioChannels)">Conditional</animation>
 	</include>
@@ -45,10 +45,10 @@
 					<width>88</width>
 					<include>PosterMediaFlagsVars</include>
 					<texture>flags/Rating/IMDB.png</texture>
-					<visible>!IsEmpty(ListItem.rating)</visible>
+					<visible>!IsEmpty(ListItem.Rating)</visible>
 				</control>
 				<control type="label" id="602">
-					<label>$INFO[ListItem.rating]</label>
+					<label>$INFO[ListItem.Rating]</label>
 					<posx>30</posx>
 					<posy>525</posy>
 					<width>56</width>
@@ -57,7 +57,7 @@
 					<aligny>center</aligny>
 					<font>Font_PosterRating</font>
 					<textcolor>FlagDiffuse</textcolor>
-					<visible>!IsEmpty(ListItem.rating)</visible>
+					<visible>!IsEmpty(ListItem.Rating)</visible>
 				</control>
 			</control>
 

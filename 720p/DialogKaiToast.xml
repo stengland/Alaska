@@ -32,7 +32,7 @@
 				<height>50</height>
 				<texture>dialogs/dialog_back.png</texture>
 			</control>
-			<control type="image" id="400">
+			<control type="image" id="404">
 				<description>Icon</description>
 				<posx>322</posx>
 				<posy>10</posy>

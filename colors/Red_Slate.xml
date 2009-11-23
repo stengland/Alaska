@@ -1,13 +1,19 @@
 <colors>
 
 	<!-- Theme Colours -->
-<!--
-	<color name="BackgroundColor">ccffffc0</color>
-	<color name="BackgroundFilterColor">cc250000</color>
--->
+	<color name="BackgroundColor">bbffffc0</color>
+	<color name="BackgroundFilterColor">bb250000</color>
 	<color name="ButtonFilterColor">FFc89008</color>		<!--  FFad0909 is red, FFc89008 is yellow -->
+
+	<!-- Home 1 Colours -->
+
 	<color name="HomeFrameColor">FFE0E0E0</color>			<!-- FFE0E0E0 -->
 	<color name="HomeFrameDiffuseColor">FFFFFFFF</color>
+	<color name="MainMenuLabel">cc250000</color>			<!--  cc250000-->	
+
+	<!-- Home 2 & 3 Colour -->
+	
+	<color name="MainMenu">198c8c8c</color>
 
 	<!-- Background Test Colours
 
@@ -21,8 +27,8 @@
 
 	<!-- Global Colours -->
 
-	<color name="Time">bbffffff</color>
-	<color name="TimeAMPM">FFc89008</color>
+	<color name="Time">FFc7c7c7</color>
+	<color name="TimeAMPM">FFc89008</color>					<!-- ccb10000 -->
 	<color name="Date">FFf5b522</color>						<!-- ccb10000 is a Red color -->
 	<color name="RSSBody">bbffffff</color>
 	<color name="RSSHighlight">bbffffff</color>
@@ -50,21 +56,14 @@
 	<color name="OSDPlayingPN">aab10000</color>
 	<color name="OSDDetails">bbffffff</color>
 	<color name="OSDTime">ccffffff</color>
-	<color name="OSDProgress">eeb10000</color>
-	<color name="OSDProgressBar">CBc89008</color>
+	<color name="OSDProgress">CBc89008</color>				<!-- CBc89008 -->
+	<color name="OSDProgressBar">CBc89008</color>			<!-- bbFFFFFF -->
 	
 	<!-- Window menu colours -->
 
 	<color name="MenuValue">FFc7c7c7</color>				<!--FFebebeb-->
 	<color name="MenuValueFO">FFc89008</color>
 	
-	<!-- Home page colours -->
-	
-	<color name="MainMenuNF">28a8a8a8</color>	
-	<color name="MainMenu">198c8c8c</color>
-	<color name="MainMenuLabel">cc250000</color>			<!--  cc250000-->	
-	<color name="MainMenuArrows">cc250000</color>	
-
 	<!-- Poster view colours -->
 	
 	<color name="PosterTitle">FFc7c7c7</color>
@@ -76,7 +75,7 @@
 
 	<color name="InfoTitle">FFc7c7c7</color>
 	<color name="InfoPlot">FFc7c7c7</color>
-	<color name="InfoYear">ccb10000</color>	
+	<color name="InfoYear">FFc89008</color>	
 	<color name="InfoGenre">FFc7c7c7</color>		
 	<color name="InfoDetails">FFc7c7c7</color>
 
@@ -108,8 +107,8 @@
 
 	<!-- Dialogs -->
 
-	<color name="DialogLargeLabel">dc777777</color>
-	<color name="DialogLargeLabelAccent">dc990000</color>
+	<color name="DialogLargeLabel">FFc89008</color>
+	<color name="DialogLargeLabelAccent">aac89008</color>
 
 	<!-- Favorites -->
 
@@ -133,3 +132,5 @@
 	<color name="OSDrating">FFc7c7c7</color>
 
 </colors>
+
+<!-- Thanks to hikaricore for help on some of the colors. -->

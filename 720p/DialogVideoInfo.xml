@@ -64,31 +64,31 @@
 				<include>Objects_FSInfoCertificate</include>
 				<texture>flags/Rating/mpaa_restricted.png</texture>
 				<colordiffuse>OSDrating</colordiffuse>
-				<visible>substring(listitem.mpaa,Rated R)</visible>
+				<visible>substring(listitem.mpaa,Rated R,Left)</visible>
 			</control>
 			<control type="image">
 				<include>Objects_FSInfoCertificate</include>
 				<texture>flags/Rating/mpaa_pg13.png</texture>
 				<colordiffuse>OSDrating</colordiffuse>
-				<visible>substring(listitem.mpaa,Rated PG-13)</visible>
+				<visible>substring(listitem.mpaa,Rated PG-13,Left)</visible>
 			</control>
 			<control type="image">
 				<include>Objects_FSInfoCertificate</include>
 				<texture>flags/Rating/mpaa_pg.png</texture>
 				<colordiffuse>OSDrating</colordiffuse>
-				<visible>substring(listitem.mpaa,Rated PG) + !substring(listitem.mpaa,Rated PG-13)</visible>
+				<visible>substring(listitem.mpaa,Rated PG,Left) + !substring(listitem.mpaa,Rated PG-13,Left)</visible>
 			</control>
 			<control type="image">
 				<include>Objects_FSInfoCertificate</include>
 				<texture>flags/Rating/mpaa_nc17.png</texture>
 				<colordiffuse>OSDrating</colordiffuse>
-				<visible>substring(listitem.mpaa,Rated NC)</visible>
+				<visible>substring(listitem.mpaa,Rated NC,Left)</visible>
 			</control>
 			<control type="image">
 				<include>Objects_FSInfoCertificate</include>
 				<texture>flags/Rating/mpaa_g.png</texture>
 				<colordiffuse>OSDrating</colordiffuse>
-				<visible>substring(listitem.mpaa,Rated G)</visible>
+				<visible>substring(listitem.mpaa,Rated G,Left)</visible>
 			</control>
 			<control type="image">
 				<include>Objects_FSInfoCertificate</include>

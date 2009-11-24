@@ -19,7 +19,7 @@
 				<effect type="fade" start="100" end="0" time="600" />
 			</animation>
 			<include>OSD_Back</include>
-		<!--First Button Group-->
+			<!--First Button Group-->
 			<control type="grouplist" id="2001">
 				<visible allowhiddenfocus="true">Controlgroup(2001).HasFocus + !Window.IsVisible(125)</visible>
 				<include>Animation_CommonFade</include>
@@ -88,7 +88,7 @@
 					<onclick>PlayerControl(forward)</onclick>
 				</control>
 			</control>
-		<!--Second Button Group-->
+			<!--Second Button Group-->
 			<control type="grouplist" id="2002">
 				<visible allowhiddenfocus="true">Controlgroup(2002).HasFocus + !Window.IsVisible(125)</visible>
 				<include>Animation_CommonFade</include>
@@ -199,14 +199,14 @@
 					<posx>0</posx>
 					<posy>40</posy>
 					<width>510</width>
-				<textcolor>OSDPlayingTrack</textcolor>
-				<font>Font_NowPlayingTrack</font>
+					<textcolor>OSDPlayingTrack</textcolor>
+					<font>Font_NowPlayingTrack</font>
 					<label>$INFO[VideoPlayer.TVShowTitle]</label>
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
 			</control>
 		</control>
-	<!--Cover / Now Playing-->
+		<!--Cover / Now Playing-->
 		<control type="group">
 			<visible>!Window.IsVisible(125)</visible>
 			<animation type="WindowOpen">

@@ -212,7 +212,13 @@
 				<description>Music</description>
 				<label>2</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>[[Window.IsActive(501) | Window.IsActive(502)] + !Container.Content(songs) + !Container.Content(albums)] + !Window.IsActive(134)</visible>
+				<visible>[[Window.IsActive(501) | Window.IsActive(502)] + !Container.Content(songs) + !Container.Content(albums)] + !Window.IsActive(134) + !Control.IsVisible(50)</visible>
+			</control>
+			<control type="label">
+				<description>Music</description>
+				<label>$LOCALIZE[2]: $INFO[ListItem.Label]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>[[Window.IsActive(501) | Window.IsActive(502)] + !Container.Content(songs) + !Container.Content(albums)] + !Window.IsActive(134) + Control.IsVisible(50)</visible>
 			</control>
 			<control type="label">
 				<description>Music</description>

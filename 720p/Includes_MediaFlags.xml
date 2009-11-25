@@ -100,7 +100,13 @@
 				<control type="image">
 					<include>PosterMediaFlagsVars2</include>
 					<texture fallback="flags/default.png">$INFO[Listitem.VideoCodec,flags/VideoCodec/,.png]</texture>
-					<visible>!substring(listitem.filename,hdtv) + !substring(listitem.filename,dvd) + !substring(listitem.filename,bluray) + !substring(listitem.filename,blu-ray) + !substring(listitem.filename,bdrip) + !substring(listitem.filename,.iso,Right) + !substring(listitem.filename,.ifo,Right)</visible>
+					<visible>!substring(listitem.filename,hdtv) + !substring(listitem.filename,dvd) + !substring(listitem.filename,bluray) + !substring(listitem.filename,blu-ray) + !substring(listitem.filename,bdrip) + !substring(listitem.filename,.iso,Right) + !substring(listitem.filename,.ifo,Right) + !substring(listitem.filename,sdtv)</visible>
+					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
+				</control>
+				<control type="image">
+					<include>PosterMediaFlagsVars2</include>
+					<texture>flags/Source/sdtv.png</texture>
+					<visible>substring(listitem.filename,sdtv)</visible>
 					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
 				</control>
 				<control type="image">

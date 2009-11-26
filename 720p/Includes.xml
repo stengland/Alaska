@@ -416,8 +416,7 @@
 				</item>
 				<item id="7">
 					<description>Games</description>
-					<!-- LOC -->
-					<label>GAMES</label>
+					<label>$LOCALIZE[31011]</label>
 					<icon>homeicons/gamesicon.png</icon>
 					<onclick>ActivateWindow(1,plugin://programs/Launcher/)</onclick>
 					<visible>!Skin.HasSetting(noprograms) + Skin.HasSetting(launcherforgames)</visible>
@@ -438,14 +437,14 @@
 				</item>
 				<item id="9">
 					<description>Scripts</description>
-					<label>31020</label>
+					<label>$LOCALIZE[31020]</label>
 					<icon>homeicons/scriptsicon.png</icon>
 					<onclick>ActivateWindow(20)</onclick>
 					<visible>!Skin.HasSetting(nosettings)</visible>
 				</item>
 				<item id="10">
 					<description>Shutdown</description>
-					<label>31019</label>
+					<label>$LOCALIZE[31019]</label>
 					<icon>homeicons/shutdownicon.png</icon>
 					<onclick>Shutdown()</onclick>
 					<visible>!Skin.HasSetting(noshutdown)</visible>
@@ -588,7 +587,7 @@
 				</item>
 				<item id="7">
 					<description>Games</description>
-					<label>GAMES</label>
+					<label>$LOCALIZE[31011]</label>
 					<icon>special://skin/media/backdrops/games.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomGamesImage)]</thumb>
 					<onclick>ActivateWindow(1,plugin://programs/Launcher/)</onclick>
@@ -604,7 +603,7 @@
 				</item>
 				<item id="9">
 					<description>Scripts</description>
-					<label>31020</label>
+					<label>$LOCALIZE[31020]</label>
 					<icon>special://skin/media/backdrops/scripts.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomScriptsImage)]</thumb>
 					<onclick>ActivateWindow(20)</onclick>
@@ -612,7 +611,7 @@
 				</item>
 				<item id="10">
 					<description>Shutdown</description>
-					<label>31019</label>
+					<label>$LOCALIZE[31019]</label>
 					<icon>special://skin/media/backdrops/shutdown.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomShutdownImage)]</thumb>
 					<onclick>Shutdown()</onclick>

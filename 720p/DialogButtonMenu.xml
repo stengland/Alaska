@@ -27,7 +27,7 @@
 				<animation effect="zoom" start="100" end="120" tween="back" time="400" center="auto" reversible="false">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>Settings</label>
+				<label>5</label>
 				<onclick>ActivateWindow(4)</onclick>
 			</control>
 			<control type="button" id="3111">

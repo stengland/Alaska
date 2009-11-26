@@ -16,6 +16,7 @@
 	<include file="Includes_Backgrounds.xml" />
 	<include file="Includes_Objects.xml" />
 	<include file="Includes_Home_1.xml" />
+	<include file="Viewtype_Banner.xml" />
 	<!-- Debug objects -->
 	<include name="Object_DebugGrid">
 		<control type="image">

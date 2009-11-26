@@ -763,6 +763,7 @@
 			<width>1280</width>
 			<height>226</height>
 			<texture>movieinfolines.png</texture>
+			<colordiffuse>MovieInfoLines</colordiffuse>
 			<visible>Window.IsActive(2003)</visible>
 			<include>Animation_CommonFade</include>
 		</control>

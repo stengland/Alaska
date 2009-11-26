@@ -77,8 +77,9 @@
 	<color name="InfoTitle">FFFFFFFF</color>
 	<color name="InfoPlot">FFFFFFFF</color>
 	<color name="InfoYear">FFB3B3B3</color>	
-	<color name="InfoGenre">FFB3B3B3</color>		
+	<color name="InfoGenre">FFB3B3B3</color>	
 	<color name="InfoDetails">FFB3B3B3</color>
+	<color name="MovieInfoLines">ff009ACD</color>
 
 	<!-- Progress dialogs -->
 

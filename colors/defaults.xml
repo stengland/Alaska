@@ -79,6 +79,7 @@
 	<color name="InfoYear">B9202020</color>	
 	<color name="InfoGenre">DD202020</color>		
 	<color name="InfoDetails">DD202020</color>
+	<color name="MovieInfoLines">dd727272</color>
 
 	<!-- Progress dialogs -->
 

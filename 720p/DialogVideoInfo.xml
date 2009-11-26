@@ -140,6 +140,7 @@
 				<colordiffuse>OSDrating</colordiffuse>
 				<visible>substring(listitem.mpaa,UK:X)</visible>
 			</control>
+			<!-- German Ratings
 			<control type="image" id="171">
 				<include>Objects_FSDEInfoCertificate</include>
 				<texture>flags/Rating/FSK-0_info.png</texture>
@@ -170,6 +171,7 @@
 				<colordiffuse>OSDrating</colordiffuse>
 				<visible>substring(listitem.mpaa,Germany:18) | substring(listitem.mpaa,ab 18)</visible>
 			</control>
+			-->
 			<control type="image" id="170">
 				<include>Objects_FSInfoCertificate</include>
 				<texture>flags/Rating/australia_r.png</texture>

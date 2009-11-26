@@ -278,7 +278,19 @@
 					<font>Font_ListDetail</font>
 					<textcolor>ListTitleF</textcolor>
 					<label>$INFO[ListItem.Duration,[B]Runtime:[/B] ]</label>
-					<visible>!IsEmpty(ListItem.Title) + Container.Content(movies)</visible>
+					<visible>substring(listitem.Duration,min) + !IsEmpty(listitem.Duration) + Container.Content(movies)</visible>
+					<visible>!IsEmpty(listitem.Duration)</visible>
+				</control>
+				<control type="label">
+					<posx>690</posx>
+					<posy>80</posy>
+					<width>720</width>
+					<height>25</height>
+					<aligny>center</aligny>
+					<font>Font_ListDetail</font>
+					<textcolor>ListTitleF</textcolor>
+					<label>$INFO[ListItem.Duration,[B]Runtime:[/B] ] mins</label>
+					<visible>!substring(listitem.Duration,min) + !IsEmpty(listitem.Duration) + Container.Content(movies)</visible>
 				</control>
 				<!-- Programs -->
 				<control type="group">
@@ -430,7 +442,19 @@
 						<font>Font_ListDetail</font>
 						<textcolor>ListTitleF</textcolor>
 						<label>$INFO[ListItem.Duration,[B]Duration:[/B] ]</label>
-						<visible>!IsEmpty(ListItem.Title)</visible>
+						<visible>substring(listitem.Duration,min) + !IsEmpty(listitem.Duration)</visible>
+						<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
+					</control>
+					<control type="label">
+						<posx>690</posx>
+						<posy>80</posy>
+						<width>720</width>
+						<height>25</height>
+						<aligny>center</aligny>
+						<font>Font_ListDetail</font>
+						<textcolor>ListTitleF</textcolor>
+						<label>$INFO[ListItem.Duration,[B]Duration:[/B] ] mins</label>
+						<visible>!substring(listitem.Duration,min) + !IsEmpty(listitem.Duration)</visible>
 						<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
 					</control>
 				</control>

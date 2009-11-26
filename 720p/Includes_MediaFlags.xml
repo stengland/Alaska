@@ -213,7 +213,7 @@
 					<width>88</width>
 					<height>59</height>
 					<colordiffuse>FlagDiffuse</colordiffuse>
-					<texture fallback="flags/default.png">$INFO[Listitem.studio,special://skin/extras/Studios/,.png]</texture>
+					<texture fallback="flags/default.png">$INFO[Listitem.studio,special://skin/extras/studios/,.png]</texture>
 				</control>
 			</control>
 
@@ -233,7 +233,7 @@
 					<width>88</width>
 					<height>59</height>
 					<colordiffuse>FlagDiffuse</colordiffuse>
-					<texture fallback="flags/default.png">$INFO[Listitem.studio,special://skin/extras/Studios/,.png]</texture>
+					<texture fallback="flags/default.png">$INFO[Listitem.studio,special://skin/extras/studios/,.png]</texture>
 				</control>
 			</control>
 		</control>

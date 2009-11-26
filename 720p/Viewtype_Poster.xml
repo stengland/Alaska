@@ -455,6 +455,7 @@
 			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByInfo</include>
+			<include>Animation_HiddenByMusicInfo</include>
 			<onup>7000</onup>
 			<ondown>7000</ondown>
 			<visible>!Container.Content(episodes)</visible>
@@ -486,7 +487,7 @@
 					<posy>120</posy>
 					<width>110</width>
 					<height>75</height>
-					<texture>$INFO[ListItem.Label,special://skin/extras/Studios/,.png]</texture>
+					<texture>$INFO[ListItem.Label,special://skin/extras/studios/,.png]</texture>
 					<colordiffuse>ButtonFilterColor</colordiffuse>
 					<visible>Container.Content(studios)</visible>
 				</control>
@@ -522,7 +523,7 @@
 					<posy>105</posy>
 					<width>170</width>
 					<height>115</height>
-					<texture>$INFO[ListItem.Label,special://skin/extras/Studios/,.png]</texture>
+					<texture>$INFO[ListItem.Label,special://skin/extras/studios/,.png]</texture>
 					<colordiffuse>ButtonFilterColor</colordiffuse>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="150,150" start="67" end="100" time="600" tween="back" easing="out" />
@@ -554,6 +555,7 @@
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByInfo</include>
+			<include>Animation_HiddenByMusicInfo</include>
 			<!-- Artist -->
 			<control type="group">
 				<visible>Container.Content(artists)</visible>

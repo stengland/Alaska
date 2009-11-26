@@ -29,7 +29,7 @@
 				<width>800</width>
 				<height>544</height>
 				<texture>favourites/favourites_panel.png</texture>
-				<colordiffuse>FFFFFFFF</colordiffuse>
+				<colordiffuse>FavListPanel</colordiffuse>
 			</control>
 
 			<control type="label" id="2">

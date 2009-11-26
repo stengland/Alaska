@@ -13,11 +13,12 @@
 
 		<control type="image" id="0">
 			<description>Back Panel</description>
-			<posx>-20</posx>
-			<posy>-20</posy>
-			<width>600</width>
-			<height>480</height>
+			<posx>-30</posx>
+			<posy>-30</posy>
+			<width>620</width>
+			<height>500</height>
 			<texture>favourites/favourites_panel.png</texture>
+			<colordiffuse>FavListPanel</colordiffuse>
 		</control>
 
 		<control type="label">
@@ -27,8 +28,8 @@
 		</control>
 
 		<control type="list" id="3">
-			<posx>10</posx>
-			<posy>40</posy>
+			<posx>20</posx>
+			<posy>50</posy>
 			<width>340</width>
 			<height>382</height>
 			<onleft>5</onleft>
@@ -67,18 +68,18 @@
 
 		<control type="label" id="2">
 			<description>Number Of Files</description>
-			<posx>480</posx>
+			<posx>10</posx>
 			<posy>10</posy>
-			<width>100</width>
+			<width>140</width>
 			<label>-</label>
-			<align>right</align>
 		</control>
 
 		<control type="button" id="5">
 			<description>Manual</description>
-			<posx>360</posx>
-			<posy>40</posy>
+			<posx>400</posx>
+			<posy>10</posy>
 			<label>$LOCALIZE[368]</label>
+			<align>right</align>
 			<onleft>3</onleft>
 			<onright>3</onright>
 			<onup>3</onup>

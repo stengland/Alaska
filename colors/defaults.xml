@@ -113,7 +113,7 @@
 
 	<!-- Favorites -->
 
-	<color name="FavListPanel">CCCCCCCC</color>
+	<color name="FavListPanel">eeFFFFFF</color>
 	<color name="FavListItem">FF929191</color>
 	<color name="FavListItemSelected">FF800000</color>
 	<color name="FavListItemFocusedSelected">CCCCCCCC</color>

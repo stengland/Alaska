@@ -48,6 +48,7 @@
 
 	<color name="FlagDiffuse">FFFFFFFF</color>
 	<color name="FlagText">ff000000</color>
+	<color name="StarDiffuse">FF009ACD</color>
 
 	<!-- OSD -->
 

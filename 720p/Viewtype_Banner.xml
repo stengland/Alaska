@@ -34,6 +34,7 @@
 					<textcolor>Text</textcolor>
 					<selectedcolor>ListTitleNF</selectedcolor>					
 					<label>$INFO[ListItem.Label]</label>
+					<animation effect="slide" end="-50,0" condition="Skin.HasSetting(NoStars)">Conditional</animation>
 				</control>
 				<control type="image">
 					<posx>153</posx>
@@ -41,6 +42,8 @@
 					<width>100</width>
 					<height>18</height>
 					<texture>$INFO[ListItem.StarRating]</texture>
+					<colordiffuse>StarDiffuse</colordiffuse>
+					<visible>!Skin.HasSetting(NoStars)</visible>
 				</control>			
 			</itemlayout>
 			<focusedlayout width="828" height="100">

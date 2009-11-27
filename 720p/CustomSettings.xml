@@ -425,13 +425,25 @@
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
+						<label>Show Rating Stars</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(NoStars)</onclick>
+						<selected>!Skin.HasSetting(NoStars)</selected>
+					</control>
+					<control type="radiobutton" id="305">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
 						<label>Show Movie Watched Overlay</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<onclick>Skin.ToggleSetting(movieoverlays)</onclick>
 						<selected>Skin.HasSetting(movieoverlays)</selected>
 					</control>
-					<control type="radiobutton" id="305">
+					<control type="radiobutton" id="306">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>
@@ -443,7 +455,7 @@
 						<onclick>Skin.ToggleSetting(tvoverlays)</onclick>
 						<selected>Skin.HasSetting(tvoverlays)</selected>
 					</control>
-					<control type="radiobutton" id="306">
+					<control type="radiobutton" id="307">
 						<width>740</width>
 						<font>Font_Settings</font>
 						<textcolor>Text</textcolor>

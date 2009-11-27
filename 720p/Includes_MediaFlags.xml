@@ -171,7 +171,6 @@
 					<font>Font_Channels</font>
 					<textcolor>FlagText</textcolor>
 					<visible>!IsEmpty(ListItem.AudioChannels) + substring(ListItem.AudioChannels,6)</visible>
-					<visible>!IsEmpty(ListItem.AudioChannels)</visible>
 				</control>
 				<control type="label">
 					<label>7.1</label>
@@ -184,7 +183,6 @@
 					<font>Font_Channels</font>
 					<textcolor>FlagText</textcolor>
 					<visible>!IsEmpty(ListItem.AudioChannels) + substring(ListItem.AudioChannels,8)</visible>
-					<visible>!IsEmpty(ListItem.AudioChannels)</visible>
 				</control>
 				<control type="image">
 					<posx>5</posx>

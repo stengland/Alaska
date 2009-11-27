@@ -27,6 +27,7 @@
 					<width>162</width>
 					<height>241</height>
 					<texture>postermatteNF.png</texture>
+					<colordiffuse>IconDiffuse</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="image">
@@ -202,6 +203,7 @@
 					<width>162</width>
 					<height>241</height>
 					<texture>postermatteNF.png</texture>
+					<colordiffuse>IconDiffuse</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="image">
@@ -452,7 +454,6 @@
 			<focusposition>3</focusposition>
 			<preloaditems>2</preloaditems>
 			<include>Animation_ZoomInZoomOut</include>
-			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByInfo</include>
 			<include>Animation_HiddenByMusicInfo</include>
@@ -461,34 +462,40 @@
 			<visible>!Container.Content(episodes)</visible>
 			<itemlayout width="200" height="200">
 				<control type="image">
-					<posx>0</posx>
-					<posy>50</posy>
-					<width>200</width>
-					<height>200</height>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<aspectratio>scale</aspectratio>
-					<bordertexture border="8">common/thumb_border.png</bordertexture>
-					<bordersize>8</bordersize>
-					<animation effect="fade" start="60" end="60" time="0" condition="true">Conditional</animation>
-					<animation effect="fade" start="100" end="60" time="200">UnFocus</animation>
+					<posx>2</posx>
+					<posy>52</posy>
+					<width>196</width>
+					<height>196</height>
+					<texture>common/thumb_matte.png</texture>
+					<colordiffuse>IconDiffuse</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>8</posx>
-					<posy>250</posy>
-					<width>184</width>
-					<height>184</height>
+					<posx>2</posx>
+					<posy>52</posy>
+					<width>196</width>
+					<height>196</height>
+					<texture background="true" diffuse="common/thumb_matte.png">$INFO[ListItem.Icon]</texture>
+					<fadetime>200</fadetime>
+					<colordiffuse>IconDiffuse</colordiffuse>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					</control>
+				<control type="image">
+					<posx>2</posx>
+					<posy>252</posy>
+					<width>196</width>
+					<height>196</height>
 					<texture background="true" flipy="true" diffuse="postermatteNF_reflect.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
 					<colordiffuse>IconDiffuse</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
-				</control>
+				</control>					
 				<control type="image">
 					<posx>47</posx>
 					<posy>120</posy>
 					<width>110</width>
 					<height>75</height>
 					<texture>$INFO[ListItem.Label,special://skin/extras/studios/,.png]</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<colordiffuse>IconDiffuse</colordiffuse>
 					<visible>Container.Content(studios)</visible>
 				</control>
 				<control type="image">

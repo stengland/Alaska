@@ -59,6 +59,9 @@
 	<color name="OSDTime">ccffffff</color>
 	<color name="OSDProgress">CBc89008</color>				<!-- CBc89008 -->
 	<color name="OSDProgressBar">CBc89008</color>			<!-- bbFFFFFF -->
+	<color name="OSDStatusBackground">88c89008</color>
+	<color name="OSDStatus">bbad0909</color>
+	<color name="OSDPlayingDuration">ccffffff</color>
 	
 	<!-- Window menu colours -->
 

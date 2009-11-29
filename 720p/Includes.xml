@@ -832,5 +832,138 @@
 		<onfocus>Skin.Reset(weatheritems)</onfocus>
 		<onfocus>Skin.Reset(settingitems)</onfocus>
 	</include>
+	<!-- Player OSD Status -->
+	<include name="OSDStatus">
+		<control type="image">
+			<posx>0</posx>
+			<posy>260</posy>
+			<width>1280</width>
+			<height>190</height>
+			<texture>common/white.png</texture>
+			<colordiffuse>OSDStatusBackground</colordiffuse>
+			<visible>Player.Paused | Player.Forwarding | Player.Rewinding</visible>
+		</control>
+		<control type="label" id="0">
+			<posx>-320</posx>
+			<posy>210</posy>
+			<width>1920</width>
+			<align>center</align>
+			<aligny>top</aligny>
+			<label>$LOCALIZE[112]</label>
+			<font>Font_MainMenu</font>
+			<textcolor>OSDStatus</textcolor>
+			<visible>player.paused</visible>
+		</control>
+		<control type="label" id="0">
+			<posx>-320</posx>
+			<posy>210</posy>
+			<width>1920</width>
+			<align>center</align>
+			<aligny>top</aligny>
+			<label>ffx2</label>
+			<font>Font_MainMenu</font>
+			<textcolor>OSDStatus</textcolor>
+			<visible>player.forwarding2x</visible>
+		</control>
+		<control type="label" id="0">
+			<posx>-320</posx>
+			<posy>210</posy>
+			<width>1920</width>
+			<align>center</align>
+			<aligny>top</aligny>
+			<label>ffx4</label>
+			<font>Font_MainMenu</font>
+			<textcolor>OSDStatus</textcolor>
+			<visible>player.forwarding4x</visible>
+		</control>
+		<control type="label" id="0">
+			<posx>-320</posx>
+			<posy>210</posy>
+			<width>1920</width>
+			<align>center</align>
+			<aligny>top</aligny>
+			<label>ffx8</label>
+			<font>Font_MainMenu</font>
+			<textcolor>OSDStatus</textcolor>
+			<visible>player.forwarding8x</visible>
+		</control>
+		<control type="label" id="0">
+			<posx>-320</posx>
+			<posy>210</posy>
+			<width>1920</width>
+			<align>center</align>
+			<aligny>top</aligny>
+			<label>ffx16</label>
+			<font>Font_MainMenu</font>
+			<textcolor>OSDStatus</textcolor>
+			<visible>player.forwarding16x</visible>
+		</control>
+		<control type="label" id="0">
+			<posx>-320</posx>
+			<posy>210</posy>
+			<width>1920</width>
+			<align>center</align>
+			<aligny>top</aligny>
+			<label>ffx32</label>
+			<font>Font_MainMenu</font>
+			<textcolor>OSDStatus</textcolor>
+			<visible>player.forwarding32x</visible>
+		</control>
+		<control type="label" id="0">
+			<posx>-320</posx>
+			<posy>210</posy>
+			<width>1920</width>
+			<align>center</align>
+			<aligny>top</aligny>
+			<label>rwx2</label>
+			<font>Font_MainMenu</font>
+			<textcolor>OSDStatus</textcolor>
+			<visible>player.rewinding2x</visible>
+		</control>
+		<control type="label" id="0">
+			<posx>-320</posx>
+			<posy>210</posy>
+			<width>1920</width>
+			<align>center</align>
+			<aligny>top</aligny>
+			<label>rwx4</label>
+			<font>Font_MainMenu</font>
+			<textcolor>OSDStatus</textcolor>
+			<visible>player.rewinding4x</visible>
+		</control>
+		<control type="label" id="0">
+			<posx>-320</posx>
+			<posy>210</posy>
+			<width>1920</width>
+			<align>center</align>
+			<aligny>top</aligny>
+			<label>rwx8</label>
+			<font>Font_MainMenu</font>
+			<textcolor>OSDStatus</textcolor>
+			<visible>player.rewinding8x</visible>
+		</control>
+		<control type="label" id="0">
+			<posx>-320</posx>
+			<posy>210</posy>
+			<width>1920</width>
+			<align>center</align>
+			<aligny>top</aligny>
+			<label>rwx16</label>
+			<font>Font_MainMenu</font>
+			<textcolor>OSDStatus</textcolor>
+			<visible>player.rewinding16x</visible>
+		</control>
+		<control type="label" id="0">
+			<posx>-320</posx>
+			<posy>210</posy>
+			<width>1920</width>
+			<align>center</align>
+			<aligny>top</aligny>
+			<label>rwx32</label>
+			<font>Font_MainMenu</font>
+			<textcolor>OSDStatus</textcolor>
+			<visible>player.rewinding32x</visible>
+		</control>
+	</include>
 
 </includes>

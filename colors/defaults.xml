@@ -60,6 +60,9 @@
 	<color name="OSDTime">B9202020</color>
 	<color name="OSDProgress">55686868</color>
 	<color name="OSDProgressBar">bbFFFFFF</color>
+	<color name="OSDStatusBackground">11FFFFFF</color>
+	<color name="OSDStatus">33FFFFFF</color>
+	<color name="OSDPlayingDuration">FF686868</color>
 
 	<!-- Window menu colours -->
 

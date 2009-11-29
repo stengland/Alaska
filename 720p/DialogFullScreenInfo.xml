@@ -2,8 +2,8 @@
 
 <window id="142">
 	<defaultcontrol>2</defaultcontrol>
-	<controls>
-		<control type="group">
+	<controls>	
+		<control type="group">		
 			<posy>560</posy>
 			<animation type="WindowOpen">
 				<effect type="slide" start="0,300" end="0,0" time="600" tween="cubic" easing="out" />
@@ -29,46 +29,47 @@
 				<colordiffuse>OSDProgressBar</colordiffuse>
 				<info>Player.Progress</info>
 				<posx>30</posx>
-				<posy>115</posy>
-				<width>1220</width>
+				<posy>118</posy>
+				<width>1040</width>
 				<height>19</height>
+			</control>
+			<control type="label">
+				<posx>1096</posx>
+				<posy>116</posy>
+				<width>300</width>
+				<height>25</height>
+				<font>Font_ListDetail</font>
+				<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
+				<textcolor>OSDPlayingDuration</textcolor>
 			</control>
 			<control type="group">
 				<posx>195</posx>
-				<posy>28</posy>
+				<posy>16</posy>
 				<animation effect="slide" start="130,0" end="130,0" time="0" tween="cubic" easing="out" condition="VideoPlayer.Content(episodes)">Conditional</animation>
 				<control type="label">
-					<posx>0</posx>
+					<posx>10</posx>
 					<posy>0</posy>
 					<width>510</width>
 					<height>40</height>
 					<font>Font_PosterTitle</font>
-					<label>$INFO[VideoPlayer.Title] [COLOR OSDPlayingAlbum]$INFO[VideoPlayer.Year][/COLOR]</label>
-					<textcolor>NowPlayingTrack</textcolor>
+					<label>$INFO[VideoPlayer.Title]</label>
+					<textcolor>OSDPlayingTrack</textcolor>
 				</control>
 				<control type="label">
-					<posx>0</posx>
+					<animation effect="slide" start="0,0" end="0,0" time="0" tween="cubic" easing="out" condition="!VideoPlayer.Content(episodes)">Conditional</animation>
+					<posx>10</posx>
 					<posy>40</posy>
 					<width>510</width>
-					<font>Font_ListDetail</font>
-					<label>[B]$INFO[VideoPlayer.Director][/B] $INFO[VideoPlayer.Year]</label>
-					<textcolor>NowPlayingArtist</textcolor>
-					<visible>!VideoPlayer.Content(episodes)</visible>
-				</control>
-				<control type="label">
-					<posx>0</posx>
-					<posy>40</posy>
-					<width>510</width>
-				<textcolor>OSDPlayingTrack</textcolor>
-				<font>Font_NowPlayingTrack</font>
+					<font>Font_NowPlayingTrack</font>
 					<label>$INFO[VideoPlayer.TVShowTitle]</label>
+					<textcolor>OSDPlayingTrack</textcolor>
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
 			</control>
-		<!-- Movie Info Needs more work -->
+			<!-- Movie Info Needs more work -->
 			<control type="group">
-				<visible>VideoPlayer.Content(Movies)</visible>
-				<posx>1260</posx>
+				<visible>Player.HasVideo</visible>
+				<posx>1250</posx>
 				<posy>20</posy>
 				<control type="label">
 					<description>Year Info</description>
@@ -78,37 +79,37 @@
 					<height>18</height>
 					<aligny>center</aligny>
 					<align>right</align>
-					<textcolor>ff373434</textcolor>
-					<font>Font_OSDDetail</font>
-					<label>Year: $INFO[VideoPlayer.Year]</label>
+					<font>Font_ListDetail</font>
+					<label>$INFO[VideoPlayer.Year,[B]Year: [/B]]</label>
+					<textcolor>OSDPlayingTrack</textcolor>
 				</control>
 				<control type="label">
 					<description>Director Info</description>
 					<posx>0</posx>
-					<posy>20</posy>
+					<posy>24</posy>
 					<width>600</width>
 					<height>18</height>
 					<aligny>center</aligny>
 					<align>right</align>
-					<textcolor>ff373434</textcolor>
-					<font>Font_OSDDetail</font>
-					<label>Director: $INFO[VideoPlayer.Director]</label>
+					<font>Font_ListDetail</font>
+					<label>$INFO[VideoPlayer.Director,[B]Director: [/B]]</label>
+					<textcolor>OSDPlayingTrack</textcolor>
 				</control>
 				<control type="label">
 					<description>Genre Info</description>
 					<posx>0</posx>
-					<posy>40</posy>
+					<posy>48</posy>
 					<width>600</width>
 					<height>18</height>
 					<aligny>center</aligny>
 					<align>right</align>
-					<textcolor>ff373434</textcolor>
-					<font>Font_OSDDetail</font>
-					<label>Genre: $INFO[VideoPlayer.Genre]</label>
+					<font>Font_ListDetail</font>
+					<label>$INFO[VideoPlayer.Genre,[B]Genre: [/B]]</label>
+					<textcolor>OSDPlayingTrack</textcolor>
 				</control>
 			</control>
 		</control>
-	<!--Cover / Now Playing-->
+		<!--Cover / Now Playing-->
 		<control type="group">
 			<animation type="WindowOpen">
 				<effect type="slide" start="-300,0" end="0,0" time="600" tween="cubic" easing="out" />
@@ -141,7 +142,8 @@
 				<aspectratio>stretch</aspectratio>
 				<visible>VideoPlayer.Content(episodes)</visible>
 			</control>
-		</control> 
+		</control>
+		<include>OSDStatus</include>
 		<include>Object_DebugGrid</include>
 	</controls>
 </window>

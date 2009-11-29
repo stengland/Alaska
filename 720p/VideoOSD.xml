@@ -1,8 +1,14 @@
 <!--Alaska-->
 
 <window id="2901">
-	<defaultcontrol always="true">2001</defaultcontrol>
+	<defaultcontrol always="true">410</defaultcontrol>
 	<controls>
+
+		<control type="button" id="410">
+			<onfocus>Dialog.Close(142,force)</onfocus>
+			<onfocus>SetFocus(2001)</onfocus>
+		</control>
+		
 		<control type="label">
 			<include>DialogID</include>
 			<label>VideoOSD.xml</label>
@@ -160,7 +166,6 @@
 				</control>
 			</control>
 			<control type="progress" id="23">
-				<visible>!Window.IsVisible(125)</visible>
 				<texturebg>osd/osd_progress_back.png</texturebg>
 				<lefttexture>osd/osd_progress_left.png</lefttexture>
 				<midtexture>osd/osd_progress_mid.png</midtexture>
@@ -168,40 +173,41 @@
 				<colordiffuse>OSDProgressBar</colordiffuse>
 				<info>Player.Progress</info>
 				<posx>30</posx>
-				<posy>115</posy>
-				<width>1220</width>
+				<posy>118</posy>
+				<width>1040</width>
 				<height>19</height>
+			</control>
+			<control type="label">
+				<posx>1096</posx>
+				<posy>116</posy>
+				<width>300</width>
+				<height>25</height>
+				<font>Font_ListDetail</font>
+				<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
+				<textcolor>OSDPlayingDuration</textcolor>
 			</control>
 			<control type="group">
 				<visible>!Window.IsVisible(125)</visible>
 				<posx>195</posx>
-				<posy>28</posy>
+				<posy>16</posy>
 				<animation effect="slide" start="130,0" end="130,0" time="0" tween="cubic" easing="out" condition="VideoPlayer.Content(episodes)">Conditional</animation>
 				<control type="label">
-					<posx>0</posx>
+					<posx>10</posx>
 					<posy>0</posy>
 					<width>510</width>
 					<height>40</height>
 					<font>Font_PosterTitle</font>
-					<label>$INFO[VideoPlayer.Title] [COLOR OSDPlayingAlbum]$INFO[VideoPlayer.Year][/COLOR]</label>
-					<textcolor>NowPlayingTrack</textcolor>
-				</control>
-				<control type="label">
-					<posx>0</posx>
-					<posy>40</posy>
-					<width>510</width>
-					<font>Font_ListDetail</font>
-					<label>[B]$INFO[VideoPlayer.Director][/B] $INFO[VideoPlayer.Year]</label>
-					<textcolor>NowPlayingArtist</textcolor>
-					<visible>!VideoPlayer.Content(episodes)</visible>
-				</control>
-				<control type="label">
-					<posx>0</posx>
-					<posy>40</posy>
-					<width>510</width>
+					<label>$INFO[VideoPlayer.Title]</label>
 					<textcolor>OSDPlayingTrack</textcolor>
+				</control>
+				<control type="label">
+					<animation effect="slide" start="0,0" end="0,0" time="0" tween="cubic" easing="out" condition="!VideoPlayer.Content(episodes)">Conditional</animation>
+					<posx>10</posx>
+					<posy>40</posy>
+					<width>510</width>
 					<font>Font_NowPlayingTrack</font>
 					<label>$INFO[VideoPlayer.TVShowTitle]</label>
+					<textcolor>OSDPlayingTrack</textcolor>
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
 			</control>
@@ -241,17 +247,7 @@
 				<visible>VideoPlayer.Content(episodes)</visible>
 			</control>
 		</control>
-		<control type="label" id="0">
-			<posx>-320</posx>
-			<posy>280</posy>
-			<width>1920</width>
-			<align>center</align>
-			<aligny>top</aligny>
-			<label>$LOCALIZE[112]</label>
-			<font>Font_MainMenu</font>
-			<textcolor>22ffffff</textcolor>
-			<visible>player.paused</visible>
-		</control>
+		<include>OSDStatus</include>
 		<include>Object_DebugGrid</include>
 	</controls>
 </window>

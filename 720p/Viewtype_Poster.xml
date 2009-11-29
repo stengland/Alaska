@@ -2,8 +2,10 @@
 
 <includes>
 	<include name="Viewtype_Poster">
-		<!-- Browser -->
-		<control type="wraplist" id="50">
+	
+	<!-- Poster Wrap View -->
+	
+	<control type="wraplist" id="50">
 			<posx>-20</posx>
 			<posy>65</posy>
 			<height>515</height>
@@ -23,11 +25,11 @@
 			<itemlayout width="168" height="245">
 				<control type="image">
 					<posx>1</posx>
-					<posy>131</posy>
+					<posy>132</posy>
 					<width>162</width>
-					<height>241</height>
+					<height>239</height>
 					<texture>postermatteNF.png</texture>
-					<colordiffuse>IconDiffuse</colordiffuse>
+					<colordiffuse>BackgroundColor</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="image">
@@ -178,8 +180,10 @@
 				</control>									
 			</focusedlayout>
 		</control>
-		<!-- Browser -->
-		<control type="fixedlist" id="57">
+	
+	<!-- Poster Fixed View -->
+	
+	<control type="fixedlist" id="57">
 			<posx>-20</posx>
 			<posy>65</posy>
 			<height>515</height>
@@ -199,11 +203,11 @@
 			<itemlayout width="168" height="245">
 				<control type="image">
 					<posx>1</posx>
-					<posy>131</posy>
+					<posy>132</posy>
 					<width>162</width>
-					<height>241</height>
+					<height>239</height>
 					<texture>postermatteNF.png</texture>
-					<colordiffuse>IconDiffuse</colordiffuse>
+					<colordiffuse>BackgroundColor</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="image">
@@ -408,7 +412,7 @@
 				<aligny>center</aligny>
 				<font>Font_ListDetail</font>
 				<textcolor>ListTrackF</textcolor>
-				<label>[B]$INFO[ListItem.Genre][/B]</label>
+				<label>$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]]</label>
 				<visible>Container.Content(tvshows) | Container.Content(movies)</visible>
 			</control>
 			<control type="label">
@@ -419,7 +423,7 @@
 				<aligny>center</aligny>
 				<font>Font_ListDetail</font>
 				<textcolor>ListTrackF</textcolor>
-				<label>Episodes: [B]$INFO[ListItem.Episode][/B]</label>
+				<label>$INFO[ListItem.Episode,[B]Episodes: [/B]]</label>
 				<visible>!IsEmpty(ListItem.Episode) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 			</control>
 			<control type="label">
@@ -430,7 +434,7 @@
 				<aligny>center</aligny>
 				<font>Font_ListDetail</font>
 				<textcolor>ListTrackF</textcolor>
-				<label>Premiered: [B]$INFO[ListItem.Premiered][/B]</label>
+				<label>$INFO[ListItem.Premiered,[B]Premiered: [/B]]</label>
 				<visible>Container.Content(tvshows)</visible>
 			</control>
 		</control>
@@ -441,6 +445,9 @@
 			<include>PosterMediaFlags</include>
 		</control>
 	</include>
+	
+	<!-- Square View -->
+	
 	<include name="Viewtype_SquarePoster">
 		<control type="wraplist" id="54">
 			<viewtype label="Square">icon</viewtype>
@@ -467,7 +474,7 @@
 					<width>196</width>
 					<height>196</height>
 					<texture>common/thumb_matte.png</texture>
-					<colordiffuse>IconDiffuse</colordiffuse>
+					<colordiffuse>BackgroundColor</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>2</posx>
@@ -621,18 +628,18 @@
 				</control>
 				<control type="label">
 					<posx>0</posx>
-					<posy>45</posy>
+					<posy>50</posy>
 					<width>440</width>
 					<height>17</height>
 					<aligny>center</aligny>
 					<font>Font_ListDetail</font>
 					<textcolor>ListTitleF</textcolor>
-					<label>[B]$LOCALIZE[515]:[/B] $INFO[ListItem.Genre]</label>
+					<label>$INFO[ListItem.Genre,[B]$LOCALIZE[515]: [/B]]</label>
 					<visible>!IsEmpty(ListItem.Album)</visible>
 				</control>
 				<control type="image">
 					<posx>0</posx>
-					<posy>65</posy>
+					<posy>75</posy>
 					<width>121</width>
 					<height>22</height>
 					<texture>$INFO[ListItem.StarRating]</texture>
@@ -673,7 +680,7 @@
 					<aligny>center</aligny>
 					<font>Font_ListDetail</font>
 					<textcolor>ListTitleF</textcolor>
-					<label>[B]Album:[/B] $INFO[ListItem.Album]</label>
+					<label>$INFO[ListItem.Album,[B]Album: [/B]]</label>
 					<visible>[Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]] + !IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="label">
@@ -684,7 +691,7 @@
 					<aligny>center</aligny>
 					<font>Font_ListDetail</font>
 					<textcolor>ListTitleF</textcolor>
-					<label>[B]Artist:[/B] $INFO[ListItem.Artist]</label>
+					<label>$INFO[ListItem.Artist,[B]Artist: [/B]]</label>
 					<visible>!IsEmpty(ListItem.Title)</visible>
 					<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
 				</control>
@@ -696,7 +703,7 @@
 					<aligny>center</aligny>
 					<font>Font_ListDetail</font>
 					<textcolor>ListTitleF</textcolor>
-					<label>[B]Duration:[/B] $INFO[ListItem.Duration]</label>
+					<label>$INFO[ListItem.Duration,[B]Duration: [/B]]</label>
 					<visible>!IsEmpty(ListItem.Title)</visible>
 					<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
 				</control>

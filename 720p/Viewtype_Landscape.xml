@@ -29,7 +29,7 @@
 					<width>270</width>
 					<height>152</height>
 					<texture>episodematteNF.png</texture>
-					<colordiffuse>IconDiffuse</colordiffuse>
+					<colordiffuse>BackgroundColor</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>			
 				<control type="image">

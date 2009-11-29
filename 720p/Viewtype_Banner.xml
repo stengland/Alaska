@@ -64,7 +64,7 @@
 					<width>542</width>
 					<height>100</height>
 					<texture diffuse="list/listbannermatte.png">$INFO[ListItem.Icon]</texture>
-					<aspectratio scalediffuse="true">stretch</aspectratio>
+					<aspectratio scalediffuse="true">keep</aspectratio>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="auto" start="50" end="100" time="200" tween="cubic" easing="out" />
 						<effect type="fade" start="0" end="100" time="200" />

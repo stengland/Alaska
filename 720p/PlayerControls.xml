@@ -30,7 +30,7 @@
 				<description>Previous</description>
 				<posx>0</posx>
 				<posy>0</posy>
-				<onleft>409</onleft>
+				<onleft>411</onleft>
 				<onright>403</onright>
 				<onup>410</onup>
 				<ondown>410</ondown>
@@ -195,7 +195,7 @@
 				<posx>280</posx>
 				<posy>0</posy>
 				<onleft>408</onleft>
-				<onright>402</onright>
+				<onright>411</onright>
 				<onup>410</onup>
 				<ondown>410</ondown>
 				<height>42</height>
@@ -209,6 +209,25 @@
 				<disabledcolor>-</disabledcolor>
 				<colordiffuse>-</colordiffuse>
 				<onclick>PlayerControl(random)</onclick>
+			</control>
+			<control type="button" id="411">
+				<description>Fullscreen Control</description>
+				<posx>-296</posx>
+				<posy>-126</posy>
+				<width>292</width>
+				<height>166</height>
+				<texturefocus border="8">common/thumb_border.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<colordiffuse>BackgroundFilterColor</colordiffuse>
+				<onleft>409</onleft>
+				<onright>402</onright>
+				<onup>410</onup>
+				<ondown>410</ondown>
+				<label>-</label>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onclick>fullscreen</onclick>
+				<visible>Player.HasVideo</visible>
 			</control>
 		</control>
 

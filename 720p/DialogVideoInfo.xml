@@ -49,10 +49,10 @@
 				<width>215</width>
 				<height>76</height>
 				<aligny>center</aligny>
-				<font>Font_InfoYear</font>
+				<font>Font_MainMenuLabel</font>
 				<textcolor>InfoYear</textcolor>
 				<info>ListItem.Duration</info>
-				<visible>substring(listitem.Duration,mins)</visible>
+				<visible>substring(listitem.Duration,hrs)</visible>
 				<visible>!IsEmpty(listitem.Duration)</visible>
 			</control>
 			<control type="label">
@@ -63,8 +63,21 @@
 				<aligny>center</aligny>
 				<font>Font_InfoYear</font>
 				<textcolor>InfoYear</textcolor>
-				<label>$INFO[ListItem.Duration] mins</label>
-				<visible>!substring(listitem.Duration,min)</visible>
+				<info>ListItem.Duration</info>
+				<visible>substring(listitem.Duration,mins)</visible>
+				<visible>!substring(listitem.Duration,hrs)</visible>
+				<visible>!IsEmpty(listitem.Duration)</visible>
+			</control>
+			<control type="label">
+				<posx>433</posx>
+				<posy>45</posy>
+				<width>215</width>
+				<height>76</height>
+				<aligny>center</aligny>
+				<font>Font_InfoYear</font>
+				<textcolor>InfoYear</textcolor>
+				<label>$INFO[ListItem.Duration,, mins]</label>
+				<visible>!substring(listitem.Duration,mins)</visible>
 				<visible>!IsEmpty(listitem.Duration)</visible>
 			</control>
 			<!-- <control type="image">

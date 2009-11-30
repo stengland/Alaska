@@ -84,6 +84,7 @@
 	<color name="InfoGenre">DD202020</color>		
 	<color name="InfoDetails">DD202020</color>
 	<color name="MovieInfoLines">dd727272</color>
+	<color name="OSDrating">B9202020</color>
 
 	<!-- Progress dialogs -->
 
@@ -132,9 +133,5 @@
 	<color name="FM_ListFocusedAccent">00CCCCCC</color>
 	<color name="FM_ListUnfocused">dc777777</color>
 	<color name="FM_ListFocusSelected">CCcccccc</color>
-
-	<!-- Info Rating  -->
-
-	<color name="OSDrating">B9202020</color>
 
 </colors>

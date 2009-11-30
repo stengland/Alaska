@@ -83,6 +83,7 @@
 	<color name="InfoGenre">FFc7c7c7</color>		
 	<color name="InfoDetails">FFc7c7c7</color>
 	<color name="MovieInfoLines">bb250000</color>
+	<color name="OSDrating">FFc7c7c7</color>
 
 	<!-- Progress dialogs -->
 
@@ -131,10 +132,6 @@
 	<color name="FM_ListFocusedAccent">00CCCCCC</color>
 	<color name="FM_ListUnfocused">DD202020</color>
 	<color name="FM_ListFocusSelected">CCcccccc</color>
-
-	<!-- Info Rating  -->
-	
-	<color name="OSDrating">FFc7c7c7</color>
 
 </colors>
 

@@ -86,6 +86,7 @@
 	<color name="InfoGenre">FFB3B3B3</color>	
 	<color name="InfoDetails">FFB3B3B3</color>
 	<color name="MovieInfoLines">ff009ACD</color>
+	<color name="OSDrating">FFB3B3B3</color>
 
 	<!-- Progress dialogs -->
 
@@ -134,9 +135,5 @@
 	<color name="FM_ListFocusedAccent">00CCCCCC</color>
 	<color name="FM_ListUnfocused">d7333333</color>
 	<color name="FM_ListFocusSelected">CCcccccc</color>
-
-	<!-- Info Rating  -->
-
-	<color name="OSDrating">FFFFFFFF</color>
 
 </colors>

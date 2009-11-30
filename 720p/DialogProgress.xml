@@ -14,7 +14,7 @@
 
 		<control type="label">
 			<include>WindowID</include>
-			<label>DialogPregress.xml</label>
+			<label>DialogProgress.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
 

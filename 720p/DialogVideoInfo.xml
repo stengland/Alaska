@@ -21,8 +21,6 @@
 		<control type="group">
 			<posx>583</posx>
 			<posy>115</posy>
-			<include>Animation_ZoomedByMenu</include>
-			<include>Animation_CommonFade</include>
 			<control type="fadelabel">
 				<width>664</width>
 				<scrollout>false</scrollout>
@@ -44,21 +42,21 @@
 				<info>ListItem.Year</info>
 			</control>
 			<control type="label">
-				<posx>433</posx>
+				<posx>0</posx>
 				<posy>45</posy>
-				<width>215</width>
+				<width>260</width>
 				<height>76</height>
 				<aligny>center</aligny>
-				<font>Font_MainMenuLabel</font>
+				<font>Font_InfoYear2</font>
 				<textcolor>InfoYear</textcolor>
 				<info>ListItem.Duration</info>
 				<visible>substring(listitem.Duration,hrs)</visible>
 				<visible>!IsEmpty(listitem.Duration)</visible>
 			</control>
 			<control type="label">
-				<posx>433</posx>
+				<posx>0</posx>
 				<posy>45</posy>
-				<width>215</width>
+				<width>260</width>
 				<height>76</height>
 				<aligny>center</aligny>
 				<font>Font_InfoYear</font>
@@ -69,9 +67,9 @@
 				<visible>!IsEmpty(listitem.Duration)</visible>
 			</control>
 			<control type="label">
-				<posx>433</posx>
+				<posx>0</posx>
 				<posy>45</posy>
-				<width>215</width>
+				<width>260</width>
 				<height>76</height>
 				<aligny>center</aligny>
 				<font>Font_InfoYear</font>
@@ -282,12 +280,12 @@
 			<control type="textbox">
 				<visible>!Control.IsVisible(50)</visible>
 				<posy>281</posy>
-				<width>600</width>
-				<height>155</height>
+				<width>674</width>
+				<height>280</height>
 				<font>Font_InfoPlot</font>
 				<textcolor>InfoPlot</textcolor>
 				<info>ListItem.Plot</info>
-				<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
+				<autoscroll time="2000" delay="6000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
 			</control>
 			<control type="panel" id="50">
 				<posx>170</posx>

@@ -129,6 +129,12 @@
 			<name>Font_InfoYear</name>
 			<filename>alaska_regular.ttf</filename>
 			<size>46</size>
+		</font>	
+
+		<font>
+			<name>Font_InfoYear2</name>
+			<filename>alaska_regular.ttf</filename>
+			<size>40</size>
 		</font>
 
 		<font>

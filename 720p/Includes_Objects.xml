@@ -122,6 +122,7 @@
 	</include>
 	<!--Movie Info-->
 	<include name="Objects_FSInfoCertificate">
+		<posx>433</posx>
 		<posy>56</posy>
 		<width>249</width>
 		<height>57</height>

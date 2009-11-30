@@ -111,7 +111,7 @@
 			</control>
 			<control type="image">
 				<include>Objects_FSInfoCertificate</include>
-				<texture>flags/Rating/mpaa_g.png</texture>
+				<texture>flags/Rating/mpaa_general.png</texture>
 				<colordiffuse>OSDrating</colordiffuse>
 				<visible>substring(listitem.mpaa,Rated G,Left)</visible>
 			</control>

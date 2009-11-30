@@ -52,8 +52,8 @@
 
 	<!-- OSD -->
 
-	<color name="OSDPlayingArtist">FF686868</color>
-	<color name="OSDPlayingTrack">FF686868</color>
+	<color name="OSDPlayingArtist">FF3c3c3c</color>
+	<color name="OSDPlayingTrack">FF474747</color>
 	<color name="OSDPlayingAlbum">77686868</color>
 	<color name="OSDPlayingPN">FF686868</color>
 	<color name="OSDDetails">FF686868</color>
@@ -62,7 +62,7 @@
 	<color name="OSDProgressBar">bbFFFFFF</color>
 	<color name="OSDStatusBackground">11FFFFFF</color>
 	<color name="OSDStatus">33FFFFFF</color>
-	<color name="OSDPlayingDuration">FF686868</color>
+	<color name="OSDPlayingDuration">FF474747</color>
 
 	<!-- Window menu colours -->
 

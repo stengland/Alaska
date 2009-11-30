@@ -52,10 +52,12 @@
 				<height>19</height>
 			</control>
 			<control type="label">
-				<posx>1096</posx>
+				<posx>1250</posx>
 				<posy>128</posy>
 				<width>300</width>
-				<height>25</height>
+				<height>18</height>
+				<aligny>center</aligny>
+				<align>right</align>
 				<font>Font_ListDetail</font>
 				<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
 				<textcolor>OSDPlayingDuration</textcolor>

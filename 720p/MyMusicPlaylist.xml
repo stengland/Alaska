@@ -1,7 +1,7 @@
 <!--Alaska-->
 
 <window id="500">
-	<defaultcontrol>50</defaultcontrol>
+	<defaultcontrol>53</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
@@ -12,17 +12,16 @@
 		<include>Global_ContextFilter</include>
 		<control type="grouplist" id="7000">
 			<visible>Window.IsActive(500)</visible>
-			<include>WindowMenuVars</include>
+			<width>1100</width>
+			<height>40</height>
+			<posx>140</posx>
+			<onup>53</onup>
+			<ondown>53</ondown>
+			<itemgap>0</itemgap>
+			<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
+			<include>Animation_ZoomInMenu</include>
+			<orientation>horizontal</orientation>
 			<posy>330</posy>
-			<!-- View -->
-			<!--control type="button" id="2">
-				<description>View</description>
-				<include>WindowMenuButton</include>
-				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(2)">
-					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />
-				</animation>
-			</control--> 
 			<!-- shuffle -->
 			<control type="button" id="20">
 				<description>shuffle</description>
@@ -38,7 +37,7 @@
 				<description>randomize</description>
 				<label>$LOCALIZE[13319]</label>
 				<include>WindowMenuButton</include>
-				<onclick>ActivateWindow(weathersettings)</onclick>
+				<onclick>PlayerControl(random)</onclick>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(28)">
 					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />

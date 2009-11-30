@@ -78,13 +78,6 @@
 				<visible>!substring(listitem.Duration,mins)</visible>
 				<visible>!IsEmpty(listitem.Duration)</visible>
 			</control>
-			<!-- <control type="image">
-				<posy>66</posy>
-				<width>166</width>
-				<height>38</height>
-				<texture>flags/Rating/Rating/mpaa_restricted.png</texture>
-				<colordiffuse>OSDrating</colordiffuse>
-			</control> -->
 			<control type="image">
 				<include>Objects_FSInfoCertificate</include>
 				<texture>flags/Rating/mpaa_restricted.png</texture>
@@ -281,11 +274,11 @@
 				<visible>!Control.IsVisible(50)</visible>
 				<posy>281</posy>
 				<width>674</width>
-				<height>280</height>
+				<height>244</height>
 				<font>Font_InfoPlot</font>
 				<textcolor>InfoPlot</textcolor>
 				<info>ListItem.Plot</info>
-				<autoscroll time="2000" delay="6000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
+				<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
 			</control>
 			<control type="panel" id="50">
 				<posx>170</posx>
@@ -309,7 +302,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>Font_InfoPlot</font>
-						<textcolor>InfoPlot</textcolor>
+						<textcolor>ListTitleNF</textcolor>
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
@@ -321,7 +314,7 @@
 						<height>20</height>
 						<align>left</align>
 						<aligny>center</aligny>
-						<font>Font_ListDetail</font>
+						<font>Font_InfoPlot</font>
 						<textcolor>ListTitleF</textcolor>
 						<info>ListItem.Label</info>
 					</control>

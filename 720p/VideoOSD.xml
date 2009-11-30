@@ -178,10 +178,12 @@
 				<height>19</height>
 			</control>
 			<control type="label">
-				<posx>1096</posx>
+				<posx>1250</posx>
 				<posy>116</posy>
 				<width>300</width>
-				<height>25</height>
+				<height>18</height>
+				<aligny>center</aligny>
+				<align>right</align>
 				<font>Font_ListDetail</font>
 				<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
 				<textcolor>OSDPlayingDuration</textcolor>
@@ -192,23 +194,23 @@
 				<posy>16</posy>
 				<animation effect="slide" start="130,0" end="130,0" time="0" tween="cubic" easing="out" condition="VideoPlayer.Content(episodes)">Conditional</animation>
 				<control type="label">
-					<posx>10</posx>
-					<posy>0</posy>
-					<width>510</width>
-					<height>40</height>
-					<font>Font_PosterTitle</font>
-					<label>$INFO[VideoPlayer.Title]</label>
-					<textcolor>OSDPlayingArtist</textcolor>
-				</control>
-				<control type="label">
 					<animation effect="slide" start="0,0" end="0,0" time="0" tween="cubic" easing="out" condition="!VideoPlayer.Content(episodes)">Conditional</animation>
 					<posx>10</posx>
-					<posy>40</posy>
+					<posy>10</posy>
 					<width>510</width>
 					<font>Font_NowPlayingTrack</font>
 					<label>$INFO[VideoPlayer.TVShowTitle]</label>
 					<textcolor>OSDPlayingTrack</textcolor>
 					<visible>VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>40</posy>
+					<width>510</width>
+					<height>40</height>
+					<font>Font_PosterTitle</font>
+					<label>$INFO[VideoPlayer.Title]</label>
+					<textcolor>OSDPlayingArtist</textcolor>
 				</control>
 			</control>
 		</control>

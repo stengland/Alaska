@@ -232,7 +232,7 @@
 		</control>
 
 		<control type="button" id="410">
-			<onfocus>Dialog.Close(PlayerControls,force)</onfocus>
+			<onfocus>Dialog.Close(PlayerControls)</onfocus>
 		</control>
 
 	</controls>

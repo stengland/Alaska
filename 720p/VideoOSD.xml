@@ -5,7 +5,7 @@
 	<controls>
 
 		<control type="button" id="410">
-			<onfocus>Dialog.Close(142,force)</onfocus>
+			<onfocus>Dialog.Close(142)</onfocus>
 			<onfocus>SetFocus(2001)</onfocus>
 		</control>
 		

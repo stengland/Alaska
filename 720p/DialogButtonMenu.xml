@@ -11,8 +11,8 @@
 		</control>
 
 		<control type="button" id="410">
-			<onfocus>Dialog.Close(2003,force)</onfocus>
-			<onfocus>Dialog.Close(106,force)</onfocus>
+			<onfocus>Dialog.Close(2003)</onfocus>
+			<onfocus>Dialog.Close(106)</onfocus>
 			<onfocus>SetFocus(3110)</onfocus>
 		</control>
 

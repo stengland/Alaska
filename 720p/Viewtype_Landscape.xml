@@ -82,7 +82,7 @@
 					<texture diffuse="episodematte.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>					
 					<aspectratio scalediffuse="false">stretch</aspectratio>
-					<include>Animation_PosterInfoSlide</include>
+					<include>Animation_LandscapeInfoSlide</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="145,202" start="51" end="100" time="600" tween="back" easing="out" />
 					</animation>
@@ -93,7 +93,7 @@
 					<width>314</width>
 					<height>184</height>
 					<texture>episodeframeF.png</texture>
-					<include>Animation_PosterInfoSlide</include>					
+					<include>Animation_LandscapeInfoSlide</include>					
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="157,192" start="51" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="0" end="100" time="600" />
@@ -107,7 +107,7 @@
 					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay)</visible>
 					<info>ListItem.Overlay</info>
 					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
-					<include>Animation_PosterInfoSlide</include>					
+					<include>Animation_HiddenByInfo</include>					
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="157,192" start="51" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="0" end="100" time="600" />

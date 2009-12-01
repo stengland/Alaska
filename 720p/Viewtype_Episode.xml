@@ -5,7 +5,7 @@
 	<include name="Viewtype_Episode">
 
 		<!-- Browser -->
-		
+
 		<control type="fixedlist" id="51">
 			<viewtype label="Episode">list</viewtype>
 			<animation effect="slide" start="20,-20" end="20,-20" time="0" condition="Player.HasVideo">Conditional</animation>
@@ -26,6 +26,7 @@
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_EpisodeFloat</include>
+			<include>Animation_HiddenByInfo</include>
 			<itemlayout width="633" height="60">
 				<control type="label">
 					<posx>125</posx>
@@ -48,7 +49,6 @@
 					<label>$INFO[ListItem.Episode]</label>
 					<font>Font_EpisodeNumber</font>
 					<textcolor>EpisodeNumber</textcolor>
-					<include>Animation_HiddenByInfo</include>
 					<visible>!IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="label">
@@ -60,7 +60,6 @@
 					<label>$INFO[ListItem.Title]</label>
 					<font>Font_EpisodeTitleNF</font>
 					<textcolor>EpisodeNumber</textcolor>
-					<include>Animation_HiddenByInfo</include>
 					<visible>!IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="label">
@@ -72,7 +71,6 @@
 					<label>AIred: $INFO[ListItem.Date]</label>
 					<font>Font_EpisodeDetailNF</font>
 					<textcolor>EpisodeNumber</textcolor>
-					<include>Animation_HiddenByInfo</include>
 					<visible>!IsEmpty(ListItem.Title)</visible>
 				</control>
 			</itemlayout>
@@ -121,7 +119,6 @@
 					<animation type="Focus" reversible="false">
 						<effect type="fade" start="0" end="100" time="200" />
 					</animation>
-					<include>Animation_HiddenByInfo</include>
 					<visible>!IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="image">
@@ -150,9 +147,9 @@
 			<height>103</height>
 			<align>left</align>
 			<info>Container(51).ListItem.Plot</info>
-					<animation type="Focus" reversible="false">
-						<effect type="fade" start="0" end="100" time="200" />
-					</animation>
+			<animation type="Focus" reversible="false">
+				<effect type="fade" start="0" end="100" time="200" />
+			</animation>
 			<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
 			<font>Font_EpisodePlot</font>
 			<textcolor>EpisodePlot</textcolor>
@@ -167,6 +164,27 @@
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>PosterMediaFlags</include>
+		</control>
+
+		<control type="group">
+			<control type="image">
+				<posx>37</posx>
+				<posy>135</posy>
+				<width>506</width>
+				<height>278</height>
+				<fadetime>200</fadetime>
+				<texture diffuse="episodematte.png">$INFO[ListItem.Icon]</texture>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+			</control>
+			<control type="image">
+				<posx>12</posx>
+				<posy>110</posy>
+				<width>556</width>
+				<height>328</height>
+				<fadetime>200</fadetime>
+				<texture>episodeframe.png</texture>
+			</control>
+			<visible>Control.IsVisible(51) + Window.IsActive(2003)</visible>
 		</control>
 
 	</include>

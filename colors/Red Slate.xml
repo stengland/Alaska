@@ -46,7 +46,8 @@
 	<!-- Flags -->
 
 	<color name="FlagDiffuse">FFc7c7c7</color>
-	<color name="FlagText">FF2c0e0e</color>					<!--FF3c1212-->
+	<color name="FlagText">bb250000</color>					<!--FF3c1212-->
+	<color name="FlagText2">FFc7c7c7</color>
 	<color name="StarDiffuse">FFc89008</color>
 
 	<!-- OSD -->

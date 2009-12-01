@@ -39,6 +39,16 @@
 				<label>DialogSeekbar.xml</label>
 				<visible>Skin.HasSetting(debugmode)</visible>
 			</control>
+			<control type="label">
+				<posx>30</posx>
+				<posy>128</posy>
+				<width>300</width>
+				<height>18</height>
+				<aligny>center</aligny>
+				<font>Font_ListDetail</font>
+				<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
+				<textcolor>OSDPlayingDuration</textcolor>
+			</control>
 			<control type="progress" id="23">
 				<texturebg>osd/osd_progress_back.png</texturebg>
 				<lefttexture>osd/osd_progress_left.png</lefttexture>
@@ -46,10 +56,24 @@
 				<righttexture>osd/osd_progress_right.png</righttexture>
 				<colordiffuse>OSDProgressBar</colordiffuse>
 				<info>Player.Progress</info>
-				<posx>30</posx>
+				<posx>205</posx>
 				<posy>130</posy>
-				<width>1040</width>
+				<width>930</width>
 				<height>19</height>
+				<visible>!substring(system.time,M,right)</visible>
+			</control>
+			<control type="progress" id="23">
+				<texturebg>osd/osd_progress_back.png</texturebg>
+				<lefttexture>osd/osd_progress_left.png</lefttexture>
+				<midtexture>osd/osd_progress_mid.png</midtexture>
+				<righttexture>osd/osd_progress_right.png</righttexture>
+				<colordiffuse>OSDProgressBar</colordiffuse>
+				<info>Player.Progress</info>
+				<posx>205</posx>
+				<posy>130</posy>
+				<width>880</width>
+				<height>19</height>
+				<visible>substring(system.time,M,right)</visible>
 			</control>
 			<control type="label">
 				<posx>1250</posx>
@@ -59,7 +83,7 @@
 				<aligny>center</aligny>
 				<align>right</align>
 				<font>Font_ListDetail</font>
-				<label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
+				<label>$INFO[System.Time]$INFO[Player.FinishTime, / ]</label>
 				<textcolor>OSDPlayingDuration</textcolor>
 			</control>
 		</control>

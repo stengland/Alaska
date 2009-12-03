@@ -22,7 +22,7 @@
 			<preloaditems>2</preloaditems>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
-			<visible>Container.Content(movies) | Container.Content(albums)</visible>
+			<visible>Container.Content(movies) | Container.Content(albums) | Container.Content(artists)</visible>
 			<itemlayout width="278" height="194">
 				<control type="image">
 					<posx>1</posx>
@@ -138,7 +138,7 @@
 				<font>Font_MainMenuLabel</font>
 				<textcolor>FanartTitle</textcolor>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
-				<visible>Container.Content(movies) | Container.Content(albums)</visible>
+				<visible>Container.Content(movies) | Container.Content(albums) | Container.Content(artists)</visible>
 			</control>
 			<control type="label">
 				<posx>0</posx>

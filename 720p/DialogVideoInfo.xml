@@ -62,7 +62,7 @@
 				<font>Font_InfoYear</font>
 				<textcolor>InfoYear</textcolor>
 				<info>ListItem.Duration</info>
-				<visible>substring(listitem.Duration,mins)</visible>
+				<visible>substring(listitem.Duration,min)</visible>
 				<visible>!substring(listitem.Duration,hrs)</visible>
 				<visible>!IsEmpty(listitem.Duration)</visible>
 			</control>
@@ -75,7 +75,7 @@
 				<font>Font_InfoYear</font>
 				<textcolor>InfoYear</textcolor>
 				<label>$INFO[ListItem.Duration,, mins]</label>
-				<visible>!substring(listitem.Duration,mins)</visible>
+				<visible>!substring(listitem.Duration,min)</visible>
 				<visible>!IsEmpty(listitem.Duration)</visible>
 			</control>
 			<control type="image">

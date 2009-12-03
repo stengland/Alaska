@@ -138,10 +138,11 @@
 					<width>121</width>
 					<height>22</height>
 					<texture>$INFO[ListItem.StarRating]</texture>
+					<colordiffuse>StarDiffuse</colordiffuse>
 				</control>
 			</focusedlayout>
 		</control>		
-		
+
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture diffuse="backdrops/mask_3.png">common/white.png</texture>

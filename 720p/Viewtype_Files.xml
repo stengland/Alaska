@@ -267,6 +267,7 @@
 					<width>121</width>
 					<height>25</height>
 					<texture>$INFO[ListItem.StarRating]</texture>
+					<colordiffuse>StarDiffuse</colordiffuse>
 					<visible>Window.IsActive(25) + Container.Content(tvshows)</visible>
 				</control>
 				<control type="label">
@@ -381,6 +382,7 @@
 						<width>121</width>
 						<height>25</height>
 						<texture>$INFO[ListItem.StarRating]</texture>
+						<colordiffuse>StarDiffuse</colordiffuse>
 						<visible>!IsEmpty(ListItem.Album)</visible>
 					</control>
 				</control>

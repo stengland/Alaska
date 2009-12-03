@@ -169,6 +169,7 @@
 				<width>121</width>
 				<height>22</height>
 				<texture>$INFO[ListItem.StarRating]</texture>
+				<colordiffuse>StarDiffuse</colordiffuse>
 				<visible>!IsEmpty(ListItem.Album) + Container.Content(albums)</visible>
 			</control>
 		</control>

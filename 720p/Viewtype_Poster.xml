@@ -2,10 +2,10 @@
 
 <includes>
 	<include name="Viewtype_Poster">
-	
-	<!-- Poster Wrap View -->
-	
-	<control type="wraplist" id="50">
+
+		<!-- Poster Wrap View -->
+
+		<control type="wraplist" id="50">
 			<posx>-20</posx>
 			<posy>65</posy>
 			<height>515</height>
@@ -180,10 +180,10 @@
 				</control>									
 			</focusedlayout>
 		</control>
-	
-	<!-- Poster Fixed View -->
-	
-	<control type="fixedlist" id="57">
+
+		<!-- Poster Fixed View -->
+
+		<control type="fixedlist" id="57">
 			<posx>-20</posx>
 			<posy>65</posy>
 			<height>515</height>
@@ -445,9 +445,9 @@
 			<include>PosterMediaFlags</include>
 		</control>
 	</include>
-	
+
 	<!-- Square View -->
-	
+
 	<include name="Viewtype_SquarePoster">
 		<control type="wraplist" id="54">
 			<viewtype label="Square">icon</viewtype>
@@ -485,7 +485,7 @@
 					<fadetime>200</fadetime>
 					<colordiffuse>IconDiffuse</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
-					</control>
+				</control>
 				<control type="image">
 					<posx>2</posx>
 					<posy>252</posy>
@@ -643,6 +643,7 @@
 					<width>121</width>
 					<height>22</height>
 					<texture>$INFO[ListItem.StarRating]</texture>
+					<colordiffuse>StarDiffuse</colordiffuse>
 					<visible>!IsEmpty(ListItem.Album)</visible>
 				</control>
 			</control>

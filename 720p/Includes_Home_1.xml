@@ -33,7 +33,7 @@
 				</item>
 				<item id="3">
 					<description>Music</description>
-					<onclick>ActivateWindow(MusicLibrary,albums,return)</onclick>
+					<onclick>ActivateWindow(MusicLibrary)</onclick>
 				</item>
 				<item id="4">
 					<description>Movies</description>

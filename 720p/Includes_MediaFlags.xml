@@ -216,6 +216,7 @@
 					<height>63</height>
 					<include>PosterMediaFlagsVars</include>
 					<texture>flags/frame_studio.png</texture>
+					<visible>!IsEmpty(ListItem.Studio)</visible>
 				</control>
 				<control type="image">
 					<posx>2</posx>
@@ -224,6 +225,7 @@
 					<height>59</height>
 					<include>PosterMediaFlagsVars</include>
 					<texture fallback="flags/default.png">special://skin/extras/studios/$INFO[ListItem.Studio,,.png]</texture>
+					<visible>!IsEmpty(ListItem.Studio)</visible>
 				</control>
 			</control>
 

@@ -441,7 +441,7 @@
 					<label>$LOCALIZE[31020]</label>
 					<icon>homeicons/scriptsicon.png</icon>
 					<onclick>ActivateWindow(20)</onclick>
-					<visible>!Skin.HasSetting(nosettings)</visible>
+					<visible>!Skin.HasSetting(noscripts)</visible>
 				</item>
 				<item id="10">
 					<description>Shutdown</description>

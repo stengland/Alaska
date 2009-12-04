@@ -12,8 +12,8 @@
 		<control type="button" id="7050">
 			<texturefocus/>
 			<texturenofocus/>
-			<onleft>410</onleft>
-			<onright>410</onright>
+			<onleft>50</onleft>
+			<onright>50</onright>
 			<onup>7001</onup>
 			<ondown>7001</ondown>
 			<onclick/>
@@ -460,10 +460,5 @@
 			</control>
 		</control>
 		<include>Object_DebugGrid</include>
-
-		<control type="button" id="410">
-			<onfocus>SetFocus(50)</onfocus>
-			<onfocus>Dialog.Close(2003,force)</onfocus>
-		</control>
 	</controls>
 </window>

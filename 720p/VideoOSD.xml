@@ -8,7 +8,7 @@
 			<onfocus>Dialog.Close(142)</onfocus>
 			<onfocus>SetFocus(2001)</onfocus>
 		</control>
-		
+
 		<control type="label">
 			<include>DialogID</include>
 			<label>VideoOSD.xml</label>
@@ -28,6 +28,7 @@
 			<!--First Button Group-->
 			<control type="grouplist" id="2001">
 				<visible allowhiddenfocus="true">Controlgroup(2001).HasFocus + !Window.IsVisible(125)</visible>
+				<animation effect="slide" end="-75,0" time="0" condition="VideoPlayer.HasMenu">Conditional</animation>
 				<include>Animation_CommonFade</include>
 				<posx>925</posx>
 				<posy>25</posy>
@@ -204,7 +205,7 @@
 				<width>300</width>
 				<height>18</height>
 				<aligny>center</aligny>
-				<align></align>
+				<align/>
 				<font>Font_ListDetail</font>
 				<label>$INFO[VideoPlayer.Duration]</label>
 				<textcolor>OSDPlayingDuration</textcolor>

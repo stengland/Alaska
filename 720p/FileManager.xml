@@ -80,6 +80,7 @@
 						<height>50</height>
 						<visible>Control.HasFocus(20)</visible>
 						<texture>favourites/focus_bar.png</texture>
+						<colordiffuse>FM_Focusbar</colordiffuse>
 					</control>
 					<control type="label">
 						<posx>23</posx>
@@ -182,6 +183,7 @@
 						<height>50</height>
 						<visible>Control.HasFocus(21)</visible>
 						<texture>favourites/focus_bar.png</texture>
+						<colordiffuse>FM_Focusbar</colordiffuse>
 					</control>
 					<control type="label">
 						<posx>23</posx>

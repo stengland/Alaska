@@ -2,57 +2,74 @@
 
 <includes>
 	<include name="PosterMediaFlagsVars">
-		<posy>530</posy>
+		<posy>0</posy>
 		<height>35</height>
 		<colordiffuse>FlagDiffuse</colordiffuse>
 	</include>
 
 	<include name="PosterMediaFlagsVars2">
 		<posx>55</posx>
-		<posy>527</posy>
 		<width>60</width>
-		<height>40</height>
+		<height>35</height>
 		<colordiffuse>FlagDiffuse</colordiffuse>
-	</include>
-
-	<include name="FlagsSlideAnimations">
-		<animation effect="slide" start="0,0" end="-98,0" condition="Skin.HasSetting(noratingpanel) | IsEmpty(ListItem.Rating)">Conditional</animation>
-		<animation effect="slide" start="0,0" end="-170,0" condition="Skin.HasSetting(novideopanel) | IsEmpty(ListItem.VideoResolution)">Conditional</animation>
-		<animation effect="slide" start="0,0" end="-108,0" condition="Skin.HasSetting(noaudiopanel) | IsEmpty(ListItem.AudioChannels)">Conditional</animation>
 	</include>
 
 	<include name="PosterMediaFlags">
 		<control type="group">
 			<include>Animation_SlideUpFadeOut</include>
 			<include>Animation_HiddenByInfo</include>
-			<posx>62</posx>
-			<posy>5</posy>
+			<posx>696</posx>
+			<posy>622</posy>
 			<width>350</width>
-			<animation effect="slide" start="0,0" end="-60,20" condition="Control.IsVisible(51)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-341,20" condition="Control.IsVisible(52)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-60,60" condition="Control.IsVisible(54) | Control.IsVisible(55)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-341,20" condition="Control.IsVisible(56)">Conditional</animation>
-			<visible>![Skin.HasSetting(nostudiopanel) + Skin.HasSetting(noratingpanel) + Skin.HasSetting(novideopanel) + Skin.HasSetting(noaudiopanel)] + [Container.Content(movies) | Container.Content(episodes)]</visible>
+			<animation effect="slide" start="0,0" end="0,30" time="200" condition="!system.getbool(lookandfeel.enablerssfeeds) | Skin.HasSetting(RSS_only_on_home) + !Window.IsActive(home) + !Window.IsVisible(2006)">Conditional</animation>
+			<visible>![Skin.HasSetting(nostudiopanel) + Skin.HasSetting(noratingpanel) + Skin.HasSetting(novideopanel) + Skin.HasSetting(noaudiopanel)] + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
+
+			<!-- Year Panel -->
+
+			<control type="group">
+				<visible>!Skin.HasSetting(noyearpanel)</visible>
+				<animation effect="slide" start="0,0" end="98,0" condition="Skin.HasSetting(noratingpanel) | IsEmpty(ListItem.Rating)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="170,0" condition="Skin.HasSetting(novideopanel) | IsEmpty(ListItem.VideoResolution)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="108,0" condition="Skin.HasSetting(noaudiopanel) | IsEmpty(ListItem.AudioChannels)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="102,0" condition="Skin.HasSetting(nostudiopanel) | IsEmpty(ListItem.Studio)">Conditional</animation>
+				<control type="image">
+					<width>72</width>
+					<include>PosterMediaFlagsVars</include>
+					<texture>flags/frame_year.png</texture>
+					<visible>!IsEmpty(ListItem.Year)</visible>
+				</control>
+				<control type="label">
+					<label>$INFO[ListItem.Year]</label>
+					<posx>8</posx>
+					<width>56</width>
+					<include>PosterMediaFlagsVars</include>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_PosterRating</font>
+					<textcolor>FlagText2</textcolor>
+					<visible>!IsEmpty(ListItem.Year)</visible>
+				</control>
+			</control>
 
 			<!-- Rating Panel -->
 
 			<control type="group" id="600">
-				<description>IMDB rating</description>
-				<posx>780</posx>
-				<posy>0</posy>
+				<posx>82</posx>
 				<visible>!Skin.HasSetting(noratingpanel)</visible>
+				<animation effect="slide" start="0,0" end="170,0" condition="Skin.HasSetting(novideopanel) | IsEmpty(ListItem.VideoResolution)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="108,0" condition="Skin.HasSetting(noaudiopanel) | IsEmpty(ListItem.AudioChannels)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="102,0" condition="Skin.HasSetting(nostudiopanel) | IsEmpty(ListItem.Studio)">Conditional</animation>
 				<control type="image" id="601">
 					<width>88</width>
 					<include>PosterMediaFlagsVars</include>
-					<texture>flags/Rating/IMDB.png</texture>
+					<texture>flags/frame_imdb.png</texture>
 					<visible>!IsEmpty(ListItem.Rating)</visible>
 				</control>
 				<control type="label" id="602">
 					<label>$INFO[ListItem.Rating]</label>
 					<posx>30</posx>
-					<posy>525</posy>
 					<width>56</width>
-					<height>45</height>
+					<include>PosterMediaFlagsVars</include>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>Font_PosterRating</font>
@@ -64,21 +81,21 @@
 			<!-- Video Panel -->
 
 			<control type="group">
-				<posx>878</posx>
+				<posx>180</posx>
 				<visible>!Skin.HasSetting(novideopanel)</visible>
-				<include>FlagsSlideAnimations</include>
+				<animation effect="slide" start="0,0" end="108,0" condition="Skin.HasSetting(noaudiopanel) | IsEmpty(ListItem.AudioChannels)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="102,0" condition="Skin.HasSetting(nostudiopanel) | IsEmpty(ListItem.Studio)">Conditional</animation>
 				<control type="image">
 					<width>161</width>
 					<include>PosterMediaFlagsVars</include>
-					<texture>flags/AspectRatio/frame.png</texture>
+					<texture>flags/frame_aspect.png</texture>
 					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
 				</control>
 				<control type="label">
 					<label>$INFO[ListItem.VideoResolution]</label>
 					<posx>3</posx>
-					<posy>525</posy>
 					<width>50</width>
-					<height>45</height>
+					<include>PosterMediaFlagsVars</include>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>Font_Res</font>
@@ -88,9 +105,8 @@
 				<control type="label">
 					<label fallback="?">$INFO[ListItem.VideoAspect]</label>
 					<posx>120</posx>
-					<posy>525</posy>
 					<width>35</width>
-					<height>45</height>
+					<include>PosterMediaFlagsVars</include>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>Font_Aspect</font>
@@ -138,21 +154,20 @@
 			<!-- Audio Panel -->
 
 			<control type="group">
-				<posx>1049</posx>
+				<posx>351</posx>
 				<visible>!Skin.HasSetting(noaudiopanel)</visible>
-				<include>FlagsSlideAnimations</include>
+				<animation effect="slide" start="0,0" end="102,0" condition="Skin.HasSetting(nostudiopanel) | IsEmpty(ListItem.Studio)">Conditional</animation>
 				<control type="image">
 					<width>100</width>
 					<include>PosterMediaFlagsVars</include>
-					<texture>flags/AudioCodec/frame.png</texture>
+					<texture>flags/frame_audio.png</texture>
 					<visible>!IsEmpty(ListItem.AudioChannels)</visible>
 				</control>
 				<control type="label">
 					<label fallback="?">$INFO[ListItem.AudioChannels,,.0]</label>
 					<posx>65</posx>
-					<posy>525</posy>
 					<width>33</width>
-					<height>45</height>
+					<include>PosterMediaFlagsVars</include>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>Font_Channels</font>
@@ -163,9 +178,8 @@
 				<control type="label">
 					<label>5.1</label>
 					<posx>65</posx>
-					<posy>525</posy>
 					<width>33</width>
-					<height>45</height>
+					<include>PosterMediaFlagsVars</include>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>Font_Channels</font>
@@ -175,9 +189,8 @@
 				<control type="label">
 					<label>7.1</label>
 					<posx>65</posx>
-					<posy>525</posy>
 					<width>33</width>
-					<height>45</height>
+					<include>PosterMediaFlagsVars</include>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>Font_Channels</font>
@@ -195,6 +208,28 @@
 			<!-- Studio Panel -->
 
 			<control type="group">
+				<posx>462</posx>
+				<posy>-30</posy>
+				<visible>!Skin.HasSetting(nostudiopanel)</visible>
+				<control type="image">
+					<width>92</width>
+					<height>63</height>
+					<include>PosterMediaFlagsVars</include>
+					<texture>flags/frame_studio.png</texture>
+				</control>
+				<control type="image">
+					<posx>2</posx>
+					<posy>2</posy>
+					<width>88</width>
+					<height>59</height>
+					<include>PosterMediaFlagsVars</include>
+					<texture fallback="flags/default.png">special://skin/extras/studios/$INFO[ListItem.Studio,,.png]</texture>
+				</control>
+			</control>
+
+			<!-- Waiting for border diffuse to be implimented in to XBMC -->
+
+			<!--control type="group">
 				<posx>1161</posx>
 				<posy>514</posy>
 				<visible>!Skin.HasSetting(nostudiopanel) + !Control.IsVisible(50)</visible>
@@ -205,7 +240,7 @@
 					<width>92</width>
 					<height>62</height>
 					<texture fallback="none">special://skin/extras/studios/$INFO[ListItem.Studio,,.png]</texture>
-					<bordertexture border="2">flags/studioframe.png</bordertexture>
+					<bordertexture border="2">flags/frame_studio.png</bordertexture>
 					<bordersize>2</bordersize>
 					<colordiffuse>FlagDiffuse</colordiffuse>
 				</control>
@@ -221,11 +256,11 @@
 					<width>92</width>
 					<height>62</height>
 					<texture fallback="none">special://skin/extras/studios/$INFO[ListItem.Studio,,.png]</texture>
-					<bordertexture border="2">flags/studioframe.png</bordertexture>
+					<bordertexture border="2">flags/frame_studio.png</bordertexture>
 					<bordersize>2</bordersize>
 					<colordiffuse>FlagDiffuse</colordiffuse>
 				</control>
-			</control>
+			</control-->
 
 		</control>
 	</include>

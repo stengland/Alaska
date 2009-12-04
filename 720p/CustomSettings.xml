@@ -371,6 +371,18 @@
 					<ondown>9003</ondown>
 					<pagecontrol>-</pagecontrol>
 					<include>Animation_CommonFadeNoHide</include>
+					<control type="radiobutton" id="308">
+						<width>740</width>
+						<font>Font_Settings</font>
+						<textcolor>Text</textcolor>
+						<focusedcolor>TextFocused</focusedcolor>
+						<!-- LOC -->
+						<label>Show Year Flags</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<onclick>Skin.ToggleSetting(noyearpanel)</onclick>
+						<selected>!Skin.HasSetting(noyearpanel)</selected>
+					</control>
 					<control type="radiobutton" id="300">
 						<width>740</width>
 						<font>Font_Settings</font>

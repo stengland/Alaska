@@ -130,9 +130,10 @@
 	<color name="FM_ListTitle">dc777777</color>
 	<color name="FM_ListTitleAccent">CCdadada</color>
 	<color name="FM_ListSelected">dc990000</color>
-	<color name="FM_ListFocused">ffffffff</color>
+	<color name="FM_ListFocused">FFFFFFFF</color>
 	<color name="FM_ListFocusedAccent">00CCCCCC</color>
 	<color name="FM_ListUnfocused">dc777777</color>
 	<color name="FM_ListFocusSelected">CCcccccc</color>
+	<color name="FM_Focusbar">ff777777</color>
 
 </colors>

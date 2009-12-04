@@ -136,5 +136,6 @@
 	<color name="FM_ListFocusedAccent">00CCCCCC</color>
 	<color name="FM_ListUnfocused">d7333333</color>
 	<color name="FM_ListFocusSelected">CCcccccc</color>
+	<color name="FM_Focusbar">ff333333</color>
 
 </colors>

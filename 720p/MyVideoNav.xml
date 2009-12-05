@@ -23,6 +23,11 @@
 		<include>Viewtype_Episode</include>
 		<include>Viewtype_SquarePoster</include>
 		<include>Viewtype_Banner</include>
+		<control type="group">
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
+			<include>PosterMediaFlags</include>
+		</control>
 
 		<include>Global_ContextFilter</include>
 

@@ -476,15 +476,6 @@
 			<visible>Control.IsVisible(55)</visible>
 		</control>
 
-		<!-- Media Flags -->
-
-		<control type="group">
-			<visible>Control.IsVisible(55) + Window.IsActive(25)</visible>
-			<include>Animation_ZoomInZoomOut</include>
-			<include>Animation_ZoomedByMenu</include>
-			<include>PosterMediaFlags</include>
-		</control>
-
 		<!-- Scroll Bar -->
 
 		<control type="scrollbar" id="60">

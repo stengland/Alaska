@@ -158,12 +158,6 @@
 			<include>Animation_EpisodePlot</include>
 			<include>Animation_EpisodeFloat</include>
 			<include>Animation_HiddenByInfo</include>
-		</control>		
-		<control type="group">
-			<visible>Control.IsVisible(51)</visible>
-			<include>Animation_ZoomInZoomOut</include>
-			<include>Animation_ZoomedByMenu</include>
-			<include>PosterMediaFlags</include>
 		</control>
 
 		<control type="group">

@@ -438,12 +438,6 @@
 				<visible>Container.Content(tvshows)</visible>
 			</control>
 		</control>
-		<control type="group">
-			<visible>Control.IsVisible(50) | Control.IsVisible(57) | [Control.IsVisible(54) + Container.Content(movies)]</visible>
-			<include>Animation_ZoomInZoomOut</include>
-			<include>Animation_ZoomedByMenu</include>
-			<include>PosterMediaFlags</include>
-		</control>
 	</include>
 
 	<!-- Square View -->

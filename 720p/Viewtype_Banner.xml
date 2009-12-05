@@ -48,23 +48,14 @@
 			</itemlayout>
 			<focusedlayout width="828" height="100">
 				<control type="image">
-					<posx>72</posx>
+					<posx>76</posx>
 					<posy>-4</posy>
 					<width>566</width>
 					<height>128</height>
-					<texture>list/listbannerframe.png</texture>
-					<animation type="Focus" reversible="false">
-						<effect type="zoom" center="auto" start="50" end="100" time="200" tween="cubic" easing="out" />
-						<effect type="fade" start="0" end="100" time="200" />
-					</animation>					
-				</control>
-				<control type="image">
-					<posx>84</posx>
-					<posy>10</posy>
-					<width>542</width>
-					<height>100</height>
 					<texture diffuse="list/listbannermatte.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio scalediffuse="true">keep</aspectratio>
+					<bordertexture border="14">list/listbannerborder.png</bordertexture>
+					<bordersize>4</bordersize>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="auto" start="50" end="100" time="200" tween="cubic" easing="out" />
 						<effect type="fade" start="0" end="100" time="200" />

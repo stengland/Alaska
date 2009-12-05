@@ -1,6 +1,7 @@
 <colors>
 
 	<!-- Theme Colours -->
+	
 	<color name="BackgroundColor">bbffffc0</color>
 	<color name="BackgroundFilterColor">bb250000</color>
 	<color name="ButtonFilterColor">FFc89008</color>		<!--  FFad0909 is red, FFc89008 is yellow -->

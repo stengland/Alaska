@@ -18,15 +18,44 @@
 		<control type="group">
 			<include>Animation_SlideUpFadeOut</include>
 			<include>Animation_HiddenByInfo</include>
-			<posx>696</posx>
+			<posx>628</posx>
 			<posy>622</posy>
-			<width>350</width>
+			<width>418</width>
 			<animation effect="slide" start="0,0" end="0,30" time="200" condition="!system.getbool(lookandfeel.enablerssfeeds) | Skin.HasSetting(RSS_only_on_home) + !Window.IsActive(home) + !Window.IsVisible(2006)">Conditional</animation>
-			<visible>![Skin.HasSetting(nostudiopanel) + Skin.HasSetting(noratingpanel) + Skin.HasSetting(novideopanel) + Skin.HasSetting(noaudiopanel)] + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
+			<visible>![Skin.HasSetting(nolanguagepanel) + Skin.HasSetting(noyearpanel) + Skin.HasSetting(nostudiopanel) + Skin.HasSetting(noratingpanel) + Skin.HasSetting(novideopanel) + Skin.HasSetting(noaudiopanel)] + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
+
+			<!-- Language Panel -->
+
+			<control type="group">
+				<visible>!Skin.HasSetting(nolanguagepanel)</visible>
+				<animation effect="slide" start="0,0" end="84,0" condition="Skin.HasSetting(noyearpanel) | IsEmpty(ListItem.Year)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="98,0" condition="Skin.HasSetting(noratingpanel) | IsEmpty(ListItem.Rating)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="170,0" condition="Skin.HasSetting(novideopanel) | IsEmpty(ListItem.VideoResolution)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="108,0" condition="Skin.HasSetting(noaudiopanel) | IsEmpty(ListItem.AudioChannels)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="108,0" condition="Skin.HasSetting(nostudiopanel) | IsEmpty(ListItem.Studio) | StringCompare(Control.GetLabel(3500),empty)">Conditional</animation>
+				<control type="image">
+					<width>58</width>
+					<include>PosterMediaFlagsVars</include>
+					<texture>flags/frame_lang.png</texture>
+					<visible>!IsEmpty(ListItem.AudioLanguage)</visible>
+				</control>
+				<control type="label">
+					<label>$INFO[ListItem.AudioLanguage]</label>
+					<posx>8</posx>
+					<width>42</width>
+					<include>PosterMediaFlagsVars</include>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_PosterRating</font>
+					<textcolor>FlagText</textcolor>
+					<visible>!IsEmpty(ListItem.AudioLanguage)</visible>
+				</control>
+			</control>
 
 			<!-- Year Panel -->
 
 			<control type="group">
+				<posx>68</posx>
 				<visible>!Skin.HasSetting(noyearpanel)</visible>
 				<animation effect="slide" start="0,0" end="98,0" condition="Skin.HasSetting(noratingpanel) | IsEmpty(ListItem.Rating)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="170,0" condition="Skin.HasSetting(novideopanel) | IsEmpty(ListItem.VideoResolution)">Conditional</animation>
@@ -54,7 +83,7 @@
 			<!-- Rating Panel -->
 
 			<control type="group" id="600">
-				<posx>82</posx>
+				<posx>150</posx>
 				<visible>!Skin.HasSetting(noratingpanel)</visible>
 				<animation effect="slide" start="0,0" end="170,0" condition="Skin.HasSetting(novideopanel) | IsEmpty(ListItem.VideoResolution)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="108,0" condition="Skin.HasSetting(noaudiopanel) | IsEmpty(ListItem.AudioChannels)">Conditional</animation>
@@ -81,7 +110,7 @@
 			<!-- Video Panel -->
 
 			<control type="group">
-				<posx>180</posx>
+				<posx>248</posx>
 				<visible>!Skin.HasSetting(novideopanel)</visible>
 				<animation effect="slide" start="0,0" end="108,0" condition="Skin.HasSetting(noaudiopanel) | IsEmpty(ListItem.AudioChannels)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="108,0" condition="Skin.HasSetting(nostudiopanel) | IsEmpty(ListItem.Studio) | StringCompare(Control.GetLabel(3500),empty)">Conditional</animation>
@@ -154,7 +183,7 @@
 			<!-- Audio Panel -->
 
 			<control type="group">
-				<posx>351</posx>
+				<posx>419</posx>
 				<visible>!Skin.HasSetting(noaudiopanel)</visible>
 				<animation effect="slide" start="0,0" end="108,0" condition="Skin.HasSetting(nostudiopanel) | IsEmpty(ListItem.Studio) | StringCompare(Control.GetLabel(3500),empty)">Conditional</animation>
 				<control type="image">
@@ -208,7 +237,7 @@
 			<!-- Studio Panel -->
 
 			<control type="group">
-				<posx>462</posx>
+				<posx>530</posx>
 				<posy>-30</posy>
 				<animation effect="fade" start="100" end="0" condition="Skin.HasSetting(nostudiopanel) | IsEmpty(ListItem.Studio) | StringCompare(Control.GetLabel(3500),empty)">Conditional</animation>
 				<visible>!Skin.HasSetting(nostudiopanel) | !IsEmpty(ListItem.Studio)</visible>

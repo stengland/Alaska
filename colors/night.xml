@@ -35,9 +35,9 @@
 	<color name="RSSHighlight">ff009ACD</color>
 	<color name="RSSHeadline">FFFFFFFF</color>
 	<color name="RSSTitle">ff009ACD</color>
-	<color name="NowPlayingArtist">ff009ACD</color>
-	<color name="NowPlayingAlbum">FFB3B3B3</color>
-	<color name="NowPlayingTrack">FFFFFFFF</color>
+	<color name="NowPlayingArtist">FFFFFFFF</color>
+	<color name="NowPlayingAlbum">ff009ACD</color>
+	<color name="NowPlayingTrack">ff009ACD</color>
 	<color name="MediaMenu">FFFFFFFF</color>
 	<color name="TextFocused">ff009ACD</color>
 	<color name="Text">FFFFFFFF</color>

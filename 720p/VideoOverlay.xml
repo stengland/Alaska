@@ -39,31 +39,14 @@
 			</control>
 			<control type="label">
 				<posx>300</posx>
-				<posy>120</posy>
-				<width>368</width>
+				<posy>86</posy>
+				<width>288</width>
+				<height>60</height>
+				<aligny>center</aligny>
 				<font>Font_ListDetail</font>
-				<label>[B]$LOCALIZE[31004][/B]</label>
+				<label>$LOCALIZE[31004]:[CR][B][COLOR=NowPlayingTrack]$INFO[VideoPlayer.Title][/COLOR][/B][CR][COLOR=NowPlayingAlbum]$INFO[VideoPlayer.TVShowTitle][/COLOR]</label>
 				<textcolor>NowPlayingArtist</textcolor>
-				<animation effect="slide" end="0,-20" condition="VideoPlayer.Content(episodes)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="0,-40" time="200" condition="Window.IsActive(PlayerControls)">Conditional</animation>
-			</control>
-			<control type="label">
-				<posx>300</posx>
-				<posy>140</posy>
-				<width>368</width>
-				<font>Font_ListDetail</font>
-				<label>[B]$INFO[VideoPlayer.Title][/B]</label>
-				<textcolor>NowPlayingTrack</textcolor>
-				<animation effect="slide" start="0,0" end="0,-40" time="200" condition="Window.IsActive(PlayerControls)">Conditional</animation>
-			</control> 
-			<control type="label">
-				<posx>300</posx>
-				<posy>120</posy>
-				<width>368</width>
-				<font>Font_ListDetail</font>
-				<label>$INFO[VideoPlayer.TVShowTitle]</label>
-				<textcolor>NowPlayingAlbum</textcolor>
-				<visible>VideoPlayer.Content(episodes)</visible>
+				<wrapmultiline>true</wrapmultiline>
 				<animation effect="slide" start="0,0" end="0,-40" time="200" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 			</control>
 		</control>

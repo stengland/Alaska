@@ -227,7 +227,7 @@
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
 					<colordiffuse>MainMenuLabel</colordiffuse>
-					<visible>[Container(300).HasFocus(3) + ![ControlGroup(3300).HasFocus() | ControlGroup(3310).HasFocus()]] | [Container(3310).HasPrevious + ControlGroup(3310).HasFocus()] | [Container(3300).HasNext + ControlGroup(3300).HasFocus()] | [!Container(3300).HasNext + ControlGroup(3300).HasFocus()]</visible>
+					<visible>[Container(300).HasFocus(3) + ![ControlGroup(3300).HasFocus() | ControlGroup(3310).HasFocus()] + !StringCompare(Control.GetLabel(3320),empty)] | [Container(3310).HasPrevious + ControlGroup(3310).HasFocus()] | [Container(3300).HasNext + ControlGroup(3300).HasFocus()] | [!Container(3300).HasNext + ControlGroup(3300).HasFocus()]</visible>
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
@@ -237,7 +237,7 @@
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
 					<colordiffuse>MainMenuLabel</colordiffuse>
-					<visible>[[Container(300).HasFocus(3) + ![ControlGroup(3300).HasFocus() | ControlGroup(3310).HasFocus()]] + ![Skin.HasSetting(hidemusicnew) + Skin.HasSetting(hidepartymode) + Skin.HasSetting(hidemusicgenres) + Skin.HasSetting(hidemusicartists) + Skin.HasSetting(hidemusicyears) + Skin.HasSetting(hidemusicfiles) + Skin.HasSetting(hidemusicsettings)]] | [Container(3300).HasNext + ControlGroup(3300).HasFocus()] | [Container(3310).HasPrevious + ControlGroup(3310).HasFocus()] | [!Container(3310).HasPrevious + ControlGroup(3310).HasFocus()]</visible>
+					<visible>[[Container(300).HasFocus(3) + ![ControlGroup(3300).HasFocus() | ControlGroup(3310).HasFocus()]] + ![Skin.HasSetting(hidemusicnew) + Skin.HasSetting(hidepartymode) + Skin.HasSetting(hidemusicgenres) + Skin.HasSetting(hidemusicartists) + Skin.HasSetting(hidemusicyears) + Skin.HasSetting(hidemusicplugins) + Skin.HasSetting(hidemusicsettings)]] | [Container(3300).HasNext + ControlGroup(3300).HasFocus()] | [Container(3310).HasPrevious + ControlGroup(3310).HasFocus()] | [!Container(3310).HasPrevious + ControlGroup(3310).HasFocus()]</visible>
 					<animation effect="slide" end="0,-6" condition="!Control.IsVisible(398)">Conditional</animation>
 				</control>
 			</control>
@@ -304,7 +304,7 @@
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
 					<colordiffuse>MainMenuLabel</colordiffuse>
-					<visible>[Container(300).HasFocus(4) + ![ControlGroup(3400).HasFocus() | ControlGroup(3410).HasFocus()]] | [Container(3410).HasPrevious + ControlGroup(3410).HasFocus()] | [Container(3400).HasNext + ControlGroup(3400).HasFocus()] | [!Container(3400).HasNext + ControlGroup(3400).HasFocus()]</visible>
+					<visible>[Container(300).HasFocus(4) + ![ControlGroup(3400).HasFocus() | ControlGroup(3410).HasFocus()] + !StringCompare(Control.GetLabel(3420),empty)] | [Container(3410).HasPrevious + ControlGroup(3410).HasFocus()] | [Container(3400).HasNext + ControlGroup(3400).HasFocus()] | [!Container(3400).HasNext + ControlGroup(3400).HasFocus()]</visible>
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
@@ -381,7 +381,7 @@
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
 					<colordiffuse>MainMenuLabel</colordiffuse>
-					<visible>[Container(300).HasFocus(5) + ![ControlGroup(3500).HasFocus() | ControlGroup(3510).HasFocus()]] | [Container(3510).HasPrevious + ControlGroup(3510).HasFocus()] | [Container(3500).HasNext + ControlGroup(3500).HasFocus()] | [!Container(3500).HasNext + ControlGroup(3500).HasFocus()]</visible>
+					<visible>[Container(300).HasFocus(5) + ![ControlGroup(3500).HasFocus() | ControlGroup(3510).HasFocus()] + !StringCompare(Control.GetLabel(3520),empty)] | [Container(3510).HasPrevious + ControlGroup(3510).HasFocus()] | [Container(3500).HasNext + ControlGroup(3500).HasFocus()] | [!Container(3500).HasNext + ControlGroup(3500).HasFocus()]</visible>
 					<animation effect="slide" end="0,6" condition="!Control.IsVisible(399)">Conditional</animation>
 				</control>
 				<control type="image" id="399">
@@ -761,7 +761,7 @@
 		</control>
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3306)</onfocus>
-			<visible>Container(300).HasFocus(3) + !Skin.HasSetting(hidemusicfiles)</visible>
+			<visible>Container(300).HasFocus(3) + !Skin.HasSetting(hidemusicplugins)</visible>
 		</control>
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3307)</onfocus>
@@ -1032,42 +1032,47 @@
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3311">
 				<onclick>$INFO[Window.Property(LatestSong.5.Path),PlayMedia(,)]</onclick>
+				<visible>!StringCompare(Control.GetLabel(3316),empty)</visible>
 			</control>
 			<control type="button" id="3312">
 				<onclick>$INFO[Window.Property(LatestSong.4.Path),PlayMedia(,)]</onclick>
+				<visible>!StringCompare(Control.GetLabel(3317),empty)</visible>
 			</control>
 			<control type="button" id="3313">
 				<onclick>$INFO[Window.Property(LatestSong.3.Path),PlayMedia(,)]</onclick> 
+				<visible>!StringCompare(Control.GetLabel(3318),empty)</visible>
 			</control>
 			<control type="button" id="3314">
 				<onclick>$INFO[Window.Property(LatestSong.2.Path),PlayMedia(,)]</onclick>
+				<visible>!StringCompare(Control.GetLabel(3319),empty)</visible>
 			</control>
 			<control type="button" id="3315">
 				<onclick>$INFO[Window.Property(LatestSong.1.Path),PlayMedia(,)]</onclick>
+				<visible>!StringCompare(Control.GetLabel(3320),empty)</visible>
 			</control>
 		</control>
-		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestSong.5.Album)]$INFO[Window.Property(LatestSong.5.Title), - ]</label>
-			<visible>ControlGroup(3310).HasFocus(3311) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
+		<control type="label" id="3316">
+			<label fallback="empty">$INFO[Window.Property(LatestSong.5.Album)]$INFO[Window.Property(LatestSong.5.Title), - ]</label>
+			<visible>[ControlGroup(3310).HasFocus(3311) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)]</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
-		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestSong.4.Album)]$INFO[Window.Property(LatestSong.4.Title), - ]</label>
+		<control type="label" id="3317">
+			<label fallback="empty">$INFO[Window.Property(LatestSong.4.Album)]$INFO[Window.Property(LatestSong.4.Title), - ]</label>
 			<visible>ControlGroup(3310).HasFocus(3312) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
-		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestSong.3.Album)]$INFO[Window.Property(LatestSong.3.Title), - ]</label>
+		<control type="label" id="3318">
+			<label fallback="empty">$INFO[Window.Property(LatestSong.3.Album)]$INFO[Window.Property(LatestSong.3.Title), - ]</label>
 			<visible>ControlGroup(3310).HasFocus(3313) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
-		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestSong.2.Album)]$INFO[Window.Property(LatestSong.2.Title), - ]</label>
+		<control type="label" id="3319">
+			<label fallback="empty">$INFO[Window.Property(LatestSong.2.Album)]$INFO[Window.Property(LatestSong.2.Title), - ]</label>
 			<visible>ControlGroup(3310).HasFocus(3314) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
-		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestSong.1.Album)]$INFO[Window.Property(LatestSong.1.Title), - ]</label>
+		<control type="label" id="3320">
+			<label fallback="empty">$INFO[Window.Property(LatestSong.1.Album)]$INFO[Window.Property(LatestSong.1.Title), - ]</label>
 			<visible>ControlGroup(3310).HasFocus(3315) + ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
@@ -1142,42 +1147,47 @@
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3411">
 				<onclick>$INFO[Window.Property(LatestMovie.5.Path),PlayMedia(,)]</onclick>
+				<visible>!StringCompare(Control.GetLabel(3416),empty)</visible>
 			</control>
 			<control type="button" id="3412">
 				<onclick>$INFO[Window.Property(LatestMovie.4.Path),PlayMedia(,)]</onclick> 
+				<visible>!StringCompare(Control.GetLabel(3417),empty)</visible>
 			</control>
 			<control type="button" id="3413">
 				<onclick>$INFO[Window.Property(LatestMovie.3.Path),PlayMedia(,)]</onclick>
+				<visible>!StringCompare(Control.GetLabel(3418),empty)</visible>
 			</control>
 			<control type="button" id="3414">
 				<onclick>$INFO[Window.Property(LatestMovie.2.Path),PlayMedia(,)]</onclick>
+				<visible>!StringCompare(Control.GetLabel(3419),empty)</visible>
 			</control>
 			<control type="button" id="3415">
 				<onclick>$INFO[Window.Property(LatestMovie.1.Path),PlayMedia(,)]</onclick>
+				<visible>!StringCompare(Control.GetLabel(3420),empty)</visible>
 			</control>
 		</control>
-		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestMovie.5.Title)]</label>
+		<control type="label" id="3416">
+			<label fallback="empty">$INFO[Window.Property(LatestMovie.5.Title)]</label>
 			<visible>ControlGroup(3410).HasFocus(3411) + ControlGroup(3410).HasFocus() + Container(300).HasFocus(4)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
-		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestMovie.4.Title)]</label>
+		<control type="label" id="3417">
+			<label fallback="empty">$INFO[Window.Property(LatestMovie.4.Title)]</label>
 			<visible>ControlGroup(3410).HasFocus(3412) + ControlGroup(3410).HasFocus() + Container(300).HasFocus(4)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
-		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestMovie.3.Title)]</label>
+		<control type="label" id="3418">
+			<label fallback="empty">$INFO[Window.Property(LatestMovie.3.Title)]</label>
 			<visible>ControlGroup(3410).HasFocus(3413) + ControlGroup(3410).HasFocus() + Container(300).HasFocus(4)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
-		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestMovie.2.Title)]</label>
+		<control type="label" id="3419">
+			<label fallback="empty">$INFO[Window.Property(LatestMovie.2.Title)]</label>
 			<visible>ControlGroup(3410).HasFocus(3414) + ControlGroup(3410).HasFocus() + Container(300).HasFocus(4)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
-		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestMovie.1.Title)]</label>
+		<control type="label" id="3420">
+			<label fallback="empty">$INFO[Window.Property(LatestMovie.1.Title)]</label>
 			<visible>ControlGroup(3410).HasFocus(3415) + ControlGroup(3410).HasFocus() + Container(300).HasFocus(4)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
@@ -1256,42 +1266,47 @@
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3511">
 				<onclick>$INFO[Window.Property(LatestEpisode.5.Path),PlayMedia(,)]</onclick>
+				<visible>!StringCompare(Control.GetLabel(3516),empty)</visible>
 			</control>
 			<control type="button" id="3512">
 				<onclick>$INFO[Window.Property(LatestEpisode.4.Path),PlayMedia(,)]</onclick>
+				<visible>!StringCompare(Control.GetLabel(3517),empty)</visible>
 			</control>
 			<control type="button" id="3513">
 				<onclick>$INFO[Window.Property(LatestEpisode.3.Path),PlayMedia(,)]</onclick> 
+				<visible>!StringCompare(Control.GetLabel(3518),empty)</visible>
 			</control>
 			<control type="button" id="3514">
 				<onclick>$INFO[Window.Property(LatestEpisode.2.Path),PlayMedia(,)]</onclick>
+				<visible>!StringCompare(Control.GetLabel(3519),empty)</visible>
 			</control>
 			<control type="button" id="3515">
 				<onclick>$INFO[Window.Property(LatestEpisode.1.Path),PlayMedia(,)]</onclick>
+				<visible>!StringCompare(Control.GetLabel(3520),empty)</visible>
 			</control>
 		</control>
-		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestEpisode.5.ShowTitle)]$INFO[Window.Property(LatestEpisode.5.EpisodeNo), - ]</label>
+		<control type="label" id="3516">
+			<label fallback="empty">$INFO[Window.Property(LatestEpisode.5.ShowTitle)]$INFO[Window.Property(LatestEpisode.5.EpisodeNo), - ]</label>
 			<visible>ControlGroup(3510).HasFocus(3511) + ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
-		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestEpisode.4.ShowTitle)]$INFO[Window.Property(LatestEpisode.4.EpisodeNo), - ]</label>
+		<control type="label" id="3517">
+			<label fallback="empty">$INFO[Window.Property(LatestEpisode.4.ShowTitle)]$INFO[Window.Property(LatestEpisode.4.EpisodeNo), - ]</label>
 			<visible>ControlGroup(3510).HasFocus(3512) + ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
-		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestEpisode.3.ShowTitle)]$INFO[Window.Property(LatestEpisode.3.EpisodeNo), - ]</label>
+		<control type="label" id="3518">
+			<label fallback="empty">$INFO[Window.Property(LatestEpisode.3.ShowTitle)]$INFO[Window.Property(LatestEpisode.3.EpisodeNo), - ]</label>
 			<visible>ControlGroup(3510).HasFocus(3513) + ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
-		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestEpisode.2.ShowTitle)]$INFO[Window.Property(LatestEpisode.2.EpisodeNo), - ]</label>
+		<control type="label" id="3519">
+			<label fallback="empty">$INFO[Window.Property(LatestEpisode.2.ShowTitle)]$INFO[Window.Property(LatestEpisode.2.EpisodeNo), - ]</label>
 			<visible>ControlGroup(3510).HasFocus(3514) + ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
-		<control type="label">
-			<label fallback="Not Available">$INFO[Window.Property(LatestEpisode.1.ShowTitle)]$INFO[Window.Property(LatestEpisode.1.EpisodeNo), - ]</label>
+		<control type="label" id="3520">
+			<label fallback="empty">$INFO[Window.Property(LatestEpisode.1.ShowTitle)]$INFO[Window.Property(LatestEpisode.1.EpisodeNo), - ]</label>
 			<visible>ControlGroup(3510).HasFocus(3515) + ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
 			<include>Home_MainMenuLabel</include>
 		</control>
@@ -1332,25 +1347,25 @@
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3701">
 				<onclick>ActivateWindow(2600)</onclick>
-				<label fallback="Not Available">$INFO[Window(Weather).Property(Current.Temperature),TODAY: ]$INFO[System.TemperatureUnits]</label>
+				<label>$INFO[Window(Weather).Property(Current.Temperature),TODAY: ]$INFO[System.TemperatureUnits]</label>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hideday0)</visible>
 			</control>
 			<control type="button" id="3702">
 				<onclick>ActivateWindow(2600)</onclick>
-				<label fallback="Not Available">$INFO[Window(Weather).Property(Day1.HighTemp),TOMORROW: ]$INFO[System.TemperatureUnits]</label>
+				<label>$INFO[Window(Weather).Property(Day1.HighTemp),TOMORROW: ]$INFO[System.TemperatureUnits]</label>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hideday1)</visible>
 			</control>
 			<control type="button" id="3703">
 				<onclick>ActivateWindow(2600)</onclick>
-				<label fallback="Not Available">$INFO[Window(Weather).Property(Day2.Title)]$INFO[Window(Weather).Property(Day2.HighTemp),: ]$INFO[System.TemperatureUnits]</label>
+				<label>$INFO[Window(Weather).Property(Day2.Title)]$INFO[Window(Weather).Property(Day2.HighTemp),: ]$INFO[System.TemperatureUnits]</label>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hideday2)</visible>
 			</control>
 			<control type="button" id="3704">
 				<onclick>ActivateWindow(2600)</onclick>
-				<label fallback="Not Available">$INFO[Window(Weather).Property(Day3.Title)]$INFO[Window(Weather).Property(Day3.HighTemp),: ]$INFO[System.TemperatureUnits]</label>
+				<label>$INFO[Window(Weather).Property(Day3.Title)]$INFO[Window(Weather).Property(Day3.HighTemp),: ]$INFO[System.TemperatureUnits]</label>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hideday3)</visible>
 			</control>

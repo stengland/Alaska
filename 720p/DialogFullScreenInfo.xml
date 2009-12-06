@@ -28,18 +28,7 @@
 				<height>18</height>
 				<aligny>center</aligny>
 				<font>Font_ListDetail</font>
-				<label>$INFO[VideoPlayer.Time]</label>
-				<textcolor>OSDPlayingDuration</textcolor>
-			</control>
-			<control type="label">
-				<posx>185</posx>
-				<posy>116</posy>
-				<width>300</width>
-				<height>18</height>
-				<aligny>center</aligny>
-				<align>right</align>
-				<font>Font_ListDetail</font>
-				<label>($INFO[System.Time])</label>
+				<label>$INFO[VideoPlayer.Time]  ($INFO[System.Time])</label>
 				<textcolor>OSDPlayingDuration</textcolor>
 			</control>
 			<control type="progress" id="23">
@@ -49,21 +38,10 @@
 				<righttexture>osd/osd_progress_right.png</righttexture>
 				<colordiffuse>OSDProgressBar</colordiffuse>
 				<info>Player.Progress</info>
-				<posx>205</posx>
+				<posx>210</posx>
 				<posy>118</posy>
-				<width>870</width>
+				<width>860</width>
 				<height>19</height>
-			</control>
-			<control type="label">
-				<posx>1095</posx>
-				<posy>116</posy>
-				<width>300</width>
-				<height>18</height>
-				<aligny>center</aligny>
-				<align></align>
-				<font>Font_ListDetail</font>
-				<label>$INFO[VideoPlayer.Duration]</label>
-				<textcolor>OSDPlayingDuration</textcolor>
 			</control>
 			<control type="label">
 				<posx>1250</posx>
@@ -73,7 +51,7 @@
 				<aligny>center</aligny>
 				<align>right</align>
 				<font>Font_ListDetail</font>
-				<label>($INFO[Player.FinishTime])</label>
+				<label>($INFO[Player.FinishTime])  $INFO[VideoPlayer.Duration]</label>
 				<textcolor>OSDPlayingDuration</textcolor>
 			</control>
 			<control type="group">

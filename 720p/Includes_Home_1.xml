@@ -1007,10 +1007,10 @@
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemusicyears)</visible>
 			</control>
 			<control type="button" id="3306">
-				<label>$LOCALIZE[31003]</label>
-				<onclick>ActivateWindow(MusicFiles)</onclick>
+				<label>$LOCALIZE[1038]</label>
+				<onclick>ActivateWindow(501,plugin://music/)</onclick>
 				<include>Home_MainMenuLabel</include> 
-				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemusicfiles)</visible>
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemusicplugins)</visible>
 			</control>
 			<control type="button" id="3307">
 				<label>Music Settings</label>

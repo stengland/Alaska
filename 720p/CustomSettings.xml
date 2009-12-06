@@ -1258,11 +1258,11 @@
 						<textcolor>Text</textcolor>
 						<focusedcolor>TextFocused</focusedcolor>
 						<!-- LOC -->
-						<label>Hide Music Files</label>
+						<label>Hide Music Plugins</label>
 						<align>left</align>
 						<aligny>center</aligny>
-						<onclick>Skin.ToggleSetting(hidemusicfiles)</onclick>
-						<selected>Skin.HasSetting(hidemusicfiles)</selected>
+						<onclick>Skin.ToggleSetting(hidemusicplugins)</onclick>
+						<selected>Skin.HasSetting(hidemusicplugins)</selected>
 						<visible>Skin.HasSetting(musicitems)</visible>
 					</control>
 					<control type="radiobutton" id="527">

@@ -11,7 +11,7 @@
 			<fadetime>400</fadetime>
 			<texture>$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<include>Animation_CommonFade</include>
-			<visible>!Skin.HasSetting(hidefanart)</visible>
+			<visible>!Skin.HasSetting(hidefanart) + !Control.IsVisible(50)</visible>
 		</control>
 
 		<include>Global_Filter</include>

@@ -96,14 +96,15 @@
 	<!-- List & File colours -->
 
 	<color name="ListTrackNF">FF686868</color>
-	<color name="ListTitleNF">FF474747</color>
+	<color name="ListTitleNF">ab474747</color>
 	<color name="ListTrackF">FF686868</color>
 	<color name="ListTitleF">FF474747</color>
 	<color name="FileTitleNF">ab474747</color>	
 
 	<!-- Poster colours -->
 
-	<color name="WallIconDiffuse">48FFFFFF</color>
+	<color name="WallIconDiffuse">89FFFFFF</color>
+	<color name="WallArrowDiffuse">FFc30000</color>
 	<color name="IconDiffuse">89FFFFFF</color>
 	<color name="WatchedIconDiffuseNF">68c30000</color>
 	<color name="WatchedIconDiffuseFO">FFc30000</color>

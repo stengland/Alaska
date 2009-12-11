@@ -105,7 +105,8 @@
 
 	<!-- Poster colours -->
 
-	<color name="WallIconDiffuse">FF262626</color>
+	<color name="WallIconDiffuse">FF4c4c4c</color>
+	<color name="WallArrowDiffuse">ff009ACD</color>
 	<color name="IconDiffuse">FF262626</color>
 	<color name="WatchedIconDiffuseNF">68009ACD</color>
 	<color name="WatchedIconDiffuseFO">ff009ACD</color>

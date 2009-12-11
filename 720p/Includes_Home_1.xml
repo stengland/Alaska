@@ -954,7 +954,7 @@
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidevideosettings)</visible>
 			</control>
 			<control type="button" id="3204">
-				<label>$LOCALIZE[31018]</label>
+				<label>341</label>
 				<onclick>PlayDVD()</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible>System.HasMediaDVD</visible>
@@ -1432,7 +1432,7 @@
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidelogoff)</visible>
 			</control>
 			<control type="button" id="3807">
-				<label>31070</label>
+				<label>130</label>
 				<onclick>ActivateWindow(7)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hideinfo)</visible>

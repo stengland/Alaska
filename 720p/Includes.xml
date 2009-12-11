@@ -452,7 +452,7 @@
 				</item>
 				<item id="11">
 					<description>Play Disc</description>
-					<label>31018</label>
+					<label>341</label>
 					<icon>homeicons/playdiscicon.png</icon>
 					<onclick>PlayDVD</onclick>
 					<visible>System.HasMediadvd</visible>
@@ -620,7 +620,7 @@
 				</item>
 				<item id="11">
 					<description>Play Disc</description>
-					<label>31018</label>
+					<label>341</label>
 					<icon>special://skin/media/backdrops/playdisc.jpg</icon>
 					<thumb>$INFO[Skin.String(CustomPlayDiscImage)]</thumb>
 					<onclick>PlayDVD</onclick>

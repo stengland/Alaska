@@ -10,7 +10,7 @@
 		</control>
 		<control type="grouplist" id="1">
 			<posx>390</posx>
-			<posy>680</posy>
+			<posy>692</posy>
 			<height>62</height>
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
@@ -22,8 +22,8 @@
 				<description>Create</description>
 				<label>$LOCALIZE[294]</label>
 				<font>Font_ListTitleNF</font>
-				<textcolor>OSDPlayingAlbum</textcolor>
-				<selectedcolor>ListTitleNF</selectedcolor>
+				<textcolor>TextSelected</textcolor>
+				<selectedcolor>TextFocused</selectedcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<width>250</width>
@@ -34,8 +34,8 @@
 				<description>Clear</description>
 				<label>$LOCALIZE[296]</label>
 				<font>Font_ListTitleNF</font>
-				<textcolor>OSDPlayingAlbum</textcolor>
-				<selectedcolor>ListTitleNF</selectedcolor>
+				<textcolor>TextSelected</textcolor>
+				<selectedcolor>TextFocused</selectedcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<width>250</width>
@@ -46,7 +46,7 @@
 		<control type="list" id="11">
 			<viewtype label="Wide">wrap</viewtype>
 			<posx>140</posx>
-			<posy>520</posy>
+			<posy>510</posy>
 			<height>166</height>
 			<width>1000</width>
 			<onleft>11</onleft>
@@ -64,6 +64,7 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>137</height>
+				<texture>common/white.png</texture>
 					<bordertexture border="8">common/thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
 					<texture>$INFO[ListItem.Thumb]</texture>
@@ -79,7 +80,7 @@
 					<aligny>center</aligny>
 					<font>Font_ListDetail</font>
 					<label>$INFO[ListItem.label]</label>
-					<textcolor>NowPlayingArtist</textcolor>
+					<textcolor>TextSelected</textcolor>
 				</control>
 			</itemlayout>
 			<focusedlayout height="157" width="250">
@@ -115,23 +116,39 @@
 					<aligny>center</aligny>
 					<font>Font_ListDetail</font>
 					<label>$INFO[ListItem.label]</label>
-					<textcolor>NowPlayingArtist</textcolor>
+					<textcolor>TextFocused</textcolor>
 				</control>
 			</focusedlayout>
 		</control>
 		<control type="image">
-			<posx>1155</posx>
-			<posy>590</posy>
-			<width>27</width>
-			<height>27</height>
-			<texture>wall/WallArrow.png</texture>
+			<posx>101</posx>
+			<posy>586</posy>
+			<width>15</width>
+			<height>15</height>
+			<texture>common/white.png</texture>
 		</control>
 		<control type="image">
 			<posx>95</posx>
-			<posy>590</posy>
+			<posy>580</posy>
 			<width>27</width>
 			<height>27</height>
 			<texture flipx="true">wall/WallArrow.png</texture>
+			<colordiffuse>WallArrowDiffuse</colordiffuse>
+		</control>
+		<control type="image">
+			<posx>1161</posx>
+			<posy>586</posy>
+			<width>15</width>
+			<height>15</height>
+			<texture>common/white.png</texture>
+		</control>
+		<control type="image">
+			<posx>1155</posx>
+			<posy>580</posy>
+			<width>27</width>
+			<height>27</height>
+			<texture>wall/WallArrow.png</texture>
+			<colordiffuse>WallArrowDiffuse</colordiffuse>
 		</control>
 		<include>Object_DebugGrid</include>
 	</controls>

@@ -106,8 +106,7 @@
 	<color name="WallIconDiffuse">89FFFFFF</color>
 	<color name="WallArrowDiffuse">FFc30000</color>
 	<color name="IconDiffuse">89FFFFFF</color>
-	<color name="WatchedIconDiffuseNF">68c30000</color>
-	<color name="WatchedIconDiffuseFO">FFc30000</color>
+	<color name="WatchedIconDiffuseFO">FFFFFFFF</color>
 
 	<!-- Fanart colours -->
 

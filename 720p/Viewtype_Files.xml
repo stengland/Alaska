@@ -79,32 +79,6 @@
 					<label>$INFO[ListItem.Episode]$INFO[ListItem.Title,. ]</label>
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + Container.Content(episodes)</visible>
 				</control>
-				<control type="image">
-					<posx>688</posx>
-					<posy>8</posy>
-					<width>30</width>
-					<height>30</height>
-					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>
-					<info>ListItem.Overlay</info>
-					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
-					<include>Animation_ZoomInZoomOut</include>
-					<include>Animation_ZoomedByMenu</include>
-					<include>Animation_HiddenByMusicInfo</include>
-					<include>Animation_FilesInfoSlide</include>
-				</control>
-				<control type="image">
-					<posx>688</posx>
-					<posy>8</posy>
-					<width>30</width>
-					<height>30</height>
-					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies)</visible>
-					<info>ListItem.Overlay</info>
-					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
-					<include>Animation_ZoomInZoomOut</include>
-					<include>Animation_ZoomedByMenu</include>
-					<include>Animation_HiddenByMusicInfo</include>
-					<include>Animation_FilesInfoSlide</include>
-				</control>
 			</itemlayout>
 			<focusedlayout width="720" height="120">
 				<control type="group">
@@ -149,8 +123,6 @@
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<bordertexture border="8">common/thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
-					<include>Animation_ZoomInZoomOut</include>
-					<include>Animation_ZoomedByMenu</include>
 					<include>Animation_HiddenByMusicInfo</include>
 					<include>Animation_FilesInfoSlide</include>
 					<visible>![Window.IsActive(25) + Container.Content(Genres)]</visible>
@@ -168,8 +140,6 @@
 					<texture fallback="defaultmoviegenre.jpg">special://skin/extras/moviegenres/$INFO[ListItem.Label].jpg</texture>
 					<bordertexture border="8">common/thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
-					<include>Animation_ZoomInZoomOut</include>
-					<include>Animation_ZoomedByMenu</include>
 					<include>Animation_HiddenByMusicInfo</include>
 					<include>Animation_FilesInfoSlide</include>
 					<visible>Window.IsActive(25) + Container.Content(Genres)</visible>
@@ -181,26 +151,45 @@
 				<control type="image">
 					<posx>650</posx>
 					<posy>40</posy>
-					<width>40</width>
-					<height>40</height>
-					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>
-					<info>ListItem.Overlay</info>
-					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
-					<include>Animation_ZoomInZoomOut</include>
-					<include>Animation_ZoomedByMenu</include>
+					<width>36</width>
+					<height>36</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<texture>OverlayWatchedBackground.png</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
 					<include>Animation_HiddenByMusicInfo</include>
 					<include>Animation_FilesInfoSlide</include>
 				</control>
 				<control type="image">
 					<posx>650</posx>
 					<posy>40</posy>
-					<width>40</width>
-					<height>40</height>
+					<width>36</width>
+					<height>36</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
+					<include>Animation_HiddenByMusicInfo</include>
+					<include>Animation_FilesInfoSlide</include>
+				</control>
+				<control type="image">
+					<posx>652</posx>
+					<posy>80</posy>
+					<width>30</width>
+					<height>30</height>
+					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<texture>OverlayWatchedBackground.png</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<include>Animation_HiddenByMusicInfo</include>
+					<include>Animation_FilesInfoSlide</include>
+					<animation effect="slide" end="4,-42" time="0" condition="Container.Content(episodes)">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>652</posx>
+					<posy>80</posy>
+					<width>30</width>
+					<height>30</height>
 					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
 					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
-					<include>Animation_ZoomInZoomOut</include>
-					<include>Animation_ZoomedByMenu</include>
 					<include>Animation_HiddenByMusicInfo</include>
 					<include>Animation_FilesInfoSlide</include>
 					<animation effect="slide" end="4,-42" time="0" condition="Container.Content(episodes)">Conditional</animation>

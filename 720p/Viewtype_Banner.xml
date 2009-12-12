@@ -63,10 +63,23 @@
 				</control>
 				<control type="image">
 					<posx>82</posx>
-					<posy>8</posy>
-					<width>32</width>
-					<height>32</height>
-					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<posy>9</posy>
+					<width>26</width>
+					<height>26</height>
+					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<texture>OverlayWatchedBackground.png</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="355,60" start="50" end="100" time="200" tween="cubic" easing="out" />
+						<effect type="fade" start="0" end="100" time="200" />
+					</animation>
+				</control>
+				<control type="image">
+					<posx>82</posx>
+					<posy>9</posy>
+					<width>26</width>
+					<height>26</height>
+					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					<info>ListItem.Overlay</info>
 					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
 					<animation type="Focus" reversible="false">

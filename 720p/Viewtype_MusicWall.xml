@@ -16,7 +16,7 @@
 				<posy>6</posy>
 				<width>162</width>
 				<height>162</height>
-				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-6).Icon]</texture>
+				<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-6).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
 				<colordiffuse>WallIconDiffuse</colordiffuse>
@@ -27,7 +27,7 @@
 				<posy>186</posy>
 				<width>162</width>
 				<height>162</height>
-				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-5).Icon]</texture>
+				<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-5).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
 				<colordiffuse>WallIconDiffuse</colordiffuse>
@@ -38,7 +38,7 @@
 				<posy>366</posy>
 				<width>162</width>
 				<height>162</height>
-				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-4).Icon]</texture>
+				<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-4).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
 				<colordiffuse>WallIconDiffuse</colordiffuse>
@@ -49,7 +49,7 @@
 				<posy>6</posy>
 				<width>162</width>
 				<height>162</height>
-				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-3).Icon]</texture>
+				<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-3).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
 				<colordiffuse>WallIconDiffuse</colordiffuse>
@@ -60,7 +60,7 @@
 				<posy>186</posy>
 				<width>162</width>
 				<height>162</height>
-				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-2).Icon]</texture>
+				<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-2).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
 				<colordiffuse>WallIconDiffuse</colordiffuse>
@@ -71,7 +71,7 @@
 				<posy>366</posy>
 				<width>162</width>
 				<height>162</height>
-				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-1).Icon]</texture>
+				<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-1).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
 				<colordiffuse>WallIconDiffuse</colordiffuse>
@@ -82,7 +82,7 @@
 				<posy>6</posy>
 				<width>162</width>
 				<height>162</height>
-				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(9).Icon]</texture>
+				<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(9).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
 				<colordiffuse>WallIconDiffuse</colordiffuse>
@@ -93,7 +93,7 @@
 				<posy>186</posy>
 				<width>162</width>
 				<height>162</height>
-				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(10).Icon]</texture>
+				<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(10).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
 				<colordiffuse>WallIconDiffuse</colordiffuse>
@@ -104,7 +104,7 @@
 				<posy>366</posy>
 				<width>162</width>
 				<height>162</height>
-				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(11).Icon]</texture>
+				<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(11).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
 				<colordiffuse>WallIconDiffuse</colordiffuse>
@@ -115,7 +115,7 @@
 				<posy>6</posy>
 				<width>162</width>
 				<height>162</height>
-				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(12).Icon]</texture>
+				<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(12).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
 				<colordiffuse>WallIconDiffuse</colordiffuse>
@@ -126,7 +126,7 @@
 				<posy>186</posy>
 				<width>162</width>
 				<height>162</height>
-				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(13).Icon]</texture>
+				<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(13).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
 				<colordiffuse>WallIconDiffuse</colordiffuse>
@@ -137,7 +137,7 @@
 				<posy>366</posy>
 				<width>162</width>
 				<height>162</height>
-				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(14).Icon]</texture>
+				<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(14).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
 				<colordiffuse>WallIconDiffuse</colordiffuse>
@@ -157,6 +157,7 @@
 			<orientation>horizontal</orientation>
 			<onup>7000</onup>
 			<ondown>7000</ondown>
+			<preloaditems>2</preloaditems>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_MusicWallFloat</include>
 			<include>Animation_ZoomedByMenu</include>

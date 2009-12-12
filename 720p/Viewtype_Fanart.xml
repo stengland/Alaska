@@ -63,16 +63,6 @@
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 				</control>
-				<control type="image">
-					<posx>2</posx>
-					<posy>130</posy>
-					<width>24</width>
-					<height>24</height>
-					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<info>ListItem.Overlay</info>
-					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
-					<include>Animation_HiddenByInfo</include>
-				</control>
 			</itemlayout>
 			<focusedlayout width="300" height="184">
 				<control type="image">
@@ -101,11 +91,25 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>6</posx>
-					<posy>126</posy>
-					<width>30</width>
-					<height>30</height>
-					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<posx>8</posx>
+					<posy>131</posy>
+					<width>26</width>
+					<height>26</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<texture>OverlayWatchedBackground.png</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<include>Animation_PosterInfoSlide</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="157,192" start="51" end="100" time="600" tween="back" easing="out" />
+						<effect type="fade" start="0" end="100" time="600" />
+					</animation>
+				</control>
+				<control type="image">
+					<posx>8</posx>
+					<posy>131</posy>
+					<width>26</width>
+					<height>26</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					<info>ListItem.Overlay</info>
 					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
 					<include>Animation_PosterInfoSlide</include>

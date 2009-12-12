@@ -65,8 +65,6 @@
 	<color name="OSDStatus">cc009ACD</color>
 	<color name="OSDPlayingDuration">FFFFFFFF</color>
 
-
-
 	<!-- Window menu colours -->
 
 	<color name="MenuValue">FFFFFFFF</color>
@@ -108,8 +106,7 @@
 	<color name="WallIconDiffuse">FF4c4c4c</color>
 	<color name="WallArrowDiffuse">ff009ACD</color>
 	<color name="IconDiffuse">FF262626</color>
-	<color name="WatchedIconDiffuseNF">68009ACD</color>
-	<color name="WatchedIconDiffuseFO">ff009ACD</color>
+	<color name="WatchedIconDiffuseFO">FFFFFFFF</color>
 
 	<!-- Fanart colours -->
 

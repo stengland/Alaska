@@ -43,7 +43,7 @@
 				<width>46</width>
 				<height>46</height>
 				<texture>dialogs/dialog_back.png</texture>
-				<aspectratio>stretch</aspectratio>
+				<colordiffuse>DialogBack</colordiffuse>
 			</control>
 			<control type="progress" id="404">
 				<description>Progressbar</description>

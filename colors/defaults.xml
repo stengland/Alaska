@@ -96,7 +96,7 @@
 	<!-- List & File colours -->
 
 	<color name="ListTrackNF">FF686868</color>
-	<color name="ListTitleNF">ab474747</color>
+	<color name="ListTitleNF">FF474747</color>
 	<color name="ListTrackF">FF686868</color>
 	<color name="ListTitleF">FF474747</color>
 	<color name="FileTitleNF">ab474747</color>	
@@ -118,6 +118,8 @@
 
 	<color name="DialogLargeLabel">dc777777</color>
 	<color name="DialogLargeLabelAccent">CCdadada</color>
+	<color name="DialogBack">FFFFFFFF</color>
+	<color name="DialogBackground">CCFFFFFF</color>
 
 	<!-- Favorites -->
 

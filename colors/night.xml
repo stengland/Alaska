@@ -1,7 +1,7 @@
 <colors>
 
 	<!-- Theme Colours -->
-	
+
 	<color name="BackgroundColor">d7000000</color>
 	<color name="BackgroundFilterColor">ff009ACD</color>
 	<color name="ButtonFilterColor">ff009ACD</color>
@@ -13,7 +13,7 @@
 	<color name="MainMenuLabel">FFFFFFFF</color>	
 
 	<!-- Home 2 & 3 Colour -->
-	
+
 	<color name="MainMenu">193c3c3c</color>
 
 	<!-- Background Test Colours
@@ -27,7 +27,7 @@
 	-->
 
 	<!-- Global Colours -->
-	
+
 	<color name="Time">FFFFFFFF</color>
 	<color name="TimeAMPM">ff009ACD</color>
 	<color name="Date">ff009ACD</color>
@@ -64,8 +64,8 @@
 	<color name="OSDStatusBackground">11009ACD</color>
 	<color name="OSDStatus">cc009ACD</color>
 	<color name="OSDPlayingDuration">FFFFFFFF</color>
-	
-	
+
+
 
 	<!-- Window menu colours -->
 
@@ -120,6 +120,8 @@
 
 	<color name="DialogLargeLabel">CC747474</color>
 	<color name="DialogLargeLabelAccent">CCdadada</color>
+	<color name="DialogBack">FFFFFFFF</color>
+	<color name="DialogBackground">DD004f69</color>
 
 	<!-- Favorites -->
 

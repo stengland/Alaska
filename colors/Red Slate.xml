@@ -118,6 +118,8 @@
 
 	<color name="DialogLargeLabel">FFc89008</color>
 	<color name="DialogLargeLabelAccent">aac89008</color>
+	<color name="DialogBack">FFFFFFFF</color>
+	<color name="DialogBackground">CCad0909</color>
 
 	<!-- Favorites -->
 

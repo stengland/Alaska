@@ -11,15 +11,16 @@
 
 	<controls>
 
-		<control type="image" id="0">
-			<description>Back Panel</description>
-			<posx>-30</posx>
-			<posy>-30</posy>
-			<width>620</width>
-			<height>500</height>
-			<texture>favourites/favourites_panel.png</texture>
-			<colordiffuse>FavListPanel</colordiffuse>
-		</control>
+		<control type="group">
+			<control type="image" id="0">
+				<description>Back Panel</description>
+				<posx>-30</posx>
+				<posy>-30</posy>
+				<width>620</width>
+				<height>500</height>
+				<texture>favourites/favourites_panel.png</texture>
+				<colordiffuse>FavListPanel</colordiffuse>
+			</control>
 
 			<control type="label">
 				<include>DialogID</include>

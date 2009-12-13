@@ -90,6 +90,20 @@
 			</focusedlayout>
 		</control>
 
+		<control type="group">
+			<control type="image">
+				<posx>30</posx>
+				<posy>212</posy>
+				<width>544</width>
+				<height>123</height>
+				<texture diffuse="list/listbannermatte.png">$INFO[ListItem.Icon]</texture>
+				<aspectratio scalediffuse="true">keep</aspectratio>
+				<bordertexture border="14">list/listbannerborder.png</bordertexture>
+				<bordersize>4</bordersize>
+			</control>
+			<visible>Control.IsVisible(58) + Window.IsActive(2003)</visible>
+		</control>
+
 	</include>
 
 </includes>

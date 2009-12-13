@@ -203,7 +203,7 @@
 					<font>Font_ListTitleBigger</font>
 					<textcolor>ListTitleF</textcolor>
 					<label>$INFO[ListItem.Label]</label>
-					<visible>Container.Content(files) | [IsEmpty(ListItem.Title) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]</visible>
+					<visible>Container.Content(files) | [IsEmpty(ListItem.Title) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs) + !Window.IsActive(1)]</visible>
 				</control>
 				<control type="label">
 					<posx>690</posx>

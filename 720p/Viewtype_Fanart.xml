@@ -63,6 +63,26 @@
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>134</posy>
+					<width>20</width>
+					<height>20</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<texture>OverlayWatchedBackground.png</texture>
+					<colordiffuse>WatchedIconBackNF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>134</posy>
+					<width>20</width>
+					<height>20</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
 			</itemlayout>
 			<focusedlayout width="300" height="184">
 				<control type="image">
@@ -73,7 +93,7 @@
 					<texture background="true" fallback="special://skin/media/backdrops/movies.jpg" diffuse="episodematte.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<fadetime>200</fadetime>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
-					<include>Animation_PosterInfoSlide</include>
+					<include>Animation_LandscapeInfoSlide</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="145,202" start="51" end="100" time="600" tween="back" easing="out" />
 					</animation>
@@ -84,7 +104,7 @@
 					<width>314</width>
 					<height>184</height>
 					<texture>episodeframeF.png</texture>
-					<include>Animation_PosterInfoSlide</include>
+					<include>Animation_LandscapeInfoSlide</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="157,192" start="51" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="0" end="100" time="600" />
@@ -97,8 +117,8 @@
 					<height>26</height>
 					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					<texture>OverlayWatchedBackground.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
-					<include>Animation_PosterInfoSlide</include>
+					<colordiffuse>WatchedIconBackFO</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="157,192" start="51" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="0" end="100" time="600" />
@@ -112,7 +132,7 @@
 					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					<info>ListItem.Overlay</info>
 					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
-					<include>Animation_PosterInfoSlide</include>
+					<include>Animation_HiddenByInfo</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="157,192" start="51" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="0" end="100" time="600" />

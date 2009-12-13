@@ -88,6 +88,46 @@
 					<include>Animation_HiddenByInfo</include>
 					<visible>Container.Content(Genres)</visible>
 				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>134</posy>
+					<width>26</width>
+					<height>26</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<texture>OverlayWatchedBackground.png</texture>
+					<colordiffuse>WatchedIconBackNF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>134</posy>
+					<width>26</width>
+					<height>26</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>134</posy>
+					<width>26</width>
+					<height>26</height>
+					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<texture>OverlayWatchedBackground.png</texture>
+					<colordiffuse>WatchedIconBackNF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>134</posy>
+					<width>26</width>
+					<height>26</height>
+					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies)</visible>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
 			</itemlayout>
 			<focusedlayout width="328" height="515">
 				<control type="image">
@@ -137,8 +177,8 @@
 					<height>40</height>
 					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					<texture>OverlayWatchedBackground.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
-					<include>Animation_PosterInfoSlide</include>
+					<colordiffuse>WatchedIconBackFO</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="0" end="100" time="600" />
@@ -152,7 +192,7 @@
 					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
 					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
-					<include>Animation_PosterInfoSlide</include>
+					<include>Animation_HiddenByInfo</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="0" end="100" time="600" />
@@ -165,8 +205,8 @@
 					<height>40</height>
 					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					<texture>OverlayWatchedBackground.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
-					<include>Animation_PosterInfoSlide</include>
+					<colordiffuse>WatchedIconBackFO</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="0" end="100" time="600" />
@@ -180,7 +220,7 @@
 					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
 					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
-					<include>Animation_PosterInfoSlide</include>
+					<include>Animation_HiddenByInfo</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="0" end="100" time="600" />
@@ -274,6 +314,46 @@
 					<include>Animation_HiddenByInfo</include>
 					<visible>Container.Content(Genres)</visible>
 				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>134</posy>
+					<width>26</width>
+					<height>26</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<texture>OverlayWatchedBackground.png</texture>
+					<colordiffuse>WatchedIconBackNF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>134</posy>
+					<width>26</width>
+					<height>26</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>134</posy>
+					<width>26</width>
+					<height>26</height>
+					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<texture>OverlayWatchedBackground.png</texture>
+					<colordiffuse>WatchedIconBackNF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>134</posy>
+					<width>26</width>
+					<height>26</height>
+					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies)</visible>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
 			</itemlayout>
 			<focusedlayout width="328" height="515">
 				<control type="image">
@@ -323,8 +403,8 @@
 					<height>40</height>
 					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					<texture>OverlayWatchedBackground.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
-					<include>Animation_PosterInfoSlide</include>
+					<colordiffuse>WatchedIconBackFO</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="0" end="100" time="600" />
@@ -338,7 +418,7 @@
 					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
 					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
-					<include>Animation_PosterInfoSlide</include>
+					<include>Animation_HiddenByInfo</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="0" end="100" time="600" />
@@ -351,8 +431,8 @@
 					<height>40</height>
 					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					<texture>OverlayWatchedBackground.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
-					<include>Animation_PosterInfoSlide</include>
+					<colordiffuse>WatchedIconBackFO</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="0" end="100" time="600" />
@@ -366,7 +446,7 @@
 					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(movies)</visible>
 					<info>ListItem.Overlay</info>
 					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
-					<include>Animation_PosterInfoSlide</include>
+					<include>Animation_HiddenByInfo</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="0" end="100" time="600" />
@@ -472,7 +552,6 @@
 			<preloaditems>2</preloaditems>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
-			<include>Animation_HiddenByInfo</include>
 			<include>Animation_HiddenByMusicInfo</include>
 			<onup>7000</onup>
 			<ondown>7000</ondown>
@@ -485,6 +564,7 @@
 					<height>196</height>
 					<texture>common/thumb_matte.png</texture>
 					<colordiffuse>BackgroundColor</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="image">
 					<posx>2</posx>
@@ -495,6 +575,7 @@
 					<fadetime>200</fadetime>
 					<colordiffuse>IconDiffuse</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="image">
 					<posx>2</posx>
@@ -505,6 +586,7 @@
 					<fadetime>200</fadetime>
 					<colordiffuse>IconDiffuse</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<include>Animation_HiddenByInfo</include>
 				</control>					
 				<control type="image">
 					<posx>47</posx>
@@ -514,6 +596,47 @@
 					<texture>$INFO[ListItem.Label,special://skin/extras/studios/,.png]</texture>
 					<colordiffuse>IconDiffuse</colordiffuse>
 					<visible>Container.Content(studios)</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>6</posx>
+					<posy>56</posy>
+					<width>28</width>
+					<height>28</height>
+					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<texture>OverlayWatchedBackground.png</texture>
+					<colordiffuse>WatchedIconBackNF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>6</posx>
+					<posy>56</posy>
+					<width>28</width>
+					<height>28</height>
+					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(tvshows)</visible>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>6</posx>
+					<posy>56</posy>
+					<width>28</width>
+					<height>28</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					<texture>OverlayWatchedBackground.png</texture>
+					<colordiffuse>WatchedIconBackNF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>6</posx>
+					<posy>56</posy>
+					<width>28</width>
+					<height>28</height>
+					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>
+					<info>ListItem.Overlay</info>
+					<colordiffuse>WatchedIconDiffuseNF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
 				</control>
 			</itemlayout>
 			<focusedlayout width="300" height="300">
@@ -526,7 +649,7 @@
 					<aspectratio>scale</aspectratio>
 					<bordertexture border="8">common/thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
-					<include>Animation_HiddenByInfo</include>
+					<include>Animation_SquareInfoSlide</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="150,150" start="67" end="100" time="600" tween="back" easing="out" />
 						<effect type="fade" start="60" end="100" time="600" />
@@ -544,15 +667,16 @@
 						<effect type="fade" start="60" end="100" time="600" />
 					</animation>
 					<visible>Container.Content(studios)</visible>
+					<include>Animation_SquareInfoSlide</include>
 				</control>
 				<control type="image">
-					<posx>8</posx>
-					<posy>8</posy>
+					<posx>10</posx>
+					<posy>10</posy>
 					<width>38</width>
 					<height>38</height>
 					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					<texture>OverlayWatchedBackground.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<colordiffuse>WatchedIconBackFO</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="150,150" start="67" end="100" time="600" tween="back" easing="out" />
@@ -560,8 +684,8 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>8</posx>
-					<posy>8</posy>
+					<posx>10</posx>
+					<posy>10</posy>
 					<width>38</width>
 					<height>38</height>
 					<visible>Skin.HasSetting(tvoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(tvshows)</visible>
@@ -574,13 +698,13 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>8</posx>
-					<posy>8</posy>
+					<posx>10</posx>
+					<posy>10</posy>
 					<width>38</width>
 					<height>38</height>
 					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					<texture>OverlayWatchedBackground.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<colordiffuse>WatchedIconBackFO</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="150,150" start="67" end="100" time="600" tween="back" easing="out" />
@@ -588,8 +712,8 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>8</posx>
-					<posy>8</posy>
+					<posx>10</posx>
+					<posy>10</posy>
 					<width>38</width>
 					<height>38</height>
 					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies)</visible>

@@ -124,7 +124,6 @@
 					<bordertexture border="8">common/thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
 					<include>Animation_HiddenByMusicInfo</include>
-					<include>Animation_FilesInfoSlide</include>
 					<visible>![Window.IsActive(25) + Container.Content(Genres)]</visible>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="450,75" start="80" end="94" time="200" tween="cubic" easing="out" />
@@ -141,7 +140,6 @@
 					<bordertexture border="8">common/thumb_border.png</bordertexture>
 					<bordersize>8</bordersize>
 					<include>Animation_HiddenByMusicInfo</include>
-					<include>Animation_FilesInfoSlide</include>
 					<visible>Window.IsActive(25) + Container.Content(Genres)</visible>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="450,75" start="80" end="94" time="200" tween="cubic" easing="out" />
@@ -155,9 +153,8 @@
 					<height>36</height>
 					<visible>Skin.HasSetting(movieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
 					<texture>OverlayWatchedBackground.png</texture>
-					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<colordiffuse>WatchedIconBackFO</colordiffuse>
 					<include>Animation_HiddenByMusicInfo</include>
-					<include>Animation_FilesInfoSlide</include>
 				</control>
 				<control type="image">
 					<posx>650</posx>
@@ -168,7 +165,6 @@
 					<info>ListItem.Overlay</info>
 					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
 					<include>Animation_HiddenByMusicInfo</include>
-					<include>Animation_FilesInfoSlide</include>
 				</control>
 				<control type="image">
 					<posx>652</posx>
@@ -179,7 +175,6 @@
 					<texture>OverlayWatchedBackground.png</texture>
 					<colordiffuse>ButtonFilterColor</colordiffuse>
 					<include>Animation_HiddenByMusicInfo</include>
-					<include>Animation_FilesInfoSlide</include>
 					<animation effect="slide" end="4,-42" time="0" condition="Container.Content(episodes)">Conditional</animation>
 				</control>
 				<control type="image">
@@ -191,7 +186,6 @@
 					<info>ListItem.Overlay</info>
 					<colordiffuse>WatchedIconDiffuseFO</colordiffuse>
 					<include>Animation_HiddenByMusicInfo</include>
-					<include>Animation_FilesInfoSlide</include>
 					<animation effect="slide" end="4,-42" time="0" condition="Container.Content(episodes)">Conditional</animation>
 				</control>
 				<control type="label">

@@ -74,8 +74,9 @@
 
 	<color name="PosterTitle">FF474747</color>
 	<color name="EpisodeLabelF">FF474747</color>	
-	<color name="EpisodePlot">DD202020</color>	
-	<color name="EpisodeNumber">FF474747</color>		
+	<color name="EpisodePlot">DD202020</color>
+	<color name="EpisodeNumber">FF474747</color>
+	<color name="EpisodeWatched">bb474747</color>
 
 	<!-- Info dialog colours -->
 
@@ -106,7 +107,10 @@
 	<color name="WallIconDiffuse">89FFFFFF</color>
 	<color name="WallArrowDiffuse">FFc30000</color>
 	<color name="IconDiffuse">89FFFFFF</color>
+	<color name="WatchedIconBackFO">FFc30000</color>
+	<color name="WatchedIconBackNF">86c30000</color>
 	<color name="WatchedIconDiffuseFO">FFFFFFFF</color>
+	<color name="WatchedIconDiffuseNF">86FFFFFF</color>
 
 	<!-- Fanart colours -->
 

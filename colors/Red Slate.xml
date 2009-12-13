@@ -75,7 +75,8 @@
 	<color name="PosterTitle">FFc7c7c7</color>
 	<color name="EpisodeLabelF">FFc7c7c7</color>	
 	<color name="EpisodePlot">FFc7c7c7</color>	
-	<color name="EpisodeNumber">FFc7c7c7</color>		
+	<color name="EpisodeNumber">FFc7c7c7</color>
+	<color name="EpisodeWatched">bbc7c7c7</color>
 	
 	<!-- Info dialog colours -->
 
@@ -106,7 +107,10 @@
 	<color name="WallIconDiffuse">ccb10000</color>			<!-- ccb10000 -->
 	<color name="WallArrowDiffuse">FFc89008</color>
 	<color name="IconDiffuse">89FFFFFF</color>
+	<color name="WatchedIconBackFO">FFc89008</color>
+	<color name="WatchedIconBackNF">86c89008</color>
 	<color name="WatchedIconDiffuseFO">FFad0909</color>
+	<color name="WatchedIconDiffuseNF">86ad0909</color>
 
 	<!-- Fanart colours -->
 

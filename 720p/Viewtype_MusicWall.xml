@@ -12,6 +12,27 @@
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByMusicInfo</include>
 			<control type="image">
+				<posx>-100</posx>
+				<posy>-100</posy>
+				<width>1</width>
+				<height>1</height>
+				<texture background="true">$INFO[Container.ListItemPosition(-9).Icon]</texture>
+			</control>
+			<control type="image">
+				<posx>-100</posx>
+				<posy>-100</posy>
+				<width>1</width>
+				<height>1</height>
+				<texture background="true">$INFO[Container.ListItemPosition(-8).Icon]</texture>
+			</control>
+			<control type="image">
+				<posx>-100</posx>
+				<posy>-100</posy>
+				<width>1</width>
+				<height>1</height>
+				<texture background="true">$INFO[Container.ListItemPosition(-7).Icon]</texture>
+			</control>
+			<control type="image">
 				<posx>6</posx>
 				<posy>6</posy>
 				<width>162</width>
@@ -142,6 +163,27 @@
 				<bordersize>1</bordersize>
 				<colordiffuse>WallIconDiffuse</colordiffuse>
 				<aspectratio stretchdiffuse="false">stretch</aspectratio>
+			</control>
+			<control type="image">
+				<posx>1300</posx>
+				<posy>1300</posy>
+				<width>1</width>
+				<height>1</height>
+				<texture background="true">$INFO[Container.ListItemPosition(15).Icon]</texture>
+			</control>
+			<control type="image">
+				<posx>1300</posx>
+				<posy>1300</posy>
+				<width>1</width>
+				<height>1</height>
+				<texture background="true">$INFO[Container.ListItemPosition(16).Icon]</texture>
+			</control>
+			<control type="image">
+				<posx>1300</posx>
+				<posy>1300</posy>
+				<width>1</width>
+				<height>1</height>
+				<texture background="true">$INFO[Container.ListItemPosition(17).Icon]</texture>
 			</control>
 		</control>
 		

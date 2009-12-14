@@ -62,7 +62,7 @@
 				</control>
 				<!-- current condition -->
 				<control type="label">
-					<info>Window.Property(Current.Condition)</info>
+					<label>[UPPERCASE]$INFO[Window.Property(Current.Condition)][/UPPERCASE]</label>
 					<width>205</width>
 					<height>35</height>
 					<posx>5</posx>
@@ -565,7 +565,7 @@
 		<control type="grouplist">
 			<posx>260</posx>
 			<include>WindowMenuVars</include>
-			<posy>307</posy>
+			<posy>300</posy>
 			<control type="button" id="7041">
 				<include>WindowMenuLabel</include>
 				<label>8</label>

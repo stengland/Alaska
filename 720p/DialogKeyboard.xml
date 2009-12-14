@@ -28,9 +28,9 @@
 
 			<control type="label" id="310">
 				<description>Edit Text</description>
-				<posx>108</posx>
+				<posx>118</posx>
 				<posy>243</posy>
-				<width>420</width>
+				<width>400</width>
 				<height>22</height>
 				<include>Objects_KeyOffVars</include>
 				<align>center</align>
@@ -42,7 +42,7 @@
 				<description>Dialog heading</description>
 				<posx>21</posx>
 				<posy>243</posy>
-				<width>80</width>
+				<width>90</width>
 				<height>22</height>
 				<include>Objects_KeyOffVars</include>
 				<align>center</align>

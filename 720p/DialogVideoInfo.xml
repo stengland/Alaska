@@ -302,7 +302,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>Font_InfoPlot</font>
-						<textcolor>ListTitleNF</textcolor>
+						<textcolor>FileTitleNF</textcolor>
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
@@ -408,7 +408,7 @@
 			<visible allowhiddenfocus="true">ControlGroup(7001).HasFocus</visible>
 			<include>Animation_ZoomInMenu</include>
 			<orientation>horizontal</orientation>
-			<posy>307</posy>
+			<posy>300</posy>
 			<!-- Cast/Review -->
 			<control type="button" id="7040">
 				<include>WindowMenuLabel</include>

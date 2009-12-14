@@ -67,8 +67,8 @@
 
 	<!-- Window menu colours -->
 
-	<color name="MenuValue">FFa1a1a1</color>
-	<color name="MenuValueFO">FF454545</color>	
+	<color name="MenuValue">FF7a7a7a</color>
+	<color name="MenuValueFO">FF414141</color>	
 
 	<!-- Poster view colours -->
 
@@ -96,7 +96,6 @@
 
 	<!-- List & File colours -->
 
-	<color name="ListTrackNF">FF686868</color>
 	<color name="ListTitleNF">FF474747</color>
 	<color name="ListTrackF">FF686868</color>
 	<color name="ListTitleF">FF474747</color>

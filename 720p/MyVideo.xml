@@ -77,7 +77,7 @@
 
 		<control type="grouplist">
 			<include>WindowMenuVars</include>
-			<posy>307</posy>
+			<posy>300</posy>
 			<control type="button" id="40">
 				<include>WindowMenuLabel</include>
 				<label>VIEWTYPE</label>

@@ -108,9 +108,9 @@
 	<color name="WallArrowDiffuse">ff009ACD</color>
 	<color name="IconDiffuse">FF262626</color>
 	<color name="WatchedIconBackFO">ff009ACD</color>
-	<color name="WatchedIconBackNF">86009ACD</color>
+	<color name="WatchedIconBackNF">22009ACD</color>
 	<color name="WatchedIconDiffuseFO">FFFFFFFF</color>
-	<color name="WatchedIconDiffuseNF">86FFFFFF</color>
+	<color name="WatchedIconDiffuseNF">22FFFFFF</color>
 
 	<!-- Fanart colours -->
 

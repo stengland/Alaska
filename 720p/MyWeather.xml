@@ -148,21 +148,11 @@
 				</control>
 				<!-- Wind -->
 				<control type="label">
-					<label>$LOCALIZE[404]</label>
+					<label>[COLOR Date]$LOCALIZE[404]: [/COLOR] $INFO[Window.Property(Current.Wind)]</label>
 					<width>205</width>
 					<height>20</height>
 					<posx>5</posx>
 					<posy>215</posy>
-					<font>Font_Date</font>
-					<align>center</align>
-					<textcolor>Date</textcolor>
-				</control>
-				<control type="label">
-					<info>Window.Property(Current.Wind)</info>
-					<width>205</width>
-					<height>20</height>
-					<posx>5</posx>
-					<posy>235</posy>
 					<font>Font_Date</font>
 					<align>center</align>
 					<textcolor>SettingsDetail</textcolor>

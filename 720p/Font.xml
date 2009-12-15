@@ -6,34 +6,30 @@
 
 		<font>
 			<name>Font_Channels</name>
-			<filename>alaska_condblack.ttf</filename>
+			<filename>alaska_black.ttf</filename>
 			<aspect>0.7</aspect>
 			<size>24</size>
-			<linespacing>0.6</linespacing>
 		</font>
 
 		<font>
 			<name>Font_Res</name>
-			<filename>alaska_condblack.ttf</filename>
+			<filename>alaska_black.ttf</filename>
 			<aspect>0.7</aspect>
 			<size>26</size>
-			<linespacing>0.6</linespacing>
 		</font>
 
 		<font>
 			<name>Font_Aspect</name>
-			<filename>alaska_condblack.ttf</filename>
+			<filename>alaska_black.ttf</filename>
 			<aspect>0.7</aspect>
 			<size>22</size>
-			<linespacing>0.6</linespacing>
 		</font>
 
 		<font>
 			<name>Font_PosterRating</name>
-			<filename>alaska_condblack.ttf</filename>
+			<filename>alaska_black.ttf</filename>
 			<aspect>0.7</aspect>
 			<size>26</size>
-			<linespacing>0.6</linespacing>
 		</font>
 
 		<font>
@@ -70,7 +66,7 @@
 
 		<font>
 			<name>Font_Time</name>
-			<filename>alaska_condblack.ttf</filename>
+			<filename>alaska_black.ttf</filename>
 			<aspect>0.9</aspect>
 			<size>38</size>
 		</font>
@@ -83,35 +79,38 @@
 
 		<font>
 			<name>Font_Date</name>
-			<filename>alaska_light.ttf</filename>
+			<filename>alaska_regular.ttf</filename>
+			<aspect>0.9</aspect>
 			<size>18</size>
 		</font>	
 
 		<font>
 			<name>Font_RSS</name>
-			<filename>alaska_thin.ttf</filename>
+			<filename>alaska_nocaps.ttf</filename>
+			<aspect>0.9</aspect>
 			<size>19</size>
 		</font>
 
 		<font>
 			<name>Font_RSS_Big</name>
-			<filename>alaska_light_nocaps.ttf</filename>
-			<aspect>0.85</aspect>
+			<filename>alaska_nocaps.ttf</filename>
+			<aspect>0.9</aspect>
 			<size>25</size>
 		</font>
 
 		<font>
 			<name>Font_NowPlayingTrack</name>
-			<filename>alaska_light.ttf</filename>
+			<filename>alaska_regular.ttf</filename>
+			<aspect>0.9</aspect>
 			<size>24</size>
 		</font>
 
 		<font>
 			<name>Font_PosterTitle</name>
-			<filename>alaska_condblack.ttf</filename>
+			<filename>alaska_black.ttf</filename>
 			<aspect>0.7</aspect>
 			<size>38</size>
-			<linespacing>0.6</linespacing>
+			<linespacing>0.9</linespacing>
 		</font>
 
 		<font>
@@ -173,26 +172,26 @@
 
 		<font>
 			<name>Font_EpisodeDetailNF</name>
-			<filename>alaska_light.ttf</filename>
+			<filename>alaska_regular.ttf</filename>
+			<aspect>0.9</aspect>
 			<size>17</size>
 		</font>	
 
 		<font>
 			<name>Font_EpisodePlot</name>
-			<filename>alaska_light_nocaps.ttf</filename>
+			<filename>alaska_nocaps.ttf</filename>
 			<size>19</size>
-			<linespacing>0.8</linespacing>
 		</font>	
 
 		<font>
 			<name>Font_EpisodePlot2</name>
-			<filename>alaska_light_nocaps.ttf</filename>
+			<filename>alaska_nocaps.ttf</filename>
 			<size>16</size>
 		</font>	
 
 		<font>
 			<name>Font_TVShow</name>
-			<filename>alaska_light_nocaps.ttf</filename>
+			<filename>alaska_nocaps.ttf</filename>
 			<size>22</size>
 			<linespacing>1</linespacing>
 		</font>
@@ -220,7 +219,7 @@
 
 		<font>
 			<name>Font_SettingsDetail</name>
-			<filename>alaska_light_nocaps.ttf</filename>
+			<filename>alaska_nocaps.ttf</filename>
 			<size>19</size>
 		</font>
 
@@ -269,9 +268,9 @@
 
 		<font>
 			<name>Font_ListDetailNF</name>
-			<filename>alaska_light.ttf</filename>
+			<filename>alaska_regular.ttf</filename>
+			<aspect>0.9</aspect>
 			<size>15</size>
-			<linespacing>0.82</linespacing>
 		</font>
 
 		<font>
@@ -283,9 +282,9 @@
 
 		<font>
 			<name>Font_ListDetail</name>
-			<filename>alaska_light.ttf</filename>
+			<filename>alaska_regular.ttf</filename>
+			<aspect>0.9</aspect>
 			<size>17</size>
-			<linespacing>0.82</linespacing>
 		</font>
 
 		<font>
@@ -297,7 +296,8 @@
 
 		<font>
 			<name>Font_MenuLabel</name>
-			<filename>alaska_light.ttf</filename>
+			<filename>alaska_regular.ttf</filename>
+			<aspect>0.9</aspect>
 			<size>24</size>
 		</font>	
 

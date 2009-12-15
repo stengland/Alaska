@@ -235,13 +235,13 @@
 				</control>
 				<control type="textbox">
 					<posx>690</posx>
-					<posy>30</posy>
+					<posy>34</posy>
 					<width>700</width>
-					<height>84</height>
+					<height>76</height>
 					<font>Font_EpisodePlot</font>
 					<textcolor>EpisodePlot</textcolor>
 					<info>ListItem.Plot</info>
-					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
+			<autoscroll time="3200" delay="6000" repeat="6000">Skin.HasSetting(autoscroll)</autoscroll>
 					<visible>!IsEmpty(ListItem.Plot) + Window.IsActive(25) + Container.Content(episodes)</visible>
 				</control>
 				<control type="image">

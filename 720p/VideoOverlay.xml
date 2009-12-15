@@ -44,7 +44,7 @@
 				<height>60</height>
 				<aligny>center</aligny>
 				<font>Font_ListDetail</font>
-				<label>$LOCALIZE[31004]:[CR][B][COLOR=NowPlayingTrack]$INFO[VideoPlayer.Title][/COLOR][/B][CR][COLOR=NowPlayingAlbum]$INFO[VideoPlayer.TVShowTitle][/COLOR]</label>
+				<label>$LOCALIZE[13350][CR][B][COLOR=NowPlayingTrack]$INFO[VideoPlayer.Title][/COLOR][/B][CR][COLOR=NowPlayingAlbum]$INFO[VideoPlayer.TVShowTitle][/COLOR]</label>
 				<textcolor>NowPlayingArtist</textcolor>
 				<wrapmultiline>true</wrapmultiline>
 				<animation effect="slide" start="0,0" end="0,-40" time="200" condition="Window.IsActive(PlayerControls)">Conditional</animation>

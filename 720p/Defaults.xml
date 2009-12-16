@@ -27,7 +27,7 @@
 		<focusedcolor>TextFocused</focusedcolor>
 		<selectedcolor>TextFocused</selectedcolor>
 		<disabledcolor>TextDisabled</disabledcolor>
-		<scroll>true</scroll>
+		<scroll>false</scroll>
 		<scrollspeed>40</scrollspeed>
 	</default>
 

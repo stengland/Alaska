@@ -3,6 +3,13 @@
 <fonts>
 
 	<fontset id="Default" unicode="true">
+	
+		<!-- Default XBMC font --> 
+	 	<font>
+			<name>font13</name>
+			<filename>Arial.ttf</filename>
+			<size>20</size>
+		</font>
 
 		<font>
 			<name>Font_Channels</name>
@@ -48,8 +55,8 @@
 		<font>
 			<name>Font_Settings</name>
 			<filename>alaska_nocaps.ttf</filename>
+			<aspect>0.9</aspect>
 			<size>26</size>
-			<linespacing>1</linespacing>
 		</font>
 
 		<font>
@@ -116,7 +123,7 @@
 		<font>
 			<name>Font_InfoPlot</name>
 			<filename>alaska_nocaps.ttf</filename>
-			<size>23</size>
+			<size>20</size>
 		</font>
 
 		<font>
@@ -137,15 +144,8 @@
 			<name>Font_InfoDetails</name>
 			<filename>alaska_regular.ttf</filename>
 			<aspect>0.95</aspect>
-			<size>19</size>
-		</font>
-
-		<font>
-			<name>Font_InfoCast</name>
-			<filename>alaska_regular.ttf</filename>
-			<aspect>0.95</aspect>
-			<size>19</size>
-			<linespacing>0.87</linespacing>	  
+			<size>17</size>
+			<linespacing>1.1</linespacing>
 		</font>	
 
 		<font>

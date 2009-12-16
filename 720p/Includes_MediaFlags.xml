@@ -42,6 +42,7 @@
 				<control type="label">
 					<label>$INFO[ListItem.AudioLanguage]</label>
 					<posx>8</posx>
+					<posy>-1</posy>
 					<width>42</width>
 					<include>PosterMediaFlagsVars</include>
 					<align>center</align>
@@ -70,6 +71,7 @@
 				<control type="label">
 					<label>$INFO[ListItem.Year]</label>
 					<posx>8</posx>
+					<posy>-1</posy>
 					<width>56</width>
 					<include>PosterMediaFlagsVars</include>
 					<align>center</align>
@@ -97,6 +99,7 @@
 				<control type="label" id="602">
 					<label>$INFO[ListItem.Rating]</label>
 					<posx>30</posx>
+					<posy>-1</posy>
 					<width>56</width>
 					<include>PosterMediaFlagsVars</include>
 					<align>center</align>
@@ -123,6 +126,7 @@
 				<control type="label">
 					<label>$INFO[ListItem.VideoResolution]</label>
 					<posx>3</posx>
+					<posy>-1</posy>
 					<width>50</width>
 					<include>PosterMediaFlagsVars</include>
 					<align>center</align>
@@ -195,6 +199,7 @@
 				<control type="label">
 					<label fallback="?">$INFO[ListItem.AudioChannels,,.0]</label>
 					<posx>65</posx>
+					<posy>-1</posy>
 					<width>33</width>
 					<include>PosterMediaFlagsVars</include>
 					<align>center</align>
@@ -207,6 +212,7 @@
 				<control type="label">
 					<label>5.1</label>
 					<posx>65</posx>
+					<posy>-1</posy>
 					<width>33</width>
 					<include>PosterMediaFlagsVars</include>
 					<align>center</align>
@@ -218,6 +224,7 @@
 				<control type="label">
 					<label>7.1</label>
 					<posx>65</posx>
+					<posy>-1</posy>
 					<width>33</width>
 					<include>PosterMediaFlagsVars</include>
 					<align>center</align>

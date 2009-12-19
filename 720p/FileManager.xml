@@ -18,6 +18,7 @@
 				<posx>-20</posx>
 				<posy>0</posy>
 				<texture border="100">filemanager/filemanager_panel.png</texture>
+				<colordiffuse>FMListPanel</colordiffuse>
 			</control>
 			<control type="label" id="101">
 				<posx>590</posx>
@@ -121,6 +122,7 @@
 				<posx>-20</posx>
 				<posy>0</posy>
 				<texture border="100">filemanager/filemanager_panel.png</texture>
+				<colordiffuse>FMListPanel</colordiffuse>
 			</control>
 			<control type="label" id="102">
 				<posx>590</posx>

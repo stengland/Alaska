@@ -16,16 +16,6 @@
 	
 	<color name="MainMenu">193c3c3c</color>
 
-	<!-- Background Test Colours
-	
-	<color name="BackgroundColor">ee000025</color>
-	<color name="BackgroundFilterColor">44009ACD</color>
-	<color name="BackgroundColor">dd000025</color>
-	<color name="BackgroundFilterColor">cc151579</color>
-	<color name="BackgroundColor">bb4aff46</color>
-	<color name="BackgroundFilterColor">dd024d00</color>
-	-->
-
 	<!-- Global Colours -->
 
 	<color name="Time">FF686868</color>
@@ -132,6 +122,7 @@
 
 	<!-- Filemanager -->
 
+	<color name="FMListPanel">eeFFFFFF</color>
 	<color name="FM_ListTitle">dc777777</color>
 	<color name="FM_ListTitleAccent">CCdadada</color>
 	<color name="FM_ListSelected">dc990000</color>

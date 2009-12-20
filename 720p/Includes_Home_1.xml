@@ -635,7 +635,7 @@
 			<posy>264</posy>
 			<width>348</width>
 			<height>44</height>
-			<texture>mainmenu/homeshade.png</texture>
+			<texture>mainmenu/homeback.png</texture>
 			<colordiffuse>HomeFrameDiffuseColor</colordiffuse>
 		</control>
 	</include>

@@ -103,48 +103,6 @@
 				<effect type="zoom" time="200" center="640,480" start="100" end="90" tween="cubic" easing="in" />
 				<effect type="fade" time="200" start="100" end="0" />
 			</animation>
-			<!--control type="label">
-				<posx>1275</posx>
-				<posy>95</posy>
-				<width>200</width>
-				<height>60</height>
-				<aligny>center</aligny>
-				<align>right</align>
-				<textcolor>OSDPlayingArtist</textcolor>
-				<font>Font_OSDDetail</font>
-				<label>$LOCALIZE[31715]</label>
-			</control>
-			<control type="label">
-				<posx>1275</posx>
-				<posy>110</posy>
-				<width>450</width>
-				<height>60</height>
-				<aligny>center</aligny>
-				<align>right</align>
-				<textcolor>OSDPlayingPN</textcolor>
-				<font>Font_OSDDetail</font>
-				<label>$INFO[MusicPlayer.Offset(-1).Artist] - $INFO[MusicPlayer.Offset(-1).Title]</label>
-			</control>
-			<control type="label">
-				<posx>290</posx>
-				<posy>95</posy>
-				<width>200</width>
-				<height>60</height>
-				<aligny>center</aligny>
-				<textcolor>OSDPlayingArtist</textcolor>
-				<font>Font_OSDDetail</font>
-				<label>$LOCALIZE[31704]</label>
-			</control>
-			<control type="label">
-				<posx>290</posx>
-				<posy>110</posy>
-				<width>450</width>
-				<height>60</height>
-				<aligny>center</aligny>
-				<textcolor>OSDPlayingPN</textcolor>
-				<font>Font_OSDDetail</font>
-				<label>$INFO[MusicPlayer.Offset(1).Artist] - $INFO[MusicPlayer.Offset(1).Title]</label>
-			</control-->
 			<control type="label">
 				<posx>290</posx>
 				<posy>10</posy>

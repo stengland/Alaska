@@ -9,7 +9,7 @@
 	<!-- Home 1 Colours -->
 
 	<color name="HomeFrameColor">FFE0E0E0</color>
-	<color name="HomeFrameDiffuseColor">FFFFFFFF</color>
+	<color name="HomeFrameDiffuseColor">FFd6d6d6</color>
 	<color name="MainMenuLabel">bb383737</color>
 
 	<!-- Home 2 & 3 Colour -->

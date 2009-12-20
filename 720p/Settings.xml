@@ -10,7 +10,7 @@
 			<onfocus>Dialog.Close(106)</onfocus>
 			<onfocus>SetFocus(60)</onfocus>
 		</control>
-		
+
 		<include>Global_Background</include>
 		<include>Global_Filter</include>
 		<control type="panel" id="60">
@@ -310,6 +310,7 @@
 			</control>
 		</control>
 		<include>Global_ContextFilter</include>
+		<include>Global_NowPlaying</include>
 		<include>Global_Time</include>
 		<include>Setting_Heading</include>
 		<include>Global_RSS</include>

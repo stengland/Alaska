@@ -13,9 +13,9 @@
 			<visible>!Skin.HasSetting(hidefanart)</visible>
 		</control>
 		<include>Global_Filter</include>
-		
+
 		<include>Object_MovieInfoLines</include>
-		
+
 		<include>Viewtype_Files</include>
 		<include>Viewtype_List</include>
 		<include>Viewtype_Poster</include>
@@ -119,11 +119,12 @@
 				</animation>				
 			</control>				
 		</control>
-		
+
+		<include>Global_NowPlaying</include>
 		<include>Global_Time</include>
 		<include>Global_Heading</include>		
 		<include>Global_RSS</include>
-		
+
 		<include>Object_DebugGrid</include>
 
 	</controls>	

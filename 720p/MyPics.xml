@@ -14,12 +14,12 @@
 			<include>Animation_BackdropFade</include>
 		</control>
 		<include>Global_Filter</include>
-		
+
 		<include>Viewtype_PictureGrid</include>
 		<include>Viewtype_Files</include>
 
 		<include>Global_ContextFilter</include>		
-		
+
 		<control type="label">
 			<include>WindowID</include>
 			<label>MyPics.xml</label>
@@ -121,12 +121,13 @@
 				</animation>				
 			</control>				
 		</control>
-		
+
+		<include>Global_NowPlaying</include>
 		<include>Global_Time</include>
 		<include>Global_Heading</include>		
 		<include>Global_RSS</include>
-		
+
 		<include>Object_DebugGrid</include>
-	
+
 	</controls>
 </window>

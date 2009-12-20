@@ -18,7 +18,7 @@
 		<include>Viewtype_MusicWall</include>
 
 		<include>Global_ContextFilter</include>
-		
+
 		<control type="label">
 			<include>WindowID</include>
 			<label>MyMusicSongs.xml</label>
@@ -116,12 +116,13 @@
 				</animation>				
 			</control>				
 		</control>
-		
+
+		<include>Global_NowPlaying</include>
 		<include>Global_Time</include>
 		<include>Global_Heading</include>		
 		<include>Global_RSS</include>
-		
+
 		<include>Object_DebugGrid</include>
-	
+
 	</controls>
 </window>

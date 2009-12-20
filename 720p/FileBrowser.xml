@@ -103,7 +103,7 @@
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 		</control>
-	<!-- view options -->
+		<!-- view options -->
 		<include>Global_ContextFilter</include>
 		<control type="grouplist" id="7001">
 			<width>1000</width>
@@ -155,35 +155,38 @@
 			<include>Animation_ZoomInMenu</include>
 			<orientation>horizontal</orientation>
 			<posy>300</posy>
-		<!-- ok -->
+			<!-- ok -->
 			<control type="button" id="7040">
 				<include>WindowMenuLabel</include>
-<!-- LOC -->	<label> - </label>
+				<!-- LOC -->
+				<label> - </label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(413)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-		<!-- cancel -->
+			<!-- cancel -->
 			<control type="button" id="7041">
 				<include>WindowMenuLabel</include>
-<!-- LOC -->	<label> - </label>
+				<!-- LOC -->
+				<label> - </label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(414)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-		<!-- new folder -->
+			<!-- new folder -->
 			<control type="button" id="7042">
 				<include>WindowMenuLabel</include>
-<!-- LOC -->	<label> - </label>
+				<!-- LOC -->
+				<label> - </label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(415)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
 		</control>
-	<!-- Heading -->
+		<!-- Heading -->
 		<control type="group">
 			<posx>30</posx>
 			<posy>30</posy>
@@ -193,10 +196,12 @@
 				<include>Global_HeadingSectionVars</include>
 			</control>
 			<control type="label">
-<!-- LOC -->	<label>$INFO[ListItem.path]</label>
+				<!-- LOC -->
+				<label>$INFO[ListItem.path]</label>
 				<include>Global_HeadingDetailVars</include>
 			</control>
 		</control>
+		<include>Global_NowPlaying</include>
 		<include>Global_Time</include>
 		<include>Global_RSS</include>
 		<include>Object_DebugGrid</include>

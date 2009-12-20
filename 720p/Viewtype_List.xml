@@ -33,7 +33,7 @@
 					<textcolor>Text</textcolor>
 					<selectedcolor>ListTrackNF</selectedcolor>					
 					<label>$INFO[ListItem.TrackNumber]</label>
-					<visible>Container.Content(songs)</visible>
+					<visible>Container.Content(songs) + !Window.IsActive(500)</visible>
 				</control>
 				<control type="label">
 					<posx>111</posx>
@@ -45,7 +45,7 @@
 					<textcolor>Text</textcolor>
 					<selectedcolor>ListTitleNF</selectedcolor>					
 					<label>$INFO[ListItem.Title]</label>
-					<visible>Container.Content(songs)</visible>
+					<visible>Container.Content(songs) + !Window.IsActive(500)</visible>
 				</control>
 				<control type="label">
 					<posx>73</posx>
@@ -57,7 +57,7 @@
 					<textcolor>Text</textcolor>
 					<selectedcolor>ListTitleNF</selectedcolor>					
 					<label>$INFO[ListItem.Label]</label>
-					<visible>IsEmpty(ListItem.Title)</visible>
+					<visible>IsEmpty(ListItem.Title) + !Window.IsActive(500)</visible>
 				</control>				
 				<control type="label">
 					<posx>111</posx>
@@ -81,7 +81,7 @@
 					<textcolor>Text</textcolor>
 					<selectedcolor>ListTitleNF</selectedcolor>
 					<selectedcolor>ListTitleNF</selectedcolor>					
-					<label>$INFO[ListItem.Label] - $INFO[ListItem.Album] - $INFO[ListItem.Artist]</label>
+					<label>$INFO[ListItem.Title] - $INFO[ListItem.Album] - $INFO[ListItem.Artist]</label>
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(500)</visible>
 				</control>			
 			</itemlayout>

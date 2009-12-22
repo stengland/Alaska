@@ -123,7 +123,6 @@
 			</control>				
 		</control>
 
-		<include>Global_NowPlaying</include>
 		<include>Global_Time</include>
 		<include>Global_Heading</include>		
 		<include>Global_RSS</include>

@@ -201,7 +201,6 @@
 				<include>Global_HeadingDetailVars</include>
 			</control>
 		</control>
-		<include>Global_NowPlaying</include>
 		<include>Global_Time</include>
 		<include>Global_RSS</include>
 		<include>Object_DebugGrid</include>

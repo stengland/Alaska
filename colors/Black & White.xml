@@ -4,7 +4,7 @@
 
 	<color name="BackgroundColor">D7000000</color>
 	<color name="BackgroundFilterColor">D7000000</color>
-	<color name="ButtonFilterColor">FFD3D3D3</color>
+	<color name="ButtonFilterColor">FFc30000</color>
 
 	<!-- Home 1 Colours -->
 
@@ -93,13 +93,13 @@
 
 	<!-- Poster colours -->
 
-	<color name="WallIconDiffuse">FF4c4c4c</color>
-	<color name="WallArrowDiffuse">FFD3D3D3</color>
-	<color name="IconDiffuse">FF262626</color>
-	<color name="WatchedIconBackFO">FFD3D3D3</color>
-	<color name="WatchedIconBackNF">22D3D3D3</color>
+	<color name="WallIconDiffuse">89FFFFFF</color>
+	<color name="WallArrowDiffuse">FFc30000</color>
+	<color name="IconDiffuse">89FFFFFF</color>
+	<color name="WatchedIconBackFO">FFc30000</color>
+	<color name="WatchedIconBackNF">86c30000</color>
 	<color name="WatchedIconDiffuseFO">FFFFFFFF</color>
-	<color name="WatchedIconDiffuseNF">22FFFFFF</color>
+	<color name="WatchedIconDiffuseNF">86FFFFFF</color>
 
 	<!-- Fanart colours -->
 

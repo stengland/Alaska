@@ -199,7 +199,6 @@
 				<control type="label">
 					<label fallback="?">$INFO[ListItem.AudioChannels,,.0]</label>
 					<posx>65</posx>
-					<posy>-1</posy>
 					<width>33</width>
 					<include>PosterMediaFlagsVars</include>
 					<align>center</align>
@@ -212,7 +211,6 @@
 				<control type="label">
 					<label>5.1</label>
 					<posx>65</posx>
-					<posy>-1</posy>
 					<width>33</width>
 					<include>PosterMediaFlagsVars</include>
 					<align>center</align>
@@ -224,7 +222,6 @@
 				<control type="label">
 					<label>7.1</label>
 					<posx>65</posx>
-					<posy>-1</posy>
 					<width>33</width>
 					<include>PosterMediaFlagsVars</include>
 					<align>center</align>

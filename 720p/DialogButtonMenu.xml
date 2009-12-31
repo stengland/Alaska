@@ -49,8 +49,7 @@
 				<label>Filemanager</label>
 				<onclick>ActivateWindow(3)</onclick>
 			</control>
-
-			<control type="button" id="3117">
+			<control type="button" id="3112">
 				<description>Favourites</description>
 				<height>40</height>
 				<width>1280</width>
@@ -60,25 +59,11 @@
 				<animation effect="zoom" start="100" end="120" tween="back" time="400" center="auto" reversible="false">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>$LOCALIZE[1036]</label>
+				<label>1036</label>
 				<onclick>ActivateWindow(Favourites)</onclick>
 			</control>
-
-			<control type="button" id="3112">
-				<description>Reboot</description>
-				<height>40</height>
-				<width>1280</width>
-				<font>Font_MenuValue</font>
-				<textcolor>MenuValue</textcolor>
-				<focusedcolor>MenuValueFO</focusedcolor>
-				<animation effect="zoom" start="100" end="120" tween="back" time="400" center="auto" reversible="false">Focus</animation>
-				<align>center</align>
-				<aligny>middle</aligny>
-				<label>$LOCALIZE[13313]</label>
-				<onclick>Reset()</onclick>
-			</control>
 			<control type="button" id="3113">
-				<description>Shutdown</description>
+				<description>LogOff</description>
 				<height>40</height>
 				<width>1280</width>
 				<font>Font_MenuValue</font>
@@ -87,11 +72,10 @@
 				<animation effect="zoom" start="100" end="120" tween="back" time="400" center="auto" reversible="false">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>$LOCALIZE[13005]</label>
-				<onclick>ShutDown()</onclick>
+				<label>20126</label>
+				<onclick>System.LogOff</onclick>
 			</control>
 			<control type="button" id="3114">
-				<description>Restart Xbmc</description>
 				<height>40</height>
 				<width>1280</width>
 				<font>Font_MenuValue</font>
@@ -100,23 +84,52 @@
 				<animation effect="zoom" start="100" end="120" tween="back" time="400" center="auto" reversible="false">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>$LOCALIZE[13313] XBMC</label>
-				<onclick>RestartApp()</onclick>
+				<label>13005</label>
+				<onclick>ShutDown()</onclick>
 			</control>
 			<control type="button" id="3115">
+				<description>Shutdown Timer</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>MenuValueFO</focusedcolor>
+				<animation effect="zoom" start="100" end="120" tween="back" time="400" center="auto" reversible="false">Focus</animation>
+				<align>center</align>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>20144</label>
+				<onclick>AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
+				<visible>!System.HasAlarm(shutdowntimer)</visible>
+			</control>
+			<control type="button" id="3116">
+				<description>Shutdown Timer</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>MenuValueFO</focusedcolor>
+				<animation effect="zoom" start="100" end="120" tween="back" time="400" center="auto" reversible="false">Focus</animation>
+				<align>center</align>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>20151</label>
+				<onclick>CancelAlarm(shutdowntimer)</onclick>
+				<visible>System.HasAlarm(shutdowntimer)</visible>
+			</control>
+			<control type="button" id="3117">
 				<description>System Info Button</description>
 				<height>40</height>
 				<width>1280</width>
 				<font>Font_MenuValue</font>
-				<textcolor>MenuValue</textcolor>
 				<focusedcolor>MenuValueFO</focusedcolor>
 				<animation effect="zoom" start="100" end="120" tween="back" time="400" center="auto" reversible="false">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>$LOCALIZE[130]</label>
+				<label>130</label>
 				<onclick>ActivateWindow(7)</onclick>
 			</control>
-			<control type="button" id="3116">
+			<control type="button" id="3118">
 				<description>Reload Skin</description>
 				<height>40</height>
 				<width>1280</width>
@@ -126,7 +139,7 @@
 				<animation effect="zoom" start="100" end="120" tween="back" time="400" center="auto" reversible="false">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>RELOAD SKIN</label>
+				<label>20183</label>
 				<onclick>ReloadSkin()</onclick>
 				<visible>Skin.HasSetting(debugmode)</visible>
 			</control>

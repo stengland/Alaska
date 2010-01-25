@@ -244,5 +244,12 @@
 	<string id="40240">Selecteer welk gedeelte van dit</string>
 	<string id="40241">gegroepeerd bestand om af te spelen.</string>
 	<string id="40242">IN PREMIERE GEGAAN</string>
+	<string id="40245">ACTIVEER SONGTEKSTEN IN MUZIEK OSD</string> 
+	<string id="40246">PAD NAAR SONGTEKST SCRIPT -</string> 
+	<string id="40247">ACTIVEER DOWNLOADEN VAN ONDERTITELS IN VIDEO OSD</string>
+	<string id="40248">PAD NAAR ONDERTITEL SCRIPT -</string> 
+	<string id="40249">SYSTEEM MUZIEKBESTANDEN</string> 
+	<string id="40250">HUIDIG GESELECTEERD</string> 
+	<string id="40251">HUIDIGE AFSPEELLIJST</string>
 	
 </strings>

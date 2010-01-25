@@ -194,7 +194,7 @@
 					<textcolor>ListTitleFO</textcolor>
 					<selectedcolor>ListSelectedFO</selectedcolor>
 					<label>$INFO[ListItem.Artist]$INFO[ListItem.Album, - ]$INFO[ListItem.Duration, - ]</label>
-					<visible>!IsEmpty(ListItem.Title)</visible>
+					<visible>!IsEmpty(ListItem.Title) + Container.Content(songs)</visible>
 				</control>
 				<control type="image">
 					<posx>120</posx>

@@ -243,6 +243,15 @@
 	<string id="40239">VisualisationPresetList.xml</string>
 	<string id="40240">Scegli quale parte di questo</string>
 	<string id="40241">file riunito vuoi avviare.</string>
-	<string id="40242">PRIMA</string>
+	<string id="40242">PRIMA</string>  
+	<string id="40243">FINE RIPRODUZIONE PREVISTA</string>
+	<string id="40244">IN RIPRODUZIONE</string>
+	<string id="40245">ATTIVA LYRICS NELL'OSD</string>
+	<string id="40246">PERCORSO DELLO SCRIPT LYRICS -</string>
+	<string id="40247">ATTIVA DOWNLOAD SOTTOTITOLI NELL'OSD</string>
+	<string id="40248">PERCORSO DELLO SCRIPT SUBTITLES -</string>
+	<string id="40249">FILE MUSICALI DI SISTEMA</string>
+	<string id="40250">SELEZIONE</string>
+	<string id="40251">PLAYLIST ATTUALE</string>
 
 </strings>

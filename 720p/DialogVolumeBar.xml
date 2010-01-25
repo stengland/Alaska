@@ -16,25 +16,25 @@
 			<posy>90</posy>
 			<width>707</width>
 			<height>183</height>
-			<control type="image">
-				<posx>200</posx>
-				<posy>-2</posy>
-				<width>222</width>
-				<height>74</height>
-				<texture border="37,0,0,0">dialogs/back.png</texture>
-				<colordiffuse>DialogBackground</colordiffuse>
-				<visible>Window.IsActive(2005) | Window.IsActive(2006)</visible>
-			</control>
-			<control type="image">
-				<posx>324</posx>
-				<posy>12</posy>
-				<width>46</width>
-				<height>46</height>
-				<texture>dialogs/dialog_back.png</texture>
-				<colordiffuse>DialogBack</colordiffuse>
-			</control>
 			<control type="group">
 				<visible>!player.passthrough</visible>
+				<control type="image">
+					<posx>200</posx>
+					<posy>-2</posy>
+					<width>280</width>
+					<height>74</height>
+					<texture border="37,0,0,0">dialogs/back.png</texture>
+					<colordiffuse>DialogBackground</colordiffuse>
+					<visible>Window.IsActive(2005) | Window.IsActive(2006)</visible>
+				</control>
+				<control type="image">
+					<posx>324</posx>
+					<posy>12</posy>
+					<width>46</width>
+					<height>46</height>
+					<texture>dialogs/dialog_back.png</texture>
+					<colordiffuse>DialogBack</colordiffuse>
+				</control>
 				<control type="progress" id="404">
 					<description>Progressbar</description>
 					<posx>331</posx>
@@ -86,6 +86,23 @@
 			</control>
 			<control type="group">
 				<visible>player.passthrough</visible>
+				<control type="image">
+					<posx>0</posx>
+					<posy>-2</posy>
+					<width>480</width>
+					<height>74</height>
+					<texture border="37,0,0,0">dialogs/back.png</texture>
+					<colordiffuse>DialogBackground</colordiffuse>
+					<visible>Window.IsActive(2005) | Window.IsActive(2006)</visible>
+				</control>
+				<control type="image">
+					<posx>324</posx>
+					<posy>12</posy>
+					<width>46</width>
+					<height>46</height>
+					<texture>dialogs/dialog_back.png</texture>
+					<colordiffuse>DialogBack</colordiffuse>
+				</control>
 				<control type="image">
 					<posx>322</posx>
 					<posy>10</posy>

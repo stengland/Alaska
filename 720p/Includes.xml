@@ -142,7 +142,6 @@
 				<visible effect="fade" time="250">system.hasnetwork</visible>
 			</control>
 			<visible>Skin.HasSetting(ShowGlobalTemp)</visible>
-			<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="[Window.IsVisible(104) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(113) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(112) + [Window.IsVisible(101) | Window.IsVisible(133)]] | [[Window.IsVisible(101) + Window.IsVisible(133)]]">Conditional</animation>
 		</control>
 	</include>
 	<include name="Global_HeadingSectionVars">
@@ -311,7 +310,7 @@
 	</include>
 	<include name="Global_RSS">
 		<control type="rss" id="1">
-		<animation effect="slide" start="0,0" end="380,0" time="200" condition="Window.IsActive(PlayerControls)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="380,0" time="200" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 			<posx>0</posx>
 			<posy>675</posy>
 			<width>1280</width>
@@ -328,7 +327,7 @@
 			<visible>!Skin.HasSetting(largeRSS) + [Window.IsActive(home) | !Skin.HasSetting(RSS_only_on_home)]</visible>
 		</control>
 		<control type="rss" id="1">
-		<animation effect="slide" start="0,0" end="380,0" time="200" condition="Window.IsActive(PlayerControls)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="380,0" time="200" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 			<posx>0</posx>
 			<posy>675</posy>
 			<width>1280</width>
@@ -975,7 +974,7 @@
 				<posy>30</posy>
 				<control type="fadelabel">
 					<description>Title</description>
-					<width>1060</width>
+					<width>1020</width>
 					<font>Font_Time</font>
 					<textcolor>Time</textcolor>
 					<align>left</align>
@@ -989,7 +988,7 @@
 				</control>
 				<control type="fadelabel">
 					<description>Title</description>
-					<width>1060</width>
+					<width>1020</width>
 					<font>Font_Time</font>
 					<textcolor>Time</textcolor>
 					<align>left</align>
@@ -1122,6 +1121,19 @@
 					<label>$LOCALIZE[40243]: $INFO[Player.FinishTime]</label>
 					<align>right</align>
 				</control>
+			</control>
+			<control type="group">
+				<posx>1250</posx>
+				<posy>30</posy>
+				<control type="label">
+					<width>128</width>
+					<font>Font_Time</font>
+					<textcolor>Time</textcolor>
+					<info>Weather.Temperature</info>
+					<align>right</align>
+					<visible effect="fade" time="250">system.hasnetwork</visible>
+				</control>
+				<visible>Skin.HasSetting(ShowGlobalTemp)</visible>
 			</control>
 		</control>
 	</include>

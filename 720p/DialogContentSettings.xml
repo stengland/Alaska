@@ -137,6 +137,7 @@
 				<itemgap>2</itemgap>
 				<orientation>vertical</orientation>
 				<width>500</width>
+				<height>100</height>
 				<onup>4</onup>
 				<ondown>29</ondown>
 				<onleft>4</onleft>
